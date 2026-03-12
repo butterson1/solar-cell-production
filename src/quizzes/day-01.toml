@@ -1,0 +1,71 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the bandgap energy of silicon?"
+prompt.distractors = [
+  "0.67 eV (that's germanium)",
+  "1.42 eV (that's gallium arsenide)",
+  "2.76 eV (that's a blue photon's energy)"
+]
+answer.answer = "1.12 eV"
+context = "Silicon's bandgap of 1.12 eV is *the* number that defines which photons can generate electricity. It corresponds to infrared light at ~1100nm wavelength."
+id = "aa59c93c-0e58-4a67-a0ff-9094435a632d"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "A blue photon (2.76 eV) hits a silicon solar cell. What happens to the excess energy above the 1.12 eV bandgap?"
+prompt.distractors = [
+  "It generates extra current — more energy = more electrons",
+  "It's reflected back as blue light",
+  "It's stored in the cell for later use"
+]
+answer.answer = "It's lost as heat (thermalization loss)"
+context = "This is thermalization loss — the single biggest efficiency killer in solar cells. The electron quickly sheds excess energy as lattice vibrations (phonons), heating the silicon."
+id = "8ee194cd-8ba9-4d4a-b218-5aa4cdb262a4"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What separates the electron-hole pairs in a solar cell before they can recombine?"
+prompt.distractors = [
+  "An external battery that pushes them apart",
+  "Magnetic fields from the metal contacts",
+  "The anti-reflective coating on top"
+]
+answer.answer = "The built-in electric field at the p-n junction"
+context = "The p-n junction creates a permanent electric field in the depletion region. It's a maintenance-free, no-moving-parts charge separator — the solar cell's secret weapon."
+id = "ebf40a66-ff79-4c15-b2d2-a7c65ce0f6db"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What happens to a silicon solar cell's output when it gets hot?"
+prompt.distractors = [
+  "It increases — more heat = more energy",
+  "Nothing — temperature doesn't affect solar cells",
+  "It fluctuates randomly"
+]
+answer.answer = "It decreases — about 0.3-0.5% per °C above 25°C"
+context = "Counterintuitive but true! The bandgap shrinks with heat, but voltage drops faster than current gains. A 45°C roof costs you 6-10% performance."
+id = "6c8d4341-a38a-4c48-8c67-8021c4ef1310"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "The Shockley-Queisser limit caps single-junction silicon cells at roughly what theoretical maximum efficiency?"
+prompt.distractors = [
+  "50% — half the sunlight is usable",
+  "15% — most light is wasted",
+  "75% — only UV is lost"
+]
+answer.answer = "~33.7%"
+context = "The Shockley-Queisser limit accounts for thermalization (too-energetic photons), sub-bandgap transparency (too-weak photons), and radiative recombination. Modern lab cells at 26.8% are approaching silicon's more specific limit of 29.4%."
+id = "11bf260c-78fa-40ff-9961-2eddf544bf43"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "What are the two types of doped silicon, and which dopant element is used for each?"
+answer.answer = "n-type (phosphorus) and p-type (boron)"
+alternatives = [
+  "n-type uses phosphorus, p-type uses boron",
+  "phosphorus for n-type, boron for p-type",
+  "n type phosphorus p type boron"
+]
+context = "Phosphorus has 5 outer electrons (one extra → donates free electron → n-type). Boron has 3 (one missing → creates a hole → p-type). Typical doping: ~1 impurity atom per million silicon atoms."
+id = "13f694aa-ef93-4475-9a9e-8a1efe5c3274"

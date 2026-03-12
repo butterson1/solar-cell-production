@@ -1,0 +1,18 @@
+[book]
+authors = ["OGBot"]
+language = "en"
+src = "src"
+title = "Solar Cell Production — From Sand to Grid"
+
+[build]
+build-dir = "book"
+
+[preprocessor.quiz]
+command = "mdbook-quiz"
+fullscreen = true
+
+[output.html]
+default-theme = "navy"
+preferred-dark-theme = "navy"
+git-repository-url = ""
+additional-css = []
