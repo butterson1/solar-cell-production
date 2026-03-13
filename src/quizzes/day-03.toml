@@ -1,0 +1,63 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why is metallurgical-grade silicon (99% pure) completely unsuitable for solar cells?"
+prompt.distractors = [
+    "It's too brittle to be sliced into wafers",
+    "Its melting point is too low for cell processing",
+    "It contains too much oxygen, which blocks photons"
+]
+answer.answer = "Impurities like iron act as recombination centers that trap electrons, destroying cell efficiency"
+context = "Even a single iron atom per billion silicon atoms can halve a solar cell's efficiency. At 99% purity, impurity concentrations are millions of times too high for the p-n junction to function properly."
+id = "c0debc8c-04b5-4b7a-98e2-f6d9b10e4ac8"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the key insight that makes the Siemens process work?"
+prompt.distractors = [
+    "Silicon can be melted and recrystallized to separate impurities",
+    "Impurities can be removed by dissolving silicon in hydrofluoric acid",
+    "High-pressure filtration can physically separate impurity atoms"
+]
+answer.answer = "Converting silicon into a gas (trichlorosilane) allows purification by distillation, then conversion back to solid"
+context = "The Siemens process converts solid silicon into volatile trichlorosilane (boiling point 31.8°C), purifies it through fractional distillation — a technique perfected over centuries — then decomposes it back into ultra-pure solid silicon via chemical vapor deposition."
+id = "c1d7e216-16c1-4fc3-bef2-af56f79a8fed"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Approximately how much electrical energy (in kWh) does the Siemens process require to produce one kilogram of polysilicon?"
+answer.answer = "60-80"
+answer.alternatives = ["60-80 kWh", "70", "60 to 80", "70 kWh"]
+context = "The Siemens process consumes 60-80 kWh per kilogram of polysilicon, making it one of the most energy-intensive industrial purification processes. This is why polysilicon plants cluster near cheap electricity sources."
+id = "3d9bf3c4-8220-441f-b72f-dd885340ae55"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the main advantage of fluidized bed reactors (FBR) over the traditional Siemens process?"
+prompt.distractors = [
+    "FBR produces higher purity polysilicon suitable for electronic-grade applications",
+    "FBR uses no hazardous chemicals, making it environmentally superior",
+    "FBR can process raw sand directly, skipping the metallurgical-grade step"
+]
+answer.answer = "FBR consumes roughly half the energy (25-35 kWh/kg) and operates continuously instead of in batches"
+context = "FBR operates at 600-800°C instead of 1,100°C, using simpler silane gas (SiH₄). The lower temperature and continuous operation cut energy consumption to 25-35 kWh/kg. The tradeoff is higher surface contamination due to the granular product's large surface-to-volume ratio."
+id = "73db8fd6-0240-4440-beb5-94061c524352"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why does polysilicon production concentrate in regions like Xinjiang and Inner Mongolia?"
+prompt.distractors = [
+    "These regions have the purest quartz sand deposits in the world",
+    "Local regulations allow higher-temperature reactor operation",
+    "The dry climate prevents moisture contamination during production"
+]
+answer.answer = "Cheap coal-fired electricity (~$0.03-0.04/kWh) makes the energy-intensive process economical"
+context = "When polysilicon sells for $7-10/kg and requires 60-80 kWh to produce, electricity cost is the dominant variable. At $0.04/kWh, electricity costs ~$2.80/kg; at $0.10/kWh, it's $7.00/kg. Cheap energy is the difference between profit and loss."
+id = "6048297b-f8f8-48f9-a268-bae802b032d1"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "What temperature are the slim rods heated to inside a Siemens reactor?"
+answer.answer = "1,050-1,150°C"
+answer.alternatives = ["1100°C", "1,100°C", "1050-1150", "1100 degrees"]
+context = "The silicon slim rods are resistively heated to 1,050-1,150°C, at which temperature trichlorosilane decomposes and deposits pure silicon onto the rod surface. This extreme temperature is the primary reason for the process's high energy consumption."
+id = "4c5eae93-0121-4951-8e4c-3d93a34d4d76"
