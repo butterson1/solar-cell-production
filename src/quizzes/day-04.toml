@@ -1,0 +1,113 @@
+# Day 4 Quiz: Crystal Growth — Czochralski vs Float-Zone
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why did the solar industry shift from multicrystalline to monocrystalline wafers, reaching 95%+ market share by 2024?"
+prompt.distractors = [
+    "Monocrystalline silicon is cheaper to produce due to simpler manufacturing",
+    "Multicrystalline silicon degrades faster in sunlight, reducing panel lifespan",
+    "Multicrystalline silicon can't be cut thin enough for modern cell designs"
+]
+answer.answer = "Grain boundaries in multicrystalline silicon cause 2-4% absolute efficiency loss, which became unacceptable as cell architectures like PERC and TOPCon pushed performance limits"
+context = "Grain boundaries in polycrystalline silicon act as recombination centers where electrons get trapped. As high-efficiency architectures demanded every fraction of a percent, the 2-4% efficiency penalty became a dealbreaker, despite multicrystalline's lower production cost."
+id = "71d8dce2-ac55-45f5-a6ba-8b8120407c44"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the 'Dash neck' technique, and why is it critical to CZ crystal growth?"
+prompt.distractors = [
+    "A technique for rapidly cooling the ingot to prevent cracking during extraction",
+    "A method of rotating the seed crystal to distribute dopants evenly",
+    "A chemical etching step that removes surface contamination from the seed"
+]
+answer.answer = "Growing a thin neck (3-5 mm diameter) after seed contact allows thermal-shock dislocations to propagate to the surface and terminate, yielding a dislocation-free crystal"
+context = "When the seed touches the 1,420°C melt, thermal shock creates dislocations. By growing a very thin neck, these defects reach the surface and self-terminate. The entire ingot (200+ kg) then hangs from this pencil-thin neck — and if it snaps, the ingot falls back into the melt."
+id = "a7fcf389-1844-4313-90f5-8b170bd059bc"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "What is the melting point of silicon?"
+answer.answer = "1,425°C"
+answer.alternatives = ["1425°C", "1425", "1,425", "1425 degrees"]
+context = "Silicon melts at 1,425°C. CZ growth operates just above this temperature (1,420-1,430°C), with the melt slightly superheated. This is why the process requires such enormous energy input — maintaining hundreds of kilograms of silicon above 1,420°C for days."
+id = "f485bb90-d679-47b0-948e-4896dc70ca49"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why can't float-zone (FZ) silicon be used for mainstream solar manufacturing?"
+prompt.distractors = [
+    "FZ silicon has too many oxygen impurities from the RF coil",
+    "FZ crystals grow with random grain orientations, not as single crystals",
+    "FZ silicon's crystal structure is incompatible with PERC cell designs"
+]
+answer.answer = "FZ ingots are limited to ~200 mm diameter (surface tension can't support larger molten zones), they process only 50-80 kg per run, and wafers cost 30-100× more than CZ"
+context = "The molten zone in FZ is held by surface tension alone. Mass grows with the cube of diameter, while surface tension scales linearly — above ~200 mm, the melt collapses. Combined with low throughput and $5-15/wafer cost vs $0.15-0.25 for CZ, FZ is economically unviable for solar."
+id = "38cc1fae-1e29-43ca-98b5-328d1e38e5f2"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What does the segregation coefficient tell us about crystal growth, and why is boron's value of k₀ = 0.8 problematic?"
+prompt.distractors = [
+    "k₀ = 0.8 means boron evaporates during crystal growth, making doping unpredictable",
+    "k₀ = 0.8 means boron concentrates exclusively at grain boundaries, causing hotspots",
+    "k₀ = 0.8 means boron reacts with the quartz crucible, contaminating the melt"
+]
+answer.answer = "k₀ describes how impurities partition between solid and liquid during freezing — boron's high k₀ means it incorporates nearly equally into the crystal instead of being rejected into the melt, so it can't be removed by crystal growth"
+context = "Most metals have tiny k₀ values (iron: 8×10⁻⁶), meaning crystal growth rejects them into the melt. But boron (k₀ = 0.8) partitions almost equally between solid and liquid, and oxygen (k₀ = 1.25) actually prefers the solid. This is why polysilicon purification must remove boron before crystal growth — the CZ process won't do it."
+id = "8d8357c5-d947-4f89-ab38-84b57138c5c4"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "In recharge CZ (RCZ) technology, how many ingots can leading manufacturers like LONGi pull from a single crucible?"
+answer.answer = "6-10"
+answer.alternatives = ["6 to 10", "8", "6-12", "8-10", "10", "12"]
+context = "By 2024, LONGi and TZS routinely pulled 6-10 ingots per crucible using RCZ, with some claiming 12+. This shares crucible cost across multiple ingots and cuts energy use 20-30% by avoiding full thermal cycling between pulls."
+id = "395b3dd4-f030-449f-bccf-2ca98b5bc3ea"
+
+# 🔁 Review: Recent days (Days 1-3)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 3) What is the primary purpose of fractional distillation in the Siemens process?"
+prompt.distractors = [
+    "To separate silicon from oxygen in quartz sand",
+    "To cool trichlorosilane from gas to liquid form for storage",
+    "To remove hydrogen gas byproducts that would contaminate the silicon"
+]
+answer.answer = "To separate trichlorosilane (boiling point 31.8°C) from impurity chlorides like BCl₃ and PCl₃, which have different boiling points, achieving parts-per-billion purity"
+context = "Distillation exploits boiling point differences: BCl₃ boils at 12.6°C, TCS at 31.8°C, and PCl₃ at 76°C. Multiple distillation columns in series reduce boron and phosphorus to below 0.1 parts per billion. This step accounts for 15-20% of the process's total energy."
+id = "3abdef5a-f449-41b2-98a4-d2bd2d4bbff5"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 2) What is the dominant crystalline form of silicon used in solar cells, and what is its atomic structure?"
+prompt.distractors = [
+    "Hexagonal silicon — each atom bonds to six neighbors in a honeycomb pattern",
+    "Amorphous silicon — atoms are arranged randomly with no long-range order",
+    "Body-centered cubic — each atom sits at the center of a cube of eight neighbors"
+]
+answer.answer = "Diamond cubic structure — each silicon atom is covalently bonded to exactly four neighbors at tetrahedral angles of 109.5°"
+context = "Silicon crystallizes in the diamond cubic structure, where each atom forms four sp³-hybridized covalent bonds at 109.5° angles. This structure creates the electronic band gap (1.12 eV) that makes silicon useful as a semiconductor for solar cells."
+id = "924e1237-a426-43fb-9018-b3a54b11ad95"
+
+# 🔁 Review: Older days
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (Day 1) What is the band gap energy of crystalline silicon in electron volts?"
+answer.answer = "1.12 eV"
+answer.alternatives = ["1.12", "1.1 eV", "1.1"]
+context = "Silicon's band gap of 1.12 eV means photons need at least this much energy to excite an electron across the gap. This corresponds to light wavelengths shorter than about 1,100 nm (near-infrared). Photons with less energy pass through silicon without being absorbed."
+id = "a09b3a89-3b6d-4976-b70a-a19fdc33cf87"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 1) What happens to photon energy that exceeds silicon's band gap?"
+prompt.distractors = [
+    "It's stored as chemical energy in the silicon lattice for later release",
+    "It's reflected back by the anti-reflective coating",
+    "It generates multiple electron-hole pairs, increasing current proportionally"
+]
+answer.answer = "The excess energy is lost as heat (thermalization) — the electron quickly relaxes to the bottom of the conduction band"
+context = "A 3 eV photon (blue light) hitting silicon creates one electron-hole pair and wastes 1.88 eV as heat. This thermalization loss is one of the fundamental reasons the Shockley-Queisser efficiency limit for single-junction silicon cells is about 33%."
+id = "aa429b18-3734-4fbd-9f2d-a18023cfef63"
