@@ -1,0 +1,113 @@
+# Day 5 Quiz: Ingot Slicing — Turning Crystals into Wafers
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why did diamond wire sawing replace slurry wire sawing so rapidly for monocrystalline silicon (from <10% in 2015 to >90% by 2018)?"
+prompt.distractors = [
+  "Diamond wire produces smoother surfaces that eliminate the need for any post-cut etching or cleaning steps",
+  "Diamond wire uses recycled industrial diamonds, making it cheaper than sourcing fresh silicon carbide abrasive",
+  "Diamond wire operates at lower temperatures, preventing thermal stress cracks that plagued slurry-cut wafers"
+]
+answer.answer = "Diamond wire cuts 5× faster with 65% less kerf loss, uses only water-based coolant instead of toxic PEG/SiC slurry, and produces shallower surface damage"
+context = "Diamond wire reduced kerf from 170-200 μm to 55-70 μm, increased feed rates from 0.3-0.6 mm/min to 1.5-3.0 mm/min, and replaced the complex PEG/SiC slurry with simple water and surfactant. The combined cost, speed, and environmental advantages made the transition inevitable."
+id = "f1f4776e-b77c-4305-824d-ae5188506ab8"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What happens when a diamond wire breaks during a multi-wire saw cut, and why is this such a feared event?"
+prompt.distractors = [
+  "The machine automatically re-threads the wire and resumes cutting, but the brief pause causes a visible thickness band on all wafers",
+  "The break triggers emergency coolant flooding that thermally shocks the silicon, creating microcracks in the top 50 wafers",
+  "The wire retracts to the spool, leaving the cut unfinished — the brick must be repositioned and the cut restarted from scratch"
+]
+answer.answer = "The wire snaps and goes slack across the entire web, causing the wafer array to collapse into a tangled mess of cracked silicon and steel, potentially ruining thousands of wafers simultaneously"
+context = "A single wire forms the entire web of 5,000-8,000 cutting segments. When it breaks, all tension is lost at once, and partially-cut wafers — still fragile and tightly spaced — collapse and shatter against each other. At major plants, wire breakage accounts for 2-3% yield loss."
+id = "9d684249-739f-4e7c-8c82-294ab7898762"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "What is the approximate core diameter of the thinnest diamond wires used in production wafering as of 2024?"
+answer.answer = "38 μm"
+answer.alternatives = ["38-42 μm", "38 micrometers", "38", "40 μm", "42 μm", "38-42"]
+context = "By 2024, leading manufacturers were using diamond wires with steel cores as thin as 38-42 μm, with 6-12 μm diamond particles bonded to the surface. This gives a total wire diameter of about 52-65 μm and kerf loss of 55-65 μm."
+id = "8bcce9b1-6768-4824-87ac-8d07f8d4d0d7"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why is the silicon wafer no longer the dominant cost component in a finished solar module?"
+prompt.distractors = [
+  "Wafer costs have remained flat while other components decreased, shifting the proportion toward wafers by default",
+  "The shift to thin-film solar panels eliminated silicon wafers entirely from most modern module production lines",
+  "Government subsidies for polysilicon production have artificially suppressed wafer prices below their true manufacturing cost"
+]
+answer.answer = "At ~$7/kg polysilicon, each wafer contains only $0.04 of silicon — less than the silver paste per cell ($0.10-0.15) and far less than the module's glass, backsheet, and frame combined"
+context = "Polysilicon price drops to ~$7/kg in 2024 made silicon content almost negligible in total module cost. Silver paste metallization and non-cell components (glass, frame, backsheet, junction box) now dominate, which is why thinner wafers yield diminishing cost returns."
+id = "6ddfd695-e52e-47b5-aa87-917f239bfe12"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why did diamond wire initially struggle with multicrystalline silicon but work well on monocrystalline?"
+prompt.distractors = [
+  "Multicrystalline silicon is softer than monocrystalline, causing the diamond particles to embed too deeply and snag",
+  "The grain boundaries in multicrystalline silicon release metallic impurities that chemically degrade the nickel electroplating on the wire",
+  "Multicrystalline ingots have internal thermal stresses from casting that cause spontaneous fracturing during high-speed wire cuts"
+]
+answer.answer = "Random grain orientations in multicrystalline ingots created uneven wear on diamond particles, causing wire breakage and rough surfaces"
+context = "In monocrystalline silicon, the uniform crystal orientation means consistent cutting behavior. In multicrystalline, each grain has a different hardness direction, creating irregular forces on the diamonds. This accelerated the industry shift to mono — it wasn't just more efficient, it was easier to slice."
+id = "9d6a709b-a224-44d6-9c59-ee098f0dd7ef"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "What is the name of the process where a cylindrical CZ ingot is cut into a square cross-section before wafering?"
+answer.answer = "squaring"
+answer.alternatives = ["bricking", "squaring or bricking", "cropping"]
+context = "Squaring (also called bricking) removes the curved edges from a cylindrical ingot to create a pseudo-square cross-section matching the wafer format (e.g., 182mm × 182mm for M10). The removed silicon (~15-18% of ingot mass) is recycled as CZ furnace feedstock."
+id = "3da24279-2345-4e6f-a028-e70914e51cdc"
+
+# 🔁 Review: Recent days (Days 3-4)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 4) In the Czochralski process, what is the purpose of counter-rotating the crucible and the growing crystal?"
+prompt.distractors = [
+  "To prevent the seed crystal from bonding unevenly to the melt surface during the initial dipping phase",
+  "To wind the growing crystal tighter, increasing its structural strength for the subsequent Dash neck stage",
+  "To generate centrifugal force that pushes heavier impurity atoms to the crucible walls for removal"
+]
+answer.answer = "To create a controlled convection pattern in the melt that ensures thermal symmetry and uniform dopant distribution throughout the crystal"
+context = "The crucible rotates at 5-15 RPM while the crystal rotates opposite at 8-20 RPM. This counter-rotation creates predictable melt flow patterns, preventing thermal asymmetries that would cause uneven crystal growth and non-uniform resistivity."
+id = "430cc3cc-7ae6-44f4-8d39-e181b9daf110"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 3) Why is the Siemens process so energy-intensive, and roughly how much electricity does it consume per kilogram of polysilicon?"
+prompt.distractors = [
+  "The hydrogen chloride synthesis requires plasma generation at 15,000°C, consuming 40-50 kWh/kg of polysilicon produced",
+  "The SiC reactor walls must be continuously cooled with liquid nitrogen to prevent silicon adhesion, using 100+ kWh/kg",
+  "The fractional distillation columns require repeated boiling and condensing cycles across 20+ stages, consuming 30-40 kWh/kg"
+]
+answer.answer = "CVD deposition requires heating slim rods to 1,000-1,100°C for days while most input energy radiates away as heat, consuming 50-80 kWh per kg of polysilicon"
+context = "The Siemens CVD reactor is thermodynamically inefficient — slim silicon rods glow white-hot for 5-7 days, radiating most of their energy as infrared heat into the reactor walls. This step alone dominates the process energy budget at 50-80 kWh/kg."
+id = "396ff954-0bce-4c1f-93f0-f64d23d0018e"
+
+# 🔁 Review: Older days
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 2) Why does silicon's position in the periodic table (Group 14) make it ideal for solar cells?"
+prompt.distractors = [
+  "Group 14 elements have the highest melting points in their respective periods, enabling high-temperature cell processing",
+  "Group 14 elements form metallic bonds that allow free electron movement without any doping required",
+  "Group 14 elements are the most abundant semiconductor materials in Earth's crust, ensuring cheap raw material supply"
+]
+answer.answer = "With four valence electrons, silicon forms exactly four covalent bonds in a tetrahedral structure, creating a semiconductor with a near-ideal band gap of 1.12 eV for solar energy conversion"
+context = "Silicon's four valence electrons create a stable diamond cubic crystal with sp³ bonding. The resulting 1.12 eV band gap is close to the theoretical optimum for single-junction solar cells (~1.34 eV), capturing a broad range of the solar spectrum."
+id = "a38701a0-65f7-42bd-8a68-c24fc20f30d7"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (Day 1) What percentage of incident solar energy can a single-junction silicon cell theoretically convert, according to the Shockley-Queisser limit?"
+answer.answer = "33%"
+answer.alternatives = ["33.7%", "~33%", "about 33%", "29%", "29.4%", "33.7", "34%"]
+context = "The Shockley-Queisser limit for a single-junction cell with silicon's 1.12 eV band gap is about 33% (sometimes cited as 29.4% for silicon specifically due to Auger recombination). Thermalization of excess photon energy and sub-bandgap transparency are the main loss mechanisms."
+id = "35cc591e-0425-422e-8504-5c0152fe9d64"
