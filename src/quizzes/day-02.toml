@@ -1,17 +1,21 @@
 [[questions]]
 type = "MultipleChoice"
 prompt.prompt = "What percentage of Earth's crust is silicon by mass?"
-prompt.distractors = ["8.1%", "45.2%", "14.6%"]
-answer.answer = "27.7%"
+prompt.distractors = ["8.1% — third after oxygen and aluminum", "45.2% — making it the most abundant element overall", "14.6% — roughly equal to iron and magnesium combined"]
+answer.answer = "27.7% — the second most abundant element after oxygen"
 context = "Silicon is the second most abundant element in Earth's crust at 27.7% by mass, behind only oxygen. It's more common than aluminum, iron, and every other element."
 id = "38569e97-7beb-4b9a-9944-3f2627bce13e"
 
 [[questions]]
 type = "MultipleChoice"
 prompt.prompt = "Why can't 99% pure metallurgical-grade silicon be used directly in solar cells?"
-prompt.distractors = ["It's too brittle to cut into wafers", "Its melting point is too low for cell processing", "It doesn't absorb visible light efficiently"]
-answer.answer = "Uncontrolled impurities at that level overwhelm the deliberate doping and destroy cell efficiency"
-context = "At 99% purity, there are roughly 10²⁰ impurity atoms per cm³ — far more than the ~10¹⁶ dopant atoms intentionally added. Contaminants like iron act as recombination centers that kill photogenerated electrons, and just 1 part per billion of iron can halve cell efficiency."
+prompt.distractors = [
+  "The remaining 1% consists of oxygen, which creates insulating oxide layers within the crystal",
+  "Carbon impurities at that level form silicon carbide inclusions that block current flow",
+  "The crystal structure of MG-Si is polycrystalline, and solar cells require monocrystalline material"
+]
+answer.answer = "Metallic impurities like iron create recombination centers that trap charge carriers, even at parts-per-billion concentrations"
+context = "At 99% purity, there are roughly 10²⁰ impurity atoms per cm³ — far more than the ~10¹⁶ dopant atoms intentionally added. Just 1 part per billion of iron can halve cell efficiency by creating sites where electrons and holes recombine before reaching the contacts."
 id = "6800597c-59eb-4d66-805c-ce92bdf2e74b"
 
 [[questions]]
@@ -19,23 +23,31 @@ type = "ShortAnswer"
 prompt.prompt = "What is the name of the chemical compound (formula SiHCl₃) that silicon is converted into for gas-phase purification via distillation?"
 answer.answer = "trichlorosilane"
 answer.alternatives = ["TCS", "Trichlorosilane", "SiHCl3"]
-context = "Trichlorosilane (SiHCl₃) boils at 31.8°C, making it easy to handle as a liquid and purify via fractional distillation. The different boiling points of impurity chlorosilanes allow separation to parts-per-trillion purity levels."
+context = "Trichlorosilane (SiHCl₃) boils at 31.8°C, making it easy to handle as a liquid and purify via fractional distillation."
 id = "c080ab42-8c3f-48cc-87e8-8142eb7a8be5"
 
 [[questions]]
 type = "MultipleChoice"
 prompt.prompt = "Approximately how much electrical energy is needed to produce one kilogram of polysilicon via the traditional Siemens process?"
-prompt.distractors = ["5–10 kWh", "15–25 kWh", "200–300 kWh"]
-answer.answer = "60–80 kWh"
-context = "The Siemens process consumes 60–80 kWh per kg of polysilicon, making it extremely energy-intensive. This is why polysilicon plants locate near cheap electricity. Fluidized bed reactors (FBR) reduce this to 15–25 kWh/kg."
+prompt.distractors = [
+  "25–35 kWh — comparable to the fluidized bed reactor alternative",
+  "120–150 kWh — similar to aluminum smelting per kilogram",
+  "200–300 kWh — on par with titanium refining energy requirements"
+]
+answer.answer = "60–80 kWh — driven primarily by maintaining the rods at ~1,100°C for extended deposition cycles"
+context = "The Siemens process consumes 60–80 kWh per kg of polysilicon. This is why polysilicon plants locate near cheap electricity. Fluidized bed reactors reduce this to 25–35 kWh/kg but produce lower surface purity."
 id = "c9a8690b-31dc-477b-a9fd-85a8f4b4e8c9"
 
 [[questions]]
 type = "MultipleChoice"
 prompt.prompt = "Silicon's bandgap is 1.12 eV. Why is this significant for solar cells?"
-prompt.distractors = ["It exactly matches the energy of green photons, which are most abundant in sunlight", "It allows silicon to operate at temperatures above 200°C without degrading", "It's the lowest bandgap of any semiconductor, letting it absorb the most photons"]
-answer.answer = "It's close to the theoretical optimum of ~1.34 eV for maximum single-junction efficiency under the solar spectrum"
-context = "The Shockley-Queisser limit shows that a bandgap of ~1.34 eV maximizes the efficiency tradeoff between absorbing many photons and extracting high voltage from each one. Silicon's 1.12 eV is remarkably close to this optimum — a cosmic coincidence that helped it dominate the PV market."
+prompt.distractors = [
+  "It matches the peak wavelength of sunlight (550nm green), maximizing photon absorption",
+  "It's the lowest bandgap among common semiconductors, allowing absorption of the widest light range",
+  "It enables silicon to conduct electricity at room temperature without any doping required"
+]
+answer.answer = "It's near the theoretical optimum of ~1.34 eV, balancing photon absorption against voltage extraction for maximum efficiency"
+context = "The Shockley-Queisser limit shows that ~1.34 eV maximizes the tradeoff between absorbing many photons and extracting high voltage. Silicon's 1.12 eV is close enough to capture ~95% of the theoretical maximum — a fortunate coincidence."
 id = "39484d2f-6a5d-44cf-9815-7298e54b9426"
 
 [[questions]]
@@ -43,5 +55,5 @@ type = "ShortAnswer"
 prompt.prompt = "What type of furnace is used to reduce quartzite (SiO₂) into metallurgical-grade silicon using carbon at ~2,000°C?"
 answer.answer = "submerged arc furnace"
 answer.alternatives = ["arc furnace", "Submerged arc furnace", "electric arc furnace"]
-context = "Submerged arc furnaces use massive graphite electrodes carrying 100,000+ amperes to reach ~2,000°C, reducing SiO₂ with carbon to produce molten silicon at 98–99% purity. Each ton of MG-Si requires 11–13 MWh of electricity."
+context = "Submerged arc furnaces use massive graphite electrodes carrying 100,000+ amperes to reach ~2,000°C. Each ton of MG-Si requires 11–13 MWh of electricity."
 id = "cff88709-83ad-403d-8ec6-f5e647b53638"

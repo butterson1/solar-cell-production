@@ -2,60 +2,60 @@
 type = "MultipleChoice"
 prompt.prompt = "What is the bandgap energy of silicon?"
 prompt.distractors = [
-  "0.67 eV (that's germanium)",
-  "1.42 eV (that's gallium arsenide)",
-  "2.76 eV (that's a blue photon's energy)"
+  "0.67 eV — optimized for infrared absorption",
+  "1.42 eV — ideal for the peak solar spectrum",
+  "1.85 eV — positioned for visible light harvesting"
 ]
-answer.answer = "1.12 eV"
-context = "Silicon's bandgap of 1.12 eV is *the* number that defines which photons can generate electricity. It corresponds to infrared light at ~1100nm wavelength."
+answer.answer = "1.12 eV — in the near-infrared range"
+context = "Silicon's bandgap of 1.12 eV corresponds to infrared light at ~1100nm wavelength. It's close to the theoretical optimum of ~1.34 eV for maximum single-junction efficiency."
 id = "aa59c93c-0e58-4a67-a0ff-9094435a632d"
 
 [[questions]]
 type = "MultipleChoice"
 prompt.prompt = "A blue photon (2.76 eV) hits a silicon solar cell. What happens to the excess energy above the 1.12 eV bandgap?"
 prompt.distractors = [
-  "It generates extra current — more energy = more electrons",
-  "It's reflected back as blue light",
-  "It's stored in the cell for later use"
+  "It generates additional current by freeing a second electron from a neighboring atom",
+  "It's re-emitted as a lower-energy photon through radiative recombination",
+  "It's stored temporarily in the depletion region and released during low-light periods"
 ]
-answer.answer = "It's lost as heat (thermalization loss)"
-context = "This is thermalization loss — the single biggest efficiency killer in solar cells. The electron quickly sheds excess energy as lattice vibrations (phonons), heating the silicon."
+answer.answer = "It's converted to lattice vibrations (phonons), heating the silicon crystal"
+context = "This is thermalization loss — the single biggest efficiency killer in solar cells. The excited electron quickly sheds excess energy as heat, regardless of how energetic the original photon was."
 id = "8ee194cd-8ba9-4d4a-b218-5aa4cdb262a4"
 
 [[questions]]
 type = "MultipleChoice"
 prompt.prompt = "What separates the electron-hole pairs in a solar cell before they can recombine?"
 prompt.distractors = [
-  "An external battery that pushes them apart",
-  "Magnetic fields from the metal contacts",
-  "The anti-reflective coating on top"
+  "The surface passivation layer creates a chemical potential gradient across the cell",
+  "The metal contact grid on top applies an electrostatic pull on free carriers",
+  "The difference in doping concentration creates diffusion pressure toward the contacts"
 ]
-answer.answer = "The built-in electric field at the p-n junction"
-context = "The p-n junction creates a permanent electric field in the depletion region. It's a maintenance-free, no-moving-parts charge separator — the solar cell's secret weapon."
+answer.answer = "The built-in electric field at the p-n junction sweeps carriers in opposite directions"
+context = "The p-n junction creates a permanent electric field in the depletion region. It's a maintenance-free, no-moving-parts charge separator — the solar cell's core mechanism."
 id = "ebf40a66-ff79-4c15-b2d2-a7c65ce0f6db"
 
 [[questions]]
 type = "MultipleChoice"
 prompt.prompt = "What happens to a silicon solar cell's output when it gets hot?"
 prompt.distractors = [
-  "It increases — more heat = more energy",
-  "Nothing — temperature doesn't affect solar cells",
-  "It fluctuates randomly"
+  "Current decreases while voltage stays constant, reducing power by ~0.1% per °C",
+  "Both voltage and current increase slightly, but resistance losses offset the gain",
+  "Output stays flat up to 50°C, then drops sharply due to thermal runaway effects"
 ]
-answer.answer = "It decreases — about 0.3-0.5% per °C above 25°C"
-context = "Counterintuitive but true! The bandgap shrinks with heat, but voltage drops faster than current gains. A 45°C roof costs you 6-10% performance."
+answer.answer = "Voltage drops faster than current rises, causing a net power loss of ~0.3-0.5% per °C"
+context = "Counterintuitive but true! The bandgap shrinks with heat, boosting current slightly, but voltage drops much more. A 45°C roof costs you 6-10% performance compared to lab conditions at 25°C."
 id = "6c8d4341-a38a-4c48-8c67-8021c4ef1310"
 
 [[questions]]
 type = "MultipleChoice"
 prompt.prompt = "The Shockley-Queisser limit caps single-junction silicon cells at roughly what theoretical maximum efficiency?"
 prompt.distractors = [
-  "50% — half the sunlight is usable",
-  "15% — most light is wasted",
-  "75% — only UV is lost"
+  "~29.4% — set by Auger recombination and parasitic absorption in silicon specifically",
+  "~40.7% — achievable with perfect anti-reflection and ideal light trapping",
+  "~25.6% — the current world record, which represents the practical maximum"
 ]
-answer.answer = "~33.7%"
-context = "The Shockley-Queisser limit accounts for thermalization (too-energetic photons), sub-bandgap transparency (too-weak photons), and radiative recombination. Modern lab cells at 26.8% are approaching silicon's more specific limit of 29.4%."
+answer.answer = "~33.7% — determined by thermalization and sub-bandgap photon losses for any single junction"
+context = "The Shockley-Queisser limit of ~33.7% applies to any single-junction cell at the optimal bandgap (~1.34 eV). Silicon's specific limit is lower (~29.4%) due to its non-ideal bandgap and Auger recombination. The current record is 26.8%."
 id = "11bf260c-78fa-40ff-9961-2eddf544bf43"
 
 [[questions]]
