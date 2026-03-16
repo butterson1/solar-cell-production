@@ -1,0 +1,113 @@
+# Day 7 Quiz: Anti-Reflective Coatings & Surface Texturing
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why does a single-layer quarter-wave ARC make solar cells appear blue rather than some other color?"
+prompt.distractors = [
+  "The silicon nitride material has an intrinsic blue tint from nitrogen absorption bands that dominate the reflected spectrum regardless of film thickness",
+  "The ARC is tuned to suppress red and infrared reflection most effectively, so the remaining reflected light is shifted toward shorter blue wavelengths by the Doppler effect at the film boundary",
+  "Blue light has the highest photon energy in the visible spectrum, causing it to scatter more within the SiNₓ film and re-emit outward rather than transmitting into the silicon"
+]
+answer.answer = "The ARC thickness is optimized for ~600 nm (orange light near the solar spectrum peak), achieving near-zero reflection there — but at shorter blue wavelengths (400-500 nm), the film is no longer exactly a quarter-wave thick, so reflection rises to 5-10% and the reflected blue light gives the cell its color"
+context = "A quarter-wave ARC achieves destructive interference at one design wavelength. The industry tunes to ~600 nm where solar irradiance peaks. At 450 nm, the optical path difference shifts away from the half-wave cancellation condition, and reflection rebounds. The reflected blue photons are what your eye sees."
+id = "6a0b3b4a-e1a3-4c8b-a682-48d5c1f1e782"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Silicon nitride (SiNₓ:H) deposited by PECVD performs three functions simultaneously on a solar cell. Which combination is correct?"
+prompt.distractors = [
+  "Anti-reflection coating, electrical insulation of the emitter from moisture, and gettering of iron impurities to the wafer surface for removal",
+  "Anti-reflection coating, mechanical strengthening of the thin wafer against bowing, and creation of a tunneling oxide for carrier transport",
+  "Anti-reflection coating, doping of the emitter with nitrogen atoms to increase sheet resistance, and UV filtering to protect the EVA encapsulant"
+]
+answer.answer = "Anti-reflection coating (n ≈ 2.0, 75 nm), surface passivation via hydrogen capping of dangling bonds (reducing surface recombination velocity from >100,000 to <10 cm/s), and bulk defect passivation through hydrogen diffusion during firing"
+context = "The 10-15 atomic percent hydrogen in PECVD SiNₓ:H is the key. During the ~800°C firing step, hydrogen diffuses into the silicon, passivating dangling bonds at the surface and neutralizing bulk defects like grain boundaries and boron-oxygen pairs. This triple function makes SiNₓ:H the most impactful single layer in solar cell manufacturing."
+id = "d978ba21-af48-45e1-a2a3-e681b9a95682"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "What is the approximate weighted average front-surface reflectance of a modern monocrystalline silicon cell with both pyramid texturing and SiNₓ ARC?"
+answer.answer = "1.5-3%"
+answer.alternatives = ["2%", "1.5-2.5%", "~2%", "2-3%", "1.5%", "about 2%", "less than 3%"]
+context = "Pyramid texturing gives photons 2-3 bounces on the surface, and each bounce sees only ~1-3% reflection thanks to the SiNₓ ARC. The combined effect reduces weighted average reflectance from ~35% (polished bare silicon) to just 1.5-3% — a 90-95% reduction in reflection losses."
+id = "41100d78-93d8-453e-aa5c-fb22bb30d113"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why can't multicrystalline silicon wafers use the same alkaline KOH pyramid texturing process as monocrystalline wafers?"
+prompt.distractors = [
+  "KOH reacts with the metallic impurities concentrated at grain boundaries in multicrystalline silicon, creating deep etch pits that mechanically weaken the wafer",
+  "The higher boron concentration used in multicrystalline silicon bases inhibits the KOH etch reaction, making the process impractically slow at standard temperatures",
+  "Multicrystalline wafers are typically thicker (250 μm vs 170 μm), and the KOH etch rate is too fast to stop before removing excessive material"
+]
+answer.answer = "KOH etching is anisotropic — it depends on crystal orientation. Random grain orientations in multicrystalline silicon produce a chaotic mix of pyramids, flat shelves, and deep trenches instead of uniform texturing, resulting in poor optical and aesthetic quality"
+context = "The elegant pyramid formation relies on the 30-50× etch rate difference between (100) and (111) crystal planes. In monocrystalline, the entire surface is (100), giving uniform pyramids. In multicrystalline, each grain has a different orientation, so each etches differently — some form pyramids, others stay flat or over-etch."
+id = "fe5b27cd-dfbc-4123-b809-8d9e779b3eb3"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Black silicon achieves less than 0.3% reflectance using a fundamentally different optical mechanism than pyramidal texturing. What is it?"
+prompt.distractors = [
+  "The nanoscale spikes are smaller than visible wavelengths, causing diffraction that redirects all reflected light sideways where it re-enters the silicon through adjacent spike walls",
+  "Quantum confinement in the sub-100 nm spike tips shifts the silicon bandgap to absorb UV and blue photons that would normally be reflected by bulk silicon",
+  "The spikes act as plasmonic nanoantennas that concentrate electromagnetic field energy at their tips, forcing near-complete absorption in a process similar to surface-enhanced Raman scattering"
+]
+answer.answer = "The 100-500 nm tall nanoscale spikes create a graded refractive index — a smooth transition from n=1.0 (air) to n=3.9 (silicon) — so light never encounters a sharp interface and reflection is virtually eliminated, similar to the nanostructures on moth eyes"
+context = "When surface features are comparable in size to the wavelength of light, the effective refractive index varies gradually from air to bulk silicon. There's no abrupt step in refractive index, so there's no Fresnel reflection. This is the same principle moth eyes use — nanoscale bumps evolved over millions of years to minimize glint from predators."
+id = "b2c9da48-d838-4cef-8229-393dfba6d6e6"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "What is the ideal refractive index for a single-layer anti-reflective coating on silicon (n ≈ 3.9) in air (n = 1.0)?"
+answer.answer = "~2.0"
+answer.alternatives = ["1.97", "2.0", "about 2", "~1.97", "2", "1.9-2.0", "sqrt(3.9)"]
+context = "The optimal single-layer ARC refractive index is the geometric mean of the two bounding media: n_ARC = √(n_air × n_Si) = √(1.0 × 3.9) ≈ 1.97. Silicon nitride (SiNₓ) with n = 1.95-2.05 is nearly perfect for this application, which is one reason it became the industry standard."
+id = "bc21f5d7-4c36-4fc3-8f57-270ae47195fd"
+
+# 🔁 Review: Recent days (Days 5-6)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 6) What is the 'selective emitter' approach, and what problem does it solve?"
+prompt.distractors = [
+  "A method of varying wafer thickness across the cell so the emitter is thicker at the edges where current density peaks, reducing resistive losses at the busbar connections",
+  "A technique that implants different dopant species (phosphorus vs arsenic) in alternating stripes to create a lateral electric field that steers carriers toward the nearest gridline",
+  "A process where the emitter is completely removed between gridlines, leaving bare intrinsic silicon that eliminates Auger recombination in the field regions"
+]
+answer.answer = "Heavy phosphorus doping (~10²¹/cm³) only under metal contacts for low contact resistance, and lighter doping (~10¹⁹/cm³) between contacts to avoid the 'dead layer' recombination problem — solving the tradeoff between electrical contact quality and carrier collection"
+context = "The dead layer forms when phosphorus exceeds solid solubility (~5 × 10²⁰/cm³), creating recombination centers that kill blue-light response. Selective emitters keep heavy doping where it's needed (under contacts) and light doping where passivation matters (between contacts). Modern PERC and TOPCon cells use alternative approaches like passivation layers or rear-side heavy doping."
+id = "ea0b7739-7f08-4d5d-82eb-e252e1f41e47"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 5) Modern diamond wire saws use wire with a diameter of approximately 50-60 μm. Why is reducing wire diameter so important for manufacturing economics?"
+prompt.distractors = [
+  "Thinner wires vibrate at higher frequencies during cutting, which polishes the wafer surface during slicing and eliminates the need for a separate damage-removal etch step",
+  "The reduced wire mass lowers the spool weight, allowing the wire to be transported by standard logistics instead of requiring heavy-freight shipping for each spool",
+  "Thinner wires have lower electrical resistance, reducing the power consumption of the wire tensioning motors by approximately 40%"
+]
+answer.answer = "Thinner wire means a narrower kerf (cut width), so less silicon is wasted as sawdust — reducing kerf loss from ~130 μm with older slurry saws to ~60-70 μm, recovering roughly 30-40% more usable wafers from each ingot"
+context = "Silicon lost as kerf (sawdust) historically accounted for nearly half the ingot volume. Reducing wire diameter from 120-160 μm (slurry era) to 50-60 μm (modern diamond wire) directly reduces kerf width, extracting more wafers per ingot and cutting material cost per watt."
+id = "5cc7b0c7-17e3-4e65-a697-f8dc7b5b96a1"
+
+# 🔁 Review: Older days
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 3) In the Siemens process, why are the slim silicon rods heated to 1,000-1,100°C rather than a lower temperature that would still decompose trichlorosilane?"
+prompt.distractors = [
+  "Trichlorosilane (TCS) only begins to thermally decompose above 950°C — below this temperature the Si-Cl bond energy of 381 kJ/mol cannot be overcome and no silicon deposits",
+  "Lower temperatures would deposit amorphous silicon instead of polycrystalline, and amorphous silicon cannot be used for Czochralski crystal growth due to its random atomic structure",
+  "The chlorine byproduct (HCl) attacks and re-etches the deposited silicon below 1,000°C, making net deposition rate effectively zero at lower temperatures"
+]
+answer.answer = "The high temperature is needed to achieve commercially viable deposition rates — TCS decomposition does occur at lower temperatures, but the reaction kinetics are too slow, and the deposited silicon quality (grain size, purity) degrades at lower temperatures due to incomplete surface diffusion of adsorbed species"
+context = "TCS begins decomposing around 600°C, but the deposition rate and film quality are poor. At 1,000-1,100°C, surface mobility of silicon adatoms is high enough to form large, high-purity polycrystalline grains, and the deposition rate reaches ~1 mm/hour on the rod surface. The tradeoff is enormous radiative heat loss — the dominant energy cost of the process."
+id = "5b54bef9-f135-49a4-9374-b25f60060ba0"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (Day 1) What is the name of the fundamental physical effect by which solar cells convert light into electricity?"
+answer.answer = "photovoltaic effect"
+answer.alternatives = ["the photovoltaic effect", "PV effect", "photovoltaic"]
+context = "The photovoltaic effect — first observed by Edmond Becquerel in 1839 — is the generation of voltage and current in a material upon exposure to light. It occurs when photons with energy above the semiconductor's bandgap create electron-hole pairs that are separated by the built-in electric field of a p-n junction."
+id = "9c8e4e72-fe49-430a-9e4a-d695fd1f1294"
