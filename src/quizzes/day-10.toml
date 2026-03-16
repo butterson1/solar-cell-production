@@ -1,0 +1,113 @@
+# Day 10 Quiz: Thin-Film Alternatives — CdTe, CIGS, Amorphous Si
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why does cadmium telluride need only 2-4 μm of absorber material to capture 99%+ of above-bandgap photons, while crystalline silicon needs 150-180 μm?"
+prompt.distractors = [
+  "CdTe has a narrower bandgap of 1.1 eV compared to silicon's 1.5 eV, which allows it to absorb a wider range of the solar spectrum using far less material per absorbed photon",
+  "CdTe crystals have a much higher refractive index (~4.2) than silicon (~3.5), causing internal total reflection that traps photons and forces multiple absorption passes through the film",
+  "CdTe's polycrystalline grain boundaries act as photon scattering centers that increase the effective optical path length by 50-100×, compensating for inherently similar absorption coefficients"
+]
+answer.answer = "CdTe is a direct bandgap semiconductor with an absorption coefficient roughly 100× higher than indirect-bandgap silicon, so photons are absorbed in a much shorter distance without needing phonon assistance"
+context = "In direct bandgap materials like CdTe, electrons can absorb photons and jump across the bandgap in a single step. Silicon's indirect bandgap requires simultaneous phonon interaction, making absorption inherently less probable."
+id = "d10-q01"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the critical role of the cadmium chloride (CdCl₂) activation treatment in CdTe cell manufacturing?"
+prompt.distractors = [
+  "It etches away surface contaminants and native oxides from the CdTe film, reducing series resistance at the back contact interface by a factor of 10 and improving fill factor from ~65% to ~78%",
+  "It dopes the CdTe absorber with chlorine to create a controlled p-type carrier concentration of 10¹⁵ cm⁻³, replacing the previous reliance on copper diffusion which caused long-term instability",
+  "It converts the CdTe from an amorphous to a polycrystalline phase through nucleation seeding, since the as-deposited vapor transport film is initially amorphous and must be crystallized for charge transport"
+]
+answer.answer = "It promotes recrystallization that increases grain size from ~0.5 μm to 2-5 μm and passivates grain boundaries with chlorine atoms, boosting efficiency from barely 10% to over 18%"
+context = "The CdCl₂ treatment at 380-420°C is the single most important post-deposition step. Without it, the small grains and unpassivated grain boundaries cause massive recombination losses."
+id = "d10-q02"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why do CdTe modules often produce more annual energy (kWh/kWp) than higher-efficiency crystalline silicon modules in hot desert installations?"
+prompt.distractors = [
+  "CdTe's wider bandgap of 1.5 eV means it doesn't absorb near-infrared photons that crystalline silicon converts to heat, keeping the module 15-20°C cooler under the same irradiance conditions",
+  "CdTe's glass-glass construction provides better thermal mass and heat dissipation than the polymer backsheets used in crystalline silicon modules, reducing peak operating temperatures by 8-12°C",
+  "CdTe modules use a frameless design that allows air to circulate under both surfaces equally, while framed silicon modules trap convective heat at the bottom edge where airflow is restricted"
+]
+answer.answer = "CdTe has a lower temperature coefficient of about -0.28 to -0.32%/°C versus silicon's -0.35 to -0.45%/°C, retaining 2-3% more rated power when module temperatures reach 65-70°C"
+context = "At module temperatures of 65-70°C (40-45°C above STC), CdTe loses about 12-14% of rated power while crystalline silicon loses 15-20%. Over a full year in hot climates, this adds up to measurably higher energy yield per rated watt."
+id = "d10-q03"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "What is the current CIGS cell efficiency world record, set by Uppsala University in 2024?"
+answer.answer = "23.64%"
+answer.alternatives = ["23.64", "23.6%", "23.64 percent"]
+context = "Uppsala University set the CIGS world record at 23.64% efficiency in 2024, verified by independent measurement. This is the highest lab efficiency for any thin-film single-junction technology."
+id = "d10-q04"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the key manufacturing challenge that has prevented CIGS from achieving the commercial success of CdTe or crystalline silicon?"
+prompt.distractors = [
+  "CIGS requires ultra-high purity indium (99.9999%) that costs $800-1,200 per kilogram, making the raw material cost alone 3-4× higher than the total manufacturing cost of crystalline silicon modules",
+  "CIGS absorber films must be annealed at temperatures above 900°C, which limits substrate choices to expensive high-temperature ceramics and rules out the cheap soda-lime glass used for CdTe and silicon",
+  "CIGS cells degrade by 40-50% in the first year of outdoor exposure due to moisture ingress through the zinc oxide window layer, requiring expensive hermetic encapsulation that doubles module cost"
+]
+answer.answer = "CIGS requires vacuum deposition of a quaternary compound with precise four-element stoichiometry control, driving capital costs to $0.70-1.00/W of capacity — 2-3× higher than crystalline silicon's $0.30-0.40/W"
+context = "The four-element (Cu, In, Ga, Se) composition must be precisely controlled, requiring expensive vacuum systems and multi-source evaporation or sputtering plus selenization. This complexity has sunk numerous CIGS startups."
+id = "d10-q05"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why does the Staebler-Wronski effect cause amorphous silicon solar cells to lose 10-30% of their initial efficiency in the first few hundred hours of light exposure?"
+prompt.distractors = [
+  "Ultraviolet photons break the Si-H bonds that passivate surface defects, exposing dangling bonds at the top surface that increase surface recombination velocity from 10 cm/s to over 1,000 cm/s",
+  "Absorbed photons gradually crystallize the amorphous silicon into a microcrystalline phase with indirect bandgap properties, reducing the absorption coefficient by 20-40× and requiring thicker films",
+  "Light-induced heating causes hydrogen atoms to diffuse out of the film through the transparent electrode, increasing the defect density by 2-3 orders of magnitude and making the material irreversibly insulating"
+]
+answer.answer = "Absorbed photon energy breaks weak Si-Si bonds in the disordered network, creating metastable dangling bond defects that act as recombination centers and reduce carrier lifetime throughout the bulk of the film"
+context = "The Staebler-Wronski effect creates metastable (not permanent) defects. They can be partially reversed by annealing at ~150°C, but in outdoor use the cells stabilize at a degraded efficiency well below their initial value."
+id = "d10-q06"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 9) What enables the tunnel oxide in TOPCon cells to simultaneously passivate the silicon surface and allow current flow?"
+prompt.distractors = [
+  "The tunnel oxide is doped with phosphorus atoms at concentrations of 10²⁰ cm⁻³, creating a conductive pathway through the oxide that carries current while the surrounding undoped regions passivate dangling bonds",
+  "The oxide contains engineered pinholes at a density of 10⁶ per cm² that allow direct metal-semiconductor contact at discrete points, while the continuous oxide between pinholes provides chemical passivation",
+  "The tunnel oxide uses a graded composition from pure SiO₂ at the silicon interface to silicon-rich SiOₓ at the poly-Si interface, with the oxygen gradient creating both passivation and a conduction path"
+]
+answer.answer = "At just 1.0-1.5 nm thick (5-7 atomic layers), the oxide is thin enough for electrons to quantum mechanically tunnel through while still being thick enough to chemically passivate surface dangling bonds"
+context = "Quantum tunneling probability drops exponentially with barrier thickness. At 1-1.5 nm, the tunneling probability is high enough to carry the cell's photocurrent. Above ~2.5 nm, resistance becomes prohibitive."
+id = "d10-q07"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 8) Why is silver specifically used for front-side metallization contacts on silicon solar cells instead of cheaper metals like copper or aluminum?"
+prompt.distractors = [
+  "Silver forms a Schottky barrier with n-type silicon that has a barrier height of exactly 0.75 eV, matching the optimal contact resistance for maximum power extraction at the cell's operating voltage of 0.6-0.7 V",
+  "Silver has the highest melting point of any printable metal paste at 1,235°C, which is necessary to survive the 800-900°C firing step without melting through the silicon nitride anti-reflective coating",
+  "Silver nanoparticles in the paste undergo plasmonic resonance at wavelengths of 400-500 nm, enhancing light absorption in the silicon directly beneath each contact finger by up to 15% through near-field effects"
+]
+answer.answer = "Silver has the highest electrical conductivity of any element (1.59 μΩ·cm resistivity) and its oxide is conductive, allowing screen-printed fingers to carry high current density with minimal resistive loss"
+context = "Silver's unmatched conductivity means narrower fingers can carry the same current, reducing shading losses. Copper is similarly conductive but oxidizes to insulating CuO, creating contact resistance problems."
+id = "d10-q08"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 6) In a p-n junction solar cell, what physically drives the separation of electron-hole pairs created by photon absorption?"
+prompt.distractors = [
+  "The temperature gradient between the sun-facing front surface and the cooler rear surface creates a thermoelectric Seebeck voltage of 0.2-0.4 mV/°C that pushes carriers toward their respective contacts",
+  "The difference in work function between the front silver contacts and the rear aluminum contacts creates an external electric field that pulls electrons to the front and holes to the back of the cell",
+  "The concentration gradient of photogenerated carriers — high near the front surface where light is absorbed and low at the rear — drives diffusion currents that separate electrons from holes across the wafer"
+]
+answer.answer = "The built-in electric field across the depletion region of the p-n junction, created by the space charge of ionized dopant atoms, sweeps electrons toward the n-side and holes toward the p-side"
+context = "At the p-n junction, diffusion of majority carriers leaves behind fixed ionized dopant atoms (positive donors in n-type, negative acceptors in p-type), creating a built-in electric field of roughly 10⁴ V/cm across the ~0.5 μm depletion region."
+id = "d10-q09"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (Day 5) Approximately how thick are the silicon wafers used in modern solar cell production?"
+answer.answer = "150-180 μm"
+answer.alternatives = ["150-180 um", "150 to 180 μm", "150-180 micrometers", "170 μm", "160 μm", "150 μm", "180 μm", "about 170 μm"]
+context = "Modern diamond wire saws cut wafers to 150-180 μm thickness, down from 300+ μm a decade ago. Further thinning is limited by wafer breakage during high-speed cell processing."
+id = "d10-q10"
