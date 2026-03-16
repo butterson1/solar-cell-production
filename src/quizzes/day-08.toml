@@ -1,0 +1,65 @@
+# Day 8 Quiz: Screen Printing & Metallization
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the role of glass frit in silver paste during the firing process?"
+prompt.distractors = [
+  "It acts as a flux that lowers the melting point of silver particles so they sinter together at 400°C instead of requiring 960°C, enabling the use of cheaper low-temperature furnaces",
+  "It forms a permanent insulating layer between the silver contact and the silicon emitter, preventing silver atoms from diffusing into the junction and degrading cell performance",
+  "It reacts with atmospheric oxygen during firing to create a protective silver oxide shell around each particle, preventing oxidation and ensuring long-term contact stability"
+]
+answer.answer = "It melts at 500-650°C and chemically etches through the SiNₓ anti-reflective coating using PbO, exposing the silicon emitter so silver can make direct electrical contact with the semiconductor"
+context = "The glass frit — typically lead-borosilicate (PbO-B₂O₃-SiO₂) — becomes a corrosive liquid during firing. The PbO dissolves the silicon nitride ARC, creating channels through which dissolved silver precipitates onto the silicon surface as crystallites. Without this 'fire-through' mechanism, the silver would sit on top of the ARC with no electrical connection to the cell."
+id = "a33d86e6-fe19-49f8-93f8-13b2eecb22b6"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why does the solar industry use silver rather than copper for screen-printed contacts, despite copper costing roughly 1/100th as much per kilogram?"
+prompt.distractors = [
+  "Copper has a bulk resistivity roughly 10× higher than silver (1.59 × 10⁻⁷ vs 1.59 × 10⁻⁸ Ω·m), so contact fingers would need to be 10× wider, causing unacceptable shading losses above 10%",
+  "Copper paste cannot survive the 750-850°C peak firing temperatures — it melts at 660°C and destroys the wafer surface, while silver's melting point of 960°C provides adequate thermal margin",
+  "Copper forms a thick native oxide layer during firing that cannot be removed without hydrofluoric acid, making the contacts non-solderable and incompatible with standard module assembly"
+]
+answer.answer = "Copper diffuses rapidly into silicon even at room temperature, creating deep-level recombination centers that destroy minority carrier lifetime and cell efficiency — requiring expensive diffusion barriers that complicate manufacturing"
+context = "Copper is only 6% more resistive than silver (1.68 vs 1.59 × 10⁻⁸ Ω·m), so conductivity isn't the issue. The problem is copper's fast interstitial diffusion in silicon, which poisons the junction. Any copper metallization scheme needs barrier layers (Ni, W, or amorphous Si), adding process complexity. HJT cells are the best candidates because their a-Si layers naturally block copper diffusion."
+id = "537571a8-9b65-4280-a6eb-eb3f318ad85d"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "During co-firing, the wafer spends only 1-3 seconds at peak temperature (750-850°C). What happens on the rear side during this brief thermal spike?"
+prompt.distractors = [
+  "The screen-printed silver rear busbars melt completely and re-solidify into a mirror-like reflective layer that bounces unabsorbed photons back through the cell for a second absorption pass",
+  "A thin titanium dioxide layer forms spontaneously on the aluminum surface through atmospheric oxidation, providing additional rear-side passivation equivalent to the front-side SiNₓ",
+  "The rear-side silicon nitride capping layer crystallizes into a dense ceramic, permanently sealing the cell from moisture ingress and eliminating the need for encapsulation"
+]
+answer.answer = "The aluminum paste alloys with silicon at the 577°C eutectic, creating a 5-10 μm deep p⁺-doped back surface field (BSF) that repels minority carriers away from the rear surface and reduces recombination losses by 2-3% absolute efficiency"
+context = "The Al-Si eutectic at 577°C enables the aluminum to dissolve into the silicon and re-solidify as a heavily p⁺-doped region. This BSF acts as an 'electron mirror' — minority carriers (electrons in p-type silicon) that drift toward the back surface encounter the p⁺ field and are reflected back into the bulk, where they can contribute to photocurrent instead of recombining at the surface."
+id = "1d93b5e2-8b17-4814-b876-309287591349"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Approximately how many metric tons of silver did the photovoltaic industry consume in 2024?"
+answer.answer = "7000"
+answer.alternatives = ["7,000", "7000 tons", "7,000 tons", "over 7000", "7217"]
+context = "PV silver demand reached approximately 7,000-7,200 tons in 2024, up ~20% year-on-year. This represents about 20% of total global silver mine production (~26,000 tons/year), making PV the largest single industrial consumer of silver worldwide."
+id = "a31f646b-4b56-4279-a1ec-9967e006a9df"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Silver paste is described as a shear-thinning (non-Newtonian) fluid. What does this mean in practice during screen printing?"
+prompt.distractors = [
+  "The paste becomes more viscous when the squeegee applies pressure, forcing it to hold its shape tightly against the screen mesh and preventing any flow through the openings until pressure is released",
+  "The paste maintains constant viscosity regardless of squeegee speed or pressure, ensuring uniform line width whether the printer runs at 100 mm/s or 400 mm/s squeegee speed",
+  "The paste becomes permanently less viscous after the first squeegee pass, requiring fresh paste for each wafer to maintain consistent finger height and line width across a production run"
+]
+answer.answer = "The paste has high viscosity at rest (200-400 Pa·s) to maintain its printed shape, but drops to much lower viscosity (20-50 Pa·s) under the shear force of the squeegee, allowing it to flow smoothly through the fine screen openings"
+context = "Shear-thinning behavior is essential for screen printing. At rest, the paste is thick enough to hold a sharp line profile without slumping. Under the squeegee's shear force, viscosity drops by roughly 10×, enabling the paste to flow through openings as narrow as 20 μm. This behavior comes from the organic vehicle — specifically thixotropic agents that form weak molecular networks, broken by shear and reformed at rest."
+id = "b087820b-ac61-4b8e-ad84-a8aa01d744bf"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "What is the approximate width of a screen-printed front contact finger on a modern (2025) solar cell?"
+answer.answer = "25-30 μm"
+answer.alternatives = ["25 μm", "30 μm", "25-40 μm", "20-30 μm", "30 microns", "25 microns"]
+context = "Modern screen printing achieves finger openings of 20-30 μm on the screen, with printed lines spreading to 25-40 μm after paste flow. This is down from ~50 μm in 2015. The trend toward narrower fingers reduces shading loss and silver consumption — key drivers of the ongoing efficiency and cost improvements in solar cells."
+id = "b0199a02-d68d-49b0-952d-b8f8e387ce09"
