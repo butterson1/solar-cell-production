@@ -1,0 +1,113 @@
+# Day 6 Quiz: Doping — Creating the P-N Junction
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why does adding just 1 boron atom per 5 million silicon atoms increase conductivity by a factor of ~15,000?"
+prompt.distractors = [
+  "Boron atoms are much smaller than silicon, creating lattice strain that loosens neighboring electrons from their bonds",
+  "Each boron atom catalyzes a chain reaction that frees electrons from hundreds of adjacent silicon atoms simultaneously",
+  "Boron's electronegativity pulls electrons from the valence band into the conduction band across the entire crystal"
+]
+answer.answer = "Each boron atom creates exactly one mobile hole with a shallow ionization energy (0.045 eV), so at room temperature virtually 100% of dopant atoms contribute a free carrier — far more than intrinsic thermal generation provides"
+context = "Intrinsic silicon has only ~1.5 × 10¹⁰ carriers/cm³ from thermal excitation across the full 1.12 eV band gap. Adding 10¹⁶ boron atoms/cm³ — each donating one hole from just 0.045 eV above the valence band — increases the carrier count by a factor of roughly a million, making the 15,000× conductivity increase possible."
+id = "55394dd1-eb26-476d-a7eb-3751c84869bb"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the 'dead layer' problem in solar cells with heavily phosphorus-doped emitters?"
+prompt.distractors = [
+  "Excess phosphorus forms a metallic silicide at the surface that blocks light from entering the silicon bulk entirely",
+  "Phosphorus concentration above 10²⁰/cm³ causes the emitter to become p-type due to amphoteric behavior, reversing the junction",
+  "Heavy phosphorus doping increases the emitter's refractive index to match air, eliminating the anti-reflective effect"
+]
+answer.answer = "Phosphorus exceeding solid solubility (~5 × 10²⁰/cm³) sits at interstitial sites and forms precipitates that act as recombination centers, killing blue-light response in the first 0.1-1 μm where short-wavelength photons are absorbed"
+context = "Blue/UV photons (400-500 nm) generate carriers within the first fraction of a micrometer. If that surface region is over-doped, Auger recombination and Shockley-Read-Hall recombination via inactive phosphorus complexes destroy those carriers before collection. Early cells lost 15-20% of available solar energy from this effect."
+id = "ce696c70-87fc-44d1-8cad-be11fa8707d2"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "What is the approximate built-in potential (voltage) across the depletion zone of a silicon p-n junction?"
+answer.answer = "0.6-0.7 V"
+answer.alternatives = ["0.7 V", "0.6 V", "0.65 V", "~0.7V", "0.7", "0.6-0.7"]
+context = "The built-in potential across a silicon p-n junction is about 0.6-0.7 volts, arising from the Fermi level difference between the n-type and p-type sides. Despite this small voltage, the electric field within the narrow depletion zone (0.1-1 μm) reaches 10,000-100,000 V/cm — enough to sweep photogenerated carriers apart in picoseconds."
+id = "fa553137-f2d3-4df6-bc3b-ad9e44bd713c"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why has the solar industry's shift from p-type to n-type base wafers made boron diffusion suddenly critical to scale?"
+prompt.distractors = [
+  "N-type wafers require boron diffusion on both sides to create the p-n junction plus a back surface field, doubling the diffusion steps",
+  "Boron has a higher solid solubility in n-type silicon than p-type, enabling thinner emitters that require more precise diffusion control",
+  "N-type wafers are incompatible with POCl₃ phosphorus diffusion, so boron must replace phosphorus as the primary emitter dopant everywhere"
+]
+answer.answer = "TOPCon cells use n-type (phosphorus-doped) base wafers with a boron-doped front emitter — replacing the traditional structure where boron was only in the base during crystal growth and didn't need a separate diffusion step"
+context = "In traditional PERC, boron is incorporated during CZ crystal growth (no diffusion step needed). TOPCon flips the structure: n-type base with a boron emitter requiring BBr₃ diffusion at 900-1,050°C. With TOPCon overtaking PERC since ~2024, global BBr₃ diffusion furnace capacity has scaled to over 300 GW annually."
+id = "f7e542d5-4b8b-43d8-a24e-3d9ef509fc69"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why does ion implantation remain a niche doping method in solar despite offering ±1% dose accuracy versus ±5-10% for diffusion?"
+prompt.distractors = [
+  "Ion implantation creates permanent lattice damage that reduces carrier lifetime below acceptable limits, even after annealing at 1,000°C",
+  "The dopant atoms implanted by ion beams cluster at grain boundaries rather than substitutional sites, reducing electrical activation to below 50%",
+  "Ion implantation can only process one wafer at a time, limiting throughput to under 500 wafers/hour — far too slow for solar volumes"
+]
+answer.answer = "Ion implanters cost $3-5 million (5-10× a diffusion furnace) and have higher maintenance costs from high-vacuum systems and consumable ion sources, making diffusion more economical for standard cell architectures"
+context = "Throughput is actually competitive (2,000-3,000 wafers/hour), and lattice damage is fully repaired by a post-implant anneal. The barrier is purely economic: capital cost and maintenance. Ion implantation is used where precision justifies the cost, such as IBC cells by Maxeon (formerly SunPower)."
+id = "ef4c9c23-7006-4c2d-aa03-b61d5ccd4cac"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "What chemical compound is the standard source gas for phosphorus diffusion doping in solar cell manufacturing?"
+answer.answer = "POCl₃"
+answer.alternatives = ["POCl3", "phosphorus oxychloride", "POCL3", "pocl3"]
+context = "Phosphorus oxychloride (POCl₃) is a liquid at room temperature that is bubbled with nitrogen carrier gas into a quartz tube furnace at 800-900°C. It reacts with oxygen to form P₂O₅, which deposits as phosphosilicate glass (PSG) on the wafer surface and serves as the phosphorus source for diffusion."
+id = "157d770f-98f0-41e6-9075-cd4557c67daa"
+
+# 🔁 Review: Recent days (Days 4-5)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 5) Why did diamond wire sawing's transition happen fastest for monocrystalline silicon and lag behind for multicrystalline?"
+prompt.distractors = [
+  "Multicrystalline silicon has a lower melting point that causes the diamond wire to overheat and lose its abrasive particles at standard cutting speeds",
+  "The wider wafer formats used for multicrystalline ingots required longer wire spans that increased the risk of wire breakage beyond acceptable limits",
+  "Patent restrictions held by Asahi Diamond Industrial specifically blocked diamond wire use on multicrystalline substrates until 2018"
+]
+answer.answer = "Random grain orientations in multicrystalline silicon created uneven wear on diamond particles due to varying hardness directions per grain, causing accelerated wire degradation and rougher cut surfaces"
+context = "Monocrystalline silicon presents a uniform crystal orientation to the wire, giving consistent cutting forces. Each grain in multicrystalline has a different crystallographic direction, creating irregular mechanical loading that wore diamonds unevenly and caused more wire breakage."
+id = "487037e0-7ab1-45af-aa59-e7c4437cdb54"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 4) What is the purpose of the 'Dash neck' — the extremely thin section grown at the start of a Czochralski crystal?"
+prompt.distractors = [
+  "The thin neck acts as a thermal buffer that prevents the cold seed crystal from cracking when it contacts the 1,425°C silicon melt",
+  "The narrow diameter creates a high dopant concentration zone used as a reference standard for measuring resistivity throughout the ingot",
+  "The Dash neck serves as a mechanical release point, allowing the crystal to separate cleanly from the seed if the puller mechanism jams"
+]
+answer.answer = "The thin neck (3-4 mm diameter) allows dislocations generated by thermal shock at the seed-melt interface to propagate to the surface and terminate, yielding a dislocation-free crystal body"
+context = "When the seed contacts the melt, the thermal shock creates millions of dislocations. Dash's breakthrough was realizing that growing an extremely thin neck forces these dislocations to glide to the crystal surface and annihilate. The full-diameter crystal grown afterward is essentially dislocation-free."
+id = "8c6b3e45-70e3-4454-a4bf-eafab2e89bea"
+
+# 🔁 Review: Older days
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 3) What is the fundamental thermodynamic reason the Siemens process consumes 50-80 kWh per kilogram of polysilicon?"
+prompt.distractors = [
+  "The fractional distillation of trichlorosilane requires repeatedly boiling and condensing across 30+ stages, each adding incremental energy cost",
+  "The hydrogen reduction step is endothermic by 285 kJ/mol, requiring sustained energy input to decompose HCl back into H₂ and Cl₂ for recycling",
+  "Crushing and grinding metallurgical-grade silicon into fine powder for the initial hydrochlorination reaction consumes most of the process energy"
+]
+answer.answer = "Slim silicon rods must be electrically heated to 1,000-1,100°C for 5-7 days during CVD deposition, and most of that energy radiates away as infrared heat into the cooled reactor walls"
+context = "The Siemens reactor is essentially a radiant heater running for days. The slim rods glow white-hot while trichlorosilane decomposes on their surface, but the vast majority of electrical energy is lost as thermal radiation to the water-cooled bell jar. This radiative loss dominates the process energy budget."
+id = "8c468f34-1aa5-434d-a910-fa2c970857b5"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (Day 2) What is silicon's band gap energy in electron volts, and why is it significant for solar cells?"
+answer.answer = "1.12 eV"
+answer.alternatives = ["1.12", "1.1 eV", "~1.12 eV", "1.12eV"]
+context = "Silicon's band gap of 1.12 eV is close to the Shockley-Queisser optimum (~1.34 eV) for single-junction solar cells. Photons with less energy pass through; photons with more energy lose the excess as heat (thermalization). This near-ideal gap is one reason silicon dominates photovoltaics."
+id = "7f532862-3f14-4a3e-a0e4-66911448ba83"
