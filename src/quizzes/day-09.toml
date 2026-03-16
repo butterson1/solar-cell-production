@@ -1,0 +1,113 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the primary problem that PERC, TOPCon, and HJT all attempt to solve compared to the older Al-BSF cell design?"
+prompt.distractors = [
+    "Reducing the cost of silver paste used in metallization contacts",
+    "Increasing the absorption of ultraviolet photons at the front surface",
+    "Improving the mechanical strength of thinner silicon wafers"
+]
+answer.answer = "Reducing carrier recombination at the rear surface of the cell"
+context = "All three architectures focus on passivating the rear surface to reduce recombination. An untreated surface can have recombination velocities exceeding 10⁶ cm/s, while good passivation drops this below 10 cm/s. The old Al-BSF design left ~200-500 cm/s rear recombination velocity, wasting 2-4% absolute efficiency."
+id = "81a09b52-cf15-462f-80a4-9ad9f94bfb2c"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why did PERC take over the industry so quickly despite being invented in 1983?"
+prompt.distractors = [
+    "It achieved the highest theoretical efficiency limit of any silicon architecture at 28.7%",
+    "It eliminated the need for silver paste by using copper-plated contacts instead",
+    "It was the first architecture to use n-type silicon wafers, which don't suffer from LID"
+]
+answer.answer = "Existing Al-BSF production lines could be retrofitted for PERC with relatively low investment ($10-20M)"
+context = "PERC's killer advantage was backward compatibility. Manufacturers only needed to add rear passivation deposition (Al₂O₃/SiNₓ) and laser contact opening — the rest of the line stayed the same. This made conversion vastly cheaper than building new TOPCon or HJT lines from scratch."
+id = "7ffc29cc-9d6b-48e0-a935-d5e4c4214eec"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "In TOPCon cells, how thick is the tunnel oxide layer that enables quantum mechanical tunneling of electrons?"
+answer.answer = "1.0-1.5 nm"
+answer.alternatives = ["1-1.5 nm", "1 to 1.5 nm", "1.2 nm", "about 1 nm", "1.5 nm"]
+context = "The tunnel oxide in TOPCon is just 1.0-1.5 nm thick — about 5-7 atomic layers of silicon dioxide. This is thin enough for electrons to quantum-mechanically tunnel through, but thick enough to passivate the surface and block hole transport."
+id = "f67e5211-b2cf-4f2b-902f-eea5c8436b63"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is HJT's main advantage over TOPCon in hot climates like the Middle East or Australia?"
+prompt.distractors = [
+    "HJT cells use less silver per watt, reducing costs in remote desert installations",
+    "HJT's thicker anti-reflective coating absorbs more infrared radiation before it heats the cell",
+    "HJT cells can operate at higher voltages (above 1000V) which reduces resistive losses in long cable runs"
+]
+answer.answer = "HJT has a superior temperature coefficient (-0.26%/°C vs -0.38%/°C for PERC), losing less power as temperature rises"
+context = "For every degree above 25°C, HJT loses only 0.26% of its power output, compared to 0.32% for TOPCon and 0.38% for PERC. In hot climates where module temperatures can reach 60-70°C, this translates to 3-5% more annual energy production."
+id = "8400069c-ff21-4523-b2b4-d44c408be743"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why can't HJT cells use the same high-temperature silver paste firing process (750-850°C) used in PERC and TOPCon?"
+prompt.distractors = [
+    "The indium tin oxide (ITO) layer decomposes above 400°C, destroying the transparent conductor",
+    "The n-type silicon wafer used in HJT has a lower melting point than p-type silicon",
+    "The copper wire interconnects used in HJT would oxidize at those temperatures"
+]
+answer.answer = "The amorphous silicon passivation layers crystallize above ~200°C, destroying their passivation properties"
+context = "HJT's passivation comes from hydrogenated amorphous silicon (a-Si:H) layers just 5-8 nm thick. Above ~200°C, the amorphous silicon begins to crystallize and loses its hydrogen, destroying the exquisite surface passivation that gives HJT its high voltage. This is why the entire HJT process after a-Si deposition must stay below 200°C."
+id = "ba4fdb1c-465d-4782-b9ed-4924563af4d0"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "What type of silicon wafer (p-type or n-type) do TOPCon cells use, and what degradation problem does this avoid?"
+answer.answer = "n-type, avoids light-induced degradation (LID)"
+answer.alternatives = ["n-type, LID", "n-type, avoids LID", "n-type wafers, no LID", "n-type silicon, light-induced degradation"]
+context = "TOPCon uses n-type silicon wafers, which don't suffer from light-induced degradation (LID) — a phenomenon caused by boron-oxygen complexes in p-type wafers that causes 1-3% power loss in the first year of operation. N-type wafers also have higher minority carrier lifetimes (>1 ms vs ~0.1 ms)."
+id = "a383741f-11a1-4eb7-a344-401f483f857d"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the approximate bifaciality factor of HJT cells, and why is it higher than PERC's?"
+prompt.distractors = [
+    "50-60%, because HJT uses thinner wafers that transmit more light to the rear",
+    "70-75%, because the aluminum oxide rear passivation reflects light more uniformly",
+    "80-85%, because the low-temperature silver paste creates more transparent rear contacts"
+]
+answer.answer = "90-95%, because HJT's symmetric structure with passivated contacts on both sides captures rear light efficiently"
+context = "HJT cells have a naturally symmetric structure — both sides have identical a-Si:H/TCO stacks — giving them bifaciality factors of 90-95%. PERC achieves only ~70% because its rear aluminum contacts and local openings are less effective at capturing and converting rear-side illumination."
+id = "68943235-5db1-4e1e-88d2-095af1c866e7"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the primary material bottleneck that could limit HJT's scaling to 500+ GW of annual production?"
+prompt.distractors = [
+    "Silver — HJT requires 3x more silver per cell than TOPCon due to low-temperature paste limitations",
+    "Phosphine gas — the dopant gas for n-type amorphous silicon is produced by only two suppliers globally",
+    "Monocrystalline silicon — HJT requires float-zone wafers that can only be produced at small scale"
+]
+answer.answer = "Indium — HJT's ITO layers would require ~1,500 tonnes/year at 500 GW scale, far exceeding current global production of ~900 tonnes"
+context = "Each HJT cell uses 200-300 mg of indium via its indium tin oxide (ITO) transparent conductor layers. At 500 GW annual production, this would require about 1,500 tonnes of indium per year — nearly double the entire current global supply. The industry is exploring alternatives like aluminum-doped zinc oxide (AZO) and thinner ITO layers."
+id = "885c9701-bd1c-4a39-ae86-4d8e8d3056db"
+
+# Review questions from earlier days
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 8) Why does the solar industry use silver rather than copper for screen-printed contacts, despite copper being nearly as conductive?"
+prompt.distractors = [
+    "Silver has a lower melting point than copper, making it compatible with silicon wafer processing temperatures",
+    "Copper paste cannot be formulated with glass frit, so it cannot etch through the anti-reflective coating",
+    "Silver is more abundant and cheaper to mine than copper in the quantities needed for solar manufacturing"
+]
+answer.answer = "Copper rapidly diffuses into silicon at processing temperatures, creating deep-level traps that kill minority carrier lifetime"
+context = "Copper is a fast diffuser in silicon — at the 750-850°C firing temperatures used in cell manufacturing, copper atoms penetrate deep into the wafer and create recombination centers that destroy cell performance. Silver doesn't have this problem. The industry is working on copper plating with barrier layers, but it remains challenging."
+id = "955a8e06-5fff-4921-815e-22554b9b72d0"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 6) In a p-n junction solar cell, what role does the built-in electric field at the junction play in power generation?"
+prompt.distractors = [
+    "It accelerates photons toward the absorber layer to increase the probability of electron-hole pair generation",
+    "It heats the junction region to the optimal temperature for carrier transport through the semiconductor",
+    "It creates a magnetic field that guides current flow through the external circuit to the load"
+]
+answer.answer = "It separates photo-generated electron-hole pairs by sweeping electrons toward the n-side and holes toward the p-side"
+context = "The built-in electric field at the p-n junction is what makes a solar cell work as a power source. When a photon creates an electron-hole pair near the junction, the field sweeps the electron to the n-side and the hole to the p-side, creating a current that can do work in an external circuit."
+id = "90f64cf4-5d31-4ead-8751-a7bb4df0a722"
