@@ -1,0 +1,119 @@
+# Day 11 Quiz: Multi-Junction & Tandem Cells
+
+## Current Day Questions (6)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "In a single-junction silicon cell, what happens to a 3.0 eV ultraviolet photon?"
+prompt.distractors = [
+  "It passes through the silicon unabsorbed because its energy exceeds the bandgap threshold, contributing to transmission losses of about 19% of solar energy",
+  "It generates two electron-hole pairs through impact ionization, each carrying approximately 1.5 eV, which is why UV-rich spectra boost silicon cell output",
+  "It is absorbed by the anti-reflective coating before reaching the junction, converting to heat in the silicon nitride layer at roughly 65% thermal loss"
+]
+answer.answer = "It generates one electron-hole pair worth 1.12 eV while the remaining 1.88 eV is lost as waste heat through thermalization, a process that happens nearly instantaneously"
+context = "Photons above the bandgap energy are absorbed but only generate one electron-hole pair at the bandgap energy. The excess energy (3.0 - 1.12 = 1.88 eV) thermalizes into lattice vibrations (heat). This is one of the two major loss mechanisms in single-junction cells."
+id = "9dc147f2-5297-4ff8-8701-0bb72ac90aad"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why are III-V multi-junction solar cells 200-400x more expensive per watt than silicon cells?"
+prompt.distractors = [
+  "The III-V semiconductor materials like gallium and indium are extremely rare earth elements with limited global reserves, and mining them requires specialized deep-shaft extraction techniques",
+  "The cells require platinum and palladium electrode contacts that must be deposited under ultra-high vacuum conditions, and these precious metals dominate the per-watt cost breakdown",
+  "The six-junction architecture requires each layer to be manufactured in a separate cleanroom facility, then bonded together using gold-tin eutectic soldering at 280°C per interface"
+]
+answer.answer = "MOCVD grows crystal one atomic layer at a time at 600-700°C using toxic organometallic precursors, with growth rates of only 1-2 µm/hour on germanium substrates costing ~$100 per 100 mm wafer"
+context = "The extreme cost comes from the MOCVD manufacturing process — it's incredibly slow and uses expensive precursors and substrates. This is boutique semiconductor fabrication, not the mass-production scale of silicon wafer manufacturing."
+id = "40056a71-3f00-434f-abbc-758fd7cece4a"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the fundamental constraint of monolithic (two-terminal) tandem cells that creates a real-world vulnerability to changing weather?"
+prompt.distractors = [
+  "The perovskite top layer thermally expands at a different rate than the silicon bottom cell, causing micro-cracks at the interface when temperature changes exceed 15°C per hour",
+  "The voltage output of each sub-cell must match exactly, and since voltage is temperature-dependent, any thermal gradient between the top and bottom layers creates resistive losses",
+  "The optical coupling between layers depends on a precise refractive index match that shifts with humidity, causing Fresnel reflection losses at the internal interface of up to 8%"
+]
+answer.answer = "The sub-cells are wired in series so current must be identical through both, meaning the weaker cell limits the whole device — and spectral shifts throughout the day change which cell produces less current"
+context = "In a monolithic tandem, series connection means the cell producing less current bottlenecks the entire device. The solar spectrum shifts (more blue at noon, more red at sunrise/sunset), pushing current matching out of alignment and reducing efficiency by a few percent compared to standard test conditions."
+id = "f36c0835-c291-4f95-9514-c5f690abfac5"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the current world record efficiency for a perovskite-silicon tandem cell, and who holds it?"
+prompt.distractors = [
+  "36.12% achieved by Oxford PV in January 2026, certified at their Brandenburg facility using a 1.72 eV formamidinium-cesium perovskite on a TOPCon silicon bottom cell",
+  "33.90% achieved by Hanwha Q Cells in March 2025, using an all-solution-processed wide-bandgap perovskite deposited via slot-die coating on heterojunction silicon",
+  "32.50% achieved by NREL in collaboration with First Solar in August 2025, combining a methylammonium-free perovskite with a rear-contact silicon cell architecture"
+]
+answer.answer = "34.85% achieved by LONGi in April 2025 — a record certified by NREL — followed closely by JinkoSolar at 34.76%, both surpassing the best single-junction silicon cell at 26.81%"
+context = "LONGi, the world's largest solar manufacturer, set the perovskite-silicon tandem record at 34.85% in April 2025. This already far exceeds the theoretical single-junction silicon limit of 29.4%."
+id = "a35bce2a-746b-406d-9b3c-a6d7c28f91e4"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "What is the approximate theoretical efficiency limit for a perovskite-silicon two-junction tandem cell?"
+answer.answer = "43%"
+answer.alternatives = ["43 percent", "~43%", "about 43%", "around 43%"]
+context = "The theoretical limit for a two-junction tandem with optimal bandgap pairing is about 43%, well above silicon's single-junction Shockley-Queisser limit of 29.4%."
+id = "f9a86456-fdc7-4a29-9ab2-33fd8bb5a073"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What makes perovskite-silicon tandems potentially revolutionary compared to III-V multi-junction cells for terrestrial solar?"
+prompt.distractors = [
+  "Perovskite top cells achieve higher absolute efficiency than III-V cells because their defect tolerance allows operation closer to the radiative limit, reaching 98% of theoretical maximum",
+  "Perovskite tandems can operate efficiently under concentrated sunlight up to 500 suns without active cooling, eliminating the tracking hardware that III-V concentrator systems require",
+  "Perovskite materials have inherently superior UV stability compared to III-V semiconductors, giving them a 40-year operational lifetime versus the typical 15-year III-V degradation cycle"
+]
+answer.answer = "Perovskite layers can be solution-deposited at 100-150°C onto existing silicon cells using cheap precursors, potentially adding only 10-20% to silicon cell cost while boosting output 20-30%"
+context = "Unlike III-V cells requiring expensive MOCVD at 600-700°C on germanium substrates, perovskites use low-temperature solution processing with cheap raw materials. This means existing silicon production lines can be retrofitted, making tandems an incremental rather than revolutionary manufacturing change."
+id = "95191e86-c400-40b8-a621-0a6e7636d379"
+
+## Review Questions — Recent Days (2)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 9) In TOPCon cell architecture, what is the key feature that reduces recombination at the rear surface?"
+prompt.distractors = [
+  "A thick aluminum oxide (Al₂O₃) layer deposited by atomic layer deposition that provides both chemical passivation and a fixed positive charge to repel electrons from the surface",
+  "A hydrogenated amorphous silicon (a-Si:H) intrinsic buffer layer deposited at 200°C by PECVD that saturates dangling bonds while maintaining excellent carrier transport",
+  "A laser-fired aluminum point contact pattern through a SiO₂ dielectric mirror that creates local back-surface fields while reflecting unabsorbed infrared photons back into the cell"
+]
+answer.answer = "An ultra-thin tunnel oxide layer (~1.5 nm SiO₂) topped with phosphorus-doped polysilicon that passivates the surface while allowing electrons to quantum-tunnel through to the contact"
+context = "TOPCon (Tunnel Oxide Passivated Contact) uses a ~1.5 nm SiO₂ layer thin enough for quantum tunneling, topped with doped polysilicon. This provides excellent surface passivation while maintaining electrical contact — the key innovation over PERC's local aluminum contacts."
+id = "e27721f2-4677-42ef-b46d-adcd0ddfab0e"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 10) What is First Solar's key competitive advantage with CdTe thin-film technology?"
+prompt.distractors = [
+  "CdTe cells achieve the highest single-junction efficiency of any commercial technology at 24.5%, surpassing both PERC and TOPCon silicon cells in standard test conditions",
+  "CdTe panels use abundant tellurium sourced from copper refining byproducts, making them immune to the polysilicon supply chain disruptions that affect crystalline silicon manufacturers",
+  "CdTe thin-film cells can be deposited on flexible polymer substrates, enabling building-integrated applications that rigid crystalline silicon modules cannot serve cost-effectively"
+]
+answer.answer = "First Solar's vapor transport deposition process coats an entire 1200×600 mm glass substrate in under 2.5 hours from raw glass to finished module, achieving the lowest manufacturing cost per watt in the industry"
+context = "First Solar's vertically integrated process — from glass input to finished module — is extremely fast and cheap. The vapor transport deposition technique is far faster than the multi-step crystalline silicon process, giving First Solar consistently low manufacturing costs despite lower cell efficiency."
+id = "837e98d8-cc19-46b8-9f1f-36bc8181dc66"
+
+## Review Questions — Older Days (2)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 6) In the p-n junction doping process, why does the built-in electric field at the junction point from the n-side toward the p-side?"
+prompt.distractors = [
+  "The higher concentration of electrons on the n-side creates a negative charge that repels electrons from the p-side, establishing a voltage gradient that drives conventional current from p to n",
+  "The boron acceptor atoms on the p-side have a stronger electronegativity than phosphorus donors on the n-side, creating a permanent dipole field across the metallurgical junction interface",
+  "The diffusion of majority carriers during junction formation creates an excess of positively charged donor ions on the p-side and negatively charged acceptor ions on the n-side"
+]
+answer.answer = "When electrons diffuse from n to p and holes from p to n, they leave behind fixed ionized donor atoms (+) on the n-side and acceptor atoms (−) on the p-side, creating a field pointing from + to −, i.e. n to p"
+context = "The depletion region forms when mobile carriers diffuse across the junction. The immobile ionized dopant atoms left behind create a space charge region: positive on the n-side (exposed donor ions) and negative on the p-side (exposed acceptor ions). The resulting electric field points from the positive n-side to the negative p-side."
+id = "f146812f-0a4b-4d29-b994-88d9fca7ff46"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (Day 5) What is the approximate thickness of a standard silicon wafer after wire-saw slicing, in micrometers?"
+answer.answer = "150"
+answer.alternatives = ["150 µm", "150 micrometers", "~150", "130-170", "150-180", "160", "170"]
+context = "Modern diamond-wire saws cut silicon wafers to approximately 150-170 µm thickness, down from 300+ µm a decade ago. Thinner wafers mean more wafers per ingot and lower silicon consumption per cell."
+id = "9ae18b3e-fabf-4ad6-840f-9554730e1881"
