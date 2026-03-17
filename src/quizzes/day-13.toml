@@ -1,0 +1,119 @@
+# Day 13 Quiz: Quality Control & Cell Testing
+
+## Current Day Questions (6)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why do solar cell factories sort cells into bins based on multiple parameters (I_sc, V_oc, FF) rather than just efficiency alone?"
+prompt.distractors = [
+  "Different efficiency cells can have matching thermal coefficients, and binning by I_sc/V_oc ensures that cells in the same module degrade at the same rate over their 25-year lifetime, reducing warranty claims",
+  "Sorting by multiple parameters is required by IEC 61215 for module certification — regulators mandate ±0.05 A current matching and ±5 mV voltage matching within each series string",
+  "Cells with identical efficiency but different V_oc values will have incompatible bypass diode trigger thresholds, causing some diodes to activate prematurely under partial shading conditions"
+]
+answer.answer = "Two cells with identical efficiency can have very different current and voltage profiles, and since series-connected cells are limited by the lowest current in the string, mixing high-current/low-voltage cells with low-current/high-voltage cells creates mismatch losses and localized heating"
+context = "In a series string, all cells carry the same current. A cell with lower I_sc forces the entire string to its current level, wasting the excess photocurrent in higher-I_sc cells as heat. Binning by I_sc (not just efficiency) prevents this mismatch."
+id = "d13-q01"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the key advantage of photoluminescence (PL) imaging over electroluminescence (EL) imaging in a solar cell production line?"
+prompt.distractors = [
+  "PL imaging achieves spatial resolution below 1 micrometer compared to EL's 10-micrometer limit, allowing detection of nano-scale crystal defects and individual dislocation lines in monocrystalline wafers",
+  "PL imaging operates in the visible spectrum (400-700 nm) using standard silicon CCD cameras, eliminating the need for expensive InGaAs SWIR detectors required by EL systems",
+  "PL imaging measures surface recombination velocity directly with ±5% accuracy, while EL can only provide qualitative maps that require calibration against independent lifetime measurements"
+]
+answer.answer = "PL imaging is contactless and works at every production stage — from raw as-cut wafers through finished cells — while EL requires electrical contacts and can only be performed on completed cells or modules"
+context = "PL uses optical excitation (laser illumination) rather than electrical injection, so it doesn't need metal contacts. This means you can inspect wafers before any processing, catching defects early when the wafer investment is minimal."
+id = "d13-q02"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "In an IV curve measurement, what does the fill factor (FF) physically represent, and what typical range indicates a healthy modern PERC cell?"
+prompt.distractors = [
+  "FF is the ratio of the cell's actual V_oc to the theoretical thermodynamic limit set by the Shockley-Queisser model, with healthy PERC cells achieving 88-92% of the SQ voltage limit",
+  "FF measures the fraction of the cell area that actively contributes to photocurrent generation versus inactive area under busbars and finger shadows, with PERC cells achieving 94-97% active area coverage",
+  "FF is the ratio of the cell's efficiency under concentrated 10-sun illumination to its efficiency at 1-sun STC conditions, with well-made PERC cells showing a concentration ratio of 1.15-1.25"
+]
+answer.answer = "FF is the ratio of the cell's actual maximum power point (V_mp × I_mp) to the product of V_oc × I_sc — it measures how 'square' the IV curve is, with healthy PERC cells achieving fill factors of 80-84%"
+context = "A perfect cell would have FF = 100% (a perfectly rectangular IV curve). Real cells are limited by series resistance (from fingers, busbars, bulk silicon) and shunt resistance (from edge defects, cracks). PERC cells typically achieve 80-84% FF; TOPCon reaches 82-85%."
+id = "d13-q03"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "How does lock-in thermography (LIT) detect shunt defects that are invisible to standard EL imaging?"
+prompt.distractors = [
+  "LIT uses ultraviolet illumination at 365 nm to excite fluorescence in the anti-reflective coating, and shunt defects create local coating damage that fluoresces at a different wavelength than intact regions",
+  "LIT measures the acoustic emission from micro-crack propagation when the cell is thermally cycled between -40°C and 85°C, with shunt locations producing characteristic ultrasonic signatures at 1-5 MHz",
+  "LIT applies a high-frequency AC bias at 100 kHz to the cell and measures the impedance response, with shunts appearing as localized drops in junction capacitance detected by a scanning probe"
+]
+answer.answer = "LIT applies a pulsed electrical bias at 1-25 Hz while an IR thermal camera records surface temperature, then uses phase-sensitive detection to extract millikelvin temperature variations at shunt sites from the noisy thermal background"
+context = "Shunts dissipate power as heat in spots as small as 50 micrometers. LIT's lock-in technique correlates temperature oscillations with the excitation frequency, achieving sensitivity of ~0.001°C — far below what a simple thermal snapshot could detect."
+id = "d13-q04"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "What are the three conditions that define Standard Test Conditions (STC) for solar cell measurement? (list irradiance, spectrum, and temperature)"
+answer.answer = "1000 W/m², AM1.5G spectrum, 25°C cell temperature"
+answer.alternatives = ["1000 W/m2, AM1.5G, 25°C", "1000W/m2 AM1.5G 25C", "1000 W/m², AM1.5G, 25 degrees"]
+context = "STC provides a universal reference point: irradiance of 1,000 W/m² (approximating peak noon sunlight), the AM1.5G spectral distribution (sunlight after passing through 1.5 atmospheres at ~48° zenith angle), and a cell temperature of 25°C."
+id = "d13-q05"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why was the discovery that PL imaging of raw wafers can predict final cell efficiency to ±0.2-0.3% so transformative for manufacturing?"
+prompt.distractors = [
+  "It allowed factories to skip the IV flash test entirely on finished cells, eliminating the $150,000 cost of xenon solar simulators and saving 0.5 seconds per cell in production throughput",
+  "It enabled wafer manufacturers to guarantee minimum efficiency specifications to cell makers, creating a new premium wafer market segment with 15-20% price premiums on certified high-lifetime material",
+  "It proved that surface passivation quality — not bulk lifetime — was the dominant variable in cell performance, redirecting R&D investment from crystal growth toward atomic layer deposition equipment"
+]
+answer.answer = "It enabled factories to sort wafers by quality before investing in cell processing, routing high-lifetime wafers to premium lines and lower-lifetime wafers to standard lines — catching value differences at the cheapest possible stage"
+context = "PL prediction works because bulk minority carrier lifetime — which PL measures directly — is the dominant variable in final cell efficiency. By sorting at the raw wafer stage (before $0.30+ of processing), factories avoid wasting expensive cell-processing steps on inherently inferior wafers."
+id = "d13-q06"
+
+## 🔁 Review Questions — Recent Days (2)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 12) What is the largest single energy loss mechanism in a standard single-junction solar cell, and approximately what fraction of incoming solar energy does it consume?"
+prompt.distractors = [
+  "Radiative recombination consumes approximately 25% of incoming solar energy because even at optimal operating voltage the cell re-emits a substantial photon flux in the near-infrared region",
+  "Sub-bandgap transmission consumes approximately 33% of incoming solar energy because the infrared portion of the AM1.5G spectrum below silicon's 1.12 eV bandgap carries most of the sun's radiant power",
+  "The Carnot entropy penalty consumes approximately 30% of incoming solar energy due to the solid-angle mismatch between the sun's 0.5° disk and the cell's 180° hemispherical emission pattern"
+]
+answer.answer = "Thermalization consumes approximately 33% of incoming solar energy because above-bandgap photons create carriers that shed their excess kinetic energy as lattice heat within femtoseconds of absorption"
+context = "Thermalization is the single biggest loss. High-energy photons (e.g., 3.0 eV blue light hitting silicon with a 1.12 eV bandgap) create 'hot' carriers that collide with the crystal lattice thousands of times in the first picosecond, dumping 1.88 eV as waste heat."
+id = "d13-q07"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 11) In a triple-junction III-V solar cell used for space and concentrator applications, why are the subcells ordered from widest bandgap on top to narrowest on bottom?"
+prompt.distractors = [
+  "Wider-bandgap materials have higher thermal conductivity and must face the sun to dissipate heat from concentrated sunlight before it reaches the temperature-sensitive narrow-gap bottom cell",
+  "Lattice matching requirements dictate that wider-bandgap III-V compounds must be grown first on the germanium substrate, and flipping the stack after growth would introduce dislocations at the bonding interface",
+  "The bottom narrow-gap cell acts as a structural substrate that must be thickest for mechanical support, and epitaxial growth proceeds from thick substrates upward to progressively thinner absorber layers"
+]
+answer.answer = "Each subcell absorbs photons above its bandgap and transmits those below it — the wide-gap top cell filters out high-energy photons first, letting progressively lower-energy photons reach each subsequent layer for efficient conversion"
+context = "This is spectral splitting by stacking. The top cell (e.g., GaInP at ~1.85 eV) absorbs blue/green light. The middle cell (GaAs at ~1.42 eV) catches red/near-IR. The bottom cell (Ge at ~0.67 eV) collects remaining IR. Each photon is converted near its energy, minimizing thermalization."
+id = "d13-q08"
+
+## 🔁 Review Questions — Older Days (2)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 6) When phosphorus is diffused into p-type boron-doped silicon to create the n-type emitter, what physically creates the built-in electric field at the p-n junction?"
+prompt.distractors = [
+  "The difference in crystal lattice spacing between phosphorus-rich and boron-rich silicon regions creates mechanical strain that generates a piezoelectric field of approximately 0.7 V across the interface",
+  "Free electrons from the n-side and free holes from the p-side annihilate at the junction through pair production, leaving behind a region of pure intrinsic silicon whose bandgap difference creates the field",
+  "Phosphorus atoms at the junction thermally ionize boron atoms on the p-side through Auger energy transfer, creating a gradient of ionization states that produces an electrostatic potential difference"
+]
+answer.answer = "Electrons diffuse from the n-side to the p-side and holes diffuse the opposite way, leaving behind fixed ionized dopant atoms — positive phosphorus ions on the n-side and negative boron ions on the p-side — whose charge separation creates the depletion region's electric field"
+context = "The built-in field arises from carrier diffusion across the junction. Mobile carriers leave behind immobile ionized dopants (P⁺ on the n-side, B⁻ on the p-side), creating a space charge region. The resulting electric field (~0.6-0.7 V for silicon) opposes further diffusion and separates photogenerated carriers."
+id = "d13-q09"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (Day 3) What is the name of the dominant industrial process used to purify metallurgical-grade silicon into 9N+ (99.9999999%) polysilicon for solar wafers?"
+answer.answer = "Siemens process"
+answer.alternatives = ["siemens", "the Siemens process", "Siemens"]
+context = "The Siemens process converts metallurgical-grade silicon to trichlorosilane (SiHCl₃) gas, purifies it by distillation, then deposits high-purity silicon onto heated rods by chemical vapor deposition at around 1,100°C. It produces the vast majority of the world's solar-grade polysilicon."
+id = "d13-q10"
