@@ -1,0 +1,119 @@
+# Day 14: From Cell to Module — Encapsulation & Assembly
+
+## Current Day Questions (6)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why does cutting solar cells in half before stringing reduce resistive power losses in the tabbing ribbons by approximately 75%?"
+prompt.distractors = [
+    "Half-cut cells have twice the voltage, so the ribbon carries more voltage at lower impedance, reducing thermal dissipation in the copper by a factor of four according to P = V²/Z calculations.",
+    "Half-cut cells use ribbons that are half the length, and since resistance scales linearly with length (R = ρL/A), the total I²R loss in each ribbon drops by 50%, compounded by a parallel wiring benefit.",
+    "Half-cut cells operate at a higher fill factor due to reduced edge recombination, which means more power is extracted at the maximum power point and less energy is dissipated as heat in the interconnects."
+]
+answer.answer = "Half-cut cells produce half the current of full-size cells because current scales with area while voltage stays the same. Since resistive losses scale with I²R, halving the current reduces the I² term by a factor of four, cutting ribbon losses by 75%."
+context = "This is a direct application of the I²R power loss relationship. Current is halved (from ~14A to ~7A), so I² drops by 4×, meaning resistive losses in the ribbons drop by approximately 75%. The voltage per cell remains unchanged."
+id = "cbfbe8e2-ce84-4ea6-8e0c-d7aa23e28110"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the fundamental chemical problem with EVA (ethylene-vinyl acetate) encapsulant that has driven the industry toward POE alternatives?"
+prompt.distractors = [
+    "EVA undergoes UV-induced chain scission that breaks the polymer backbone into short oligomers, which migrate to the cell surface and form a reflective film that blocks 3-5% of incoming light over 10 years.",
+    "EVA's peroxide crosslinking agents slowly decompose at operating temperatures above 60°C, releasing free radicals that oxidize the silver grid fingers and increase series resistance by 15-25% within the first decade.",
+    "EVA absorbs moisture that causes volumetric swelling of 2-4%, generating mechanical stress that delaminates the encapsulant from the glass surface and creates voids where condensation accumulates and corrodes contacts."
+]
+answer.answer = "EVA slowly decomposes via hydrolysis of its vinyl acetate groups, releasing acetic acid that is corrosive to silver grid fingers, cell metallization, and especially the transparent conductive oxide (TCO) layers used in HJT cells, causing degradation after 10-15 years."
+context = "The hydrolysis of vinyl acetate groups producing acetic acid is EVA's fundamental weakness. This is particularly problematic for HJT cells with acid-sensitive TCO layers, and in hot humid climates where the hydrolysis reaction is accelerated."
+id = "3522340e-1e29-4bbf-b436-8ef497e6c149"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "During vacuum lamination, why must the evacuation step be completed before the encapsulant reaches its melting temperature?"
+prompt.distractors = [
+    "The encapsulant's crosslinking agents decompose at temperatures above 120°C, and if oxygen is still present during decomposition, the free radicals react with O₂ instead of polymer chains, resulting in incomplete cure and gel content below 50%.",
+    "The glass and encapsulant have different coefficients of thermal expansion, and residual air pressure prevents uniform thermal contact between layers, creating temperature gradients exceeding ±8°C that cause differential curing across the module.",
+    "The solder joints between tabbing ribbons and cell busbars can reflow if exposed to both heat and atmospheric pressure simultaneously, causing the ribbons to shift position by 1-2mm and creating resistive contact failures."
+]
+answer.answer = "If air remains between layers when the encapsulant melts and flows, it becomes permanently trapped as bubbles. These bubbles create local hot spots, moisture ingress points, and optical defects that compromise module performance and longevity."
+context = "Once the encapsulant melts and flows, it seals around any remaining air pockets, trapping them permanently. The vacuum (0.5–1 mbar) must be established first so all air is removed before the polymer becomes fluid. Bubbles are considered module killers."
+id = "9a0a422f-d672-4d5f-a5ac-a6e45e99e117"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "How can modern solar modules achieve a cell-to-module (CTM) power ratio exceeding 100%, producing more power than the sum of their individual bare cells?"
+prompt.distractors = [
+    "The encapsulant material acts as a waveguide that concentrates diffuse light onto the cells through total internal reflection at the air-encapsulant interface, effectively increasing irradiance on each cell by 1.5-2% above the incident level.",
+    "The series-parallel wiring configuration in half-cut modules reduces the current mismatch penalty between cells, allowing the module to operate closer to each cell's individual maximum power point and recovering 1-2% of typically lost power.",
+    "The aluminum frame acts as a thermal heat sink that keeps cell temperature 2-3°C lower than bare cells would operate at, and since silicon cells gain approximately 0.4% efficiency per degree of cooling, this thermal benefit adds 1-2% output."
+]
+answer.answer = "Light hitting the white backsheet between cell gaps reflects upward to the glass surface, which totally internally reflects it back onto adjacent cells. Combined with anti-reflective coatings on the glass reducing front-surface reflection, these optical gains scavenge otherwise wasted photons."
+context = "CTM ratios of 100.5-102% are achieved through light trapping effects: the cell gaps, backsheet reflectivity, and glass internal reflection create optical recycling paths that recover photons that would miss the cells. AR coatings further reduce front-surface losses."
+id = "3972c051-04cd-4d41-ae00-9416203c3e62"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "What is the approximate water vapor transmission rate advantage of POE encapsulant compared to EVA? (Express as 'X times lower' or 'X times more resistant')"
+answer.answer = "7 times"
+answer.alternatives = ["seven times", "7x", "7 times lower", "seven times lower", "7 times more resistant"]
+context = "POE's water vapor transmission rate (WVTR) is roughly seven times lower than EVA's, making it dramatically superior for moisture protection, especially critical for HJT cells and bifacial glass-glass modules."
+id = "a6e254d8-3c33-4d3c-8119-9d719c5e112f"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What was the consequence of the solar backsheet quality crisis of 2018-2020, and what material property distinguished the failing products from reliable ones?"
+prompt.distractors = [
+    "Backsheets using recycled PET cores absorbed UV radiation and became electrically conductive over time, creating ground faults that tripped inverter safety systems and reduced system availability by 15-30% in affected installations.",
+    "Backsheets manufactured with non-crosslinked EVA adhesive layers lost bond strength after thermal cycling, causing systematic delamination that exposed junction boxes to water ingress and triggered widespread arc-fault fires across European rooftop installations.",
+    "Backsheets using Chinese-produced PVDF (polyvinylidene fluoride) instead of DuPont Tedlar contained residual catalysts that reacted with aluminum frames, causing galvanic corrosion that weakened mounting structures and led to module detachments in high-wind regions."
+]
+answer.answer = "Millions of modules with substandard non-fluoropolymer backsheets experienced cracking, yellowing, and delamination within 5-8 years, exposing cells to moisture and failing safety testing. The critical distinction was the presence or absence of fluoropolymer layers like DuPont's Tedlar (PVF)."
+context = "The backsheet crisis was one of solar's costliest quality episodes. Non-fluoropolymer alternatives (like PPE — PET/PET/EVA) degraded far faster than fluoropolymer-based backsheets (TPT — Tedlar/PET/Tedlar), which are rated for 25+ years. Cost savings of $3-7/m² proved catastrophically false economy."
+id = "de476309-9c6b-4bc5-84a9-33f54d200654"
+
+## Review Questions — Recent Days (2)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 13) During IV curve testing, why do factories sort cells by multiple parameters (I_sc, V_oc, and FF independently) rather than simply sorting by efficiency alone?"
+prompt.distractors = [
+    "Efficiency alone doesn't capture the cell's thermal coefficient behavior, and cells with matched I_sc but different temperature coefficients will diverge in real-world performance as module temperature rises above the 25°C STC reference point.",
+    "Different cell architectures (PERC vs TOPCon) produce efficiency through fundamentally different mechanisms, so mixing architectures in one module requires matching all electrical parameters to prevent reverse bias damage at the cell level.",
+    "Regulatory standards (IEC 61215) mandate that manufacturers track and report each parameter independently for certification, and modules assembled from single-parameter-sorted cells cannot pass the required thermal cycling and damp heat qualification tests."
+]
+answer.answer = "Two cells can have identical efficiencies through different combinations of current, voltage, and fill factor. Mixing a high-current/low-voltage cell with a low-current/high-voltage cell in the same series string creates current mismatch — and the string is limited by the weakest cell's current."
+context = "In a series string, all cells must pass the same current. If cells are matched only on efficiency but have different I_sc values, the lowest-current cell limits the entire string. Multi-parameter sorting prevents this mismatch, which is a module-level performance killer."
+id = "3c950987-f070-4f73-aebc-38f944752d9d"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 12) The Shockley-Queisser limit sets the maximum theoretical efficiency of a single-junction silicon solar cell at about 33.7%. What is the primary loss mechanism that accounts for the largest share of lost energy?"
+prompt.distractors = [
+    "Auger recombination in the heavily doped emitter region causes approximately 20% of photogenerated carriers to recombine non-radiatively before reaching the contacts, converting their energy into lattice vibrations rather than electrical current.",
+    "Reflection losses at the silicon-air interface reject approximately 30-35% of incident photons before they can enter the cell, and even with anti-reflective coatings, 3-5% of light is still reflected across the usable spectrum.",
+    "Carrier thermalization at the contacts causes a voltage drop of 0.3-0.4V as hot electrons cool to the lattice temperature at the metal-semiconductor interface, dissipating roughly 15% of the absorbed energy as Joule heating in the busbars."
+]
+answer.answer = "Thermalization losses — photons with energy above silicon's 1.12 eV bandgap generate electron-hole pairs, but the excess energy above the bandgap is immediately lost as heat. Blue photons (3.1 eV) lose about 64% of their energy this way, accounting for roughly 47% of incident solar energy."
+context = "Thermalization is the single largest loss mechanism in the Shockley-Queisser framework. High-energy photons excite carriers far above the band edge, but these 'hot carriers' cool to the band edge within picoseconds, converting the excess energy to phonons (heat)."
+id = "a7dbda5f-2ba2-4264-b221-493b9a457143"
+
+## Review Questions — Older Days (2)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 5) Why do modern diamond wire saws use a slurry of polyethylene glycol (PEG) and water during ingot slicing, and what kerf loss does a typical 120μm diamond wire produce?"
+prompt.distractors = [
+    "PEG-water slurry chemically etches the silicon surface during cutting to create a pre-textured saw-damage layer, reducing the subsequent texturing step time by 40%. Typical kerf loss with 120μm wire is approximately 90-100μm per cut.",
+    "PEG-water slurry maintains the diamond wire at a constant temperature of 25°C to prevent thermal expansion of the wire, which would cause thickness variation in the wafers. Typical kerf loss with 120μm wire is approximately 180-200μm per cut.",
+    "PEG-water slurry provides lubrication and carries away silicon debris (swarf) from the cutting zone while cooling the wire and workpiece. Typical kerf loss with 120μm wire is approximately 120-130μm per cut, meaning about 45% of the ingot becomes waste."
+]
+answer.answer = "PEG-water slurry serves as both coolant and lubricant, removing heat generated by friction and flushing silicon swarf from the narrow cutting channel to prevent wire jamming. A 120μm diamond wire produces kerf loss of approximately 120-130μm — nearly equal to the wire diameter itself."
+context = "The slurry's dual role (cooling and debris removal) is critical for cut quality. Kerf loss approximately matches wire diameter, meaning a 120μm wire destroys about 120-130μm of silicon per cut. Modern thinner wires (≤100μm) reduce this waste, pushing toward 100μm kerf."
+id = "8e2b3c06-f119-4eb6-9770-9f45828fcdd9"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (Day 3) In the Siemens process for polysilicon purification, what is the key intermediate chemical compound that silicon is converted into before being deposited back as pure silicon?"
+answer.answer = "trichlorosilane"
+answer.alternatives = ["TCS", "HSiCl3", "SiHCl3", "trichloro silane"]
+context = "The Siemens process converts metallurgical-grade silicon to trichlorosilane (HSiCl3/SiHCl3) gas, which can be purified by distillation. The purified TCS is then decomposed on hot silicon rods at ~1100°C to deposit ultra-pure polysilicon."
+id = "41afb1f1-7ed2-450c-93db-d4d2f8fcd25c"
