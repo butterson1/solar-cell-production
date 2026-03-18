@@ -1,0 +1,119 @@
+# Day 16 Quiz: Manufacturing Economics — Cost per Watt Breakdown
+
+## Current Day Questions (6)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "In a typical $0.087/Wp TOPCon module produced in Q4 2025, which cost category is the single largest?"
+prompt.distractors = [
+  "Cell processing at ~21%, driven primarily by the cost of PECVD and LPCVD equipment depreciation which accounts for half of the cell processing budget at high-capacity fabs",
+  "Polysilicon at ~17%, because even at $6-7/kg spot prices, the 1.3-1.5 kg required per module after accounting for 35-40% kerf loss makes silicon the dominant cost",
+  "Labor, overhead, and logistics at ~22%, where direct manufacturing wages and factory electricity consumption together comprise the bulk of non-material costs"
+]
+answer.answer = "Module assembly bill of materials at ~31%, because non-silicon components — glass, encapsulant, aluminum frame, junction box, and ribbon — collectively cost more than the cells inside"
+context = "The BOM for module assembly costs roughly $15.50-$16.00 per module (~$0.027/Wp), making it the largest single cost category. The technology inside the module now costs less than the packaging that protects it."
+id = "93fadaa0-f114-431a-accd-203dd62d5226"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why is higher cell efficiency the single most powerful cost reduction lever in solar manufacturing?"
+prompt.distractors = [
+  "Higher efficiency cells produce less waste heat during operation, reducing the thermal stress on encapsulant and backsheet materials, which allows manufacturers to use cheaper polymer films",
+  "Higher efficiency cells require fewer processing steps in the fab because advanced architectures like TOPCon eliminate two of the six screen-printing passes used in standard PERC lines",
+  "Higher efficiency cells allow factories to run fewer parallel production lines for the same wattage output, reducing staffing requirements by 15-20% per gigawatt of annual capacity"
+]
+answer.answer = "Most module costs — glass, frame, encapsulant, labor, factory space, logistics — scale with area, not watts, so a higher-efficiency cell produces more watts from the same-area module at nearly identical cost"
+context = "A module that is 24% efficient costs nearly the same to build as one at 22% — same glass, frame, and labor — but produces ~9% more power. This makes the cost per watt drop for 'free.'"
+id = "07b043d8-f693-4149-9c64-f3b7582cb50e"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What makes silver paste the 'quiet killer' in cell processing costs?"
+prompt.distractors = [
+  "Silver paste requires a dedicated nitrogen-atmosphere screen printing chamber that costs $2.5M per unit and must be replaced every 18 months due to mesh degradation from silver nanoparticle buildup",
+  "Silver paste must be imported exclusively from Japanese suppliers like Heraeus and DuPont, creating a supply chain bottleneck that adds 15-20% markup over raw silver commodity prices",
+  "Silver paste printing is the slowest step in the cell production line at 1,200 wafers/hour versus 6,000+/hour for PECVD, creating a throughput bottleneck that requires 3× more printers"
+]
+answer.answer = "At 10-13 mg per TOPCon cell and ~$950-1,000/kg paste cost, silver metallization accounts for $2.80-$3.50 per module — roughly 6-7% of total module cost for a single consumable material"
+context = "Silver consumption is why the industry is pursuing copper plating, SMBB designs, and zero-busbar approaches. Every milligram saved per cell translates to ~$0.001/Wp savings, worth hundreds of millions annually at 400+ GW scale."
+id = "dd7c0338-c5ed-4454-88a7-6d43d4f6fee8"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why are many Chinese module manufacturers continuing to ship products at prices below their fully-loaded production cost in 2025?"
+prompt.distractors = [
+  "Manufacturers expect polysilicon prices to drop another 30-40% in 2026 due to new Tongwei and GCL capacity coming online, which would retroactively make their current production profitable on inventory revaluation",
+  "Chinese export tax rebates of 13% on solar modules effectively subsidize each shipment, turning an apparent loss on manufacturing cost into a net profit once the government rebate is factored in",
+  "Module producers are contractually locked into long-term supply agreements signed during the 2022 price peak, and breaking those contracts would trigger penalty clauses exceeding the per-module losses"
+]
+answer.answer = "Shutting down a factory is even more expensive than running it at a loss — debt service, maintenance, and skeleton crew costs continue regardless — creating a classic overcapacity death spiral"
+context = "With ~1,200 GW of capacity built vs. ~500-600 GW of actual demand, the industry has roughly 2× overcapacity. Manufacturers keep shipping to cover variable costs and avoid the fixed costs of shutdown."
+id = "83859773-864b-4187-966c-970b1071e757"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Approximately what percentage has the cost of crystalline silicon solar modules dropped between 2010 and late 2025?"
+answer.answer = "95%"
+answer.alternatives = ["~95%", "about 95%", "roughly 95%", "95 percent", "around 95%"]
+context = "Module costs fell from roughly $1.50/Wp in 2010 to $0.08-0.10/Wp in late 2025 — a ~95% reduction in 15 years, driven by Swanson's Law (24% cost drop per doubling of cumulative capacity)."
+id = "9acdbfce-1466-4170-8e00-80a558cd808d"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "For a utility-scale solar installation in the US costing ~$0.80-$1.00/Wp, what percentage does the module itself represent?"
+prompt.distractors = [
+  "50-60%, because even at $0.09/Wp, the module plus shipping, tariffs, and warranty provisions push the effective module cost to nearly half of total system cost in the American market",
+  "10-15%, since US anti-dumping duties and Section 201 tariffs inflate balance-of-system and soft costs so dramatically that hardware becomes a minor fraction of total installed price",
+  "70-80%, as the module including shipping and import duties to the US market typically costs $0.55-0.70/Wp after anti-circumvention tariffs on Southeast Asian transshipment are applied"
+]
+answer.answer = "25-35%, because soft costs (permitting, interconnection, development, financing) and balance-of-system hardware (racking, inverters, wiring) now collectively dominate total installed cost"
+context = "The module has become so cheap that non-module costs — especially soft costs like permitting and interconnection queues — now represent the majority of system cost. Further cost reduction requires regulatory and process reform."
+id = "b0d89405-de10-48de-9a00-336ff6686566"
+
+## Review Questions — Recent Days (2)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 15) What is the actual throughput bottleneck in a crystal growth hall with 1,000+ CZ pullers?"
+prompt.distractors = [
+  "The melting phase takes 8-12 hours per cycle because polysilicon chunks must be heated gradually to prevent thermal shock cracking in the quartz crucible lining",
+  "Crystal pull speed is limited to 0.5-1.2 mm/min by the solid-liquid interface dynamics, making the 50-70 hour growth cycle the rate-limiting step for ingot output",
+  "Seed crystal availability constrains throughput because each dislocation-free seed requires 2-3 weeks of specialized float-zone preparation before it can be used"
+]
+answer.answer = "Hot zone consumables — graphite crucibles, heaters, and heat shields — degrade after 4-8 pulls and must be replaced, making maintenance turnaround the true bottleneck"
+context = "From Day 15: The crystal growth itself is mostly automated waiting. The limiting factor is how fast maintenance teams can disassemble, replace, and reassemble the hot zone components between cycles."
+id = "d5e668c6-e77c-4b25-b453-526844dc9cdb"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 14) What is the primary role of EVA or POE encapsulant films in a solar module?"
+prompt.distractors = [
+  "They act as a dielectric insulation layer between the cell metallization and the aluminum frame, preventing ground faults at system voltages up to 1,500V DC in utility-scale arrays",
+  "They serve as an optical coupling medium with a refractive index of 1.49 matched to glass, reducing front-surface reflection losses by an additional 2-3% beyond the ARC coating",
+  "They function as a thermal conduction layer that spreads heat laterally from cell hotspots, reducing peak cell temperature by 8-12°C compared to air-gap module designs"
+]
+answer.answer = "They laminate the cells between the front glass and rear cover, providing mechanical cushioning, moisture barrier protection, and optical transparency to maintain long-term module reliability"
+context = "From Day 14: EVA/POE encapsulant films bond all module layers together during lamination at 140-150°C. POE offers superior moisture resistance and lower PID risk, increasingly preferred for bifacial modules."
+id = "98fd32fb-2357-4acd-b950-3e5eac1865f5"
+
+## Review Questions — Older Days (2)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 5) Why has diamond wire largely replaced slurry-based sawing for silicon ingot wafering?"
+prompt.distractors = [
+  "Diamond wire operates in a sealed nitrogen atmosphere that prevents surface oxidation during cutting, eliminating the need for post-cut HF etching that slurry-sawed wafers require",
+  "Diamond wire produces a smoother wafer surface with <1μm roughness, which allows cell manufacturers to skip the texturing step and proceed directly to diffusion processing",
+  "Diamond wire generates less subsurface crystal damage, resulting in wafers with 0.5% higher minority carrier lifetime that translates directly to higher finished cell efficiency"
+]
+answer.answer = "Diamond wire cuts 3-5× faster than slurry, produces a narrower kerf (less silicon wasted), and has dropped to 38-42μm diameter — saving the industry billions annually in polysilicon material costs"
+context = "From Day 5: Thinner diamond wire means less silicon lost as kerf during wafering. The transition from 120μm to 38-42μm wire has saved an estimated $2-3 billion annually in polysilicon."
+id = "683b8c72-2bf2-43ce-b3be-baa0b42520a0"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (Day 9) What does TOPCon stand for?"
+answer.answer = "Tunnel Oxide Passivated Contact"
+answer.alternatives = ["tunnel oxide passivated contact", "Tunnel Oxide Passivating Contact", "tunnel oxide passivating contact"]
+context = "From Day 9: TOPCon uses an ultra-thin tunnel oxide (~1.5nm) topped with doped polysilicon to create a passivated contact that reduces recombination losses at the cell's rear surface."
+id = "cc004d8c-d79a-4979-93c6-6de16ed47bd3"
