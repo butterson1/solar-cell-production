@@ -1,0 +1,119 @@
+# Day 22 Quiz: Tandem Cells — Silicon + Perovskite Stacking
+
+## Current Day Questions (6)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "In a 2-terminal monolithic perovskite/silicon tandem, what is the primary role of the thin ITO recombination layer between the two subcells?"
+prompt.distractors = [
+    "It acts as a wavelength-selective filter that reflects infrared photons back into the silicon cell while transmitting visible light, increasing the optical path length in each subcell and boosting absorption efficiency.",
+    "It provides a lateral current-spreading pathway that collects photocurrent from both subcells and routes it to edge bus bars, eliminating the need for a separate transparent top electrode on the perovskite cell.",
+    "It creates a graded refractive index transition between the perovskite (n ≈ 2.5) and silicon (n ≈ 3.5) that minimizes internal reflection losses at the subcell interface, recovering roughly 2–3 mA/cm² of photocurrent."
+]
+answer.answer = "It provides a site where electrons from the perovskite top cell and holes from the silicon bottom cell meet and recombine, completing the internal series circuit between the two subcells without requiring external wiring."
+context = "In a 2T monolithic tandem, the two subcells are connected in series. The recombination (or tunnel/interlayer) junction allows majority carriers from each cell to recombine at the interface, completing the circuit. It's typically 10–20 nm of ITO or IZO."
+id = "fb945c9c-5801-47c9-b16e-026213133d97"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why does current matching pose a challenge for 2-terminal tandems under real-world conditions, even when optimized for the AM1.5G standard spectrum?"
+prompt.distractors = [
+    "The perovskite top cell's bandgap shifts by approximately 50 meV per 10°C temperature change, causing its absorption edge to drift into the silicon cell's spectral range and creating an unpredictable current imbalance throughout the day.",
+    "Dust accumulation on the module surface preferentially scatters short-wavelength light away from the cell, reducing the perovskite top cell's current by up to 15% while leaving the silicon cell unaffected, creating severe mismatch.",
+    "The ITO recombination layer develops increasing resistance under sustained illumination due to photoreduction of indium, causing a voltage-dependent current bottleneck that worsens throughout the day and limits total output."
+]
+answer.answer = "The solar spectrum changes throughout the day and with weather — more blue-rich at noon, more red-rich at dawn/dusk and under clouds — shifting the photocurrent balance between the two subcells away from the design-point match."
+context = "In a 2T series-connected tandem, the total current is limited by whichever subcell produces less. Since the perovskite absorbs blue light and silicon absorbs red, spectral variations shift the current balance. This costs ~1–2% annual energy yield."
+id = "7b8ba3a9-c3b0-4c88-9461-4fde2c98e47f"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What makes self-assembled monolayer (SAM) hole transport layers like Me-4PACz a significant advance over earlier polymeric HTLs such as Spiro-OMeTAD in tandem cell design?"
+prompt.distractors = [
+    "SAMs absorb a narrow band of UV light around 350 nm and re-emit it as visible photons through downconversion, adding roughly 0.5 mA/cm² of photocurrent to the perovskite top cell that Spiro-OMeTAD would otherwise block.",
+    "SAMs form a covalent bond with the lead atoms in the perovskite lattice, creating an atomically sharp interface that eliminates the 5–10 nm intermixing zone typical of polymeric HTLs and prevents halide migration into the transport layer.",
+    "SAMs have a refractive index of exactly 1.0, making them optically invisible at the perovskite-recombination layer interface, whereas polymeric HTLs introduce parasitic absorption losses of roughly 8–12% of transmitted infrared photons."
+]
+answer.answer = "SAMs are only one molecule thick (~1–2 nm) and bond directly to the substrate surface, providing excellent energy-level alignment for hole extraction while eliminating the parasitic absorption, cost, and instability associated with thick polymeric layers."
+context = "Me-4PACz and similar SAMs replaced polymeric HTLs like Spiro-OMeTAD (which were ~200 nm thick, expensive, and degraded over time). SAMs provide ideal band alignment in a single molecular layer, reducing optical and resistive losses."
+id = "985ce55a-c2a5-4816-b667-aa7f09aa45da"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why does the silicon bottom cell in a tandem actually achieve slightly higher voltage than the same silicon cell operating alone under full-spectrum sunlight?"
+prompt.distractors = [
+    "The perovskite top cell acts as a UV filter, preventing high-energy photons from generating hot carriers in silicon that would otherwise increase Auger recombination and reduce voltage by approximately 15–20 mV compared to filtered illumination.",
+    "The recombination interlayer creates an additional built-in electric field at the silicon surface that supplements the p-n junction's depletion region, effectively increasing the silicon cell's built-in potential by 10–15 mV.",
+    "Compressive strain from the perovskite layer deposited on top shifts silicon's indirect bandgap upward by roughly 20 meV through mechanical deformation of the crystal lattice, directly increasing the open-circuit voltage."
+]
+answer.answer = "The perovskite absorbs most high-energy photons, so silicon only receives infrared photons close to its bandgap energy — these produce less thermalization heat per photon, reducing lattice temperature and carrier losses, which slightly boosts voltage."
+context = "In a tandem, the silicon bottom cell sees a spectrally filtered (red/infrared-rich) illumination. These photons carry less excess energy above silicon's 1.12 eV bandgap, so less energy is wasted as heat, and the effective carrier temperature is lower, boosting Voc."
+id = "4e3b7ae5-4a33-4f78-a350-bc4edbf5d579"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the primary engineering challenge when depositing a ~500 nm perovskite film onto a silicon wafer with standard random pyramid texture (1–5 μm features)?"
+prompt.distractors = [
+    "The sharp pyramid tips concentrate the electric field during operation, causing dielectric breakdown of the perovskite film at field strengths above 10⁵ V/cm, which creates permanent conductive channels that short-circuit the top cell.",
+    "The pyramid facets are (111) crystal planes while perovskite nucleates preferentially on (100) surfaces, creating a crystallographic mismatch that forces the perovskite into a non-photoactive hexagonal phase across roughly 40% of the textured area.",
+    "Thermal expansion mismatch between the perovskite film and silicon pyramid tips generates tensile stress exceeding 500 MPa during temperature cycling, causing systematic crack propagation along pyramid ridges that degrades cell performance."
+]
+answer.answer = "The film tends to be too thin on pyramid peaks and too thick in valleys, creating pinholes and non-uniform coverage that cause local shunting and recombination losses — a problem solved by conformal co-evaporation or submicron texture polishing."
+context = "Solution-processed perovskite pools in valleys and thins at peaks of μm-scale pyramids, causing pinholes and shunts. Co-evaporation in vacuum deposits conformal films that follow the texture, and polishing pyramids to <1 μm also helps."
+id = "ed43669a-39b2-4fbe-bc36-12768abd3b6a"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "What is the current world-record efficiency for a perovskite/silicon tandem solar cell, certified by NREL in April 2025?"
+answer.answer = "34.85%"
+answer.alternatives = ["34.85", "34.85 percent"]
+context = "LONGi achieved 34.85% efficiency on a monolithic 2T perovskite/silicon tandem cell, certified by NREL in April 2025."
+id = "0374b100-c073-47c3-93e3-c4c77f00e4b6"
+
+## Review Questions — Recent Days (2)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 21) Why is formamidinium (FA) preferred over methylammonium (MA) as the A-site cation in modern perovskite solar cell compositions?"
+prompt.distractors = [
+    "FA has a smaller ionic radius than MA, which contracts the perovskite lattice and increases the density of the absorber layer, resulting in roughly 3× higher absorption coefficient per unit thickness compared to MA-based compositions.",
+    "FA forms stronger covalent bonds with iodide anions than MA does, creating a more rigid crystal framework with phonon frequencies that couple more efficiently with photogenerated carriers, improving charge extraction by ~25%.",
+    "FA is a symmetric molecule that eliminates the ferroelectric polarization domains found in MA-based perovskites, which otherwise create internal voltage losses of 50–80 mV through random dipole orientation at grain boundaries."
+]
+answer.answer = "MA begins to volatilize out of the perovskite lattice above ~85°C — a temperature that rooftop panels routinely reach in summer — while FA is significantly more thermally stable, making FA-rich compositions more durable under real operating conditions."
+context = "Methylammonium is volatile above ~85°C. Since solar panels regularly reach these temperatures, the field has moved to thermally stable formamidinium-rich compositions for practical device longevity."
+id = "3802bc29-5413-44e9-b0de-f1529f8e6f44"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 20) In IEC 61215 damp-heat testing, what are the standard conditions and duration that a solar module must survive to pass qualification?"
+prompt.distractors = [
+    "Exposure to 65°C and 95% relative humidity for 2,000 hours continuously, with power degradation measured at 500-hour intervals and requiring less than 3% loss at each checkpoint to pass the full sequence.",
+    "Cyclic exposure alternating between 85°C/85% RH for 12 hours and -40°C/dry for 12 hours over a total of 500 cycles, testing both moisture ingress and thermal fatigue simultaneously under the same qualification protocol.",
+    "Exposure to 75°C and 90% relative humidity for 1,500 hours, combined with simultaneous UV irradiation at 60 kWh/m² to simulate accelerated real-world aging of both encapsulant and cell under combined stressors."
+]
+answer.answer = "Continuous exposure to 85°C and 85% relative humidity for 1,000 hours, after which the module must retain at least 95% of its initial rated power output to pass the qualification test sequence."
+context = "IEC 61215 damp-heat testing subjects modules to 85°C/85% RH for 1,000 hours continuously. Modules must retain ≥95% of initial power. This is a key reliability gate for commercial solar panels, including emerging tandem technology."
+id = "91dd759f-6750-47f5-a0bd-9612f9eec1b9"
+
+## Review Questions — Older Days (2)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 12) What is the approximate theoretical maximum efficiency for a single-junction solar cell with a bandgap of 1.34 eV under unconcentrated AM1.5G sunlight, according to the Shockley-Queisser detailed balance limit?"
+prompt.distractors = [
+    "Approximately 29%, limited primarily by Auger recombination in indirect-bandgap materials, which prevents single-junction cells from reaching the full radiative limit regardless of bandgap optimization or material quality.",
+    "Approximately 37%, achievable only under concentrated sunlight at roughly 500 suns, because the unconcentrated limit is reduced by entropy generation from the mismatch between diffuse sunlight and narrow-angle cell emission.",
+    "Approximately 41%, which accounts for all radiative and non-radiative losses in a perfect material, including unavoidable phonon-assisted transitions that reduce the usable voltage below the bandgap energy."
+]
+answer.answer = "Approximately 33.7%, set by the balance between sub-bandgap transmission losses and above-bandgap thermalization losses, assuming only radiative recombination and blackbody emission from the cell at 300 K."
+context = "The Shockley-Queisser limit peaks at ~33.7% for a bandgap of 1.34 eV under 1-sun AM1.5G illumination. It accounts for thermalization, sub-bandgap transparency, radiative recombination, and blackbody emission."
+id = "ea591027-cfd1-4019-8e2d-5884c84f2be4"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (Day 7) What is the typical height range of random pyramid features formed by anisotropic KOH etching on (100) silicon wafers for surface texturing?"
+answer.answer = "1-5 μm"
+answer.alternatives = ["1-5 micrometers", "1 to 5 μm", "1 to 5 micrometers", "1-5 microns", "1 to 5 microns"]
+context = "Anisotropic etching of (100) silicon in KOH/IPA solution produces random pyramids with peak-to-valley heights typically in the 1–5 μm range, providing excellent anti-reflection and light-trapping properties."
+id = "be6c0b4d-e5b5-45a9-a934-70d68896217b"
