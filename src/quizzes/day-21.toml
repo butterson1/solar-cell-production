@@ -1,0 +1,119 @@
+# Day 21 Quiz: Perovskite Solar Cells — The Next Revolution?
+
+## Current Day Questions (6)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why can perovskite solar cells absorb the same amount of sunlight with a film ~400× thinner than a silicon wafer?"
+prompt.distractors = [
+    "Perovskite films have a graded refractive index that traps photons in internal waveguide modes, increasing the effective optical path length by several hundred times compared to silicon's flat absorption profile.",
+    "The ionic bonding in the perovskite lattice creates stronger oscillating dipoles that couple more efficiently with incoming electromagnetic radiation, dramatically increasing the cross-section per unit volume of material.",
+    "Perovskite crystals naturally form nanoscale surface textures during deposition that scatter light at extreme angles, creating total internal reflection that keeps photons bouncing inside the thin film until absorbed."
+]
+answer.answer = "Perovskites have a direct bandgap, allowing electron transitions without a simultaneous phonon, yielding an absorption coefficient roughly 10× higher than silicon's indirect bandgap at visible wavelengths, so far less material is needed."
+context = "Direct bandgap semiconductors absorb photons more efficiently per unit thickness because the electron transition from valence to conduction band doesn't require a phonon assist to conserve momentum. MAPbI₃ has an absorption coefficient of ~1.5 × 10⁵ cm⁻¹ at 550 nm, about 10× higher than silicon."
+id = "cbfaee0c-9b98-4c51-8880-cfc0e48c2d21"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the primary degradation mechanism when an unencapsulated MAPbI₃ perovskite film is exposed to 55% relative humidity at room temperature?"
+prompt.distractors = [
+    "Water molecules catalyze the reduction of Pb²⁺ to metallic lead nanoparticles at grain boundaries, which act as recombination centers and short-circuit the device within hours due to metallic conduction paths.",
+    "Humidity triggers rapid oxidation of the iodide sublattice to molecular iodine (I₂), which sublimes out of the film and leaves behind lead-rich vacancy clusters that collapse the crystal structure within hours.",
+    "Absorbed water causes the methylammonium cation to polymerize into longer-chain amines that expand the crystal lattice beyond the Goldschmidt tolerance factor, inducing a phase transition to a non-perovskite structure."
+]
+answer.answer = "Water infiltrates the lattice and decomposes MAPbI₃ into lead iodide (PbI₂), methylamine gas, and hydroiodic acid — visually apparent as the film changes from dark brown to yellow PbI₂ within hours."
+context = "Moisture decomposition of MAPbI₃ is the most well-documented degradation pathway. Water molecules break the MA-Pb-I bonding network, producing volatile methylamine and HI, leaving behind yellow PbI₂. This can begin within hours at just 55% RH."
+id = "02b964d6-4b35-4606-b20f-e7d752d4373d"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why has the perovskite solar cell field largely moved from pure methylammonium (MA) to formamidinium (FA)-rich and FA/Cs mixed A-site compositions?"
+prompt.distractors = [
+    "FA cations have a larger ionic radius that brings the Goldschmidt tolerance factor closer to 1.0, which improves charge carrier mobility by roughly 5× compared to MA, leading to much higher short-circuit currents in devices.",
+    "MA-based compositions have a bandgap of 1.55 eV that is too wide for optimal single-junction performance, while FA shifts the bandgap down to approximately 1.20 eV, which sits exactly at the Shockley-Queisser optimum.",
+    "FA cations form stronger hydrogen bonds with the halide framework, which increases the absorption coefficient by approximately 3× compared to MA, allowing even thinner active layers and reducing material costs significantly."
+]
+answer.answer = "The MA cation begins to volatilize out of the crystal above ~85°C — a temperature rooftop panels routinely reach — while FA is significantly more thermally stable, making FA-rich compositions more durable under real operating conditions."
+context = "Methylammonium is volatile and begins evaporating from the lattice at temperatures above ~85°C, which panels experience in summer. Formamidinium is more thermally stable, so the field has migrated to FA-rich compositions to improve operational lifetime."
+id = "bb077760-b88f-4fcc-8207-820b897246c3"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "In the ABX₃ perovskite structure used for solar cells, what role does each site play and what are the typical occupants?"
+prompt.distractors = [
+    "A is a halide anion (I⁻, Br⁻, Cl⁻) forming the corners, B is an organic cation (MA⁺, FA⁺) in the center, and X is lead (Pb²⁺) forming an octahedral cage — the organic cation provides charge transport while lead provides structural stability.",
+    "A is a divalent metal (Pb²⁺, Sn²⁺) at the corners, B is a monovalent cation (MA⁺, FA⁺, Cs⁺) in the center, and X is a halide anion (I⁻, Br⁻) forming the octahedra — lead provides the optical absorption while the organic cation tunes the bandgap.",
+    "A and B are both organic cations of different sizes (MA⁺ and FA⁺ respectively) that share the lattice sites equally, while X is a metal halide complex (PbI₃⁻) that forms the semiconducting backbone of the crystal structure."
+]
+answer.answer = "A is a large cation (MA⁺, FA⁺, or Cs⁺) at the cube corners, B is a smaller metal cation (typically Pb²⁺) at the center, and X is a halide anion (I⁻, Br⁻, Cl⁻) forming octahedra around B — the halides provide the bonding framework."
+context = "In ABX₃ perovskites: A-site hosts large cations like methylammonium, formamidinium, or cesium; B-site hosts divalent metals like lead; X-site hosts halide anions that form BX₆ octahedra. This arrangement creates the electronic structure responsible for photovoltaic properties."
+id = "0694d083-faa3-45dd-be38-ae38ac551557"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the leading scalable deposition technique for industrial perovskite solar cell manufacturing, and how does it work?"
+prompt.distractors = [
+    "Chemical vapor deposition (CVD), where precursor gases flow over a heated substrate at 400–600°C in a vacuum chamber, decomposing and reacting on the surface to form a crystalline perovskite film at roughly 10 cm²/min throughput.",
+    "Atomic layer deposition (ALD), where alternating pulses of lead halide and organic ammonium precursor vapors build the perovskite crystal one monolayer at a time in a vacuum chamber, achieving atomic-level thickness control at ~1 cm²/min.",
+    "Electrochemical deposition, where lead and halide ions are co-deposited from an aqueous electrolyte onto a conductive substrate under applied voltage, then thermally converted to perovskite at 200°C in an ammonium halide vapor atmosphere."
+]
+answer.answer = "Slot-die coating, a roll-to-roll process where precursor ink is pumped through a narrow slit onto a moving substrate at meters per minute — like a precision squeegee — achieving module efficiencies of 17.6% at the 10×10 cm² scale so far."
+context = "Slot-die coating is the leading scalable method for perovskite deposition. Precursor ink flows through a narrow slit onto a continuously moving substrate, enabling high-throughput roll-to-roll manufacturing. Lab-to-fab demonstrations have achieved 17.6% efficiency on 10×10 cm² modules."
+id = "c68876cb-8cc9-42e6-b087-5b8a36bcd50d"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "What is the approximate amount of active perovskite material (in grams) needed per square meter of solar cell, compared to ~800 g/m² for silicon?"
+answer.answer = "1"
+answer.alternatives = ["1 g", "1 gram", "~1", "about 1", "approximately 1"]
+context = "A perovskite solar cell uses roughly 1 gram of active material per square meter, compared to about 800 g/m² for a standard silicon cell — an 800× reduction in material consumption, reflecting the extremely thin active layer (~500 nm)."
+id = "19bbd396-9301-471c-a435-42e80701b56d"
+
+## Review Questions — Recent Days (2)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 20) What is the IEC 61215 damp heat test protocol, and what does it simulate?"
+prompt.distractors = [
+    "Modules are cycled between −40°C and +85°C with 95% RH for 200 cycles over 40 days, simulating the thermal shock and condensation damage that panels experience during rapid weather changes in temperate climates.",
+    "Modules are submerged in 85°C deionized water for 500 hours under 1-sun illumination, simulating the combined effects of water ingress and thermal stress in tropical coastal installations with heavy rainfall.",
+    "Modules are exposed to 60°C and 85% RH for 2,000 hours with simultaneous UV exposure at 60 kWh/m², simulating the combined photodegradation and humidity damage in hot, humid subtropical environments."
+]
+answer.answer = "Modules are held at 85°C and 85% relative humidity continuously for 1,000 hours (about 42 days), simulating decades of cumulative moisture and heat exposure to test encapsulant integrity and cell durability."
+context = "The IEC 61215 damp heat test subjects modules to 85°C / 85% RH for 1,000 continuous hours. This accelerated stress test simulates long-term moisture and thermal exposure to verify that encapsulation, cell interconnects, and materials can withstand humid operating conditions."
+id = "38c3a24c-5063-4e82-9243-5790bd41497e"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 19) In electroluminescence (EL) imaging, what does a dark area on an otherwise bright cell indicate?"
+prompt.distractors = [
+    "A region with unusually high carrier mobility where electrons recombine so quickly that photon emission is quenched by Auger recombination, typically caused by excessive phosphorus doping concentration above 10²¹ atoms/cm³.",
+    "A region where the anti-reflective coating is thicker than optimal, absorbing the emitted EL photons before they reach the camera sensor, creating an apparent dark spot that doesn't actually affect cell performance.",
+    "A region where the silicon crystal orientation has rotated by more than 15° relative to the bulk wafer, creating a grain boundary that emits photons at a wavelength outside the camera's near-infrared detection range."
+]
+answer.answer = "A region with elevated defect density — such as a crack, inactive area, or poor contact — where injected current cannot produce radiative recombination, indicating that those areas won't contribute to power generation under sunlight."
+context = "In EL imaging, current is injected into the cell and the resulting photon emission is captured by a near-infrared camera. Dark areas indicate regions where current cannot flow or where non-radiative recombination dominates — signaling cracks, broken fingers, dead zones, or poor metallization contact."
+id = "863d9808-bf61-4771-b5bc-b05aa0594193"
+
+## Review Questions — Older Days (2)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 12) What is the Shockley-Queisser efficiency limit for a single-junction solar cell with an optimal bandgap of ~1.34 eV, and what is the primary loss mechanism?"
+prompt.distractors = [
+    "The limit is approximately 29.4%, with the primary loss being Auger recombination where high-energy carriers transfer their excess kinetic energy to neighboring carriers instead of generating additional photocurrent in the device.",
+    "The limit is approximately 40.7%, with the primary loss being reflection at the semiconductor surface where roughly one-third of incident photons bounce back before entering the absorber layer despite anti-reflective coatings.",
+    "The limit is approximately 26.7%, with the primary loss being series resistance in the metal contacts and busbars, which dissipates roughly half of the generated power as Joule heating before it reaches the external circuit."
+]
+answer.answer = "The limit is approximately 33.7%, with the primary loss being thermalization — photons with energy above the bandgap generate electron-hole pairs, but the excess energy above the bandgap is lost as heat to the crystal lattice."
+context = "The Shockley-Queisser limit for a single-junction cell at ~1.34 eV bandgap is about 33.7%. The dominant loss mechanism is thermalization: photons with energy exceeding the bandgap create carriers that quickly shed their excess energy as heat, wasting a significant fraction of the absorbed solar spectrum."
+id = "b1eb12d4-4539-40f5-9582-dc292edcd12c"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (Day 6) What are the two dopant elements most commonly used to create n-type and p-type silicon, respectively?"
+answer.answer = "phosphorus and boron"
+answer.alternatives = ["phosphorus, boron", "P and B", "phosphorus for n-type and boron for p-type"]
+context = "Phosphorus (Group V, 5 valence electrons) is the standard n-type dopant, contributing a free electron. Boron (Group III, 3 valence electrons) is the standard p-type dopant, creating a hole. Together they form the p-n junction that drives current in a silicon solar cell."
+id = "055e6663-1ee3-44cf-8476-688610f7947e"
