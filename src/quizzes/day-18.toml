@@ -1,0 +1,123 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why did solar cell manufacturing become heavily automated even in places where labor costs were relatively low?"
+prompt.distractors = [
+  "Because most cell architectures after 2020 required Class 1 cleanrooms and human operators generated enough airborne sodium contamination to degrade minority-carrier lifetime during metallization",
+  "Because trade-policy rules in major export markets began requiring serialized robotic traceability for every wafer, making manual production ineligible for premium module certification programs",
+  "Because modern solar factories consume so much electricity that automation is needed mainly to coordinate grid-responsive load shifting and avoid utility penalties during diffusion and firing"
+]
+answer.answer = "Because the real payoff is repeatability: fragile 120-170 micron wafers, micron-level alignment, and razor-thin margins make yield loss more expensive than the labor that automation replaces"
+context = "Automation matters less for theatrical labor replacement than for consistent handling, alignment, and process control. In a business selling modules near $0.08-$0.10/W, tiny defect rates or misalignment losses can erase profit quickly."
+id = "d712d2f8-d839-4fe5-929a-b04de44bfcf4"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the best way to think about automation inside a modern TOPCon cell factory?"
+prompt.distractors = [
+  "As a sequence of isolated super-tools, each optimized independently for maximum speed, with inventory buffers added between steps so local tool utilization stays as high as possible",
+  "As a cleanroom version of batch chemistry, where wafers wait in large queues until entire lots can be processed together under identical thermal and atmospheric conditions",
+  "As a vertical hierarchy in which only the deposition and firing stages determine final quality, while upstream handling and downstream sorting mainly affect reporting accuracy"
+]
+answer.answer = "As a relay race: each wafer is a baton moving through tightly timed handoffs, and the factory succeeds only if every transfer, recipe, buffer, and routing decision stays synchronized"
+context = "The key challenge is not just that individual tools work, but that handoffs between tools work reliably. Cassettes, conveyors, software routing, and timing logic prevent damage, contamination, and bottlenecks."
+id = "2b9d424c-2aea-4a31-919f-dbf8d2b07cf9"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why are machine vision and inline imaging so valuable in solar production?"
+prompt.distractors = [
+  "They let manufacturers replace final electrical testing entirely, since visible-spectrum imaging can now infer long-term module degradation better than flash testing or EL analysis",
+  "They are mainly used to verify aesthetic color uniformity for rooftop modules, while most structural defects are still discovered later during IEC environmental qualification testing",
+  "They allow each module to be certified for bankability inside the factory, eliminating the need for third-party inspection once the line reaches statistical process control maturity"
+]
+answer.answer = "They catch precursor defects such as chips, print errors, and microcracks at line speed, before those flaws turn into yield loss, downgraded power bins, or future field failures"
+context = "A defect may not kill a cell immediately. Inline vision, EL, PL, and related inspection methods help manufacturers catch the early signature of a later problem rather than discovering it after expensive downstream processing."
+id = "67f315c5-9a56-46f1-991d-d28ea9507175"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "In an automated solar factory, why is yield usually more economically important than headline throughput?"
+prompt.distractors = [
+  "Because throughput is capped by module certification labs, which can only sample a fixed number of cells per day, so extra upstream speed rarely converts into more shipped product",
+  "Because high-throughput tools generally consume more silver paste and argon per watt, making utility and consumable costs dominate even when the line is otherwise stable",
+  "Because most gigawatt-scale factories are financing-constrained and therefore optimize for low inventory turns rather than electrical performance or final saleable output"
+]
+answer.answer = "Because a fast tool that quietly lowers saleable quality can destroy more value than a slower tool, especially when even a few millivolts or small breakage rates affect final binning revenue"
+context = "Throughput looks impressive, but yield determines how much of the line's output is actually saleable at premium power classes. Automation is powerful because it reduces hidden loss, not just because it moves quickly."
+id = "b98e87cb-3854-4ea4-b965-b2bc4fa0e3b8"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What does the manufacturing execution system (MES) contribute to a highly automated PV line?"
+prompt.distractors = [
+  "It mainly replaces enterprise accounting software by converting module power classes directly into sales invoices, customs declarations, and carbon-footprint disclosures for export markets",
+  "It acts primarily as a cybersecurity layer that isolates Chinese and Western tools from one another so mixed-vendor production lines can operate without recipe leakage or IP loss",
+  "It is used mostly for warehouse management after cells leave production, since inline routing is already fixed mechanically and does not require software-level coordination"
+]
+answer.answer = "It gives each lot a digital passport — tracking recipes, tool history, alarms, measurements, and routing — so bad outcomes can be traced back to specific process conditions"
+context = "MES turns a factory from a black box into an analyzable system. Without traceability, yield excursions are mysteries; with it, engineers can connect weak electrical outcomes to a tool, recipe, or time window."
+id = "183018d6-6794-4db3-86de-58dfd3b32fa3"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "About how thin are mainstream silicon wafers in modern cell production, as described in the lesson?"
+answer.answer = "120-170 microns"
+answer.alternatives = ["120 to 170 microns", "120–170 microns", "120-170 μm", "120 to 170 μm"]
+context = "Modern wafers are astonishingly thin — around 120-170 μm — which is one major reason robotic handling, vacuum grippers, and precise transfer systems are so important."
+id = "00233f57-87a4-4a30-9baa-8f934a4f1600"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 17) Why is wafer manufacturing the tightest global chokepoint in the solar supply chain?"
+prompt.distractors = [
+  "Because wafers contain the highest silver content in the entire PV stack, making them the stage most exposed to commodity-price shocks and metallization paste shortages",
+  "Because wafers are the only stage that must be located near seaports, since sliced silicon surfaces oxidize too quickly to survive long-distance inland transport economically",
+  "Because wafer plants are uniquely dependent on European vacuum technology and Japanese quartzware, leaving Chinese firms dominant only where imports remain unrestricted"
+]
+answer.answer = "Because wafer production combines specialized crystal-growth and slicing equipment with powerful scale effects, giving China roughly 95% share at the hardest stage for others to replicate"
+context = "Day 17 emphasized that wafering is the most concentrated step — around 95% in China — because it requires specialized equipment and know-how while benefiting strongly from economies of scale."
+id = "1a0ce21b-7c46-43c4-a8ec-12e2374cdec1"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 16) What does Swanson's Law describe?"
+prompt.distractors = [
+  "The observation that every 10% increase in module area lowers glass and frame cost per watt by about 6%, provided interconnect losses stay below 1.5%",
+  "The empirical rule that each major cell-architecture transition raises factory capex per watt by 24% before automation gradually returns the line to previous cost levels",
+  "The manufacturing heuristic that doubling wafer diameter cuts kerf loss per watt by about one quarter as long as wire-saw speed and slurry recovery scale proportionally"
+]
+answer.answer = "The empirical pattern that module prices fall by about 24% for every doubling of cumulative shipped solar capacity"
+context = "Swanson's Law is the solar industry's learning curve: cumulative deployment drives cost decline through scale, engineering improvement, and supply-chain optimization."
+id = "11f51cef-b744-4912-a56a-b91b64265d5c"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 9) What is the main architectural idea behind a TOPCon solar cell?"
+prompt.distractors = [
+  "It replaces the silicon wafer's front emitter with cadmium telluride layers, using a transparent conductive oxide to cut series resistance under low-irradiance conditions",
+  "It eliminates passivation entirely on the rear side and instead relies on very heavy phosphorus diffusion to create a low-resistance back contact through bulk conduction",
+  "It moves all current collection to edge-mounted copper ribbons, removing the need for rear-surface recombination control and allowing much lower furnace temperatures"
+]
+answer.answer = "It uses an ultra-thin tunnel oxide plus a doped polysilicon passivating contact to reduce recombination while still allowing carriers to be selectively collected"
+context = "TOPCon improves on PERC by creating a better rear contact structure: a very thin oxide plus doped polysilicon lowers recombination losses and improves voltage and efficiency."
+id = "1b4d90f9-a76a-4d67-96fb-a5112f8f1aeb"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why do advanced solar factories still need highly skilled human workers even when product handling is mostly automated?"
+prompt.distractors = [
+  "Because international bankability standards require a licensed engineer to visually approve every efficiency bin before modules can be packaged and serialized for shipment",
+  "Because robots cannot safely operate in the acidic and alkaline environments used for texturing and cleaning, so those sections still depend on manual wafer transport and inspection",
+  "Because most premium modules still require hand calibration of silver-finger geometry at the printer, which cannot yet be stabilized by closed-loop optical feedback systems"
+]
+answer.answer = "Because uptime, diagnostics, and process stability depend on technicians and engineers who can troubleshoot PLCs, servo systems, tool drift, and quality excursions before losses spread"
+context = "Automation changes the labor mix rather than eliminating labor. The highest-value people in these factories are often maintenance, controls, and process staff who keep the line inside a narrow operating window."
+id = "dec5a2b9-18a6-47ab-a6f2-97a6c0daf25c"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Which acronym is commonly used for the software layer that tracks lots, recipes, alarms, routing, and traceability across the factory?"
+answer.answer = "MES"
+answer.alternatives = ["Manufacturing Execution System", "manufacturing execution system"]
+context = "MES stands for Manufacturing Execution System. It is the software backbone that helps automated PV lines manage traceability, routing, and root-cause analysis at scale."
+id = "83346e31-b18a-4243-9ac5-28c1d47fb085"

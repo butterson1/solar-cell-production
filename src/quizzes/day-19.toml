@@ -1,0 +1,119 @@
+# Day 19 Quiz: Defect Analysis — EL Imaging, IV Curves, & Hotspots
+
+# --- Current Day Questions (6) ---
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "In an electroluminescence (EL) image of a silicon solar cell, a shunt defect typically appears as:"
+prompt.distractors = [
+  "A uniformly dark region across the entire cell, caused by the shunt draining all carriers away from the junction uniformly and preventing any radiative recombination",
+  "A bright line along the cell edge where phosphorus diffusion has increased the local doping concentration, boosting the radiative recombination rate at the perimeter",
+  "A series of dark parallel stripes matching the finger spacing, because the shunt draws current preferentially along the metallization grid lines toward the busbar"
+]
+answer.answer = "A bright spot surrounded by a dark halo, because current is funneled through the shunt site while the surrounding region is starved of carriers and produces less luminescence"
+context = "Shunts create localized low-resistance paths across the junction. Current concentrates through the shunt (bright spot) while surrounding areas lose carrier density (dark halo). This is counterintuitive because the defect region appears bright, not dark."
+id = "1a48b1f2-512e-431d-8883-2cef0309da5b"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "A solar cell's IV curve shows a normal short-circuit current but a sharply reduced fill factor with a sloping top edge. Which parasitic resistance is most likely elevated?"
+prompt.distractors = [
+  "Shunt resistance (Rsh) is too low, causing current leakage across the junction that manifests as a tilted left edge on the IV curve and reduced current near short-circuit conditions",
+  "Contact resistance at the rear aluminum BSF layer is too high, which primarily reduces Voc by increasing recombination at the back surface rather than affecting the IV curve shape",
+  "Emitter sheet resistance is too low due to excessive phosphorus doping, which increases Auger recombination and symmetrically compresses both the current and voltage axes of the IV curve"
+]
+answer.answer = "Series resistance (Rs) is too high, creating excessive resistive losses in the current path through fingers, busbars, or contacts, which causes the current to droop as voltage increases"
+context = "High series resistance specifically causes the top (high-current) portion of the IV curve to slope downward. Each additional 0.1 Ω·cm² of Rs drops fill factor by roughly 1-2 percentage points. Low shunt resistance, by contrast, causes the left edge to tilt."
+id = "c1f45185-9ac0-47ed-a490-1096145f340e"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the primary advantage of photoluminescence (PL) imaging over electroluminescence (EL) imaging in a solar cell production line?"
+prompt.distractors = [
+  "PL imaging uses visible-wavelength cameras costing under $1,000, making it at least 10× cheaper than EL systems that require expensive InGaAs sensors operating in the 950-1300 nm range",
+  "PL imaging achieves higher spatial resolution (below 10 μm) because the laser excitation source can be focused more precisely than the diffuse current injection used in EL measurements",
+  "PL imaging can detect defects in encapsulated finished modules more effectively than EL, because the optical excitation penetrates through glass and EVA layers with minimal signal attenuation"
+]
+answer.answer = "PL imaging requires no electrical contacts, allowing inspection of raw unprocessed wafers before metallization, which catches material defects before costly downstream processing steps"
+context = "PL's key advantage is contactless operation. EL requires injecting current, which means the cell needs finished contacts. PL uses optical excitation (typically 808 nm laser/LED), enabling defect detection at multiple stages — from as-cut wafers through finished cells."
+id = "442700e6-3c2f-458e-9efc-8cb5d8159d02"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "A single cell in a 72-cell series-connected module becomes 30% shaded. What happens to that cell?"
+prompt.distractors = [
+  "The shaded cell continues to generate power at 70% of its rated output, and the module current automatically adjusts downward to match the reduced contribution from that cell",
+  "The shaded cell enters forward-bias breakdown mode where it generates excess voltage to compensate for the reduced current, causing localized carrier multiplication in the junction",
+  "The shaded cell electrically disconnects from the string via its internal junction capacitance, allowing the remaining 71 cells to operate normally at a slightly higher per-cell voltage"
+]
+answer.answer = "The shaded cell becomes reverse-biased and absorbs power from the other cells, dissipating it as heat because it cannot maintain the string current set by the unshaded cells in series"
+context = "In a series string, all cells must carry the same current. When a cell can't generate the required current, it becomes reverse-biased — acting as a load rather than a source. The power from other cells is dissipated as heat, potentially reaching 150-200°C or higher."
+id = "e45ebcea-bc7d-4c04-90a2-8272dd3187d0"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "At what approximate wavelength (in nm) does the electroluminescence emission from crystalline silicon solar cells peak?"
+answer.answer = "1150"
+answer.alternatives = ["1150 nm", "1,150", "1,150 nm", "~1150", "~1150 nm", "1100", "1100 nm"]
+context = "Crystalline silicon EL emission peaks at approximately 1,150 nm, deep in the near-infrared. This is why standard visible-light cameras cannot capture EL images — you need either modified Si CCD/CMOS sensors or InGaAs cameras with sensitivity in the 950-1300 nm range."
+id = "ce742a19-af5a-4a91-b43f-55671decb977"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "In modern solar factories, what typical yield loss percentage results from IV curve testing (cells rejected for falling below minimum efficiency thresholds)?"
+prompt.distractors = [
+  "Less than 0.1%, because flash testing is primarily used for binning cells into efficiency categories rather than rejecting them, and virtually all cells meet minimum thresholds",
+  "5-8%, driven mainly by inherent Czochralski ingot quality variations that produce a wide gaussian distribution of cell efficiencies spanning several percentage points",
+  "10-15%, reflecting the stringent requirements of tier-1 manufacturers who reject any cell with fill factor below 82% or Voc deviation greater than 5 mV from the target value"
+]
+answer.answer = "1-3% in a well-run factory, representing cells with efficiency too far below spec to be sold in any bin, which translates to $50,000-150,000 in daily losses at gigawatt production scale"
+context = "A 1-3% rejection rate from IV testing is typical for well-managed production lines. This is a significant cost at scale but far less expensive than shipping defective cells that would trigger warranty claims costing 10-30× more in the field."
+id = "abcb39d1-fb11-4f24-8407-05d47aaa7a93"
+
+# --- Review Questions: Recent Days (2) ---
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 18) In automated solar cell production, what is the primary role of machine vision systems positioned after screen printing?"
+prompt.distractors = [
+  "They measure the wet weight of deposited silver paste on each cell to ensure paste consumption stays within the 80-120 mg per cell budget for cost control purposes",
+  "They monitor the squeegee pressure in real time by analyzing the deformation pattern of the screen mesh through high-speed cameras mounted above the printing station",
+  "They track individual wafer serial numbers by reading laser-scribed QR codes on the cell back surface, linking each cell to its complete upstream processing history"
+]
+answer.answer = "They inspect printed finger and busbar geometry for defects like broken lines, misalignment, or thickness variations that would increase series resistance and reduce cell efficiency"
+context = "Post-printing machine vision is critical for catching metallization defects — broken fingers, smeared paste, misaligned busbars — before the cell moves to firing. These defects directly impact series resistance and fill factor, as discussed in today's IV curve section."
+id = "9101d01c-b915-4774-a80f-3009c51d9602"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 17) Why has Southeast Asia (Vietnam, Malaysia, Thailand, Cambodia) become a major hub for solar module assembly despite having minimal polysilicon or wafer production?"
+prompt.distractors = [
+  "Southeast Asian countries have abundant quartz sand deposits suitable for direct metallurgical-grade silicon production, enabling a complete local supply chain from raw material to finished cell",
+  "These countries developed indigenous solar cell technology through government-funded R&D programs in the 2010s, creating proprietary high-efficiency architectures that attracted global demand",
+  "Southeast Asian facilities primarily focus on thin-film CdTe and CIGS module assembly, which requires different supply chains than the crystalline silicon wafer production concentrated in China"
+]
+answer.answer = "Chinese manufacturers established assembly plants in Southeast Asia to diversify supply chains and navigate trade tariffs imposed by the US and EU on Chinese-origin modules and cells"
+context = "Southeast Asia's role in solar manufacturing is largely a response to trade policy. US tariffs on Chinese solar products (starting with anti-dumping duties in 2012 and expanding since) incentivized Chinese companies to set up downstream assembly operations in countries like Vietnam and Malaysia."
+id = "7c77ab21-ef2c-4d3e-8dc9-814b0e673410"
+
+# --- Review Questions: Older Days (2) ---
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 6) During phosphorus diffusion doping to create the n-type emitter, what is 'dead layer' formation and why is it problematic?"
+prompt.distractors = [
+  "A dead layer is an undoped region that forms at the wafer center because phosphorus atoms cannot diffuse deeper than 0.5 μm, leaving the bulk silicon with insufficient carrier concentration",
+  "A dead layer is a crystallographic damage zone where the high-temperature diffusion process (850-900°C) causes thermal stress fractures in the top 100 nm of the silicon wafer surface",
+  "A dead layer is an oxide barrier that forms when residual oxygen in the diffusion furnace reacts with the silicon surface, blocking further phosphorus penetration and creating a passivation layer"
+]
+answer.answer = "A dead layer is an over-doped surface region where the phosphorus concentration exceeds silicon's solid solubility limit, creating electrically inactive precipitates that increase Auger recombination and reduce blue response"
+context = "When phosphorus concentration at the surface exceeds ~1-2 × 10²¹ atoms/cm³, excess phosphorus forms electrically inactive clusters. This 'dead layer' absorbs short-wavelength (blue) photons without generating useful current, reducing cell efficiency. Selective emitter designs address this problem."
+id = "aedbf6c9-eb96-4318-afe1-762ce88735f4"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (Day 9) What does the acronym PERC stand for in solar cell architecture?"
+answer.answer = "Passivated Emitter and Rear Cell"
+answer.alternatives = ["Passivated Emitter and Rear Contact", "passivated emitter and rear cell", "passivated emitter and rear contact", "Passivated emitter and rear cell"]
+context = "PERC (Passivated Emitter and Rear Cell/Contact) adds a dielectric passivation layer (typically Al₂O₃ + SiNₓ) to the rear surface, reducing recombination and boosting efficiency by 1-1.5% absolute over standard Al-BSF cells. It became the dominant architecture around 2019."
+id = "2c0b8ce8-97fa-488c-bfa4-fa42ee44a98e"
