@@ -1,0 +1,119 @@
+# Day 20: Module Reliability — IEC Testing & Degradation
+
+# --- Current Day Questions (6) ---
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "In the IEC 61215 thermal cycling test, modules are cycled between −40°C and +85°C. What is the primary failure mechanism this test is designed to expose?"
+prompt.distractors = [
+    "Photodegradation of the anti-reflective coating under extreme temperature swings, which causes spectral mismatch and a loss of blue-light absorption in the silicon cells",
+    "Electromigration of silver atoms from the front metallization grid into the silicon bulk, which creates recombination centers that reduce minority carrier lifetime",
+    "Thermal runaway in localized hotspot regions where shunt paths concentrate current, generating positive feedback loops that can lead to cell combustion"
+]
+answer.answer = "Differential thermal expansion between materials (silicon, glass, aluminum, copper) that generates shear stress at interfaces, fatiguing solder joints and propagating micro-cracks over repeated cycles"
+context = "The materials in a solar module have very different coefficients of thermal expansion — silicon at 2.6×10⁻⁶/°C, glass at 9×10⁻⁶/°C, aluminum at 23×10⁻⁶/°C. Over 200 cycles spanning 125°C, these mismatches fatigue solder joints and propagate cracks."
+id = "71ec3a35-acff-43bd-9182-f0b1d32c12f1"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "The IEC 61215 damp heat test holds modules at 85°C and 85% relative humidity for 1,000 hours. Why has PVEL's extended DH2000 (2,000 hours) testing become the de facto industry benchmark?"
+prompt.distractors = [
+    "Because DH1000 only tests encapsulant adhesion but doesn't stress backsheet polymers, so modules that pass DH1000 can still suffer backsheet cracking within the first 5 years of outdoor deployment",
+    "Because IEC revised their standard in 2021 to require DH2000 as the new minimum for all crystalline silicon modules, and DH1000 is now only applied to thin-film CdTe and CIGS module types",
+    "Because DH2000 testing introduces a UV preconditioning step at 50 kWh/m² that DH1000 lacks, which is necessary to activate moisture-related degradation pathways in POE encapsulants"
+]
+answer.answer = "Because DH1000 corresponds to roughly 10 years of moderate humidity exposure, which is insufficient for modules deployed in tropical climates where year-round high humidity can cause failures within 5–10 years"
+context = "DH1000 roughly simulates 10 years in moderate humidity but less than 5 years in tropical conditions. PVEL's DH2000 (and even DH3000) better predicts whether modules can survive 25 years in hot, humid environments like Southeast Asia or India."
+id = "94c9b622-fbc0-497f-af75-2a5f536ea9ed"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Potential-Induced Degradation (PID) can reduce module power by 30–80%. What makes PID partially reversible?"
+prompt.distractors = [
+    "The shunt paths formed by PID are made of amorphous silicon that re-crystallizes when the module temperature drops below 25°C at night, restoring the original p-n junction characteristics over time",
+    "PID primarily damages the EVA encapsulant rather than the cell itself, and UV radiation during daytime operation gradually cross-links the damaged polymer chains back to their original structure",
+    "The anti-reflective coating thickness changes under PID voltage stress, shifting the spectral response, but thermal annealing during hot daytime operation restores the coating's optical properties"
+]
+answer.answer = "The sodium ions that migrate from the glass through the encapsulant into the cell under negative voltage can slowly migrate back out when the voltage stress is removed, partially restoring cell performance"
+context = "PID is caused by sodium ion migration from glass into the cell under high negative voltage. When voltage stress is removed (or reversed at night using PID recovery boxes), ions migrate back out, recovering 50–70% of lost power."
+id = "dc73ccd1-26f6-4d34-982c-8614134e120f"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What distinguishes LeTID from classic Light-Induced Degradation (LID) in practical field performance?"
+prompt.distractors = [
+    "LeTID affects only n-type TOPCon and HJT cells because it's caused by tunnel oxide defects, while classic LID is specific to p-type boron-doped cells due to boron-oxygen complex formation",
+    "LeTID causes power loss only under low-light conditions below 200 W/m² irradiance, while classic LID occurs across all irradiance levels and is most pronounced at standard test conditions of 1,000 W/m²",
+    "LeTID is triggered by UV wavelengths below 350 nm that penetrate the encapsulant and create surface defects, while classic LID is caused by bulk silicon defects activated by any photon above the bandgap energy"
+]
+answer.answer = "LeTID develops over months to years under combined light and temperatures above 50°C, causing 2–6% additional loss that slowly self-recovers over 5–10 years, while classic LID occurs in the first hours of light exposure"
+context = "Classic LID from boron-oxygen complexes stabilizes within hours. LeTID involves hydrogen-related defects that activate slowly under light + heat (>50°C), causing additional losses that peak at 1,000–3,000 operating hours and slowly recover over years."
+id = "00ed4932-6d26-4849-a0eb-4abeb7044822"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "According to NREL's meta-analysis, what is the median annual degradation rate for crystalline silicon solar modules in the field?"
+answer.answer = "0.5%"
+answer.alternatives = ["0.5% per year", "0.5%/year", "0.50%"]
+context = "NREL's landmark meta-analysis covering over 11,000 degradation rates found a median of about 0.5% per year for crystalline silicon modules, though this varies from 0.2% in temperate climates to over 1% in hot, humid environments."
+id = "6cdd2826-bfd1-4162-9d23-f715619a2e5b"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What causes 'snail trails' on solar module surfaces, and what do they indicate about module health?"
+prompt.distractors = [
+    "Fungal growth on the module surface that feeds on nitrogen compounds in the glass coating, indicating prolonged exposure to agricultural environments with high fertilizer concentrations",
+    "Electrolytic etching of the glass surface by leakage currents flowing through condensation films, indicating insulation failure in the module's edge seal and potential ground fault risks",
+    "Thermal decomposition of the backsheet polymer that outgasses through the cell gaps to the front surface, indicating that the module has experienced sustained temperatures above 90°C"
+]
+answer.answer = "Moisture and acetic acid from EVA decomposition penetrate micro-cracks in the cell and react with silver metallization to form brown silver acetate/carbonate compounds, indicating underlying cell damage and corrosion"
+context = "Snail trails are brown discolorations caused by chemical reactions between acetic acid (from EVA breakdown) and silver paste along micro-crack pathways. They're a visible marker for cell cracks and correlate with 5–10% power degradation."
+id = "fa61ade4-977a-4f2e-8cf2-6c4245917714"
+
+# --- Review: Recent Days (2) ---
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 19) In electroluminescence (EL) imaging, shunt defects appear counterintuitively as bright spots surrounded by dark halos. What explains this pattern?"
+prompt.distractors = [
+    "Shunts emit thermal radiation in the near-infrared range that the InGaAs camera registers as bright signal, while the surrounding dark halo is caused by temperature-induced bandgap narrowing",
+    "The bright spots are reflections from the metallic shunt material, and the dark halos are shadows cast by the surface topology of the silver paste buildup around the defect region",
+    "Shunts increase local resistance which raises the voltage across the defect, causing enhanced photon emission, while the halo results from current crowding that heats surrounding regions past optimal"
+]
+answer.answer = "Current is funneled through the low-resistance shunt path, causing intense local recombination and bright emission at that point, while surrounding regions are starved of carriers and appear dark in comparison"
+context = "In EL imaging, a shunt provides a low-resistance path that concentrates current flow. The high local recombination rate produces bright emission at the shunt, while neighboring areas receive less injected current and glow dimly."
+id = "79777489-9748-4444-a58c-3fdc046a3764"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 18) What is the primary reason solar cell factories use laser-based processing steps (like laser contact opening in PERC cells) rather than mechanical or chemical alternatives?"
+prompt.distractors = [
+    "Laser processing operates at room temperature, avoiding thermal stress on the wafer, which mechanical methods cannot achieve since they require heating the cell above 400°C for contact formation",
+    "Lasers can process all six surfaces of a solar cell simultaneously using beam-splitting optics, while mechanical and chemical methods are limited to single-surface sequential processing",
+    "Laser equipment has a 10-year maintenance-free lifespan with zero consumables, while chemical etching requires continuous replenishment of expensive precursor gases and creates hazardous waste"
+]
+answer.answer = "Lasers offer micron-scale spatial precision at throughputs of thousands of wafers per hour with no physical contact or chemical waste, enabling selective patterning steps impossible with bulk chemical or mechanical methods"
+context = "Laser processing combines sub-10-μm precision with high throughput (3,000+ wafers/hour), non-contact operation, and no chemical waste — critical for steps like selective rear-side passivation opening in PERC where precision defines cell efficiency."
+id = "65651ef3-11b9-463a-92c8-eee0dc0a975c"
+
+# --- Review: Older Days (2) ---
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (Day 5) What is the approximate thickness of a modern silicon wafer used in solar cell production?"
+answer.answer = "150 micrometers"
+answer.alternatives = ["150 μm", "150 um", "150μm", "130-170 μm", "160 micrometers", "140 micrometers", "130 micrometers", "170 micrometers"]
+context = "Modern solar wafers are typically 130–170 μm thick (about 150 μm), down from 300+ μm a decade ago. Thinner wafers save expensive silicon but are more fragile and prone to micro-cracking during handling."
+id = "aa315ade-7e3b-4115-ac3b-b74d97f15bbc"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 3) In the Siemens process for polysilicon purification, why is trichlorosilane (SiHCl₃) used as the intermediate compound rather than directly purifying solid silicon?"
+prompt.distractors = [
+    "Solid silicon has a melting point of 2,577°C which exceeds the thermal limits of industrial crucibles, so converting it to a gas-phase compound allows processing at temperatures below 1,200°C",
+    "Trichlorosilane acts as a chemical filter that selectively binds to impurity atoms like iron and copper, physically separating them during the chlorination step before any distillation occurs",
+    "Direct purification of solid silicon requires vacuum pressures below 10⁻⁸ torr which are too expensive to maintain at industrial scale, while gas-phase compounds can be purified at atmospheric pressure"
+]
+answer.answer = "Converting silicon to a volatile liquid (boiling point 31.8°C) enables fractional distillation, which exploits boiling point differences between SiHCl₃ and impurity chlorides to achieve 9N+ purity levels impossible with solid-state methods"
+context = "The genius of the Siemens process is converting silicon into trichlorosilane, a liquid that boils at 31.8°C. Fractional distillation then separates it from impurity chlorides with different boiling points, achieving 99.9999999% (9N) purity."
+id = "bf6bcde1-782c-43eb-9220-8ff49eb5e0c5"
