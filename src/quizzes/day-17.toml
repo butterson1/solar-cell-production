@@ -1,0 +1,119 @@
+# Day 17 Quiz: China's Dominance — Supply Chain Geography
+
+## Current Day Questions (6)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why is polysilicon production concentrated in Xinjiang, Sichuan, and Inner Mongolia rather than in coastal provinces like Jiangsu?"
+prompt.distractors = [
+  "Coastal provinces lack the ultra-pure water sources required for the Siemens process, while inland regions have abundant glacial meltwater suitable for polysilicon cooling systems",
+  "Environmental regulations in coastal provinces ban the chemical byproducts of polysilicon refining, forcing manufacturers to locate in provinces with more permissive industrial waste policies",
+  "The dry inland climate reduces humidity-related contamination during polysilicon crystallization, improving yields by 15-20% compared to the humid coastal manufacturing zones"
+]
+answer.answer = "Polysilicon refining consumes 60-80 kWh per kilogram, and these inland provinces offer electricity at ¥0.15-0.30/kWh from coal and hydropower — roughly a third of coastal industrial rates"
+context = "Energy cost is the dominant factor in polysilicon plant siting. Xinjiang offers coal power at $0.02-0.035/kWh, while Sichuan and Yunnan provide cheap hydroelectricity. This energy advantage outweighs the 2,000-3,000 km transport costs to coastal cell/module factories."
+id = "4edcf3cb-0d6f-43ec-af8d-d123486e1a8e"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What triggered the initial explosive growth of Chinese solar manufacturing in the 2000s?"
+prompt.distractors = [
+  "China's central government launched a Five-Year Plan in 2001 designating solar PV as a strategic industry, directing $50 billion in state bank loans to a dozen selected national champion firms",
+  "A breakthrough in low-cost metallurgical-grade silicon processing at Tsinghua University in 2003 gave Chinese manufacturers a feedstock cost advantage of 40% over Western competitors",
+  "Japan's decision to phase out nuclear power after the 2004 Chuetsu earthquake created a sudden 30 GW demand surge that only Chinese factories had the capacity to fulfill quickly"
+]
+answer.answer = "Germany's feed-in tariff law (EEG) guaranteed above-market rates for solar electricity, creating massive European demand that Chinese entrepreneurs — many Western-trained — rushed to supply with local government backing"
+context = "The irony is that European policy created the market that Chinese manufacturers filled. Shi Zhengrong (Suntech) is a prime example: Australian PhD, Wuxi government seed funding, European customers. Local governments competed to attract solar firms with cheap land, tax breaks, and loans."
+id = "d9474ff1-ec1d-43a6-ae3e-9b0be8b7e217"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "How did Chinese manufacturers respond to US and EU anti-dumping tariffs imposed in 2012-2013?"
+prompt.distractors = [
+  "They invested heavily in automated production lines to cut manufacturing costs by 30%, absorbing the tariff costs while maintaining export margins to Western markets at pre-tariff levels",
+  "They pivoted to selling primarily into the rapidly growing domestic Chinese market, which reached 34.5 GW annually by 2016, reducing their dependence on Western exports to under 20%",
+  "They challenged the tariffs through WTO dispute resolution proceedings, winning partial relief in 2015 that reduced effective duty rates on modules to under 10% for most major exporters"
+]
+answer.answer = "They shifted final assembly operations to Vietnam, Thailand, Malaysia, and Cambodia, shipping Chinese-made cells to Southeast Asia for module assembly and re-exporting to Western markets tariff-free"
+context = "This Southeast Asian routing legally sidestepped the tariffs for years. The US Commerce Department eventually ruled in 2023 that this constituted circumvention, imposing new duties of 24-49% on modules from these four countries, effective 2024-2025."
+id = "0f8dd3f1-81c1-4160-98d0-6351ff6393fe"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "At which stage of the solar supply chain is China's market share MOST concentrated, and approximately what percentage does it hold?"
+prompt.distractors = [
+  "Polysilicon refining at approximately 85%, because the Siemens process requires massive capital investment that only Chinese state-backed firms could afford at scale during the 2015-2020 expansion period",
+  "Cell manufacturing at approximately 92%, because advanced PERC and TOPCon cell architectures require proprietary Chinese equipment — especially PECVD and laser doping tools — that aren't exported",
+  "Module assembly at approximately 88%, because Chinese logistics networks and component suppliers (glass, EVA, backsheet, junction box) create an integrated ecosystem that's impossible to replicate elsewhere"
+]
+answer.answer = "Wafer manufacturing at approximately 95%, because it requires the most specialized equipment (diamond wire saws, crystal growth furnaces) and benefits most from economies of scale in production"
+context = "The 95% wafer concentration is the supply chain's tightest chokepoint. Wafer production requires both specialized capital equipment and the know-how of crystal growth, making it harder to replicate than module assembly (~80%) or even polysilicon (~85%)."
+id = "b3b6e11e-010a-4c89-adab-f75f7b05b31f"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the approximate cost premium for producing a solar module in Europe versus China as of 2025?"
+prompt.distractors = [
+  "European modules cost roughly €0.045/W more than Chinese equivalents, a gap driven primarily by higher glass and aluminum frame costs from EU carbon border adjustment tariffs on raw materials",
+  "European modules cost roughly €0.210/W more than Chinese equivalents, a gap that Fraunhofer ISE concluded cannot be closed without full nationalization of European solar manufacturing capacity",
+  "European modules cost roughly €0.070/W more than Chinese equivalents, a gap that SolarPower Europe projects will close naturally by 2028 as European factories reach their planned 50 GW scale"
+]
+answer.answer = "European modules cost roughly €0.103/W more than Chinese equivalents, a gap that Fraunhofer ISE concluded could be reduced to below 10% with aggressive policies like carbon border adjustments and procurement preferences"
+context = "The September 2025 Fraunhofer ISE report commissioned by SolarPower Europe quantified this gap. At ~€0.103/W, it's enormous relative to Chinese module prices of $0.08-0.10/Wp, effectively meaning European production costs roughly double the Chinese price."
+id = "b0ad40fa-3cef-4d2a-a316-b535b81236a1"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "In 2024, approximately how many GW of modules did the 'Big Four' Chinese manufacturers (JinkoSolar, LONGi, Trina, JA Solar) collectively ship?"
+answer.answer = "320 GW"
+answer.alternatives = ["320", "over 320 GW", "300 GW", "~320 GW", "about 320"]
+context = "JinkoSolar shipped 93 GW, LONGi 78 GW, Trina 77 GW, and JA Solar 77 GW, totaling over 320 GW — roughly 60% of all new solar installations worldwide in 2024."
+id = "84ed7bb7-4a3e-40b2-a49b-284704bb0a30"
+
+## Review Questions — Recent Days (2)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 16) What is 'Swanson's Law' in the context of solar manufacturing economics?"
+prompt.distractors = [
+  "For every 10% improvement in cell conversion efficiency, module manufacturing costs decline by approximately 18% due to fewer cells needed per watt of output capacity",
+  "For every new gigawatt-scale factory that opens, regional polysilicon prices drop by approximately 8% as increased demand triggers supplier investments in expanded refining capacity",
+  "For every five-year period of sustained R&D investment, the theoretical efficiency ceiling for commercial silicon cells increases by approximately 1.5 absolute percentage points"
+]
+answer.answer = "For every doubling of cumulative shipped solar capacity, module prices drop by approximately 24% — an empirical learning curve observation that has held remarkably steady since the 1970s"
+context = "Swanson's Law is an empirical observation, not a physics law. The 24% learning rate reflects the cumulative effect of hundreds of specific engineering improvements, scale effects, and supply chain optimizations over decades."
+id = "e32aecc2-f09a-41a5-82fd-36e235c4660f"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 15) In a modern vertically integrated solar factory, what is the approximate total journey time from raw polysilicon to a finished, tested module ready for shipping?"
+prompt.distractors = [
+  "Roughly 12-18 hours, since continuous-flow manufacturing with inline crystal growth and laser processing eliminates all traditional batch-processing bottlenecks in the production chain",
+  "Roughly 2-3 weeks, because polysilicon must undergo a 10-day purification cycle before Czochralski growth, followed by a 5-day annealing process to relieve internal crystal stress",
+  "Roughly 8-12 weeks, due to mandatory 30-day seasoning of wafers after slicing and a 14-day burn-in test period required for IEC certification before modules can ship"
+]
+answer.answer = "Roughly 3-5 days total, with crystal growth taking the longest at 2-3 days per ingot, while downstream steps like wafering, cell processing, and module assembly each take hours to complete"
+context = "The Czochralski crystal growth process is the pacing bottleneck — a single ingot takes 2-3 days to pull. But modern factories run many furnaces in parallel. Downstream steps (wafering, cell lines, module assembly) are highly parallelized and each take only hours per batch."
+id = "c96843d0-6785-4cda-953a-4b747f0b071a"
+
+## Review Questions — Older Days (2)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 3) In the Siemens process for polysilicon purification, what is the core chemical reaction that produces semiconductor-grade silicon?"
+prompt.distractors = [
+  "Silicon tetrafluoride (SiF₄) is reduced with molten sodium metal at 800°C in a sealed reactor, depositing pure silicon on cooled graphite substrates while producing sodium fluoride as a byproduct",
+  "Silane gas (SiH₄) is thermally decomposed at 600°C in a fluidized bed reactor, where silicon atoms nucleate onto seed particles that grow into granular polysilicon pellets over 8-12 hours",
+  "Metallurgical-grade silicon is dissolved in hydrochloric acid at 350°C to form dichlorosilane (SiH₂Cl₂), which is then electrolytically reduced in a molten salt bath to deposit 99.9999% pure silicon"
+]
+answer.answer = "Trichlorosilane gas (SiHCl₃) is passed over heated silicon seed rods at roughly 1,100°C inside a bell-jar reactor, where it thermally decomposes and deposits ultra-pure silicon onto the rods"
+context = "The Siemens process reacts metallurgical-grade silicon with HCl to produce trichlorosilane (SiHCl₃), which is then distilled to extreme purity and decomposed at ~1,100°C onto slim silicon seed rods in a bell-jar (Siemens) reactor. This chemical vapor deposition produces 9N+ (99.9999999%) purity silicon."
+id = "668ad3ca-0801-419d-ac79-c0c670cd317e"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (Day 6) What are the two types of dopant atoms used to create the p-type and n-type layers in a standard silicon solar cell?"
+answer.answer = "Boron for p-type and phosphorus for n-type"
+answer.alternatives = ["boron and phosphorus", "phosphorus and boron", "B and P", "boron (p-type) and phosphorus (n-type)"]
+context = "Boron (Group III, one fewer valence electron than silicon) creates electron 'holes' for p-type doping. Phosphorus (Group V, one extra valence electron) provides free electrons for n-type doping. Their junction creates the electric field that separates photogenerated charge carriers."
+id = "d5a2ebcc-9fb2-4a5b-9167-b2e2a37244e5"
