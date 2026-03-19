@@ -1,0 +1,119 @@
+# Day 26 Quiz: Space Solar & Concentrator PV
+
+# --- Current Day Questions (6) ---
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why do space-based solar power advocates focus on geostationary orbit (GEO) rather than low Earth orbit for power generation satellites?"
+prompt.distractors = [
+    "GEO provides lower radiation exposure, reducing cell degradation to under 0.5% per year and extending satellite lifespan to 50+ years without shielding",
+    "GEO allows the use of cheaper silicon cells instead of III-V cells because the Van Allen belts shield the satellite from most cosmic radiation",
+    "GEO satellites orbit faster than Earth rotates, allowing a single ground rectenna to receive power from multiple satellites throughout the day"
+]
+answer.answer = "GEO satellites remain fixed above one ground station and experience sunlight ~99.5% of the year, enabling near-continuous 24/7 power delivery to a single rectenna"
+context = "Geostationary orbit keeps the satellite stationary relative to a ground receiver, and the satellite is only eclipsed for brief periods (~72 min max) around equinoxes, enabling near-constant power generation and transmission."
+id = "4b6ddced-0f37-4b2f-bc62-b0a9b958c6c2"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the primary reason III-V multi-junction cells (like InGaP/GaAs/InGaAs) are preferred over silicon for space applications, despite costing ~$80,000-130,000/m²?"
+prompt.distractors = [
+    "III-V cells have a lower temperature coefficient than silicon, maintaining peak efficiency even when satellite surfaces reach 200°C during full sun exposure in orbit",
+    "III-V cells can be manufactured thinner than silicon, reducing total satellite mass by 60% even though the cells themselves are denser per unit area",
+    "III-V cells naturally self-anneal radiation damage when heated during eclipse transitions, recovering most efficiency losses every orbital cycle"
+]
+answer.answer = "III-V cells deliver 350-450 W/kg on ultra-light substrates versus ~15-20 W/kg for glass-fronted silicon, and this watts-per-kilogram advantage is decisive when every gram costs money to launch"
+context = "In space, the optimization target is watts per kilogram, not dollars per square meter. Since launch costs dominate the budget, the lightweight III-V cells' 20× better power-to-weight ratio more than compensates for their higher cell cost."
+id = "35656887-07f6-4955-afd2-3932001893f5"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why does high-concentration PV (HCPV) perform poorly in cloudy climates, unlike conventional silicon panels?"
+prompt.distractors = [
+    "HCPV Fresnel lenses absorb moisture from humid air, causing optical degradation and reducing transmission by up to 40% within months of deployment",
+    "HCPV multi-junction cells are tuned to the direct-beam AM1.5D spectrum and produce almost zero current when illuminated with the blue-shifted spectrum of diffuse light",
+    "HCPV dual-axis trackers cannot accurately position panels when cloud cover obscures the sun's disk, causing mechanical hunting that damages the tracking gears"
+]
+answer.answer = "Fresnel lenses and mirrors can only focus direct-beam sunlight arriving from a single direction; diffuse light scattered by clouds comes from all angles and cannot be optically concentrated onto the tiny cell"
+context = "Concentration optics work by redirecting parallel rays to a focal point. Diffuse light, which comes from all directions in an overcast sky, cannot be focused this way. Conventional silicon panels can still use diffuse light because each cell accepts photons from a wide angle."
+id = "d5dd42e4-88e7-462b-8a3d-d31307b2a824"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Caltech's SSPD-1 mission in 2023 was significant because its MAPLE experiment demonstrated what specific capability for the first time?"
+prompt.distractors = [
+    "It demonstrated a multi-junction solar cell array generating over 1 kW of power in orbit while maintaining 30% efficiency for six continuous months",
+    "It demonstrated autonomous robotic assembly of solar array segments in orbit, deploying a 50 m² array from a single Falcon 9 launch fairing",
+    "It demonstrated a closed-loop microwave beam-steering system that tracked a moving ground receiver with sub-degree accuracy from low Earth orbit"
+]
+answer.answer = "It demonstrated wireless power transmission in space using lightweight, flexible microwave transmitters with custom CMOS circuits, and beamed a detectable signal to a ground receiver on Caltech's campus"
+context = "The MAPLE (Microwave Array for Power-transfer Low-orbit Experiment) successfully transmitted power wirelessly in space using flexible, lightweight microwave transmitter arrays and detected the signal on Earth — a proof-of-concept for the hardware approach, not yet useful power levels."
+id = "1d19e9e0-1c0b-4a7d-93a0-223a67ae51bf"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "A concentrator PV system operating at 500× concentration needs tracking accuracy within approximately ±0.5°. What happens if the tracker drifts beyond this tolerance?"
+prompt.distractors = [
+    "The multi-junction cell overheats rapidly because unfocused sunlight hits the heat spreader at oblique angles, bypassing the thermal management system entirely",
+    "The Fresnel lens develops thermal stress fractures because asymmetric illumination creates temperature gradients exceeding 80°C across its surface area",
+    "The cell's bypass diodes activate to prevent reverse-bias damage, shunting power from the misaligned lens and reducing array voltage by discrete steps"
+]
+answer.answer = "The focused light spot moves off the tiny cell (typically ~1 cm²), so most concentrated sunlight misses the active semiconductor entirely and output drops precipitously toward zero"
+context = "At 500× concentration, the focal spot is very small. Even a fraction of a degree of misalignment shifts the focused beam off the cell entirely. Unlike flat panels where slight misalignment merely reduces output proportionally, CPV has a sharp cliff in performance when tracking drifts."
+id = "25120488-cc34-4843-a820-59feaf27463a"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "What is the approximate solar irradiance (in W/m²) at the top of Earth's atmosphere, known as the solar constant?"
+answer.answer = "1361"
+answer.alternatives = ["1,361", "1361 W/m²", "1,361 W/m²", "~1361", "1360", "1366"]
+context = "The solar constant — the total solar irradiance at Earth's distance from the sun — is approximately 1,361 W/m². This is the starting point for all space solar power calculations, before any atmospheric or optical losses."
+id = "080825e3-3201-40e6-a40a-558c9c4ff940"
+
+# --- Review Questions from Recent Days (2) ---
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 25) What is the most economically valuable material recovered from recycling crystalline silicon solar panels at end of life?"
+prompt.distractors = [
+    "The silicon wafers themselves, which can be re-refined and reused in new solar cells after chemical etching to remove the p-n junction dopants",
+    "The copper ribbon interconnects, which contain approximately 500g of high-purity copper per standard 60-cell residential module",
+    "The EVA encapsulant, which can be depolymerized and reprocessed into virgin-grade ethylene vinyl acetate for new module lamination"
+]
+answer.answer = "The aluminum frame and junction box, followed by the glass front sheet — these bulk commodity materials represent most of the recoverable value because silver and silicon are present in tiny quantities"
+context = "By mass and market value, the aluminum frame (~10% of module weight) and glass (~70% of weight) dominate the recoverable value. While silver is precious, each cell contains only milligrams. The silicon wafer, though theoretically reusable, is costly to re-process to solar grade."
+id = "8d5f49f8-687d-42f3-b1f5-fbdaf681902e"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 24) What architectural challenge limits the efficiency of building-integrated PV (BIPV) compared to conventional rooftop-mounted panels?"
+prompt.distractors = [
+    "BIPV modules must use thinner glass for structural integration, which reduces light transmission by 15-20% compared to the tempered glass on standard modules",
+    "BIPV installations are limited to amorphous silicon cells because crystalline silicon is too rigid to conform to curved building facades and rooflines",
+    "BIPV modules cannot include bypass diodes due to building code fire safety requirements, making them vulnerable to catastrophic hotspot failures"
+]
+answer.answer = "BIPV panels are fixed at the building's orientation and tilt, often far from optimal angles, and frequently experience partial shading from adjacent structures, reducing energy yield significantly versus optimally-placed arrays"
+context = "Unlike ground-mount or rooftop systems that can be oriented and tilted for maximum solar exposure, BIPV must conform to the building's existing architecture. Facades face east/west, windows create shading, and aesthetic integration often means sub-optimal angles."
+id = "ca2b45c5-cfdf-4ed7-8bee-ccecb3e63c94"
+
+# --- Review Question from Older Day (2) ---
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 11) In a triple-junction solar cell (e.g., InGaP/GaAs/Ge), why must the sub-cells be current-matched, and what limits the overall device current?"
+prompt.distractors = [
+    "Current matching prevents thermal runaway; the sub-cell generating the highest current overheats if the others can't absorb excess carriers, causing lattice damage",
+    "Current matching ensures equal voltage contribution from each junction; the total device voltage is the average of all three sub-cell voltages when properly matched",
+    "Current matching balances photon absorption rates; without it, unused photons re-emit as luminescence from the top cell and never reach the lower junctions"
+]
+answer.answer = "Because the sub-cells are connected in series, the same current must flow through all of them, so the overall device current is limited by whichever sub-cell generates the least photocurrent under the given spectrum"
+context = "Series-connected multi-junction cells force identical current through every junction. The weakest (lowest-current) sub-cell becomes the bottleneck. This is why spectral conditions matter — a shift in the solar spectrum can change which junction limits the device."
+id = "366658b0-ce6c-4f47-a54a-0384b9e4ebba"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (Day 9) What does the acronym PERC stand for in solar cell technology?"
+answer.answer = "Passivated Emitter and Rear Cell"
+answer.alternatives = ["Passivated Emitter and Rear Contact", "passivated emitter and rear cell", "passivated emitter and rear contact"]
+context = "PERC — Passivated Emitter and Rear Cell (sometimes 'Rear Contact') — adds a dielectric passivation layer to the rear surface of the cell, reducing recombination losses and reflecting unabsorbed light back through the silicon for a second pass."
+id = "2c9a9c3b-5049-48e3-b78e-bda19d8fa76a"
