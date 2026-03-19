@@ -1,0 +1,119 @@
+# Day 28 Quiz — The Full Journey: Sand to Grid
+
+# --- Current Day Questions (6) ---
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the approximate energy payback time for a modern silicon solar panel — the time it takes to generate more energy than was consumed in its entire manufacturing chain?"
+prompt.distractors = [
+    "4–6 months, because modern manufacturing is extremely energy-efficient and uses mostly renewable electricity for polysilicon production and crystal growth",
+    "5–8 years, because the energy-intensive Siemens process, Czochralski growth, and module lamination collectively consume enormous amounts of electricity",
+    "10–15 years, because the full lifecycle including mining, transportation, chemical processing, and factory construction requires substantial cumulative energy input"
+]
+answer.answer = "1–2 years, because while steps like the Siemens process (~60-80 kWh/kg) and CZ growth are energy-intensive, the panel then produces net-positive energy for 28+ more years"
+context = "Modern solar panels have an energy payback time of 1–2 years, after which they generate pure net-positive energy for the remaining 28+ years of their lifespan."
+id = "a9f0623a-bbfb-426e-b572-2ccb6a24ba81"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "During wafer slicing with diamond wire saws, approximately what percentage of the carefully purified and crystallized silicon ingot is lost as kerf (sawdust waste)?"
+prompt.distractors = [
+    "10–15%, because modern diamond wires at 100–120 μm diameter are thin enough that most of the ingot is converted into usable wafers with minimal material loss",
+    "55–65%, because the wire diameter plus necessary spacing between cuts means more silicon is destroyed than preserved, making kerf the dominant output",
+    "5–8%, because manufacturers like Longi and TCL Zhonghuan have optimized wire tension and cutting speed to achieve near-zero kerf losses at production scale"
+]
+answer.answer = "35–40%, because with wafers at 130–160 μm thick and each cut destroying 60–80 μm of silicon as kerf, roughly a third or more of the ingot becomes waste powder"
+context = "Diamond wire sawing wastes approximately 35–40% of silicon as kerf. With wafers 130–160 μm thick and ~60–80 μm lost per cut, this is the most wasteful step in the production chain."
+id = "0da21be2-e8ff-4c4d-8cd6-1dbdd6a250c7"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why does KOH (potassium hydroxide) texturing produce a surface covered in tiny pyramids on monocrystalline silicon wafers?"
+prompt.distractors = [
+    "KOH deposits potassium silicate crystals in a regular pyramidal pattern on the surface, building up the texture from solution rather than removing material from the wafer",
+    "KOH etches all crystal planes at equal rates, but surface tension effects at the microscale cause the etchant to pool in certain regions, creating random peaks and valleys",
+    "KOH reacts with the phosphorus-doped emitter layer preferentially, and the gradient of dopant concentration across the surface determines where pyramids form versus dissolve"
+]
+answer.answer = "KOH etches silicon anisotropically — attacking the <100> crystal plane roughly 100× faster than the <111> plane — so the slower-etching <111> planes remain as pyramid faces"
+context = "The pyramidal texture arises from anisotropic etching: KOH dissolves the <100> crystal plane ~100× faster than the <111> plane, leaving the <111> faces exposed as the sides of 5–10 μm pyramids."
+id = "32ae7b60-dea2-4640-b298-0b704b7158c4"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Across the entire production chain from sand to grid-connected module, what is the total mass of silicon contained in a single solar panel that will produce 25,000+ kWh over its lifetime?"
+prompt.distractors = [
+    "About 5–8 kg, because a 550W module requires substantial silicon mass to achieve full light absorption across its roughly 2.5 square meter active cell area",
+    "About 50–100 grams, because modern wafers are so thin (130 μm) that the semiconductor layer is essentially a film requiring minimal raw silicon material",
+    "About 3–4 kg, because while individual wafers are thin, a 72-cell module contains dozens of cells plus silicon used in bypass diodes and junction box components"
+]
+answer.answer = "About 600 grams — less than a paperback book — because the industry's achievement is making a tiny amount of precisely arranged material do extraordinary work"
+context = "A solar panel contains only about 600 grams of silicon. The semiconductor industry's genius is in precise atomic arrangement, not material quantity."
+id = "c79dbc72-b39c-48a3-a43b-012c2c30f90d"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the primary function of the bypass diodes (typically 3 per module) contained in the junction box on the back of a solar module?"
+prompt.distractors = [
+    "They regulate the output voltage to prevent overcharging of connected batteries by diverting excess current when the module's voltage exceeds a safe threshold for storage systems",
+    "They convert a small portion of DC output to AC within the module itself, reducing the workload on the string inverter and improving overall system conversion efficiency",
+    "They monitor individual cell temperatures and disconnect overheating strings from the circuit to prevent thermal runaway and EVA degradation during high-irradiance conditions"
+]
+answer.answer = "They protect against hotspot damage when cells are partially shaded, by providing an alternative current path around the shaded string so power isn't dissipated in blocked cells"
+context = "Bypass diodes provide an alternative current path around shaded or underperforming cell strings, preventing reverse-biased cells from overheating and causing hotspot damage to the module."
+id = "4962f3d4-6942-496e-a39b-b93adcaea631"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "What is the approximate levelized cost of energy (LCOE) range for solar electricity in sunny regions as of 2025, in dollars per kWh?"
+answer.answer = "$0.02–0.05/kWh"
+answer.alternatives = ["0.02-0.05", "$0.02-$0.05", "2-5 cents", "$0.02 to $0.05", "0.02 to 0.05"]
+context = "Solar LCOE in sunny regions has dropped to $0.02–0.05/kWh, making it cheaper than any fossil fuel in history."
+id = "e76bfbea-b9a1-43a2-a2d8-8a4ed8be68b0"
+
+# --- Review Questions: Recent Days (2) ---
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 26) Why is the inverse-square law a fundamental challenge for space-based solar power stations that would beam energy to Earth's surface?"
+prompt.distractors = [
+    "The inverse-square law means solar panel efficiency decreases with the square of the distance from the Sun, so panels in high orbit produce exponentially less power per unit area",
+    "The inverse-square law causes the microwave or laser beam to spread as it travels from orbit to ground, requiring enormous receiving antennas (rectennas) many kilometers across",
+    "The inverse-square law means that atmospheric absorption of the transmitted beam increases quadratically with altitude, making higher orbits progressively less viable for power beaming"
+]
+answer.answer = "The inverse-square law governs beam divergence during transmission: even tightly focused microwave beams spread over the 36,000 km from geostationary orbit, losing energy density"
+context = "Beam divergence over the ~36,000 km from geostationary orbit to Earth's surface is governed by the inverse-square law and diffraction limits, requiring very large transmitting and receiving apertures."
+id = "9d865970-1816-42d0-b159-9fa1c43449cc"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 27) What is the current lab efficiency record for a single-junction silicon solar cell, and which company achieved it?"
+prompt.distractors = [
+    "29.4% by SunPower using a back-contact IBC architecture with copper electroplating and advanced surface passivation on an n-type CZ wafer substrate",
+    "26.1% by Trina Solar using a TOPCon architecture with poly-Si passivating contacts and optimized phosphorus-doped emitter on a large-area commercial wafer",
+    "28.6% by Kaneka using a tandem heterojunction structure with intermediate reflector layers and spectrum-splitting between front and rear silicon absorbers"
+]
+answer.answer = "27.3% by LONGi using an HJT (heterojunction) cell architecture, which achieves exceptionally high open-circuit voltage through superior amorphous silicon surface passivation"
+context = "LONGi holds the single-junction silicon efficiency record at 27.3%, achieved with an HJT architecture that delivers outstanding surface passivation and high open-circuit voltage."
+id = "3cc9444e-8842-4bea-9982-0089554b1d73"
+
+# --- Review Questions: Older Days (2) ---
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 3) In the Siemens process, why is trichlorosilane (SiHCl₃) the preferred intermediate compound for silicon purification rather than directly purifying the solid silicon?"
+prompt.distractors = [
+    "Trichlorosilane selectively bonds with metallic impurities like iron and aluminum, forming stable precipitates that can be filtered out, leaving pure SiHCl₃ in solution",
+    "Trichlorosilane can be electrolyzed in an aqueous solution, which deposits pure silicon at the cathode while impurities remain dissolved in the electrolyte bath",
+    "Trichlorosilane reacts with oxygen at low temperatures to form volatile impurity oxides that evaporate away, leaving behind progressively purer silicon compound"
+]
+answer.answer = "Trichlorosilane is a liquid (boiling point 31.8°C) that can be fractionally distilled — and distillation is extraordinarily effective at separating impurities, removing an order of magnitude per pass"
+context = "Converting silicon to liquid trichlorosilane enables fractional distillation, which is phenomenally effective at purification — each distillation pass removes roughly an order of magnitude of impurity concentration."
+id = "24df5a6d-d9f7-47ce-a6f2-1617e2a35dde"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (Day 9) What does PERC stand for in solar cell architecture?"
+answer.answer = "Passivated Emitter and Rear Contact"
+answer.alternatives = ["Passivated Emitter and Rear Cell", "passivated emitter and rear contact"]
+context = "PERC stands for Passivated Emitter and Rear Contact. It adds an aluminum oxide passivation layer on the rear of the cell with laser-drilled local contacts, pushing efficiency to 23–23.5%."
+id = "e6e4e327-b3e2-4363-8625-1c5d7e86e73c"
