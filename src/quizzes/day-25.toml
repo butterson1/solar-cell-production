@@ -1,0 +1,123 @@
+# Day 25 Quiz: Recycling & End-of-Life for Solar Panels
+
+## Current Day Questions (Day 25)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why is EVA encapsulant particularly difficult to separate from solar cells during recycling?"
+prompt.distractors = [
+  "EVA degrades into hydrofluoric acid at recycling temperatures, corroding the silicon wafers and making them impossible to recover without specialized acid-resistant equipment",
+  "EVA forms a mechanical interlock with the textured silicon surface during lamination, creating microscopic anchors that require ultrasonic vibration at 40 kHz to release cleanly",
+  "EVA absorbs UV radiation over the panel's lifetime and becomes brittle, shattering into microplastic fragments that contaminate the silicon during any separation attempt"
+]
+answer.answer = "EVA cross-links into a thermoset polymer during lamination at 150°C, meaning it cannot be remelted like a thermoplastic and must be destroyed via pyrolysis at 400–600°C or dissolved with chemical solvents"
+context = "During lamination, EVA undergoes irreversible cross-linking, becoming a thermoset. Unlike thermoplastics, thermosets don't melt when reheated—they char. This means clean separation requires either pyrolysis (thermal decomposition) or solvent dissolution, both of which are more complex and expensive than simple remelting."
+id = "dccddc63-69c0-493e-9d3a-b97e7cf457f5"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the approximate material value of a standard crystalline silicon solar panel at current commodity prices, and which single material contributes the most value?"
+prompt.distractors = [
+  "Roughly $40–55, with the high-purity silicon wafers contributing the most value due to the energy-intensive Czochralski crystal growth process required to produce them originally",
+  "Roughly $15–25, with the aluminum frame contributing the most value because it accounts for 2–3 kg of immediately recyclable metal per panel at current aluminum market rates",
+  "Roughly $5–10, with the copper ribbon interconnects contributing the most value since copper trades at higher per-kilogram prices than any other bulk material in the module"
+]
+answer.answer = "Roughly $15–25, with the silver contacts contributing the most value per gram—10–15 g of silver at approximately $30/oz represents a significant portion of total recoverable material value"
+context = "A typical panel contains $15–25 worth of raw materials. Silver, though present in small quantities (10–15 g), is by far the most valuable per unit mass at ~$30/oz, making it a primary economic driver for high-value recycling."
+id = "77f05b81-2e2c-40cf-a874-2c9fb38eca1a"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "First Solar's CdTe thin-film recycling process recovers over 95% of cadmium and tellurium. Why is tellurium recovery particularly significant beyond the environmental benefit?"
+prompt.distractors = [
+  "Tellurium is classified as a conflict mineral under the Dodd-Frank Act, and recovering it domestically allows First Solar to avoid supply chain disclosure requirements and associated compliance costs",
+  "Tellurium has a half-life of only 8 years in CdTe crystal form, meaning unrecycled panels gradually release it into soil as the compound degrades, creating a uniquely time-sensitive environmental hazard",
+  "Tellurium is primarily mined in regions with unstable geopolitical conditions, and First Solar's recycling program was specifically mandated by US Department of Energy strategic reserve requirements"
+]
+answer.answer = "Tellurium is one of the rarest elements in Earth's crust at about 1 part per billion, with global mining output of only 500–600 tonnes per year, making First Solar's ~40 tonnes of annual recovery a meaningful fraction of world supply"
+context = "Tellurium's extreme rarity (comparable to platinum in crustal abundance) and limited mining output make it a critical supply constraint for CdTe technology. First Solar's recycling recovery of ~40 tonnes/year is a significant share of global supply, reducing dependence on primary mining."
+id = "e9f7edd9-093e-4907-875f-94bbbee82eb4"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "IRENA projects cumulative PV waste will reach 78 million tonnes by 2050. Why does the waste curve follow such a dramatically exponential pattern rather than a linear increase?"
+prompt.distractors = [
+  "Panel degradation rates accelerate exponentially after year 15 due to UV-induced delamination cascades, causing most panels to fail catastrophically between years 15 and 20 rather than lasting their full 25-year warranty",
+  "Recycling infrastructure bottlenecks cause stockpiling effects, where panels awaiting processing accumulate in storage yards for 5–10 years, creating apparent waste spikes that don't reflect actual decommissioning rates",
+  "Climate change is increasing the frequency of severe weather events exponentially, destroying panels through hail and wind damage at rates that compound year over year beyond normal end-of-life decommissioning"
+]
+answer.answer = "The modern solar installation boom started around 2010–2012, and with 25-year panel lifespans, the first massive decommissioning wave hits 2035–2040, coinciding with even larger installation volumes from subsequent years also beginning to age out"
+context = "Annual installations grew from 17 GW in 2010 to 30+ GW by 2012 and continued accelerating. With 25-year lifespans, each year's cohort creates a delayed waste wave. The exponential shape comes from exponentially growing installation volumes all reaching end-of-life in sequence."
+id = "e5d5fe64-5cf9-485b-92e5-f026a1fa7170"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why does mechanical recycling dominate the current PV recycling market despite recovering significantly less material value than thermal or chemical processes?"
+prompt.distractors = [
+  "Mechanical recycling produces higher-purity glass output that meets flat glass specifications, making it more attractive to glass manufacturers who pay premium prices for recycling feedstock",
+  "Thermal and chemical recycling processes require hazardous material handling permits that take 3–5 years to obtain in most jurisdictions, creating regulatory barriers that prevent competitors from entering the market",
+  "Mechanical recycling facilities can be co-located with existing e-waste processing plants without modification, while thermal systems require dedicated facilities with specialized emission control equipment costing $50M+"
+]
+answer.answer = "Mechanical recycling costs only $5–10 per panel versus $15–25 for thermal processes, and since total recoverable material value is just $15–25 per panel, the cost difference represents the entire profit margin in an unregulated market"
+context = "With materials worth $15–25 per panel and no mandates requiring high-value recovery, the cheapest processing method wins. Mechanical recycling's $5–10 cost leaves some margin, while thermal recycling's $15–25 cost can consume the entire material value."
+id = "811be33d-26b0-42f4-ad82-3e0901c1232a"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "What minimum recovery rate by mass does the EU WEEE Directive mandate for photovoltaic panel recycling?"
+answer.answer = "80%"
+answer.alternatives = ["80 percent", "80% by mass", "eighty percent"]
+context = "The WEEE Directive mandates a minimum 80% recovery rate by mass and 70% recycling/reuse rate. Critics note these targets are achievable with basic mechanical recycling of glass and aluminum alone, which together account for ~85% of module mass."
+id = "e9776552-f4b2-4477-9098-17d054c53ba5"
+
+## Review Questions — Recent Days (Days 22-24)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 23) In bifacial solar modules, what is the typical bifaciality factor, and what does it represent?"
+prompt.distractors = [
+  "Typically 50–60%, representing the fraction of total energy output that comes from diffuse rather than direct sunlight, which bifacial modules capture more efficiently than monofacial designs",
+  "Typically 95–100%, representing the ratio of front-side efficiency to the theoretical Shockley-Queisser limit, indicating how close the cell architecture comes to maximum possible single-junction performance",
+  "Typically 65–75%, representing the proportion of rear-surface photons that are successfully absorbed rather than reflected, determined primarily by the anti-reflective coating thickness on the back surface"
+]
+answer.answer = "Typically 70–90%, representing the ratio of rear-side power output to front-side power output under standard test conditions, indicating how effectively the cell converts light entering from the back"
+context = "Bifaciality factor is defined as rear-side power divided by front-side power under STC. Values of 70–90% are typical for modern bifacial cells, meaning the rear side can generate 70–90% as much power as the front when equally illuminated."
+id = "e1cbbbe3-1d6f-494c-a991-7d1219295206"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 24) What is the primary technical challenge that limits BIPV adoption compared to conventional rack-mounted solar panels?"
+prompt.distractors = [
+  "BIPV modules operate at significantly higher temperatures than rack-mounted panels due to reduced airflow behind the building envelope, causing 20–30% efficiency losses from thermal effects that cannot be mitigated",
+  "BIPV glass must meet fire resistance ratings (Class A or equivalent) that require thicker low-iron glass, increasing module weight to 25–30 kg/m² and exceeding structural load limits of most residential buildings",
+  "BIPV warranty terms conflict with building material warranties, as PV performance guarantees of 25 years are shorter than the 40–50 year expected lifespan of the building envelope components they replace"
+]
+answer.answer = "BIPV must simultaneously satisfy both building codes (structural, thermal, weather-sealing, fire safety) and electrical performance requirements, creating complex dual-certification processes that increase cost and limit design flexibility"
+context = "BIPV products serve as both building materials and power generators, requiring compliance with two separate regulatory frameworks. This dual-use nature increases testing, certification complexity, and cost compared to conventional panels that only need to meet electrical standards."
+id = "37d23638-2aca-4046-be5d-ef04592a1f8c"
+
+## Review Questions — Older Days
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 3) In the Siemens process for polysilicon purification, trichlorosilane (HSiCl₃) is decomposed on heated silicon rods. What temperature are these rods maintained at, and why is this temperature critical?"
+prompt.distractors = [
+  "Rods are maintained at 600–700°C, just above the melting point of trichlorosilane, because the gas must be in liquid phase when it contacts the rod surface to achieve uniform deposition without dendritic crystal growth",
+  "Rods are maintained at 1,414°C, the melting point of silicon, because the deposited silicon must briefly liquefy to form a continuous polycrystalline layer rather than a porous, mechanically weak coating",
+  "Rods are maintained at 800–900°C, the optimal temperature for silicon carbide formation, because a thin SiC barrier layer must form first to provide nucleation sites for subsequent high-purity silicon deposition"
+]
+answer.answer = "Rods are maintained at 1,000–1,100°C, hot enough to thermally decompose trichlorosilane into elemental silicon and HCl gas, while remaining below silicon's melting point to ensure solid-phase deposition of polycrystalline silicon"
+context = "The Siemens process operates at 1,000–1,100°C, which provides enough thermal energy to break HSiCl₃ bonds and deposit pure silicon while keeping the silicon in solid phase. This temperature window is critical for achieving the 9N–11N purity levels required for solar-grade polysilicon."
+id = "749a3460-8488-4c00-a273-1a0325afedf1"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 14) During module encapsulation, why is the lamination process performed under vacuum before applying heat and pressure?"
+prompt.distractors = [
+  "Vacuum removes moisture from the EVA sheets that would otherwise hydrolyze during curing, producing acetic acid bubbles that etch the silver metallization and degrade cell-to-ribbon solder joints over time",
+  "Vacuum lowers the boiling point of the EVA cross-linking agents, allowing the curing reaction to initiate at 120°C instead of 150°C, which reduces thermal stress on the cells and improves long-term reliability",
+  "Vacuum creates a pressure differential that forces EVA to flow preferentially into the cell interconnect gaps, ensuring copper ribbons are fully encapsulated before the bulk lamination pressure is applied from above"
+]
+answer.answer = "Vacuum removes trapped air from between the module layers before the EVA melts and flows, preventing air bubbles that would scatter light, create delamination initiation points, and accelerate moisture-induced degradation over the module's lifetime"
+context = "Air bubbles trapped in the laminate cause optical losses (light scattering), serve as stress concentrators that initiate delamination, and create pathways for moisture ingress. Evacuating air before EVA melting ensures a void-free, optically clear encapsulation."
+id = "91bb4879-6c20-4782-97d7-fe16c92dd739"
