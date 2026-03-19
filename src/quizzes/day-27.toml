@@ -1,0 +1,119 @@
+# Day 27 Quiz — What's in the Lab Today
+
+# --- Current Day Questions (6) ---
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "LONGi's large-area perovskite-silicon tandem cell demonstrated at SNEC 2025 achieved 33% efficiency. What was notable about this particular result compared to other tandem records?"
+prompt.distractors = [
+  "It used a novel triple-junction architecture stacking perovskite, silicon, and CIGS layers, achieving the highest voltage ever recorded for a multi-junction photovoltaic device at 3.2V open-circuit",
+  "It was fabricated entirely using roll-to-roll printing at room temperature, demonstrating that tandem cells could be manufactured without any vacuum deposition steps or high-temperature processing",
+  "It achieved the record under concentrated illumination of 500 suns rather than standard one-sun conditions, using a Fresnel lens array to boost photon flux beyond normal terrestrial irradiance levels"
+]
+answer.answer = "It was demonstrated on a commercially relevant 260.9 cm² area, where edge effects, current mismatch, and defect density make high efficiency much harder to achieve than on small fingernail-sized lab cells"
+context = "Many lab records are set on tiny cells (often <1 cm²). LONGi's achievement was notable because scaling to 260.9 cm² introduces real manufacturing challenges — proving the technology's commercial viability, not just its theoretical potential."
+id = "f8f78eb7-dac1-4bdd-acd7-7b98e90cf9a8"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Singlet fission enables silicon-based solar cells to potentially exceed their Shockley-Queisser limit. How does this quantum mechanical process work at the molecular level?"
+prompt.distractors = [
+  "A single photon strikes two adjacent molecules simultaneously via quantum tunneling, creating correlated electron-hole pairs in each molecule that are entangled and can be extracted as coherent current through the silicon substrate",
+  "Two low-energy infrared photons are combined through nonlinear optical absorption in the organic layer, producing a single high-energy virtual state that then injects one energetic carrier into the silicon cell below",
+  "The organic molecules act as photonic upconverters, absorbing two sub-bandgap photons sequentially and emitting a single photon with enough energy to create an electron-hole pair in the silicon absorber layer"
+]
+answer.answer = "A single high-energy photon creates a singlet excited state in an organic molecule, which then splits into two lower-energy triplet states on neighboring molecules, each capable of generating a separate electron-hole pair in the silicon"
+context = "Singlet fission converts one high-energy photon into two triplet excitons. This is why silicon–singlet fission devices can exceed 100% external quantum efficiency in the blue/UV range — more carriers out than photons in, without violating energy conservation."
+id = "11571bba-9107-442b-8eaa-d018abcdd275"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why do perovskite solar cells achieve dramatically higher efficiency under indoor LED lighting (~38.7%) compared to silicon cells under the same conditions?"
+prompt.distractors = [
+  "Perovskite's higher carrier mobility under low-intensity illumination reduces recombination losses that dominate at indoor light levels, while silicon's indirect bandgap creates phonon-bottleneck effects that worsen at low photon flux densities",
+  "Indoor LEDs emit significant ultraviolet radiation that perovskite absorbs efficiently due to its wide absorption tail, whereas silicon's anti-reflective coatings are optimized for the outdoor solar spectrum and reflect most UV from artificial sources",
+  "Perovskite films exhibit photon recycling under narrow-band illumination, where re-emitted photons are reabsorbed multiple times within the thin film, effectively amplifying the voltage output beyond what a single absorption event would produce"
+]
+answer.answer = "Indoor LED lighting has a narrow emission spectrum, and perovskite's bandgap can be precisely tuned to match it, whereas silicon's fixed 1.12 eV bandgap is optimized for the broad solar spectrum and wastes most narrow-band artificial light energy"
+context = "It's a spectral matching issue. Perovskite's tunable bandgap (1.2–2.3 eV) can be dialed in to perfectly match LED emission peaks, minimizing thermalization losses. Silicon can't adjust its bandgap and loses significant energy when the illumination spectrum is narrow."
+id = "ed080943-948d-4856-b72b-579bb0183ca7"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Thermophotovoltaic (TPV) systems demonstrated over 40% conversion efficiency from a high-temperature emitter. What fundamental advantage do they offer over conventional battery storage for grid applications?"
+prompt.distractors = [
+  "TPV cells generate both electricity and high-grade heat simultaneously in a cogeneration arrangement, achieving combined thermal-electric efficiencies above 85% that no electrochemical battery can match for industrial process heat applications",
+  "TPV systems use abundant iron-air chemistry in the emitter block, enabling energy densities 10x higher than lithium-ion while costing less than $5/kWh, making them economically superior for any storage duration beyond 2 hours",
+  "TPV cells operate at cryogenic temperatures on the receiving side, creating a Carnot-favorable temperature differential that allows theoretical conversion efficiencies approaching 70%, far beyond any room-temperature electrochemical system"
+]
+answer.answer = "They store energy as extreme heat (1,500–2,400°C) in simple insulated carbon or silicon blocks with no moving parts, no exotic chemicals, and no degradation from charge cycling, then convert it back to electricity via thermal radiation onto PV cells"
+context = "TPV thermal batteries use fundamental physics — hot things radiate photons — rather than complex electrochemistry. Carbon blocks don't degrade from cycling, don't use rare materials, and can store energy at densities far beyond what chemical batteries achieve."
+id = "eee1b4ca-472f-4db5-a199-c521e9411c25"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "What molecule, reported in ACS Energy Letters in 2025, provided a breakthrough for singlet fission solar cells by being both efficient at fission and photostable — unlike the earlier champion molecules tetracene and pentacene?"
+answer.answer = "DPND"
+answer.alternatives = ["dipyrrolonaphthyridinedione", "Dipyrrolonaphthyridinedione"]
+context = "DPND (dipyrrolonaphthyridinedione) solved the key problem with earlier singlet fission molecules: photodegradation. Tetracene and pentacene work well for fission but bleach and decompose under prolonged illumination, making them unsuitable for real solar cells."
+id = "977dc326-af41-465d-b959-82c033cf112d"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Luminescent solar concentrators (LSCs) using quantum dots face a critical optical challenge that limits device size. Which recent advance directly addresses this problem?"
+prompt.distractors = [
+  "Embedding quantum dots in photonic crystal waveguides that create forbidden frequency bands, preventing any re-emitted photons from escaping through the top or bottom surfaces of the concentrator panel",
+  "Using tandem quantum dot layers with cascading energy levels, where each successive layer absorbs and re-emits at progressively longer wavelengths to amplify the photon flux reaching the edge-mounted cells",
+  "Doping the glass substrate with rare-earth ions that create a refractive index gradient, bending all internally reflected photons toward the edges regardless of their emission angle within the concentrator"
+]
+answer.answer = "Engineering quantum dots with a large Stokes shift — a wide gap between absorption and emission wavelengths — which dramatically reduces self-absorption, the problem where re-emitted photons get reabsorbed before reaching the edge-mounted PV cells"
+context = "Self-absorption is the key size-limiting factor for LSCs. When absorption and emission spectra overlap, photons get reabsorbed repeatedly during their path to the edge. A large Stokes shift separates these spectra, allowing photons to travel further without being recaptured."
+id = "271ce26c-a8f6-46a6-a069-2392fddedbbe"
+
+# --- Review Questions from Recent Days (2) ---
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 26) In space solar applications, the dominant cell technology uses III-V multi-junction cells rather than silicon. What is the primary reason for this choice despite III-V cells costing roughly 100x more per unit area?"
+prompt.distractors = [
+  "III-V cells are inherently radiation-hard due to their direct bandgap, which means displacement damage from protons and electrons self-anneals at operating temperature without requiring protective coverglass shielding",
+  "III-V cells weigh approximately one-tenth as much as equivalent silicon cells due to their thinner active layers, and launch cost savings at $5,000–10,000/kg to orbit more than offset the higher cell manufacturing price",
+  "III-V cells can operate at temperatures up to 400°C without significant efficiency loss, allowing spacecraft to orbit much closer to the Sun than silicon-powered missions could safely venture"
+]
+answer.answer = "III-V multi-junction cells achieve efficiencies above 47% under concentration by stacking materials with different bandgaps, and in space where launch mass and panel area are severely constrained, maximizing watts per kilogram justifies the higher cost"
+context = "In space, the cost equation is inverted. Panel area and mass directly affect launch cost, spacecraft design, and mission capability. III-V multi-junction cells produce far more power per unit area and mass, making them cost-effective despite their high $/cm² price."
+id = "8f6f3d36-f55a-4edd-9359-29a6ddaa1211"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 25) When recycling crystalline silicon solar panels, what is the most economically challenging step, and why does it create a bottleneck for the recycling industry?"
+prompt.distractors = [
+  "Removing the anti-reflective silicon nitride coating requires hydrofluoric acid etching at precise concentrations, generating hazardous fluoride waste streams that demand expensive neutralization and disposal at certified treatment facilities",
+  "Extracting the copper interconnect ribbons from between cells requires manual disassembly because automated systems cannot distinguish copper from tin solder, making labor costs prohibitive at current recycled copper market prices",
+  "Recovering the silver from screen-printed metallization requires cyanide leaching at elevated temperatures, and the small quantity per panel (2–4 grams) doesn't justify the chemical processing costs at today's silver prices"
+]
+answer.answer = "Separating the laminated layers — glass, EVA encapsulant, cells, and backsheet thermally bonded together — requires energy-intensive pyrolysis or chemical processing, and the recovered silicon wafer fragments have limited value compared to virgin polysilicon"
+context = "The EVA lamination that protects modules for 25+ years also makes them extremely difficult to disassemble. Thermal processing to separate layers consumes significant energy, and the broken cell fragments recovered are worth less than newly produced polysilicon."
+id = "1ce3efb5-971e-41b9-8f87-d07eeaf64c4e"
+
+# --- Review Question from Older Days (2) ---
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 12) The Shockley-Queisser limit sets a theoretical maximum of ~33.7% for a single-junction cell with an optimal bandgap of ~1.34 eV. Which loss mechanism accounts for the largest single share of wasted energy?"
+prompt.distractors = [
+  "Radiative recombination, where electron-hole pairs emit photons back out of the cell before being collected, dissipates approximately 15% of incident solar energy and sets the fundamental voltage limit of any semiconductor junction",
+  "Transmission losses from sub-bandgap photons that pass straight through the absorber without being absorbed account for roughly 10% of incident energy, and this fraction increases significantly for wider-bandgap materials",
+  "Carnot thermodynamic losses arising from the temperature difference between the 5,778K solar surface and the ~300K cell surface impose an unavoidable entropy penalty that consumes about 5% of theoretical maximum power"
+]
+answer.answer = "Thermalization — the process where photons with energy above the bandgap generate carriers that rapidly shed their excess energy as heat to the crystal lattice — wastes approximately 30% of incident solar energy in a silicon cell"
+context = "Thermalization is the single biggest loss in any single-junction cell. A 3 eV UV photon and a 1.2 eV IR photon both produce one carrier at the bandgap energy (~1.1 eV for silicon). The difference is dumped as waste heat into the lattice within picoseconds."
+id = "c231cc68-f818-4406-9e21-221873932e81"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (Day 9) What does the acronym TOPCon stand for in solar cell architecture?"
+answer.answer = "Tunnel Oxide Passivated Contact"
+answer.alternatives = ["tunnel oxide passivated contact", "Tunnel oxide passivated contact"]
+context = "TOPCon uses an ultra-thin (~1.5 nm) silicon oxide tunnel layer topped with a doped polysilicon layer. Carriers tunnel through the oxide while surface recombination is suppressed, enabling cell efficiencies above 26%."
+id = "30c2f9bf-e63e-46f3-b4e0-cff1630ec985"
