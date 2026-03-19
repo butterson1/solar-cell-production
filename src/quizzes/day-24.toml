@@ -1,0 +1,119 @@
+# Day 24: Building-Integrated PV (BIPV) — Quiz
+
+## Current Day Questions (6)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why can't BIPV products be fairly evaluated using the same cost-per-watt metric applied to conventional solar panels?"
+prompt.distractors = [
+  "Because BIPV cells use fundamentally different semiconductor physics that make watt-based comparisons meaningless across different junction architectures and bandgap configurations.",
+  "Because BIPV modules are always less efficient than conventional panels, so the industry developed a separate cost-per-lumen metric that accounts for both transparency and generation.",
+  "Because BIPV installations receive less irradiation due to non-optimal tilt angles, so the metric must be adjusted using a building orientation correction factor defined in IEC 61853."
+]
+answer.answer = "Because BIPV replaces conventional building materials (roofing, cladding, glass), so the cost of the displaced material must be subtracted to find the true incremental cost of adding power generation."
+context = "This is the 'material offset' principle — BIPV competes against granite, aluminum composite, and triple-glazed glass, not against utility-scale solar panels. When you subtract the $150–$1,200/m² cost of the building material BIPV replaces, the effective solar cost can approach zero."
+id = "e7058c8a-e3f5-4482-a1d2-6391948cad3f"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the main reason that facade BIPV systems can be more valuable per kWh than roof-mounted systems for commercial buildings, despite producing less total energy?"
+prompt.distractors = [
+  "Facade panels operate at cooler temperatures due to wind exposure on vertical surfaces, which increases cell efficiency by 8–12% compared to roof panels and raises the value of each generated kWh.",
+  "Building codes in the EU assign a 1.5× renewable energy credit multiplier to facade-mounted PV systems under the EPBD directive, making each kWh count more toward zero-emission compliance targets.",
+  "Vertical facade panels capture primarily diffuse light rather than direct beam radiation, which produces higher-quality DC power with less voltage ripple that inverters convert more efficiently."
+]
+answer.answer = "Facade PV produces more power in winter and during morning/evening hours, creating a flatter generation curve that better matches commercial buildings' 8 AM–6 PM electricity consumption profile."
+context = "Vertical surfaces receive more direct sunlight when the sun is low (winter, mornings, evenings) and less at midday when the sun is high. This flatter generation profile aligns better with commercial demand curves than the sharp midday peak of roof-mounted systems."
+id = "fd479421-c62c-4e7f-aaf9-fbb1db8d1208"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why are spandrel panels considered one of the most economically compelling BIPV applications?"
+prompt.distractors = [
+  "Spandrel panels receive the highest solar irradiation on a curtain wall because they are positioned at the top of each floor where inter-floor reflections concentrate sunlight onto the opaque surface.",
+  "Spandrel panels can use bifacial cells that capture light from both the exterior and from interior office lighting, effectively doubling energy harvest compared to single-sided facade BIPV modules.",
+  "Spandrel panels are exempt from the thermal cycling tests required for vision glass BIPV under IEC 61215, which reduces certification costs by 40–60% and accelerates time-to-market significantly."
+]
+answer.answer = "Spandrels are already opaque building elements costing $150–$300/m², so full-efficiency 18–20% silicon cells can be used without sacrificing daylight, and the incremental cost to add PV can be as low as $50–$100/m²."
+context = "Since spandrel panels hide floor slabs and mechanical spaces and are already opaque, there's no transparency trade-off. You get full monocrystalline efficiency while replacing a component the building needs anyway, making the incremental solar cost very low."
+id = "0cd8882f-8b90-4b12-bee9-0709b4afc911"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the primary technical limitation of 'truly transparent' photovoltaic windows like those produced by ClearVue Technologies?"
+prompt.distractors = [
+  "The UV and IR absorbing layers degrade rapidly under thermal cycling, limiting the window's useful power-generating lifespan to 8–10 years before efficiency drops below 1%, far shorter than the building's life.",
+  "The transparent PV coatings create optical distortions that reduce the color rendering index below 80%, making interior spaces appear yellowish and unsuitable for offices, retail, or healthcare settings.",
+  "The conductive transparent oxide layers required for current collection have sheet resistance above 50 Ω/sq, causing resistive losses that increase non-linearly with panel size beyond 0.5 m² area."
+]
+answer.answer = "Efficiency is only about 3.3% because the glass must transmit visible light photons rather than absorbing them, limiting energy harvest to UV and IR wavelengths that carry less total energy than the visible spectrum."
+context = "Transparency and power generation are directly opposed — every visible photon that passes through to illuminate the interior is one that wasn't absorbed. ClearVue achieves 70% visible light transmission with a perfect CRI of 99%, but only 3.3% power conversion efficiency, producing roughly 30–35 W/m²."
+id = "177cb2c3-64a9-4985-a008-87e51e8a13b5"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why are module-level power electronics (MLPEs) particularly critical for BIPV installations compared to conventional rooftop solar arrays?"
+prompt.distractors = [
+  "BIPV modules operate at higher voltages due to their integration with building electrical systems, and MLPEs are required to step down the voltage to levels compatible with standard grid-tie inverters.",
+  "BIPV panels are mounted without grounding frames, so MLPEs provide the rapid shutdown capability mandated by NEC 690.12 that conventional grounded racking systems achieve through mechanical disconnects.",
+  "BIPV cells experience faster light-induced degradation (LID) than conventional modules due to elevated temperatures, and MLPEs compensate by continuously recalibrating the maximum power point every 50 ms."
+]
+answer.answer = "In BIPV, every panel faces different shading from neighboring buildings, balconies, and architectural features, and string inverters would force all panels to match the worst performer's output, losing 10–25% of harvestable energy."
+context = "The 'Christmas lights' effect in string inverters means one shaded panel drags down the entire string. BIPV installations have inherently complex, variable shading patterns, so microinverters or DC optimizers that let each panel operate independently can recover 10–25% of otherwise lost energy."
+id = "c11923d8-976f-40ca-9a9d-f95008c08f21"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "The Copenhagen International School's BIPV facade uses approximately how many solar panels, covering how many square meters?"
+answer.answer = "12,000 panels, 6,000 m²"
+answer.alternatives = ["12000 panels 6000 m2", "12,000 panels covering 6,000 square meters", "12000 panels, 6000 sqm", "12,000 solar panels, 6,000 m²"]
+context = "The Copenhagen International School, completed in 2017 and designed by C.F. Møller Architects, features 12,000 SolarLab panels covering 6,000 m² of facade with a 720 kWp capacity, generating about 300 MWh/year."
+id = "67798735-4a7b-436c-8a84-0771d1b90bea"
+
+## Review Questions — Recent Days (2)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 23) What is the typical bifacial energy gain for a utility-scale installation using single-axis trackers over white gravel with an albedo of 0.5?"
+prompt.distractors = [
+  "5–8% gain, because single-axis trackers primarily improve direct beam capture and contribute minimally to rear-side illumination, which depends almost entirely on diffuse ground reflection patterns.",
+  "35–45% gain, because the combination of high-albedo ground cover and continuous tracking creates a resonant reflection cavity between adjacent rows that amplifies rear irradiance beyond simple albedo calculations.",
+  "12–15% gain, because while high-albedo surfaces increase ground-reflected light reaching the rear cells, the tracker's east-west rotation reduces the effective view factor of the ground during morning and evening hours."
+]
+answer.answer = "20–30% gain, because high-albedo ground surfaces significantly increase the diffuse and reflected light reaching the rear side of bifacial modules, and tracking optimizes the front-side capture throughout the day."
+context = "Bifacial modules over high-albedo surfaces like white gravel (albedo ~0.5) combined with single-axis tracking typically deliver 20–30% more energy than fixed monofacial systems. The albedo of the ground beneath bifacial panels is a critical design parameter."
+id = "9c9a927f-5b7a-46f6-9c29-598be29dbbad"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 22) In a two-terminal (2T) monolithic perovskite-silicon tandem cell, why must the current output of both sub-cells be carefully matched?"
+prompt.distractors = [
+  "Because mismatched currents cause the lower-current cell to enter reverse bias and develop hotspots that thermally degrade the perovskite layer above 150°C, triggering irreversible halide segregation and phase decomposition.",
+  "Because the shared transparent conductive oxide interlayer has a maximum current density threshold of 18 mA/cm², and exceeding it in either sub-cell causes resistive heating that cracks the brittle interlayer.",
+  "Because unmatched currents create a voltage differential across the recombination junction that shifts the perovskite cell's bandgap through the Stark effect, permanently altering its absorption spectrum."
+]
+answer.answer = "Because in a series-connected 2T device, the total current is limited to the lower of the two sub-cells' photocurrents — any excess current generated by the higher-producing cell is wasted as heat in the recombination layer."
+context = "Two-terminal tandems wire the sub-cells in series, so the device current equals the minimum of the two sub-cell currents (like a chain limited by its weakest link). Current matching requires careful tuning of the perovskite bandgap and layer thickness."
+id = "03c6637f-c910-4b92-9316-354d24df0a04"
+
+## Review Questions — Older Days (2)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 9) What is the key structural difference between a PERC cell and a TOPCon cell that gives TOPCon its efficiency advantage?"
+prompt.distractors = [
+  "TOPCon uses a thicker aluminum back-surface field (Al-BSF) layer of 30–50 µm compared to PERC's 15–20 µm layer, which improves rear-side carrier collection efficiency by extending the depletion region deeper into the bulk.",
+  "TOPCon replaces PERC's boron-doped p-type silicon wafer with a gallium-doped p-type wafer, which eliminates light-induced degradation (LID) and maintains a 0.3–0.5% absolute efficiency advantage throughout the module's lifetime.",
+  "TOPCon uses a front-side heterojunction of amorphous silicon over crystalline silicon instead of PERC's homojunction, creating a wider bandgap window layer that reduces thermalization losses by approximately 8–12%."
+]
+answer.answer = "TOPCon adds an ultra-thin (~1.5 nm) tunnel oxide layer topped by a doped polysilicon layer on the rear surface, which passivates dangling bonds far more effectively than PERC's aluminum oxide/silicon nitride rear passivation stack."
+context = "TOPCon (Tunnel Oxide Passivated Contact) achieves superior rear-surface passivation through a ~1.5 nm SiO₂ tunnel oxide plus n+ polysilicon layer. This virtually eliminates recombination at the rear contact while still allowing carrier transport via quantum tunneling."
+id = "636d2ba8-29d7-485b-9cc8-ae86f42c4cc5"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (Day 7) What is the name of the surface texturing pattern created by anisotropic KOH etching of monocrystalline silicon wafers?"
+answer.answer = "random pyramids"
+answer.alternatives = ["random pyramid texture", "pyramid texture", "pyramids", "random pyramid", "inverted pyramids"]
+context = "Anisotropic etching of (100)-oriented monocrystalline silicon in KOH solution preferentially etches along crystal planes, creating a surface covered in random pyramids (typically 1–10 µm tall) that reduce reflectance from ~35% to ~10% by causing light to bounce multiple times between pyramid faces."
+id = "f5990310-d272-4e1e-9970-a04317afffa2"
