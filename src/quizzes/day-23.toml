@@ -1,0 +1,125 @@
+# Day 23 Quiz: Bifacial Modules & Tracking Systems
+
+## Current Day Questions (6)
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "A bifacial solar module is installed over dark agricultural soil (albedo ~0.15) and then the ground is covered with white gravel (albedo ~0.65). Based on the relationship between albedo and rear-side gain, approximately how much additional rear-side power generation would you expect?"
+prompt.distractors = [
+    "About 5–8% more rear-side generation, because each 0.1 albedo increase adds roughly 1% rear power, and the 0.50 albedo difference produces a modest linear gain limited by rear cell saturation effects.",
+    "About 30–35% more rear-side generation, because the relationship between albedo and rear power is exponential at high albedo values, and white surfaces produce disproportionate specular reflection toward the module.",
+    "About 2–3% more rear-side generation, because most of the rear-side contribution comes from diffuse sky radiation entering at oblique angles, and ground-reflected light accounts for only a minor fraction of total rear irradiance."
+]
+answer.answer = "About 15–25% more rear-side generation, because each 0.1 increase in albedo contributes roughly 3–5% additional rear-side power, and the 0.50 difference in albedo (0.15 to 0.65) compounds across that range."
+context = "Research shows each 0.1 albedo increase yields 3–5% more rear-side power. Going from 0.15 to 0.65 (a 0.50 increase) would produce roughly 15–25% additional rear generation. White reflective surfaces can push bifacial gain up to 20%."
+id = "59cdf99f-1d19-4e3f-8e73-a6e3da2599fc"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why do glass-glass (dual glass) bifacial modules now dominate over glass-transparent backsheet designs for utility-scale bifacial installations?"
+prompt.distractors = [
+    "Glass-glass modules are 15–20% lighter per square meter than transparent backsheet designs, reducing structural loading on trackers and allowing longer torque tube spans with fewer pile foundations per megawatt.",
+    "Transparent backsheets transmit UV wavelengths more efficiently than glass (50% vs 40%), which accelerates EVA yellowing and cell degradation, making glass-glass the only viable option for 30-year warranties.",
+    "Glass-glass modules can use frameless edge-sealed construction that eliminates potential-induced degradation (PID) entirely, while transparent backsheet modules require grounded frames that create voltage differentials."
+]
+answer.answer = "Glass-glass modules offer higher rear-side light transmittance (~94% vs ~89% for transparent backsheets), superior long-term moisture resistance, and better established durability data, maximizing bifacial gain over 30-year project lifetimes."
+context = "Dual glass provides ~94% rear transmittance vs ~89% for transparent backsheets, meaning more light reaches the rear cells. Glass also provides a more proven moisture barrier and longer reliability track record, which is critical for bankability."
+id = "c9bb37eb-0377-49e0-8350-08af7939f7b9"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is 'backtracking' in the context of single-axis solar trackers, and why is it used?"
+prompt.distractors = [
+    "Backtracking reverses the tracker rotation direction at solar noon so modules face due south during the afternoon instead of following the sun westward, reducing thermal stress from sustained high-irradiance exposure on a single cell string.",
+    "Backtracking increases the tracker tilt angle beyond the sun angle during early morning and late afternoon to capture more diffuse atmospheric radiation, trading direct-beam losses for higher energy harvest from scattered photons.",
+    "Backtracking temporarily stows modules to a flat horizontal position when wind speeds exceed 15 m/s, then rapidly returns to the optimal tracking angle once conditions normalize, protecting against mechanical fatigue damage."
+]
+answer.answer = "Backtracking reduces the tracker tilt angle during low-sun periods so that each row's shadow falls short of the neighboring row, eliminating inter-row shading at the cost of a small reduction in direct-beam capture on each individual row."
+context = "When the sun is low, aggressive tracking would cause rows to shade each other. Backtracking deliberately reduces tilt to avoid shading overlap. The small cosine loss on each row is far less than the shading loss that would occur on neighboring rows."
+id = "51c7256b-bc38-4288-a976-da9c824da796"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why do bifacial solar modules perform disproportionately well during winter at high-latitude installations?"
+prompt.distractors = [
+    "Silicon's bandgap narrows at cold winter temperatures, shifting its absorption edge to longer wavelengths and allowing it to capture a broader portion of the red-shifted winter spectrum, boosting both front and rear cell efficiency by 3–5%.",
+    "Winter cloud cover produces predominantly short-wavelength diffuse light that penetrates glass more efficiently than direct-beam radiation, increasing optical coupling to the rear cells by reducing front-surface Fresnel reflection losses.",
+    "The lower winter sun angle increases the air mass traversed by sunlight, which reddens the spectrum and preferentially excites rear-side n-type cell architectures that have stronger long-wavelength quantum efficiency than front p-type layers."
+]
+answer.answer = "Snow cover pushes ground albedo to 0.80–0.90, dramatically increasing rear-side irradiance, while the low winter sun angle directs a greater fraction of diffuse and reflected light toward the module's back surface."
+context = "In winter at high latitudes, snow creates extremely high albedo (0.80+), and the low sun angle means more reflected and diffuse light reaches the rear. Bifacial gain in January at Nordic sites can exceed 30%, partially offsetting shorter days."
+id = "8f441cea-cf75-4204-9436-3a1cb8ffd804"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "What is the typical energy gain percentage of a single-axis tracker over a fixed-tilt system in high-DNI locations like the American Southwest or Chile's Atacama?"
+answer.answer = "25%"
+answer.alternatives = ["25", "over 25%", ">25%", "25-30%", "25 percent"]
+context = "In high direct-normal-irradiance locations, single-axis trackers deliver gains exceeding 25% over fixed-tilt installations. The general range is 15–25%, with high-DNI sites at the upper end."
+id = "3b752283-ac6e-4e87-b206-6278e14abf52"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why has dual-axis tracking failed to gain significant market share for utility-scale solar despite offering 30–45% energy gain over fixed tilt?"
+prompt.distractors = [
+    "Dual-axis trackers require continuous GPS synchronization and high-bandwidth communication networks to maintain pointing accuracy, which adds $0.08–0.12/W in recurring connectivity costs that erode long-term project returns.",
+    "The additional mechanical vibration from dual-axis movement causes accelerated cell micro-cracking in large-format modules, forcing operators to use smaller, less efficient panels that negate the tracking energy advantage.",
+    "Dual-axis trackers create highly concentrated ground shadows that shift rapidly, preventing any rear-side illumination on bifacial modules and making them incompatible with the dominant bifacial module technology."
+]
+answer.answer = "The installed cost premium of $0.12–0.18/W is 3–4× higher than single-axis, they require wider spacing that reduces land-use density, and the additional mechanical complexity increases maintenance burden — the extra 10–15% gain over single-axis rarely justifies these costs."
+context = "Dual-axis adds only 10–15% energy over single-axis but costs 3–4× more in hardware, needs more land to avoid mutual shading, and has more mechanical failure modes. The economics favor single-axis for utility scale."
+id = "358e7f85-f96a-4b71-8714-695d5111c85b"
+
+## Review Questions
+
+# 🔁 Review — Day 20: Module Reliability
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 20) During IEC 61215 damp heat testing, modules are exposed to 85°C and 85% relative humidity for 1,000 hours. What is the primary degradation mechanism this test is designed to accelerate?"
+prompt.distractors = [
+    "Thermal expansion mismatch between silicon cells and glass causes progressive cell cracking that propagates along crystal grain boundaries, eventually severing bus bar connections and creating resistive hotspots.",
+    "UV-driven photodegradation of the EVA encapsulant produces acetic acid vapor that etches the anti-reflective coating off the cell surface, permanently reducing short-circuit current by 5–8% over the test duration.",
+    "Repeated thermal cycling between ambient and 85°C causes solder joint fatigue at the cell-ribbon interface, increasing series resistance and reducing fill factor as interconnection points develop micro-fractures."
+]
+answer.answer = "Moisture ingress through the encapsulant and backsheet attacks the cell metallization, causes delamination at material interfaces, and can trigger electrochemical corrosion of silver gridlines and solder bonds, degrading electrical performance."
+context = "The 85/85 damp heat test accelerates moisture-related degradation — corrosion of metal contacts, delamination of encapsulant-cell interfaces, and potential-induced degradation. It simulates decades of humid climate exposure in 1,000 hours."
+id = "b0cdad04-9f00-466f-b04a-4b0496b7f56b"
+
+# 🔁 Review — Day 21: Perovskite Solar Cells
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 21) What makes the perovskite crystal structure (ABX₃) particularly advantageous for solar cell engineering compared to silicon's fixed diamond cubic lattice?"
+prompt.distractors = [
+    "The perovskite lattice has a larger unit cell volume that accommodates higher dopant concentrations without creating recombination-active defect sites, allowing carrier lifetimes exceeding 100 microseconds even in heavily doped films.",
+    "Perovskite's layered 2D crystal structure enables natural quantum confinement effects that boost the absorption coefficient by 10× over bulk materials, eliminating the need for light-trapping textures used in silicon cells.",
+    "The perovskite structure spontaneously forms a built-in electric field due to its ferroelectric polarization, which drives charge separation without requiring a traditional p-n junction and simplifies device fabrication."
+]
+answer.answer = "By swapping different ions into the A, B, and X sites, engineers can continuously tune the bandgap from about 1.2 eV to 2.3 eV, enabling optimization for single-junction cells or precise spectral splitting in tandem architectures."
+context = "The ABX₃ structure's compositional flexibility is its defining advantage. Changing the halide (X = I, Br, Cl) or organic cation (A = MA, FA, Cs) tunes the bandgap across a wide range, unlike silicon's fixed 1.12 eV bandgap."
+id = "8ac34d3d-107a-423a-9dd8-7d36640320c0"
+
+# 🔁 Review — Day 14: From Cell to Module
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (Day 14) What transparent polymer material is most commonly used as the encapsulant between solar cells and glass in standard module construction?"
+answer.answer = "EVA"
+answer.alternatives = ["ethylene-vinyl acetate", "ethylene vinyl acetate", "eva"]
+context = "EVA (ethylene-vinyl acetate) is the dominant encapsulant in PV modules. It's laminated between the glass and cells at ~150°C, creating a transparent moisture barrier that protects cells while allowing light transmission."
+id = "c1c69eb3-ea56-4f4d-ac47-b784307451eb"
+
+# 🔁 Review — Day 9: Cell Architectures
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (Day 9) What key structural innovation distinguishes TOPCon cells from standard PERC, and how does it improve efficiency?"
+prompt.distractors = [
+    "TOPCon replaces the front silver grid with a copper-plated contact pattern that reduces shading losses from 3.5% to 1.8% and cuts metallization costs by 40%, boosting both efficiency and manufacturing margins.",
+    "TOPCon uses a thicker wafer (200 μm vs 160 μm) with a graded doping profile that creates a built-in back-surface field stronger than PERC's aluminum BSF, improving voltage by 15 mV without additional processing.",
+    "TOPCon deposits a textured zinc oxide layer on the front surface that replaces silicon nitride as the anti-reflective coating, achieving broader spectral coverage from 300–1200 nm and increasing photocurrent by 0.8 mA/cm²."
+]
+answer.answer = "TOPCon adds an ultra-thin (~1.5 nm) tunneling silicon oxide layer capped with doped polysilicon on the rear surface, enabling carrier-selective passivation that dramatically reduces rear recombination and pushes Voc above 720 mV."
+context = "TOPCon's defining feature is the tunnel oxide passivated contact — a ~1.5 nm SiOx layer plus n+ polysilicon that passivates the rear surface while allowing electron tunneling. This reduces recombination losses and lifts open-circuit voltage."
+id = "ccbff3b2-f39f-4d11-850b-54251e5fb316"
