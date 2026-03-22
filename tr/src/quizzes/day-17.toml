@@ -1,0 +1,122 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Polisilikon üretimi neden Jiangsu gibi kıyı illeri yerine Sincan, Siçuan ve İç Moğolistan'da yoğunlaşıyor?"
+prompt.distractors = [
+  "Kıyı illeri Siemens prosesi için gereken ultra saf su kaynaklarından yoksunken, iç kesimlerde polisilikon soğutma sistemlerine uygun bol miktarda buzul eriyik suyu bulunmaktadır.",
+  "Kıyı illerindeki çevre düzenlemeleri, polisilikon rafinasyonunun kimyasal yan ürünlerini yasaklayarak üreticileri daha hoşgörülü endüstriyel atık politikaları olan illere yerleşmeye zorluyor",
+  "Kuru iç iklim, polisilikon kristalizasyonu sırasında neme bağlı kirlenmeyi azaltır ve nemli kıyı üretim bölgelerine kıyasla verimi %15-20 artırır.",
+]
+answer.answer = "Polisilikon rafinerisi kilogram başına 60-80 kWh tüketiyor ve bu iç kesimlerdeki eyaletler kömür ve hidroelektrikten 0,15-0,30 Yen/kWh fiyatla elektrik sunuyor; bu da kıyıdaki sanayi oranlarının kabaca üçte biri kadar."
+context = "Polisilikon tesisi yerleşiminde enerji maliyeti baskın faktördür. Sincan kömür enerjisini 0,02-0,035 $/kWh seviyesinde sunarken, Sichuan ve Yunnan ucuz hidroelektrik sağlıyor. Bu enerji avantajı, kıyıdaki hücre/modül fabrikalarına 2.000-3.000 km nakliye maliyetinden daha ağır basmaktadır."
+id = "4edcf3cb-0d6f-43ec-af8d-d123486e1a8e"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "2000'li yıllarda Çin güneş enerjisi üretiminin ilk patlayıcı büyümesini ne tetikledi?"
+prompt.distractors = [
+  "Çin'in merkezi hükümeti 2001 yılında güneş enerjisini stratejik bir endüstri olarak belirleyen Beş Yıllık Plan'ı başlattı ve bir düzine seçilmiş ulusal şampiyon firmaya 50 milyar dolarlık devlet bankası kredisi yönlendirdi.",
+  "2003 yılında Tsinghua Üniversitesi'nde düşük maliyetli metalurjik kalitede silikon işleme alanında yapılan bir atılım, Çinli üreticilere Batılı rakiplere göre %40'lık bir hammadde maliyeti avantajı sağladı",
+  "Japonya'nın 2004 Chuetsu depreminden sonra nükleer enerjiyi aşamalı olarak durdurma kararı, yalnızca Çin fabrikalarının hızlı bir şekilde karşılama kapasitesine sahip olduğu ani bir 30 GW talep artışı yarattı",
+]
+answer.answer = "Almanya'nın tarife garantisi kanunu (EEG), güneş enerjisi için piyasanın üzerinde oranları garanti ederek, çoğu Batılı eğitimli Çinli girişimcilerin yerel hükümet desteğiyle arza koştuğu Avrupa'dan büyük bir talep yarattı."
+context = "Buradaki ironi, Avrupa politikasının Çinli üreticilerin doldurduğu pazarı yaratmasıdır. Shi Zhengrong (Suntech) bunun başlıca örneği: Avustralya doktorası, Wuxi hükümetinin tohum finansmanı, Avrupalı ​​müşteriler. Yerel yönetimler ucuz arsalar, vergi indirimleri ve kredilerle güneş enerjisi şirketlerini çekmek için yarıştı."
+id = "d9474ff1-ec1d-43a6-ae3e-9b0be8b7e217"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Çinli üreticiler 2012-2013'te uygulanan ABD ve AB anti-damping tarifelerine nasıl tepki verdi?"
+prompt.distractors = [
+  "Üretim maliyetlerini %30 azaltmak için otomatik üretim hatlarına büyük yatırım yaptılar, gümrük maliyetlerini karşılarken Batı pazarlarına ihracat marjlarını tarife öncesi seviyelerde tuttular",
+  "Öncelikli olarak, 2016 yılı itibariyle yıllık 34,5 GW değerine ulaşan, hızla büyüyen Çin yerel pazarına satış yapmaya yöneldiler ve Batı ihracatına olan bağımlılıklarını %20'nin altına düşürdüler.",
+  "Tarifelere WTO anlaşmazlık çözümü işlemleri yoluyla itiraz ettiler ve 2015'te çoğu büyük ihracatçı için modüllerdeki efektif vergi oranlarını %10'un altına düşüren kısmi muafiyet kazandılar",
+]
+answer.answer = "Son montaj operasyonlarını Vietnam, Tayland, Malezya ve Kamboçya'ya kaydırdılar; Çin yapımı hücreleri modül montajı için Güneydoğu Asya'ya gönderdiler ve Batı pazarlarına tarifesiz olarak yeniden ihraç ettiler."
+context = "Bu Güneydoğu Asya yönlendirmesi, yıllardır tarifelerden yasal olarak kaçındı. ABD Ticaret Bakanlığı sonunda 2023 yılında bunun hileli bir hile teşkil ettiğine ve 2024-2025'ten itibaren bu dört ülkenin modüllerine %24-49 oranında yeni vergiler getirdiğine karar verdi."
+id = "0f8dd3f1-81c1-4160-98d0-6351ff6393fe"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Çin'in MOST pazar payı güneş enerjisi tedarik zincirinin hangi aşamasında yoğunlaşıyor ve yaklaşık yüzde kaçını elinde tutuyor?"
+prompt.distractors = [
+  "Polisilikon yaklaşık %85 oranında rafine ediliyor çünkü Siemens süreci, 2015-2020 genişleme döneminde yalnızca Çin devlet destekli firmaların karşılayabileceği büyük sermaye yatırımı gerektiriyor",
+  "Gelişmiş PERC ve TOPCon hücre mimarileri, ihraç edilmeyen özel Çin ekipmanlarına (özellikle PECVD ve lazer doping araçlarına) ihtiyaç duyduğundan hücre üretimi yaklaşık %92 seviyesinde",
+  "Çin lojistik ağları ve bileşen tedarikçileri (cam, EVA, arka tabaka, bağlantı kutusu) başka yerde kopyalanması imkansız olan entegre bir ekosistem oluşturduğundan modül montajı yaklaşık %88 oranındadır",
+]
+answer.answer = "Gofret üretimi yaklaşık %95 düzeyindedir, çünkü en özel ekipmanı (elmas tel testereler, kristal büyütme fırınları) gerektirir ve üretimde ölçek ekonomilerinden en fazla yararlanır."
+context = "%95'lik levha konsantrasyonu, tedarik zincirinin en dar tıkanma noktasıdır. Gofret üretimi, hem özel sermaye ekipmanı hem de kristal büyütme teknik bilgisi gerektirir; bu da kopyalanmasını modül montajından (~%80) ve hatta polisilikondan (~%85) daha zor hale getirir."
+id = "b3b6e11e-010a-4c89-adab-f75f7b05b31f"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "2025 itibarıyla Avrupa'da bir güneş modülü üretmenin Çin'e kıyasla yaklaşık maliyet primi nedir?"
+prompt.distractors = [
+  "Avrupa modüllerinin maliyeti Çin eşdeğerlerinden kabaca 0,045 €/W daha fazladır; bu fark, esas olarak hammaddelere uygulanan AB karbon sınırı düzenleme tarifelerinden kaynaklanan yüksek cam ve alüminyum çerçeve maliyetlerinden kaynaklanmaktadır.",
+  "Avrupa modüllerinin maliyeti Çin eşdeğerlerinden kabaca 0,210 €/W daha fazladır; Fraunhofer ISE bu açığın Avrupa güneş enerjisi üretim kapasitesinin tamamen millileştirilmesi olmadan kapatılamayacağı sonucuna varmıştır.",
+  "Avrupa modüllerinin maliyeti Çin'deki eşdeğerlerinden kabaca 0,070 €/W daha fazladır; bu, SolarPower Avrupa projelerinin 2028 yılına kadar Avrupalı fabrikaların planladıkları 50 GW ölçeğine ulaşmasıyla doğal olarak kapanacağı bir farktır.",
+]
+answer.answer = "Avrupa modüllerinin maliyeti Çin eşdeğerlerinden kabaca 0,103 €/W daha fazladır; Fraunhofer ISE, karbon sınırı ayarlamaları ve satın alma tercihleri ​​gibi agresif politikalarla bu farkın %10'un altına indirilebileceği sonucuna varmıştır."
+context = "SolarPower Europe tarafından hazırlanan Eylül 2025 tarihli Fraunhofer ISE raporu bu açığı ölçtü. ~0,103€/W seviyesinde, Çin modül fiyatları olan 0,08-0,10$/Wp'ye göre çok büyük bir rakam, bu da Avrupa üretim maliyetlerinin Çin fiyatının kabaca iki katı olduğu anlamına geliyor."
+id = "b0ad40fa-3cef-4d2a-a316-b535b81236a1"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "2024 yılında, 'Dört Büyük' ​​Çinli üreticiler (JinkoSolar, LONGi, Trina, JA Solar) toplu olarak yaklaşık kaç GW modül gönderdi?"
+answer.answer = "320 GW"
+answer.alternatives = [
+  "320",
+  "320'den fazla GW",
+  "300 GW",
+  "~320 GW",
+  "yaklaşık 320",
+]
+context = "JinkoSolar, 93 GW, LONGi 78 GW, Trina 77 GW ve JA Solar 77 GW sevk ederek toplamda 320 GW'den fazlasını sevk etti; bu, 2024'te dünya çapındaki tüm yeni güneş enerjisi kurulumlarının kabaca %60'ını oluşturdu."
+id = "84ed7bb7-4a3e-40b2-a49b-284704bb0a30"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (16. Gün) Güneş enerjisi üretim ekonomisi bağlamında 'Swanson Yasası' nedir?"
+prompt.distractors = [
+  "Hücre dönüşüm verimliliğindeki her %10'luk iyileşme için, modül üretim maliyetleri, çıkış kapasitesinin watt başına daha az hücreye ihtiyaç duyulması nedeniyle yaklaşık %18 azalır.",
+  "Açılan her gigawatt ölçekli fabrika için, artan talebin tedarikçinin rafineri kapasitesinin arttırılmasına yönelik yatırımlarını tetiklemesi nedeniyle bölgesel polisilikon fiyatları yaklaşık %8 oranında düşüyor.",
+  "Sürdürülebilir Ar-Ge yatırımlarının her beş yıllık dönemi için, ticari silikon hücrelerin teorik verimlilik tavanı yaklaşık 1,5 mutlak yüzde puanı artar.",
+]
+answer.answer = "Kümülatif sevk edilen güneş enerjisi kapasitesinin her iki katına çıkmasıyla, modül fiyatları yaklaşık %24 düşüyor; bu, 1970'lerden bu yana oldukça istikrarlı bir şekilde devam eden ampirik bir öğrenme eğrisi gözlemi."
+context = "Swanson Yasası bir fizik yasası değil, ampirik bir gözlemdir. %24'lük öğrenme oranı, yüzlerce spesifik mühendislik iyileştirmesinin, ölçek etkisinin ve tedarik zinciri optimizasyonlarının on yıllar boyunca kümülatif etkisini yansıtıyor."
+id = "e32aecc2-f09a-41a5-82fd-36e235c4660f"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (15. Gün) Dikey olarak entegre edilmiş modern bir güneş enerjisi fabrikasında, ham polisilikondan bitmiş, test edilmiş modüle, nakliyeye hazır hale gelene kadar yaklaşık toplam yolculuk süresi nedir?"
+prompt.distractors = [
+  "Hat içi kristal büyütme ve lazer işleme ile sürekli akışlı üretim, üretim zincirindeki tüm geleneksel toplu işleme darboğazlarını ortadan kaldırdığından yaklaşık 12-18 saat",
+  "Yaklaşık 2-3 hafta, çünkü polisilikon Czochralski büyümeden önce 10 günlük bir saflaştırma döngüsüne ve ardından iç kristal stresini azaltmak için 5 günlük bir tavlama işlemine tabi tutulmalıdır.",
+  "Dilimlemeden sonra gofretlerin zorunlu 30 günlük baharatlanması ve modüller gönderilmeden önce IEC sertifikasyonu için gereken 14 günlük yanma testi süresi nedeniyle yaklaşık 8-12 hafta",
+]
+answer.answer = "Toplamda kabaca 3-5 gün; kristal büyümesi külçe başına 2-3 gün ile en uzun sürerken, levhalama, hücre işleme ve modül montajı gibi aşağı yöndeki adımların her birinin tamamlanması saatler alır"
+context = "Czochralski kristal büyüme süreci ilerleme hızı açısından bir darboğazdır; tek bir külçenin çekilmesi 2-3 gün sürer. Ancak modern fabrikalar birçok fırını paralel olarak çalıştırıyor. Aşağı yöndeki adımlar (wafering, hücre hatları, modül montajı) oldukça paraleldir ve her biri parti başına yalnızca saatler alır."
+id = "c96843d0-6785-4cda-953a-4b747f0b071a"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (3. Gün) Siemens'in polisilikon saflaştırma sürecinde, yarı iletken dereceli silikon üreten temel kimyasal reaksiyon nedir?"
+prompt.distractors = [
+  "Silikon tetraflorür (SiF₄), kapalı bir reaktörde 800°C'de erimiş sodyum metal ile indirgenir, soğutulmuş grafit substratlar üzerinde saf silikon biriktirilirken bir yan ürün olarak sodyum florür üretilir.",
+  "Silan gazı (SiH₄), akışkan yataklı bir reaktörde 600°C'de termal olarak ayrışır; burada silikon atomları, 8-12 saat içinde granüler polisilikon peletlere dönüşen tohum parçacıkları üzerinde çekirdeklenir.",
+  "Metalurjik kalitede silikon, diklorosilanı (SiH₂Cl₂) oluşturmak için 350°C'de hidroklorik asit içinde eritilir ve daha sonra %99,9999 saf silikon biriktirmek üzere erimiş tuz banyosunda elektrolitik olarak indirgenir.",
+]
+answer.answer = "Triklorosilan gazı (SiHCl₃), bir fanus reaktörünün içinde kabaca 1.100°C sıcaklıkta ısıtılmış silikon tohum çubukları üzerinden geçirilir, burada termal olarak ayrışır ve ultra saf silikonu çubukların üzerine biriktirir."
+context = "Siemens prosesi, metalürjik kalitede silikonu HCl ile reaksiyona sokarak triklorosilan (SiHCl₃) üretiyor ve bu daha sonra aşırı saflığa kadar damıtılıyor ve bir fanus (Siemens) reaktöründe ~1.100°C'de ince silikon tohum çubukları üzerinde ayrıştırılıyor. Bu kimyasal buhar biriktirme, 9N+ (%99,9999999) saflıkta silikon üretir."
+id = "668ad3ca-0801-419d-ac79-c0c670cd317e"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (6. Gün) Standart bir silikon güneş hücresinde p-tipi ve n-tipi katmanları oluşturmak için kullanılan iki tür katkı atomu nelerdir?"
+answer.answer = "p-tipi için bor ve n-tipi için fosfor"
+answer.alternatives = [
+  "bor ve fosfor",
+  "fosfor ve bor",
+  "B ve P",
+  "bor (p-tipi) ve fosfor (n-tipi)",
+]
+context = "Bor (Grup III, silikondan bir eksik değerlik elektronu), p tipi katkılama için elektron 'delikleri' oluşturur. Fosfor (Grup V, bir ekstra değerlik elektronu), n-tipi katkılama için serbest elektronlar sağlar. Bağlantıları, fotojenlenmiş yük taşıyıcılarını ayıran elektrik alanını yaratır."
+id = "d5a2ebcc-9fb2-4a5b-9167-b2e2a37244e5"

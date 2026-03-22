@@ -1,0 +1,119 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Güneş pili fabrikaları neden hücreleri yalnızca verimlilik yerine birden fazla parametreye (I_sc, V_oc, FF) dayalı olarak kutulara ayırıyor?"
+prompt.distractors = [
+  "Farklı verimlilik hücreleri eşleşen termal katsayılara sahip olabilir ve I_sc/V_oc ile gruplama, aynı modüldeki hücrelerin 25 yıllık kullanım ömrü boyunca aynı oranda bozulmasını sağlayarak garanti taleplerini azaltır.",
+  "Modül sertifikasyonu için IEC 61215 uyarınca birden fazla parametreye göre sıralama yapılması gerekir — düzenleyiciler her seri dizisinde ±0,05 A akım eşleşmesi ve ±5 mV voltaj eşleşmesini zorunlu kılar",
+  "Aynı verimliliğe ancak farklı V_oc değerlerine sahip hücreler, uyumsuz bypass diyot tetikleme eşik değerlerine sahip olacak ve bu da bazı diyotların kısmi gölgeleme koşulları altında vaktinden önce etkinleştirilmesine neden olacaktır.",
+]
+answer.answer = "Aynı verime sahip iki hücre çok farklı akım ve gerilim profillerine sahip olabilir ve seri bağlı hücreler dizideki en düşük akımla sınırlı olduğundan, yüksek akım/düşük gerilim hücrelerini düşük akım/yüksek gerilim hücreleriyle karıştırmak uyumsuzluk kayıpları ve lokal ısınma yaratır."
+context = "Bir seri dizide tüm hücreler aynı akımı taşır. Daha düşük I_sc'ye sahip bir hücre, tüm diziyi mevcut seviyesine zorlar ve daha yüksek I_sc hücrelerdeki fazla fotoakımı ısı olarak harcar. I_sc'ye göre gruplama (yalnızca verimlilik değil) bu uyumsuzluğu önler."
+id = "d13-q01"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Güneş pili üretim hattında fotolüminesans (PL) görüntülemenin elektrolüminesans (EL) görüntülemeye göre temel avantajı nedir?"
+prompt.distractors = [
+  "PL görüntüleme, EL'nin 10 mikrometre sınırına kıyasla 1 mikrometrenin altında uzamsal çözünürlük elde ederek, nano ölçekli kristal kusurlarının ve monokristal levhalardaki bireysel dislokasyon çizgilerinin tespitine olanak tanır",
+  "PL görüntüleme, standart silikon CCD kameraları kullanarak görünür spektrumda (400-700 nm) çalışır ve EL sistemlerinin gerektirdiği pahalı InGaAs SWIR dedektörlerine olan ihtiyacı ortadan kaldırır.",
+  "PL görüntüleme yüzey rekombinasyon hızını ±%5 doğrulukla doğrudan ölçerken EL yalnızca bağımsız ömür ölçümlerine göre kalibrasyon gerektiren niteliksel haritalar sağlayabilir",
+]
+answer.answer = "PL görüntüleme temassızdır ve ham kesilmiş plakalardan bitmiş hücrelere kadar her üretim aşamasında çalışır; EL ise elektrik kontakları gerektirir ve yalnızca tamamlanmış hücreler veya modüller üzerinde gerçekleştirilebilir"
+context = "PL elektrik enjeksiyonu yerine optik uyarımı (lazer aydınlatma) kullanır, dolayısıyla metal temaslara ihtiyaç duymaz. Bu, levha yatırımının minimum düzeyde olduğu durumlarda, levhaları herhangi bir işlemden önce inceleyebileceğiniz ve kusurları erkenden yakalayabileceğiniz anlamına gelir."
+id = "d13-q02"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Bir IV eğri ölçümünde doldurma faktörü (FF) fiziksel olarak neyi temsil eder ve hangi tipik aralık sağlıklı bir modern PERC hücresini gösterir?"
+prompt.distractors = [
+  "FF hücrenin gerçek V_oc değerinin Shockley-Queisser modeli tarafından belirlenen teorik termodinamik limite oranıdır; sağlıklı PERC hücreleri SQ voltaj limitinin %88-92'sine ulaşır",
+  "FF, baralar ve parmak gölgeleri altındaki aktif olmayan alana karşı foto akım üretimine aktif olarak katkıda bulunan hücre alanının fraksiyonunu ölçer; PERC hücreleri %94-97 aktif alan kapsamına ulaşır",
+  "FF, hücrenin konsantre 10 güneş aydınlatması altındaki verimliliğinin 1 güneş STC koşullarındaki verimliliğine oranıdır; iyi yapılmış PERC hücreleri 1,15-1,25 konsantrasyon oranı gösterir.",
+]
+answer.answer = "FF, hücrenin gerçek maksimum güç noktasının (V_mp × I_mp) V_oc × I_sc çarpımına oranıdır — sağlıklı PERC hücrelerinin %80-84 doldurma faktörlerine ulaşmasıyla IV eğrisinin ne kadar 'kare' olduğunu ölçer"
+context = "Mükemmel bir hücre FF = %100'e (mükemmel dikdörtgen bir IV eğrisi) sahip olacaktır. Gerçek hücreler seri direnç (parmaklardan, baralardan, toplu silikondan) ve şönt direncinden (kenar kusurlarından, çatlaklardan) sınırlıdır. PERC hücreleri genellikle %80-84 FF elde eder; TOPCon %82-85'e ulaşıyor."
+id = "d13-q03"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Kilitli termografi (LIT), standart EL görüntülemede görülmeyen şant kusurlarını nasıl tespit eder?"
+prompt.distractors = [
+  "LIT, yansıma önleyici kaplamada floresanı uyarmak için 365 nm'de ultraviyole aydınlatmayı kullanır ve şant kusurları, bozulmamış bölgelerden farklı bir dalga boyunda floresans yayan yerel kaplama hasarı oluşturur",
+  "LIT, hücre -40°C ile 85°C arasında termal olarak döngüye tabi tutulduğunda mikro çatlak yayılımından kaynaklanan akustik emisyonu ölçer ve şant konumları 1-5 MHz'de karakteristik ultrasonik imzalar üretir",
+  "LIT, hücreye 100 kHz'de yüksek frekanslı bir AC sapması uygular ve bir tarama probu tarafından tespit edilen bağlantı kapasitansında lokalize düşüşler olarak görünen şöntlerle empedans tepkisini ölçer.",
+]
+answer.answer = "LIT, IR termal kamera yüzey sıcaklığını kaydederken 1-25 Hz'de darbeli bir elektriksel öngerilim uygular, ardından gürültülü termal arka plandan şant bölgelerindeki milikelvin sıcaklık değişimlerini çıkarmak için faza duyarlı algılamayı kullanır"
+context = "Şöntler, gücü 50 mikrometre kadar küçük noktalarda ısı olarak dağıtır. LIT'ın kilitleme tekniği, sıcaklık salınımlarını uyarılma frekansıyla ilişkilendirir ve ~0,001°C hassasiyete ulaşır; bu, basit bir termal anlık görüntünün algılayabileceğinin çok altındadır."
+id = "d13-q04"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Güneş pili ölçümü için Standart Test Koşullarını (STC) tanımlayan üç koşul nelerdir? (ışıma, spektrum ve sıcaklığı listeleyin)"
+answer.answer = "1000 W/m², AM1.5G spektrumu, 25°C hücre sıcaklığı"
+answer.alternatives = [
+  "1000 W/m2, AM1.5G, 25°C",
+  "1000W/m2 AM1.5G 25C",
+  "1000 W/m², AM1.5G, 25 derece",
+]
+context = "STC evrensel bir referans noktası sağlar: 1.000 W/m² ışınım (öğlen güneş ışığının zirvesine yakın), AM1.5G spektral dağılım (güneş ışığı ~48° zenit açısında 1,5 atmosferden geçtikten sonra) ve 25°C hücre sıcaklığı."
+id = "d13-q05"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Ham levhaların PL görüntülemesinin son hücre verimliliğini ±%0,2-0,3'e kadar tahmin edebildiğinin keşfi neden üretim için bu kadar dönüştürücü oldu?"
+prompt.distractors = [
+  "Bu, fabrikaların bitmiş hücreler üzerinde IV flaş testini tamamen atlamasına olanak tanıyarak, ksenon güneş simülatörlerinin 150.000 $'lık maliyetini ortadan kaldırdı ve üretim veriminde hücre başına 0,5 saniye tasarruf sağladı.",
+  "Bu, levha üreticilerinin hücre üreticilerine minimum verimlilik spesifikasyonlarını garanti etmelerini sağlayarak, sertifikalı yüksek ömürlü malzemede %15-20 fiyat primiyle yeni bir birinci sınıf levha pazarı segmenti yarattı.",
+  "Ar-Ge yatırımını kristal büyümesinden atomik katman biriktirme ekipmanına yönlendirerek, hücre performansındaki baskın değişkenin yığın ömrü değil, yüzey pasivasyon kalitesi olduğunu kanıtladı.",
+]
+answer.answer = "Fabrikaların, hücre işlemeye yatırım yapmadan önce levhaları kaliteye göre ayırmasına, yüksek ömürlü levhaları birinci sınıf hatlara ve daha düşük ömürlü levhaları standart hatlara yönlendirmesine olanak tanıyarak değer farklılıklarını mümkün olan en ucuz aşamada yakaladı."
+context = "PL tahmini işe yarıyor çünkü PL'nin doğrudan ölçtüğü toplu azınlık taşıyıcı ömrü, nihai hücre verimliliğindeki baskın değişkendir. Fabrikalar ham gofret aşamasında (0,30$+ işlemeden önce) ayıklama yaparak pahalı hücre işleme adımlarını doğası gereği kalitesiz gofretlere harcamaktan kaçınır."
+id = "d13-q06"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (12. Gün) Standart tek bağlantılı güneş hücresindeki en büyük tek enerji kaybı mekanizması nedir ve gelen güneş enerjisinin yaklaşık olarak ne kadarını tüketir?"
+prompt.distractors = [
+  "Işınımsal rekombinasyon, gelen güneş enerjisinin yaklaşık %25'ini tüketir çünkü optimum çalışma voltajında ​​bile hücre, yakın kızılötesi bölgede önemli bir foton akımını yeniden yayar.",
+  "Alt bant aralığı iletimi, gelen güneş enerjisinin yaklaşık %33'ünü tüketir çünkü AM1.5G spektrumunun silikonun 1,12 eV bant aralığının altındaki kızılötesi kısmı güneşin ışınım gücünün çoğunu taşır",
+  "Carnot entropi cezası, güneşin 0,5°'lik diski ile hücrenin 180°'lik yarım küre emisyon modeli arasındaki katı açı uyumsuzluğu nedeniyle gelen güneş enerjisinin yaklaşık %30'unu tüketir.",
+]
+answer.answer = "Termalizasyon, gelen güneş enerjisinin yaklaşık %33'ünü tüketir çünkü bant aralığının üzerindeki fotonlar, femtosaniyelik soğurma süresi içinde fazla kinetik enerjilerini kafes ısısı olarak saçan taşıyıcılar oluşturur"
+context = "Termalizasyon en büyük kayıptır. Yüksek enerjili fotonlar (örneğin, 1,12 eV bant aralığına sahip silikona çarpan 3,0 eV mavi ışık), ilk pikosaniyede kristal kafesle binlerce kez çarpışan 'sıcak' taşıyıcılar oluşturur ve 1,88 eV'yi atık ısı olarak boşaltır."
+id = "d13-q07"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (11. Gün) Uzay ve yoğunlaştırıcı uygulamalar için kullanılan üç eklemli bir III-V güneş hücresinde, alt hücreler neden en geniş bant aralığına sahip üstte en dar en altta olacak şekilde sıralanır?"
+prompt.distractors = [
+  "Daha geniş bant aralığına sahip malzemeler daha yüksek termal iletkenliğe sahiptir ve sıcaklığa duyarlı dar aralıklı alt hücreye ulaşmadan önce konsantre güneş ışığından gelen ısıyı dağıtmak için güneşe bakmalıdır.",
+  "Kafes eşleştirme gereklilikleri, daha geniş bant aralıklı III-V bileşiklerinin ilk olarak germanyum substratında büyütülmesi gerektiğini ve büyümeden sonra yığının ters çevrilmesinin bağlanma arayüzünde dislokasyonlara neden olacağını belirtir.",
+  "Alttaki dar aralıklı hücre, mekanik destek için en kalın olması gereken yapısal bir substrat görevi görür ve epitaksiyel büyüme, kalın substratlardan yukarıya doğru giderek daha ince emici katmanlara doğru ilerler.",
+]
+answer.answer = "Her alt hücre, kendi bant aralığının üzerindeki fotonları emer ve altındakileri iletir; geniş aralıklı üst hücre, öncelikle yüksek enerjili fotonları filtreler ve verimli dönüşüm için giderek daha düşük enerjili fotonların sonraki katmanlara ulaşmasını sağlar."
+context = "Bu istifleme yoluyla spektral bölmedir. Üst hücre (örneğin, ~1,85 eV'de GaInP) mavi/yeşil ışığı emer. Orta hücre (~1,42 eV'de GaAs) kırmızıyı/yakını-IR yakalar. Alttaki hücre (~0,67 eV'de Ge) kalan IR'yi toplar. Her foton kendi enerjisine yakın bir değerde dönüştürülerek termalizasyon en aza indirilir."
+id = "d13-q08"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (6. Gün) Fosfor, n-tipi yayıcıyı oluşturmak için p-tipi bor katkılı silikona difüzlendiğinde, p-n kavşağında yerleşik elektrik alanını fiziksel olarak ne yaratır?"
+prompt.distractors = [
+  "Fosfor açısından zengin ve bor açısından zengin silikon bölgeleri arasındaki kristal kafes aralığındaki fark, arayüz boyunca yaklaşık 0,7 V'luk bir piezoelektrik alan üreten mekanik gerilim yaratır",
+  "N-tarafındaki serbest elektronlar ve p-tarafındaki serbest delikler, çift oluşumu yoluyla bağlantı noktasında yok olur ve geride bant aralığı farkı alanı yaratan saf içsel silikon bölgesini bırakır.",
+  "Bağlantı noktasındaki fosfor atomları, Auger enerji aktarımı yoluyla p tarafındaki bor atomlarını termal olarak iyonize ederek, elektrostatik potansiyel farkı üreten bir iyonizasyon durumları gradyanı yaratır.",
+]
+answer.answer = "Elektronlar n-tarafından p-tarafına doğru yayılır ve delikler ters yönde yayılır ve geride sabit iyonize katkı atomları (n-tarafında pozitif fosfor iyonları ve p-tarafında negatif bor iyonları) kalır; bunların yük ayrımı tükenme bölgesinin elektrik alanını oluşturur."
+context = "Yerleşik alan, bağlantı noktası boyunca taşıyıcı difüzyonundan kaynaklanır. Mobil taşıyıcılar, hareketsiz iyonize katkı maddelerini (n tarafında P⁺, p tarafında B⁻) geride bırakarak bir uzay yükü bölgesi oluşturur. Ortaya çıkan elektrik alanı (silikon için ~0,6-0,7 V) daha fazla difüzyona karşı çıkar ve fotojenlenmiş taşıyıcıları ayırır."
+id = "d13-q09"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (3. Gün) Güneş levhaları için metalürjik kalitede silikonun 9N+ (%99.9999999) polisilikon haline saflaştırılmasında kullanılan baskın endüstriyel işlemin adı nedir?"
+answer.answer = "Siemens süreci"
+answer.alternatives = [
+  "siemens",
+  "Siemens süreci",
+  "Siemens",
+]
+context = "Siemens prosesi, metalürjik kalitede silikonu triklorosilan (SiHCl₃) gazına dönüştürüyor, damıtma yoluyla saflaştırıyor ve ardından yüksek saflıkta silikonu, yaklaşık 1.100°C'de kimyasal buhar biriktirme yoluyla ısıtılmış çubuklar üzerine biriktiriyor. Dünyanın güneş enerjisiyle kullanılabilen polisilikonunun büyük çoğunluğunu üretiyor."
+id = "d13-q10"

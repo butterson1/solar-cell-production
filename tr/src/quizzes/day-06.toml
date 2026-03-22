@@ -1,0 +1,124 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Neden 5 milyon silikon atomuna yalnızca 1 bor atomu eklemek iletkenliği ~15.000 kat artırıyor?"
+prompt.distractors = [
+  "Her bir bor atomu, yüzlerce bitişik silikon atomundan elektronları serbest bırakan bir zincir reaksiyonunu katalize ederek iletkenliği tek başına katkı maddesi sayısının önerdiğinin ötesinde katlanarak artırır.",
+  "Borun daha küçük atom yarıçapı, kristal boyunca Si-Si bağlarını zayıflatan ve bağlı elektronları oda sıcaklığında iletim bandına salan sıkıştırıcı kafes gerilimi oluşturur.",
+  "Bor'un yüksek elektronegatifliği (2,04'e karşılık Si'nin 1,90'ı), kuantum tünelleme mekanizması yoluyla komşu silikon atomlarından değerlik elektronlarını iletim bandına çeker.",
+]
+answer.answer = "Her bir bor atomu, 0,045 eV'lik sığ iyonizasyon enerjisine sahip bir hareketli delik oluşturur; o kadar düşüktür ki, katkı atomlarının neredeyse %100'ü, oda sıcaklığında serbest bir taşıyıcıya katkıda bulunur; bu, içsel termal üretimi çok aşar."
+context = "İçsel silikon, tam 1,12 eV bant aralığı boyunca termal uyarımdan yalnızca ~1,5 × 10¹⁰ taşıyıcı/cm³ içerir. Her biri değerlik bandının yalnızca 0,045 eV yukarısından bir delik bağışlayan 10¹⁶ bor atomu/cm³ eklemek, taşıyıcı sayısını kabaca bir milyon artırır."
+id = "55394dd1-eb26-476d-a7eb-3751c84869bb"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Yoğun fosfor katkılı yayıcılara sahip güneş pillerindeki 'ölü katman' sorunu nedir?"
+prompt.distractors = [
+  "Fazla fosfor yüzeyde yansıtıcı bir katman oluşturan metalik silisit çökeltileri oluşturur ve gelen mavi/UV fotonların %15-20'sini aktif bağlantı bölgesine ulaşmadan önce geri yansıtır.",
+  "10²⁰/cm³'ün üzerindeki ağır fosfor katkısı, üstteki 0,1-1 μm'deki bağlantı polaritesini yerel olarak tersine çeviren amfoterik davranışı tetikleyerek akımı yönlendiren parazitik bir p-n-p yapısı oluşturur",
+  "Yüksek konsantrasyonlu fosfor difüzyonu, yüzey bant aralığını 1,4 eV'nin üzerine çıkaran bir sıkıştırma gerilimi gradyanı oluşturur ve yayıcıyı 500 nm'nin altındaki dalga boylarına karşı şeffaf hale getirir.",
+]
+answer.answer = "Katı çözünürlüğü (~5 × 10²⁰/cm³) aşan fosfor, rekombinasyon merkezleri görevi gören çökeltiler oluşturan ara bölgelerde bulunur ve kısa dalga boylu fotonların emildiği ilk 0,1-1 μm'de mavi ışık tepkisini öldürür."
+context = "Mavi/UV fotonlar (400-500 nm), bir mikrometrenin ilk fraksiyonu içinde taşıyıcılar oluşturur. Bu yüzey bölgesine aşırı katkı yapılmışsa, Auger rekombinasyonu ve aktif olmayan fosfor kompleksleri yoluyla SRH rekombinasyonu, toplamadan önce bu taşıyıcıları yok eder."
+id = "ce696c70-87fc-44d1-8cad-be11fa8707d2"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Silikon p-n bağlantısının tükenme bölgesi boyunca yaklaşık yerleşik potansiyel (voltaj) nedir?"
+answer.answer = "0,6-0,7V"
+answer.alternatives = [
+  "0,7V",
+  "0,6V",
+  "0,65V",
+  "~0.7V",
+  "0,7",
+  "0.6-0.7",
+]
+context = "Yerleşik potansiyel, n-tipi ve p-tipi taraflar arasındaki Fermi seviyesi farkından kaynaklanır. Bu küçük gerilime rağmen dar tükenme bölgesi (0,1-1 μm) içindeki elektrik alanı 10.000-100.000 V/cm'ye ulaşır."
+id = "fa553137-f2d3-4df6-bc3b-ad9e44bd713c"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Güneş enerjisi endüstrisinin p-tipinden n-tipi taban plakalarına geçişi neden bor difüzyonunu aniden ölçek açısından kritik hale getirdi?"
+prompt.distractors = [
+  "N-tipi levhalar, kavşak artı bir arka yüzey alanı oluşturmak için hem ön hem de arka yüzeylerde bor difüzyonunu gerektirir, bu da levha başına yüksek sıcaklık difüzyon fırını adımlarının sayısını iki katına çıkarır",
+  "Bor, n-tipi silikonda p-tipine kıyasla 3 kat daha yüksek katı çözünürlüğe sahiptir ve parti genelinde daha hassas BBr₃ akış kontrolü ve sıcaklık homojenliği gerektiren daha ince emitör profillerine olanak tanır",
+  "N-tipi plakalar, 850°C'nin üzerindeki POCl₃ fosfor difüzyonu ile kimyasal olarak uyumsuzdur, bu nedenle bor, hem emitör hem de BSF oluşumu için birincil katkı maddesi olarak fosforun tamamen yerini almalıdır.",
+]
+answer.answer = "TOPCon, boron katkılı ön emitöre sahip n-tipi (fosfor katkılı) baz levhalar kullanır; bu, borun kristal büyümesi sırasında dahil edildiği ve hiçbir zaman ayrı bir difüzyon adımına ihtiyaç duyulmayan eski PERC yapısının yerini alır."
+context = "Geleneksel PERC'da bor, CZ kristal büyümesi sırasında eklenir (difüzyon adımına gerek yoktur). TOPCon yapıyı tersine çevirir: 900-1.050°C'de BBr₃ difüzyonu gerektiren bor yayıcıya sahip n tipi taban. TOPCon'un ~2024'ten bu yana PERC'yi geçmesiyle, küresel BBr₃ difüzyon fırını kapasitesi yıllık 300 GW'ün üzerine çıktı."
+id = "f7e542d5-4b8b-43d8-a24e-3d9ef509fc69"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Difüzyon için ±%5-10'a kıyasla ±%1 doz doğruluğu sunmasına rağmen iyon implantasyonu neden güneş enerjisi alanında niş bir katkı yöntemi olmaya devam ediyor?"
+prompt.distractors = [
+  "İyon implantasyonu, yüksek enerjili çarpışmalardan kaynaklanan kalıcı kristal kafes hasarı oluşturarak azınlık taşıyıcı ömrünü 1.000°C'de 30+ dakika boyunca uzatılmış tavlamadan sonra bile 100 μs'nin altına düşürür",
+  "İmplante edilen katkı atomları, ikame kafes bölgelerini işgal etmek yerine tercihen tane sınırlarında kümelenir ve üretim sınıfı levhalarda elektriksel aktivasyon oranlarını %50'nin altına düşürür.",
+  "Mevcut iyon ışını teknolojisi, yüksek vakumlu bir odada aynı anda yalnızca bir levhayı işleyebilir, bu da gerçek dünyadaki verimi 500 levha/saatin altında sınırlandırır; bu, GW-ölçekli fabrikalar için 5.000+/saat hedefinin çok altındadır.",
+]
+answer.answer = "İyon implanterleri alet başına 3-5 milyon dolara mal olur (5-10× difüzyon fırını) ve yüksek vakumlu sistemlerden ve tüketilebilir iyon kaynaklarından daha yüksek devam eden bakım maliyetleri taşırlar, bu da difüzyonu standart mimariler için daha ekonomik hale getirir."
+context = "Verim aslında rekabetçidir (2.000-3.000 plaka/saat) ve kafes hasarı, implantasyon sonrası tavlama ile tamamen onarılır. Engel tamamen ekonomiktir. İyon implantasyonu, Maxeon'un (eski adıyla SunPower) IBC hücreleri gibi hassasiyetin maliyeti haklı çıkardığı durumlarda kullanılır."
+id = "ef4c9c23-7006-4c2d-aa03-b61d5ccd4cac"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Güneş pili üretiminde fosfor difüzyon katkısı için standart kaynak gaz hangi kimyasal bileşiktir?"
+answer.answer = "POCl₃"
+answer.alternatives = [
+  "POCl3",
+  "fosfor oksiklorür",
+  "POCL3",
+  "pocl3",
+]
+context = "Fosfor oksiklorür (POCl₃), 800-900°C'deki bir kuvars tüp fırınına nitrojen taşıyıcı gazla kabarcıklar halinde verilen, oda sıcaklığında bir sıvıdır."
+id = "157d770f-98f0-41e6-9075-cd4557c67daa"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (5. Gün) Elmas tel testerenin benimsenmesi neden monokristalin silikon için en hızlı şekilde gerçekleşti ve multikristalin için neden geride kaldı?"
+prompt.distractors = [
+  "Çok kristalli silikonun daha düşük erime noktası, kesme arayüzünde lokalize termal yumuşamaya neden olarak elmas parçacıklarının aşınmak yerine çentik içine gömülmesine olanak tanır ve kesme hızını %40 azaltır.",
+  "Çok kristalli külçeler için daha geniş 156 mm+ plaka formatı standardı, ekonomik sürdürülebilirlik için gereken %0,1 eşiğinin üzerine kırılma oranlarını artıran daha uzun desteklenmeyen kablo aralıkları gerektiriyordu",
+  "Asahi Diamond Industrial, çok kristalli alt tabakalar için optimize edilmiş elmas tel bileşimleri konusunda özel patentlere sahipti ve bu patentler, 2018'de sona erene kadar çoklu Si pazar segmentindeki rakipleri engelledi",
+]
+answer.answer = "Çok kristalli silikondaki rastgele tane oryantasyonları, tane başına değişen sertlik yönleri nedeniyle elmas parçacıkları üzerinde eşit olmayan aşınma yaratarak tel bozulmasının hızlanmasına ve sürecin yeniden optimizasyonunu gerektiren daha kaba kesim yüzeylerine neden oldu"
+context = "Monokristalin silikon tele eşit bir kristal yönelimi sunarak tutarlı kesme kuvvetleri sağlar. Çoklu kristaldeki her taneciğin farklı bir kristalografik yönü vardır ve bu da düzensiz mekanik yükleme oluşturur."
+id = "487037e0-7ab1-45af-aa59-e7c4437cdb54"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (4. Gün) Bir Czochralski kristalinin başlangıcında oluşan son derece ince bölüm olan 'Çizgi boynu'nun amacı nedir?"
+prompt.distractors = [
+  "İnce boyun, soğuk tohum kristalinin 1.425°C'lik silikon eriyik yüzeyiyle ilk temas ettiğinde termal şok nedeniyle kırılmasını önleyen bir termal tampon bölgesi görevi görür.",
+  "3-4 mm'lik dar çap, tüm külçe gövdesi boyunca direnç tekdüzeliğini ölçmek için hat içi kalibrasyon standardı olarak kullanılan yüksek katkı konsantrasyonu referans bölgesi oluşturur",
+  "Dash boynu, kasıtlı bir mekanik zayıf nokta olarak işlev görür ve çekici mekanizmasının büyüme sırasında aşırı torkla karşılaşması durumunda kristalin tohum tutucudan temiz bir şekilde ayrılmasını sağlar.",
+]
+answer.answer = "İnce boyun (3-4 mm), tohum erimesi arayüzünde termal şokun neden olduğu dislokasyonları kristal yüzeye doğru yayılmaya ve sonlandırmaya zorlar, böylece tam çaplı gövde dislokasyon olmadan büyür"
+context = "Tohum eriyikle temas ettiğinde termal şok milyonlarca dislokasyon yaratır. Dash'in buluşu, son derece ince bir boynun bu çıkıkları yüzeye kaymaya ve yok olmaya zorladığını fark etmesiydi."
+id = "8c6b3e45-70e3-4454-a4bf-eafab2e89bea"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (3. Gün) Siemens prosesinin kilogram polisilikon başına 50-80 kWh tüketmesinin temel termodinamik nedeni nedir?"
+prompt.distractors = [
+  "Triklorosilanın fraksiyonel damıtılması, giderek daha düşük basınçlarda 30'dan fazla denge aşamasında tekrar tekrar kaynatmayı ve yoğunlaştırmayı gerektirir; her aşamada, 11N saflığa ulaşmak için artan enerji maliyeti eklenir.",
+  "Geri dönüşüm için HCl'nin hidrojenin H₂ ve Cl₂'ye indirgenmesi 285 kJ/mol kadar endotermiktir ve stokiyometrik dengeyi korumak için 5-7 günlük biriktirme döngüsü boyunca sürekli elektrik enerjisi girişi gerektirir.",
+  "İlk hidroklorinasyon reaktörü için metalürjik kalitede silikonun 100μm'nin altındaki toz haline getirilmesi, bilyalı öğütme yoluyla 25-35 kWh/kg tüketir ve CVD başlamadan önce genel proses enerji bütçesine hakim olur",
+]
+answer.answer = "İnce silikon çubuklar, CVD biriktirme sırasında 5-7 gün boyunca 1.000-1.100°C'ye elektrikle ısıtılmalıdır ve bu enerjinin büyük çoğunluğu, su soğutmalı reaktör çan kavanozu duvarlarına kızılötesi ısı olarak yayılır."
+context = "Siemens reaktörü aslında günlerce çalışan bir radyant ısıtıcıdır. İnce çubuklar akkor halinde parlarken triklorosilan yüzeylerinde ayrışır, ancak elektrik enerjisinin çoğu soğutulmuş duvarlara termal radyasyon olarak kaybolur."
+id = "8c468f34-1aa5-434d-a910-fa2c970857b5"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁(2.Gün) Silikonun elektron volt cinsinden bant aralığı enerjisi nedir?"
+answer.answer = "1,12 eV"
+answer.alternatives = [
+  "1.12",
+  "1,1 ev",
+  "~1,12 eV",
+  "1.12eV",
+]
+context = "Silikonun 1,12 eV'lik bant aralığı, tek bağlantılı güneş pilleri için Shockley-Queisser optimumuna (~1,34 eV) yakındır."
+id = "7f532862-3f14-4a3e-a0e4-66911448ba83"

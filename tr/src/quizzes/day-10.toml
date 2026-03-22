@@ -1,0 +1,124 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Kadmiyum tellürür neden bant aralığının üzerindeki fotonların %99'unu yakalamak için yalnızca 2-4 μm soğurucu malzemeye ihtiyaç duyarken, kristal silikonun 150-180 μm'ye ihtiyacı var?"
+prompt.distractors = [
+  "CdTe, silikonun 1,5 eV'sine kıyasla 1,1 eV'lik daha dar bir bant aralığına sahiptir; bu, emilen foton başına çok daha az malzeme kullanarak güneş spektrumunun daha geniş bir aralığını absorbe etmesine olanak tanır.",
+  "CdTe kristalleri silikondan (~3,5) çok daha yüksek bir kırılma indisine (~4,2) sahiptir, bu da fotonları yakalayan ve filmden birden fazla emilim geçişini zorlayan dahili toplam yansımaya neden olur",
+  "CdTe'nin çok kristalli tanecik sınırları, etkin optik yol uzunluğunu 50-100 kat artıran foton saçılma merkezleri görevi görür ve doğası gereği benzer soğurma katsayılarını telafi eder.",
+]
+answer.answer = "CdTe, dolaylı bant aralıklı silikondan kabaca 100 kat daha yüksek bir emme katsayısına sahip doğrudan bant aralıklı bir yarı iletkendir, bu nedenle fotonlar, fonon yardımına ihtiyaç duymadan çok daha kısa bir mesafede emilir."
+context = "CdTe gibi doğrudan bant aralığına sahip malzemelerde, elektronlar fotonları emebilir ve bant aralığı boyunca tek bir adımda atlayabilir. Silikonun dolaylı bant aralığı eşzamanlı fonon etkileşimi gerektirir, bu da emilimi doğası gereği daha az olası hale getirir."
+id = "d10-q01"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "CdTe hücre üretiminde kadmiyum klorür (CdCl₂) aktivasyon işleminin kritik rolü nedir?"
+prompt.distractors = [
+  "Yüzey kirleticilerini ve doğal oksitleri CdTe filminden uzaklaştırır, arka temas arayüzündeki seri direnci 10 kat azaltır ve doldurma faktörünü ~%65'ten ~%78'e artırır",
+  "10¹⁵ cm⁻³'lük kontrollü bir p-tipi taşıyıcı konsantrasyonu oluşturmak için CdTe soğurucuyu klor ile katkılayarak, uzun vadeli istikrarsızlığa neden olan bakır difüzyonuna olan eski bağımlılığın yerini alır.",
+  "Biriktirilen buhar taşıma filmi başlangıçta amorf olduğundan ve yük taşınması için kristalleştirilmesi gerektiğinden, çekirdeklenme tohumlaması yoluyla CdTe'yi amorf bir fazdan çok kristalli bir faza dönüştürür.",
+]
+answer.answer = "Tane boyutunu ~0,5 μm'den 2-5 μm'ye çıkaran yeniden kristalleşmeyi destekler ve tanecik sınırlarını klor atomlarıyla pasifleştirerek verimliliği ancak %10'dan %18'in üzerine çıkarır."
+context = "380-420°C'de CdCl₂ işlemi biriktirme sonrası tek ve en önemli adımdır. Bu olmadan, küçük taneler ve pasifleştirilmemiş tane sınırları büyük rekombinasyon kayıplarına neden olur."
+id = "d10-q02"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Sıcak çöl kurulumlarında CdTe modülleri neden genellikle yüksek verimli kristal silikon modüllerden daha fazla yıllık enerji (kWh/kWp) üretiyor?"
+prompt.distractors = [
+  "CdTe'nin 1,5 eV'lik daha geniş bant aralığı, kristalin silikonun ısıya dönüştürdüğü yakın kızılötesi fotonları absorbe etmediği ve aynı ışınım koşulları altında modülü 15-20°C daha soğuk tuttuğu anlamına gelir",
+  "CdTe'nin cam-cam yapısı, kristalin silikon modüllerde kullanılan polimer arka tabakalara göre daha iyi termal kütle ve ısı dağılımı sağlayarak en yüksek çalışma sıcaklıklarını 8-12°C azaltır.",
+  "CdTe modülleri, havanın her iki yüzey altında eşit şekilde dolaşmasına izin veren çerçevesiz bir tasarım kullanırken çerçeveli silikon modüller, hava akımının kısıtlandığı alt kenarda konvektif ısıyı hapseder",
+]
+answer.answer = "CdTe, silikonun -0,35 ila %-0,45/°C'sine kıyasla yaklaşık -0,28 ila %-0,32/°C'lik daha düşük bir sıcaklık katsayısına sahiptir ve modül sıcaklıkları 65-70°C'ye ulaştığında %2-3 daha fazla nominal gücü korur."
+context = "65-70°C modül sıcaklıklarında (STC üzerinde 40-45°C), CdTe nominal gücün yaklaşık %12-14'ünü kaybederken kristalin silikon %15-20 kaybeder. Sıcak iklimlerde bir yıl boyunca bu, nominal watt başına ölçülebilir derecede daha yüksek enerji verimi anlamına gelir."
+id = "d10-q03"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Uppsala Üniversitesi tarafından 2024'te belirlenen mevcut CIGS hücre verimliliği dünya rekoru nedir?"
+answer.answer = "23.64%"
+answer.alternatives = [
+  "23.64",
+  "%23,6",
+  "Yüzde 23,64",
+]
+context = "Uppsala Üniversitesi, 2024'te %23,64 verimlilikle CIGS dünya rekorunu kırdı ve bağımsız ölçümlerle doğrulandı. Bu, herhangi bir ince film tek bağlantı teknolojisi için en yüksek laboratuvar verimliliğidir."
+id = "d10-q04"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "CIGS ürününün CdTe veya kristalin silikonun ticari başarısına ulaşmasını engelleyen temel üretim zorluğu nedir?"
+prompt.distractors = [
+  "CIGS, kilogram başına 800-1.200 ABD dolarına mal olan ultra yüksek saflıkta indiyum (%99,9999) gerektirir; bu da tek başına hammadde maliyetini, kristalin silikon modüllerin toplam üretim maliyetinden 3-4 kat daha yüksek yapar",
+  "CIGS emici filmlerin 900°C'nin üzerindeki sıcaklıklarda tavlanması gerekir, bu da alt tabaka seçimlerini pahalı yüksek sıcaklık seramikleriyle sınırlandırır ve CdTe ve silikon için kullanılan ucuz soda-kireç camını ortadan kaldırır",
+  "CIGS hücreleri, çinko oksit pencere katmanından nem girişi nedeniyle dış mekana maruz kalmanın ilk yılında %40-50 oranında bozulur ve modül maliyetini iki katına çıkaran pahalı hermetik kapsülleme gerektirir",
+]
+answer.answer = "CIGS, hassas dört elementli stokiyometri kontrolü ile dörtlü bir bileşiğin vakumla biriktirilmesini gerektirir, bu da sermaye maliyetlerini 0,70-1,00 ABD Doları/W kapasiteye çıkarır; bu, kristalin silikonun 0,30-0,40 ABD Doları/W değerinden 2-3 kat daha yüksektir"
+context = "Dört elementli (Cu, In, Ga, Se) bileşimin hassas bir şekilde kontrol edilmesi gerekir; bu da pahalı vakum sistemleri ve çok kaynaklı buharlaştırma veya püskürtme artı selenizasyon gerektirir. Bu karmaşıklık çok sayıda CIGS startup'ın batmasına neden oldu."
+id = "d10-q05"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Staebler-Wronski etkisi neden amorf silikon güneş pillerinin ilk birkaç yüz saatlik ışığa maruz kalma süresinde başlangıç ​​verimliliklerinin %10-30'unu kaybetmesine neden oluyor?"
+prompt.distractors = [
+  "Ultraviyole fotonlar, yüzey kusurlarını pasifleştiren Si-H bağlarını kırar ve yüzey rekombinasyon hızını 10 cm/s'den 1.000 cm/s'nin üzerine çıkaran üst yüzeydeki sarkan bağları açığa çıkarır.",
+  "Emilen fotonlar, amorf silikonu kademeli olarak dolaylı bant aralığı özelliklerine sahip mikrokristalin bir faza kristalleştirir, emme katsayısını 20-40 kat azaltır ve daha kalın filmler gerektirir.",
+  "Işık kaynaklı ısıtma, hidrojen atomlarının şeffaf elektrot yoluyla filmden dışarı yayılmasına neden olur, kusur yoğunluğunu 2-3 kat artırır ve malzemeyi geri dönülemez bir şekilde yalıtkan hale getirir.",
+]
+answer.answer = "Emilen foton enerjisi, düzensiz ağdaki zayıf Si-Si bağlarını kırar, rekombinasyon merkezleri görevi gören ve filmin büyük kısmı boyunca taşıyıcı ömrünü kısaltan yarı kararlı sarkan bağ kusurları yaratır."
+context = "Staebler-Wronski etkisi yarı kararlı (kalıcı olmayan) kusurlar yaratır. ~150°C'de tavlamayla kısmen tersine çevrilebilirler, ancak dış mekan kullanımında hücreler, başlangıç ​​değerlerinin çok altında düşük bir verimlilikte stabilize olurlar."
+id = "d10-q06"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (9. Gün) TOPCon hücrelerindeki tünel oksidin aynı anda silikon yüzeyini pasifleştirmesini ve akım akımına izin vermesini sağlayan şey nedir?"
+prompt.distractors = [
+  "Tünel oksit, 10²⁰ cm⁻³ konsantrasyonlarda fosfor atomları ile katkılıdır ve çevresindeki katkısız bölgeler sarkan bağları pasifleştirirken, oksit boyunca akımı taşıyan iletken bir yol oluşturur.",
+  "Oksit, ayrı noktalarda doğrudan metal-yarı iletken temasına izin veren cm² başına 10⁶ yoğunlukta tasarlanmış iğne delikleri içerirken, iğne delikleri arasındaki sürekli oksit kimyasal pasivasyon sağlar",
+  "Tünel oksit, silikon arayüzünde saf SiO₂'den poli-Si arayüzünde silikon açısından zengin SiOₓ'ye kadar kademeli bir bileşim kullanır; oksijen gradyanı hem pasivasyon hem de bir iletim yolu oluşturur",
+]
+answer.answer = "Yalnızca 1,0-1,5 nm kalınlığındaki (5-7 atomik katman) oksit, elektronların kuantum mekaniksel olarak tünel açmasına yetecek kadar ince olmasına rağmen yüzeydeki sarkan bağları kimyasal olarak pasifleştirmeye yetecek kadar kalındır."
+context = "Kuantum tünelleme olasılığı bariyer kalınlığı arttıkça katlanarak azalır. 1-1,5 nm'de tünel açma olasılığı hücrenin foto akımını taşıyacak kadar yüksektir. ~2,5 nm'nin üzerinde direnç engelleyici hale gelir."
+id = "d10-q07"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (8. Gün) Neden bakır veya alüminyum gibi daha ucuz metaller yerine gümüş, silikon güneş pillerinin ön tarafındaki metalizasyon kontakları için özel olarak kullanılıyor?"
+prompt.distractors = [
+  "Gümüş, tam olarak 0,75 eV'lik bir bariyer yüksekliğine sahip olan n-tipi silikon ile bir Schottky bariyeri oluşturur ve hücrenin 0,6-0,7 V çalışma voltajında maksimum güç çıkışı için optimum temas direncine uygundur.",
+  "Gümüş, 1.235°C ile basılabilir tüm metal macunlar arasında en yüksek erime noktasına sahiptir; bu, silikon nitrür yansıma önleyici kaplama boyunca erimeden 800-900°C pişirme adımını atlatmak için gereklidir.",
+  "Macundaki gümüş nanopartiküller, 400-500 nm dalga boylarında plazmonik rezonansa uğrar ve yakın alan etkileri yoluyla doğrudan her temas parmağının altındaki silikondaki ışık emilimini %15'e kadar artırır.",
+]
+answer.answer = "Gümüş, tüm elementler arasında en yüksek elektrik iletkenliğine sahiptir (1,59 μΩ·cm direnç) ve oksidi iletkendir, serigrafi baskılı parmakların minimum direnç kaybıyla yüksek akım yoğunluğunu taşımasına olanak tanır"
+context = "Gümüşün eşsiz iletkenliği, daha dar parmakların aynı akımı taşıyabileceği ve gölgeleme kayıplarının azaltılabileceği anlamına gelir. Bakır da benzer şekilde iletkendir ancak yalıtkan CuO'ya oksitlenerek temas direnci sorunları yaratır."
+id = "d10-q08"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (6. Gün) Bir p-n eklemli güneş hücresinde, foton emiliminin yarattığı elektron-delik çiftlerinin ayrılmasını fiziksel olarak yönlendiren şey nedir?"
+prompt.distractors = [
+  "Güneşe bakan ön yüzey ile daha soğuk olan arka yüzey arasındaki sıcaklık gradyanı, taşıyıcıları ilgili temas noktalarına doğru iten 0,2-0,4 mV/°C'lik bir termoelektrik Seebeck voltajı oluşturur",
+  "Ön gümüş kontaklar ile arka alüminyum kontaklar arasındaki iş fonksiyonu farkı, elektronları hücrenin önüne, delikleri ise hücrenin arkasına çeken harici bir elektrik alanı yaratır.",
+  "Işığın emildiği ön yüzeye yakın yüksek ve arka tarafta düşük olan fotojenlenmiş taşıyıcıların konsantrasyon gradyanı, elektronları levha boyunca deliklerden ayıran difüzyon akımlarını yönlendirir",
+]
+answer.answer = "İyonize katkı atomlarının uzay yükü tarafından oluşturulan, p-n bağlantısının tükenme bölgesi boyunca yerleşik elektrik alanı, elektronları n tarafına ve delikleri p tarafına doğru süpürür."
+context = "P-n kavşağında çoğunluk taşıyıcılarının difüzyonu, arkasında sabit iyonize katkı atomları (n-tipinde pozitif donörler, p-tipinde negatif alıcılar) bırakır ve ~0,5 μm tükenme bölgesi boyunca kabaca 10⁴ V/cm'lik yerleşik bir elektrik alanı yaratır."
+id = "d10-q09"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (5. Gün) Modern güneş hücresi üretiminde kullanılan silikon levhalar yaklaşık olarak ne kadar kalındır?"
+answer.answer = "150-180 mikron"
+answer.alternatives = [
+  "150-180 um",
+  "150 ila 180 mikron",
+  "150-180 mikrometre",
+  "170 mikron",
+  "160 mikron",
+  "150 mikron",
+  "180 mikron",
+  "yaklaşık 170 mikron",
+]
+context = "Modern elmas tel testereler, levhaları on yıl önce 300+ μm'den 150-180 μm kalınlığa kadar kesiyordu. Daha fazla incelme, yüksek hızlı hücre işleme sırasında levhanın kırılmasıyla sınırlıdır."
+id = "d10-q10"

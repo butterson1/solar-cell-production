@@ -1,0 +1,122 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Eski Al-BSF hücre tasarımıyla karşılaştırıldığında PERC, TOPCon ve HJT'nin çözmeye çalıştığı temel sorun nedir?"
+prompt.distractors = [
+  "Daha ince temas parmakları ve çıkış gücü watt başına daha düşük gümüş tüketimi sağlayarak gümüş pasta metalizasyon maliyetini azaltır",
+  "Geliştirilmiş yansıma önleyici kaplama tasarımları ve yüzey dokulaması sayesinde ön yüzeydeki ultraviyole ve mavi fotonların emiliminin arttırılması",
+  "Yüksek hızlı üretim sırasında 130 μm'nin altındaki alt tabakaların kırılmadan işlenmesine olanak sağlamak için daha ince silikon levhaların mekanik mukavemetinin arttırılması",
+]
+answer.answer = "Eski Al-BSF tasarımının %2-4 mutlak verimliliği boşa harcayan 200-500 cm/s rekombinasyon hızlarını bıraktığı arka yüzeydeki taşıyıcı rekombinasyonunun azaltılması"
+context = "Her üç mimari de arka yüzeyi pasifleştirmeye odaklanıyor. İşlenmemiş bir silikon yüzey, 10⁶ cm/s'yi aşan rekombinasyon hızlarına sahip olabilirken, iyi bir pasifleştirme bunu 10 cm/s'nin altına düşürür."
+id = "81a09b52-cf15-462f-80a4-9ad9f94bfb2c"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "PERC 1983'te icat edilmesine rağmen neden sektörü bu kadar hızlı ele geçirdi?"
+prompt.distractors = [
+  "%28,7 ile herhangi bir tek eklemli silikon mimarisi arasında en yüksek teorik verimlilik sınırına ulaşarak üreticilere rakip tasarımlardan çok daha büyük bir iyileştirme alanı sağladı.",
+  "Nikel bariyer katmanlı bakır kaplı kontaklar kullanarak pahalı gümüş macun ihtiyacını ortadan kaldırdı ve geleneksel serigrafi baskıya kıyasla metalizasyon maliyetini %80 oranında azalttı.",
+  "Bu, p-tipi hücrelere ilk yılda %1-3 verimliliğe mal olan bor-oksijen ışığının neden olduğu bozulmayı (LID) önleyen n-tipi silikon plakaları kullanan ilk mimariydi.",
+]
+answer.answer = "Mevcut Al-BSF üretim hatları, yalnızca arka pasivasyon biriktirme ve lazer kontak açıklığı eklenerek PERC için yenilenebilir - yeni bir TOPCon veya HJT hattı için 100 milyon ABD dolarının üzerinde bir yükseltmeye karşılık 10-20 milyon ABD doları tutarında bir yükseltme"
+context = "PERC'in en büyük avantajı geriye dönük uyumluluktu. Üreticilerin yalnızca Al₂O₃/SiNₓ arka pasifleştirme biriktirme ve lazer kontak açıklığını eklemeleri yeterliydi; hattın geri kalanı aynı kaldı."
+id = "7ffc29cc-9d6b-48e0-a935-d5e4c4214eec"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "TOPCon hücrelerinde elektronların kuantum mekaniksel tünellenmesini sağlayan tünel oksit tabakası ne kadar kalındır?"
+answer.answer = "1,0-1,5 nm"
+answer.alternatives = [
+  "1-1,5 nm",
+  "1 ila 1,5 nm",
+  "1,2 nanometre",
+  "yaklaşık 1 nm",
+  "1,5 nanometre",
+]
+context = "TOPCon'daki tünel oksit yalnızca 1,0-1,5 nm kalınlığındadır; yani yaklaşık 5-7 atomik silikon dioksit katmanı. Elektronların kuantum mekaniğine göre tünel açmasına yetecek kadar ince, ancak yüzeyi pasifleştirip delik aktarımını engelleyecek kadar da kalın."
+id = "f67e5211-b2cf-4f2b-902f-eea5c8436b63"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Orta Doğu veya Avustralya gibi sıcak iklimlerde HJT'nin TOPCon ve PERC'ye göre temel avantajı nedir?"
+prompt.distractors = [
+  "HJT hücreleri, rakip teknolojilere göre watt başına daha az gümüş kullanır ve lojistik ve sistem dengesinin proje ekonomisine hakim olduğu uzak çöl kurulumlarında toplam sistem maliyetini azaltır",
+  "HJT'ın daha kalın, çok katmanlı yansıma önleyici kaplama yığını, silikona ulaşmadan önce yakın kızılötesi termal radyasyonu daha fazla emer ve aynı ışınım koşulları altında hücreyi 5-8°C daha soğuk tutar",
+  "HJT hücreleri daha yüksek sistem voltajlarında (1500V DC üzerinde) çalışabilir, bu da şebeke ölçeğindeki çöl kurulumlarında tipik olan uzun kablo yollarındaki dirençli kayıpları %25'e kadar azaltır",
+]
+answer.answer = "HJT, TOPCon için -%0,32 ve PERC için -%0,38'e karşılık -%0,26/°C'lik üstün bir sıcaklık katsayısına sahiptir ve sıcak koşullarda modül sıcaklığı 60-70°C'ye yükseldiğinde önemli ölçüde daha az güç kaybeder."
+context = "25°C'nin üzerindeki her derece için HJT, güç çıkışının yalnızca %0,26'sını kaybeder. Modül sıcaklıklarının 60-70°C'ye ulaştığı sıcak iklimlerde bu, PERC'ye kıyasla yıllık %3-5 daha fazla enerji üretimi anlamına gelir."
+id = "8400069c-ff21-4523-b2b4-d44c408be743"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "HJT hücreleri neden PERC ve TOPCon'da kullanılan aynı yüksek sıcaklıkta gümüş pasta pişirme işlemini (750-850°C) kullanamıyor?"
+prompt.distractors = [
+  "İndiyum kalay oksit (ITO) şeffaf iletken katmanları 400°C'nin üzerinde ayrışarak fırını kirleten ve hücre bağlantısı boyunca şönt yollar oluşturan indiyum buharını serbest bırakır",
+  "HJT'da kullanılan n-tipi silikon plaka substratı, azınlık taşıyıcı ömrünü kalıcı olarak >1 ms'den 50 μs'nin altına düşüren 600°C'nin üzerinde bir faz geçişine maruz kalır",
+  "Tırnaklama sırasında HJT hücrelere lehimlenen bakır tel ara bağlantıları, 300°C'nin üzerindeki sıcaklıklarda oksitlenerek modül doldurma faktörünü %70'in altına düşüren dirençli kontaklar oluşturur.",
+]
+answer.answer = "Hidrojenlenmiş amorf silikon (a-Si:H) pasifleştirme katmanları (sadece 5-8 nm kalınlıkta) ~200°C'nin üzerinde kristalleşip hidrojenlerini kaybederek HJT'a yüksek voltajını veren yüzey pasifleştirmesini yok eder."
+context = "HJT'nin pasifleşmesi a-Si:H katmanlarından gelir. ~200°C'nin üzerinde, amorf silikon kristalleşmeye başlar ve hidrojen dışarı taşarak mükemmel yüzey pasivasyonunu yok eder. Bu nedenle a-Si biriktirmeden sonraki HJT sürecinin tamamının 200°C'nin altında kalması gerekir."
+id = "ba4fdb1c-465d-4782-b9ed-4924563af4d0"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "TOPCon hücreleri ne tür silikon levha (p tipi veya n tipi) kullanıyor ve bu hangi bozulma problemini önlüyor?"
+answer.answer = "n tipi, ışık kaynaklı bozulmayı önler (LID)"
+answer.alternatives = [
+  "n-tipi, LID",
+  "n-tipi, LID'den kaçınır",
+  "n tipi gofretler, LID yok",
+  "n-tipi silikon, ışık kaynaklı bozulma",
+]
+context = "TOPCon, ilk yılda %1-3 güç kaybına neden olan p-tipi levhalardaki bor-oksijen komplekslerinin neden olduğu ışık kaynaklı bozulmaya (LID) maruz kalmayan n-tipi silikon levhalar kullanır."
+id = "a383741f-11a1-4eb7-a344-401f483f857d"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "HJT hücrelerinin yaklaşık iki yüzeylilik faktörü nedir ve neden PERC hücrelerinin ~%70'inden daha yüksektir?"
+prompt.distractors = [
+  "%50-60, çünkü HJT arka tarafa daha fazla yakın kızılötesi ışık ileten daha ince levhalar (120 μm vs 170 μm) kullandığından arka yüzeyde albedo güdümlü üretimi artırır",
+  "%70-75, çünkü HJT'daki alüminyum oksit arka pasifleştirme, PERC'nin yerel alüminyum temas noktalarından daha düzgün bir dahili reflektör oluşturarak arka taraftaki ışık yakalama verimliliğini artırır",
+  "%80-85, çünkü HJT'da kullanılan düşük sıcaklıktaki gümüş macun, standart pişirilmiş macuna göre arka emiciye %15 daha fazla ışık geçmesine izin veren yarı şeffaf arka temas parmakları oluşturur",
+]
+answer.answer = "%90-95, çünkü HJT'nin doğal simetrik yapısı - hem ön hem de arka yüzeylerde aynı a-Si:H/TCO pasifleştirilmiş kontak yığınları - arka taraf aydınlatmasını neredeyse ön taraf kadar verimli bir şekilde yakalar ve dönüştürür"
+context = "HJT hücreleri her iki tarafta da aynı a-Si:H/TCO yığınlarına sahiptir ve bu da %90-95 oranında iki yüzeylilik sağlar. PERC yalnızca ~%70'e ulaşıyor çünkü arka tarafında yerel alüminyum temas noktaları ve açıklıklar var ve bunlar arka aydınlatmayı yakalamada daha az etkili."
+id = "68943235-5db1-4e1e-88d2-095af1c866e7"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "HJT'nin ölçeklendirmesini yıllık üretimin 500'den fazla GW'si ile sınırlandırabilecek birincil malzeme darboğazı nedir?"
+prompt.distractors = [
+  "Gümüş — HJT, düşük iletkenliğe sahip olan düşük sıcaklıktaki macun formülasyonu nedeniyle hücre başına TOPCon'a göre yaklaşık 3 kat daha fazla gümüş gerektirir ve bu da yılda 20.000 tondan fazla tüketir.",
+  "Fosfin gazı (PH₃) — amorf silikon PECVD için n-tipi katkı maddesi öncüsü, küresel olarak yalnızca iki tedarikçi tarafından üretiliyor ve bu da ciddi bir tek arıza noktası tedarik zinciri darboğazı yaratıyor",
+  "Yüzen bölgeli monokristalin silikon — HJT, Czochralski kapasitesinin çok altındaki hacimlerde yalnızca Siemens yüzen bölge yöntemiyle üretilebilen ultra yüksek saflıkta (>10.000 Ω·cm) levhalar gerektirir",
+]
+answer.answer = "İndiyum — HJT'nin indiyum kalay oksit (ITO) şeffaf iletken katmanları, 500 GW ölçeğinde ~1.500 ton/yıl gerektirecektir; bu, yalnızca ~900 ton/yıl olan mevcut küresel indiyum üretimini çok aşar."
+context = "Her HJT hücresi, ITO katmanları aracılığıyla 200-300 mg indiyum kullanır. 500 GW'de bunun için ~1.500 ton/yıl gerekir; bu da toplam küresel arzın neredeyse iki katı anlamına gelir. Endüstri, alüminyum katkılı çinko oksit (AZO) gibi alternatifleri araştırıyor."
+id = "885c9701-bd1c-4a39-ae86-4d8e8d3056db"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (8. Gün) Bakırın neredeyse iletken olmasına ve 100 kat daha ucuz olmasına rağmen, güneş enerjisi endüstrisi serigrafi kontaklar için neden bakır yerine gümüş kullanıyor?"
+prompt.distractors = [
+  "Gümüşün erime noktası bakırdan çok daha düşük (960°C'ye karşı 1.085°C), bu da onu temasın yeniden akması veya deformasyonu riski olmadan 750-850°C ortak ateşleme adımıyla uyumlu hale getiriyor",
+  "Bakır macunu, SiNₓ yansıma önleyici kaplamayı aşındırmak için gereken kurşun-borosilikat cam hamuruyla formüle edilemez, bu nedenle yayıcıyla doğrudan temas edemez.",
+  "Gümüş, asidik EVA kapsülleyici ortamda kimyasal olarak bakırdan daha inerttir ve bu da ona, bakır ara bağlantılarının eşleşemeyeceği 30 yıllık bir güvenilirlik avantajı sağlar.",
+]
+answer.answer = "Bakır, işleme sıcaklıklarında hızla silikonun içine difüze olur, azınlık taşıyıcı ömrünü kısaltan ve hücre verimliliğini yok eden derin seviyede rekombinasyon tuzakları oluşturur; bu da pahalı bariyer katmanları gerektirir"
+context = "Bakır silikonda hızlı bir difüzördür. 750-850°C pişirme sıcaklıklarında bakır atomları levhanın derinliklerine nüfuz ederek rekombinasyon merkezleri oluşturur. Silver'ın bu sorunu yok."
+id = "955a8e06-5fff-4921-815e-22554b9b72d0"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (6. Gün) Bir p-n eklemli güneş hücresinde, bağlantı noktasındaki yerleşik elektrik alanı enerji üretiminde nasıl bir rol oynuyor?"
+prompt.distractors = [
+  "Gelen fotonları elektro-optik etki yoluyla yörüngelerini bükerek soğurucu katmana doğru hızlandırır, tükenme bölgesinde elektron-delik çifti oluşma olasılığını artırır",
+  "Çoğunluk taşıyıcıların kinetik enerjisini Joule ısıtma yoluyla termal enerjiye dönüştürerek bağlantı bölgesini taşıyıcı taşıma için en uygun çalışma sıcaklığına kadar ısıtır.",
+  "Katkılı yarı iletkendeki Hall etkisi yoluyla harici devre boyunca fotojenlenmiş akımın akımını yönlendiren bağlantı noktasına dik bir yerel manyetik alan yaratır.",
+]
+answer.answer = "Yeniden birleşebilmeleri için elektronları n tarafına ve delikleri p tarafına doğru süpürerek fotojenlenmiş elektron-delik çiftlerini ayırır ve harici yük boyunca akan akımı yaratır."
+context = "P-n bağlantısındaki yerleşik elektrik alanı, güneş hücresinin bir güç kaynağı olarak çalışmasını sağlayan şeydir. Bir foton bağlantı noktasının yakınında bir elektron-delik çifti oluşturduğunda, alan onları birbirinden ayırır ve böylece harici bir devrede iş yapabilirler."
+id = "90f64cf4-5d31-4ead-8751-a7bb4df0a722"

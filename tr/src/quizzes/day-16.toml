@@ -1,0 +1,121 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "2025'in 4. çeyreğinde üretilen tipik bir 0,087$/Wp TOPCon modülünde en büyük maliyet kategorisi hangisidir?"
+prompt.distractors = [
+  "Yüksek kapasiteli fabrikalarda hücre işleme bütçesinin yarısını oluşturan PECVD ve LPCVD ekipman amortismanının maliyetinden kaynaklanan hücre işleme ~%21 seviyesinde",
+  "Polisilikon ~%17, çünkü 6-7 $/kg spot fiyatlarda bile, %35-40 çentik kaybı hesaplandıktan sonra modül başına gereken 1,3-1,5 kg, silikonu baskın maliyet haline getiriyor",
+  "Doğrudan üretim ücretleri ve fabrika elektrik tüketiminin birlikte maddi olmayan maliyetlerin büyük kısmını oluşturduğu işgücü, genel giderler ve lojistik ~%22 düzeyindedir",
+]
+answer.answer = "Modül montajı malzeme listesi ~%31, çünkü silikon olmayan bileşenler (cam, kapsülleyici, alüminyum çerçeve, bağlantı kutusu ve şerit) toplu olarak içindeki hücrelerden daha pahalıdır"
+context = "Modül montajına yönelik BOM, modül başına kabaca 15,50-16,00 ABD Doları (~0,027 ABD Doları/Wp) tutarındadır ve bu da onu en büyük tek maliyet kategorisi haline getirir. Modülün içindeki teknolojinin maliyeti artık onu koruyan ambalajdan daha ucuz."
+id = "93fadaa0-f114-431a-accd-203dd62d5226"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Neden daha yüksek hücre verimliliği güneş enerjisi üretimindeki en güçlü maliyet azaltma aracıdır?"
+prompt.distractors = [
+  "Daha yüksek verimli hücreler, çalışma sırasında daha az atık ısı üreterek kapsülleyici ve arka tabaka malzemeleri üzerindeki termal stresi azaltır, bu da üreticilerin daha ucuz polimer filmler kullanmasına olanak tanır",
+  "TOPCon gibi gelişmiş mimariler, standart PERC hatlarında kullanılan altı serigrafi baskı geçişinden ikisini ortadan kaldırdığından, daha yüksek verimli hücreler fabrikada daha az işlem adımı gerektirir",
+  "Daha yüksek verimli hücreler, fabrikaların aynı watt çıkışı için daha az sayıda paralel üretim hattını çalıştırmasına olanak tanıyarak personel gereksinimlerini yıllık gigawatt kapasite başına %15-20 oranında azaltır.",
+]
+answer.answer = "Çoğu modül maliyeti (cam, çerçeve, kapsülleyici, işçilik, fabrika alanı, lojistik) watt'a göre değil alana göre ölçeklenir, böylece daha yüksek verimli bir hücre aynı alanlı modülden neredeyse aynı maliyetle daha fazla watt üretir"
+context = "%24 verimli bir modülün maliyeti, %22 verimli bir modülün maliyetiyle hemen hemen aynıdır (aynı cam, çerçeve ve işçilik) ancak ~%9 daha fazla güç üretir. Bu, 'ücretsiz' için watt başına maliyetin düşmesine neden olur."
+id = "07b043d8-f693-4149-9c64-f3b7582cb50e"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Gümüş macunu hücre işleme maliyetlerinde 'sessiz katil' yapan şey nedir?"
+prompt.distractors = [
+  "Gümüş macunu, birim başına 2,5 milyon dolara mal olan özel bir nitrojen atmosferli serigrafi baskı odası gerektirir ve gümüş nanoparçacık oluşumundan kaynaklanan ağ bozulması nedeniyle her 18 ayda bir değiştirilmesi gerekir.",
+  "Gümüş macununun yalnızca Heraeus ve DuPont gibi Japon tedarikçilerden ithal edilmesi gerekiyor, bu da ham gümüş emtia fiyatlarına %15-20 oranında artış ekleyen bir tedarik zinciri darboğazı yaratıyor",
+  "Gümüş macun baskısı, PECVD için 6.000+/saat'e karşılık 1.200 levha/saat ile hücre üretim hattındaki en yavaş adımdır ve 3 kat daha fazla yazıcı gerektiren bir üretim darboğazı yaratır.",
+]
+answer.answer = "TOPCon hücresi başına 10-13 mg ve ~950-1.000$/kg macun maliyetiyle, gümüş metalizasyonu modül başına 2,80-3,50$'a tekabül eder - tek bir sarf malzemesi için kabaca toplam modül maliyetinin %6-7'si."
+context = "Gümüş tüketimi, endüstrinin bakır kaplama, SMBB tasarımları ve sıfır bara yaklaşımlarını takip etmesinin nedenidir. Hücre başına tasarruf edilen her miligram, 400+ GW ölçeğinde yılda yüz milyonlarca dolar değerinde, ~0,001$/Wp tasarruf anlamına gelir."
+id = "dd7c0338-c5ed-4454-88a7-6d43d4f6fee8"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Neden birçok Çinli modül üreticisi 2025'teki tam yüklü üretim maliyetlerinin altında fiyatlarla ürün göndermeye devam ediyor?"
+prompt.distractors = [
+  "Üreticiler, yeni Tongwei ve GCL kapasitesinin devreye girmesi nedeniyle polisilikon fiyatlarının 2026'da %30-40 daha düşmesini bekliyor, bu da stok yeniden değerlemesinde mevcut üretimlerini geriye dönük olarak karlı hale getirecek",
+  "Çin'in güneş modüllerindeki %13'lük ihracat vergisi indirimleri, her sevkiyatı etkili bir şekilde sübvanse ederek, hükümet indirimi de hesaba katıldığında üretim maliyetindeki belirgin kaybı net kara dönüştürüyor",
+  "Modül üreticileri, 2022 fiyat zirvesi sırasında imzalanan uzun vadeli tedarik anlaşmalarına sözleşme gereği bağlı kalıyor ve bu sözleşmelerin ihlali, modül başına kayıpları aşan cezai hükümlerin tetiklenmesine neden olacak",
+]
+answer.answer = "Bir fabrikayı kapatmak, onu zararına çalıştırmaktan bile daha pahalıdır; borç servisi, bakım ve çekirdek personel maliyetleri ne olursa olsun devam eder; bu da klasik bir aşırı kapasite ölüm sarmalına yol açar"
+context = "~1.200 GW kapasite inşa edilmesine karşılık ~500-600 GW fiili taleple birlikte, sektörde kabaca 2 kat fazla kapasite var. Üreticiler değişken maliyetleri karşılamak ve kapanmanın sabit maliyetlerinden kaçınmak için nakliyeye devam ediyor."
+id = "83859773-864b-4187-966c-970b1071e757"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Kristalin silikon güneş modüllerinin maliyeti 2010 ile 2025'in sonları arasında yaklaşık yüzde kaç düştü?"
+answer.answer = "95%"
+answer.alternatives = [
+  "~%95",
+  "yaklaşık %95",
+  "kabaca %95",
+  "yüzde 95",
+  "yaklaşık %95",
+]
+context = "Modül maliyetleri 2010'da kabaca 1,50$/Wp'den 2025 sonlarında 0,08-0,10$/Wp'ye düştü; Swanson Yasasının etkisiyle 15 yılda ~%95'lik bir düşüş (kümülatif kapasitenin iki katına çıkması başına %24 maliyet düşüşü)."
+id = "9acdbfce-1466-4170-8e00-80a558cd808d"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "ABD'da ~0,80-1,00$/Wp maliyete sahip şebeke ölçekli bir güneş enerjisi kurulumu için modülün kendisi yüzde kaçı temsil eder?"
+prompt.distractors = [
+  "%50-60, çünkü 0,09 ABD Doları/Wp'de bile, modül artı nakliye, tarifeler ve garanti hükümleri, etkin modül maliyetini Amerika pazarındaki toplam sistem maliyetinin neredeyse yarısına kadar itiyor",
+  "%10-15, ABD anti-damping vergileri ve Bölüm 201 tarifeleri sistem dengesini ve yumuşak maliyetleri o kadar dramatik bir şekilde artırıyor ki donanım toplam kurulu fiyatın küçük bir kısmını oluşturuyor",
+  "%70-80, çünkü ABD pazarına nakliye ve ithalat vergilerini içeren modülün maliyeti, Güneydoğu Asya aktarmasında hileli hileyi önleme tarifeleri uygulandıktan sonra genellikle 0,55-0,70$/Wp'dir.",
+]
+answer.answer = "%25-35, çünkü yumuşak maliyetler (izin, ara bağlantı, geliştirme, finansman) ve sistem dengesi donanımı (raf, invertörler, kablolama) artık toplu olarak toplam kurulu maliyete hakimdir"
+context = "Modül o kadar ucuz hale geldi ki, modül dışı maliyetler (özellikle izin ve ara bağlantı kuyrukları gibi yumuşak maliyetler) artık sistem maliyetinin çoğunu temsil ediyor. Maliyetlerin daha fazla düşürülmesi düzenleme ve süreç reformunu gerektirir."
+id = "b0d89405-de10-48de-9a00-336ff6686566"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (15. Gün) 1000'den fazla CZ çekicinin bulunduğu bir kristal yetiştirme salonundaki gerçek üretim darboğazı nedir?"
+prompt.distractors = [
+  "Eritme aşaması döngü başına 8-12 saat sürer çünkü kuvars pota astarında termal şok çatlamasını önlemek için polisilikon parçalarının kademeli olarak ısıtılması gerekir.",
+  "Kristal çekme hızı, katı-sıvı arayüz dinamikleri tarafından 0,5-1,2 mm/dak ile sınırlıdır, bu da 50-70 saatlik büyüme döngüsünü külçe çıkışı için hız sınırlayıcı adım haline getirir",
+  "Tohum kristalinin mevcudiyeti verimi kısıtlar çünkü dislokasyonsuz her tohum, kullanılmadan önce 2-3 haftalık özel yüzdürme bölgesi hazırlığı gerektirir",
+]
+answer.answer = "Sıcak bölge sarf malzemeleri (grafit potalar, ısıtıcılar ve ısı kalkanları) 4-8 çekmeden sonra bozulur ve değiştirilmeleri gerekir; bu da bakım onarımını gerçek darboğaz haline getirir"
+context = "15. Günden itibaren: Kristal büyümesinin kendisi çoğunlukla otomatik beklemedir. Sınırlayıcı faktör, bakım ekiplerinin döngüler arasında sıcak bölge bileşenlerini ne kadar hızlı sökebileceği, değiştirebileceği ve yeniden birleştirebileceğidir."
+id = "d5e668c6-e77c-4b25-b453-526844dc9cdb"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (14. Gün) EVA veya POE kapsülleyici filmlerin güneş modülündeki birincil rolü nedir?"
+prompt.distractors = [
+  "Hücre metalizasyonu ile alüminyum çerçeve arasında dielektrik yalıtım katmanı görevi görerek şebeke ölçekli dizilerde 1.500 V DC'a kadar sistem gerilimlerinde toprak arızalarını önlerler",
+  "Camla eşleşen 1,49 kırılma indisine sahip bir optik bağlantı ortamı görevi görürler ve ön yüzey yansıma kayıplarını ARC kaplamanın ötesinde %2-3 oranında daha azaltırlar.",
+  "Isıyı hücre sıcak noktalarından yanal olarak yayan bir termal iletim katmanı olarak işlev görürler ve hava boşluğu modülü tasarımlarına kıyasla tepe hücre sıcaklığını 8-12°C azaltırlar.",
+]
+answer.answer = "Uzun vadeli modül güvenilirliğini korumak için hücreleri ön cam ile arka kapak arasında lamine ederek mekanik yastıklama, nem bariyeri koruması ve optik şeffaflık sağlarlar"
+context = "14. Günden itibaren: EVA/POE kapsülleyici filmler, 140-150°C'de laminasyon sırasında tüm modül katmanlarını birbirine bağlar. POE üstün nem direnci ve daha düşük PID riski sunar ve çift yüzeyli modüller için giderek daha fazla tercih edilir."
+id = "98fd32fb-2357-4acd-b950-3e5eac1865f5"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (5. Gün) Neden elmas tel, silikon külçe levhalama için bulamaç bazlı testerelemenin yerini büyük ölçüde aldı?"
+prompt.distractors = [
+  "Elmas tel, kesme sırasında yüzey oksidasyonunu önleyen, bulamaçla kesilmiş levhaların gerektirdiği kesim sonrası HF aşındırma ihtiyacını ortadan kaldıran kapalı bir nitrojen atmosferinde çalışır.",
+  "Elmas tel, <1μm pürüzlülüğe sahip daha pürüzsüz bir levha yüzeyi üretir; bu, hücre üreticilerinin dokulandırma adımını atlayıp doğrudan difüzyon işlemine geçmesine olanak tanır",
+  "Elmas tel, daha az yüzey altı kristal hasarı oluşturarak %0,5 daha yüksek azınlık taşıyıcı ömrüne sahip levhalar elde edilmesini sağlar ve bu da doğrudan daha yüksek bitmiş hücre verimliliği anlamına gelir",
+]
+answer.answer = "Elmas tel bulamaca göre 3-5 kat daha hızlı keser, daha dar bir çentik oluşturur (daha az silikon israfı) ve 38-42μm çapa düşerek polisilikon malzeme maliyetlerinde endüstriye yıllık milyarlarca tasarruf sağlar"
+context = "5. Günden itibaren: Daha ince elmas tel, kesme sırasında çentik olarak daha az silikon kaybı anlamına gelir. 120μm'den 38-42μm tele geçiş, polisilikonda tahmini olarak yılda 2-3 milyar dolar tasarruf sağladı."
+id = "683b8c72-2bf2-43ce-b3be-baa0b42520a0"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (9. Gün) TOPCon ne anlama geliyor?"
+answer.answer = "Tünel Oksit Pasifleştirilmiş Kontak"
+answer.alternatives = [
+  "tünel oksit pasifleştirilmiş kontak",
+  "Tünel Oksit Pasifleştirici Kontak",
+  "tünel oksit pasifleştirici kontak",
+]
+context = "9. Günden itibaren: TOPCon, hücrenin arka yüzeyindeki rekombinasyon kayıplarını azaltan pasifleştirilmiş bir temas oluşturmak için katkılı polisilikon ile kaplanmış ultra ince bir tünel oksit (~1.5nm) kullanır."
+id = "cc004d8c-d79a-4979-93c6-6de16ed47bd3"

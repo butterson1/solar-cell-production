@@ -1,0 +1,127 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Tek katmanlı çeyrek dalga ARC neden güneş pillerinin başka bir renk yerine mavi görünmesine neden oluyor?"
+prompt.distractors = [
+  "Silikon nitrür malzemesi, film kalınlığından bağımsız olarak yansıyan spektruma hakim olan nitrojen emme bantlarından kaynaklanan kendine özgü bir mavi renk tonuna sahiptir.",
+  "ARC, kırmızı ve kızılötesi yansımayı en etkili şekilde bastıracak şekilde ayarlanmıştır, böylece kalan yansıyan ışık, film sınırındaki Doppler etkisi ile daha kısa mavi dalga boylarına doğru kaydırılır.",
+  "Mavi ışık, görünür spektrumdaki en yüksek foton enerjisine sahiptir ve SiNₓ filmi içinde daha fazla saçılmasına ve silikonun içine iletmek yerine dışarıya yeniden yayılmasına neden olur.",
+]
+answer.answer = "ARC kalınlığı ~600 nm (güneş spektrumu zirvesine yakın turuncu ışık) için optimize edilmiştir ve burada sıfıra yakın yansıma elde edilir - ancak daha kısa mavi dalga boylarında (400-500 nm), film artık tam olarak çeyrek dalga kalınlığında değildir, bu nedenle yansıma %5-10'a yükselir ve yansıyan mavi ışık hücreye rengini verir."
+context = "Çeyrek dalga ARC, bir tasarım dalga boyunda yıkıcı girişime ulaşır. Endüstri, güneş ışınımının zirve yaptığı ~600 nm'ye ayarlanıyor. 450 nm'de optik yol farkı yarım dalga iptal durumundan uzaklaşır ve yansıma geri tepir. Yansıyan mavi fotonlar gözünüzün gördüğü şeydir."
+id = "6a0b3b4a-e1a3-4c8b-a682-48d5c1f1e782"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "PECVD tarafından biriktirilen silisyum nitrür (SiNₓ:H), bir güneş hücresi üzerinde aynı anda üç işlevi yerine getirir. Hangi kombinasyon doğrudur?"
+prompt.distractors = [
+  "Yansıma önleyici kaplama, emitörün nemden elektriksel yalıtımı ve demir yabancı maddelerinin uzaklaştırılması için levha yüzeyine iletilmesi",
+  "Yansıma önleyici kaplama, ince levhanın eğilmeye karşı mekanik olarak güçlendirilmesi ve taşıyıcının taşınması için tünel oksit oluşturulması",
+  "Yansıma önleyici kaplama, tabaka direncini artırmak için yayıcının nitrojen atomlarıyla katkılanması ve EVA kapsülleyiciyi korumak için UV filtreleme",
+]
+answer.answer = "Yansıma önleyici kaplama (n ≈ 2,0, 75 nm), sarkan bağların hidrojenle kapatılması yoluyla yüzey pasifleştirilmesi (yüzey rekombinasyon hızının >100.000'den <10 cm/s'ye düşürülmesi) ve ateşleme sırasında hidrojen difüzyonu yoluyla toplu kusur pasifleştirmesi"
+context = "PECVD SiNₓ:H'deki atomik yüzde 10-15 hidrojen anahtardır. ~800°C'lik ateşleme adımı sırasında hidrojen silikonun içine yayılır, yüzeydeki sarkan bağları pasifleştirir ve tane sınırları ve bor-oksijen çiftleri gibi yığın kusurlarını nötralize eder. Bu üçlü fonksiyon, SiNₓ:H'yi güneş hücresi üretiminde en etkili tek katman haline getirir."
+id = "d978ba21-af48-45e1-a2a3-e681b9a95682"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Hem piramit dokulu hem de SiNₓ ARC içeren modern bir monokristal silikon hücrenin yaklaşık ağırlıklı ortalama ön yüzey yansıması nedir?"
+answer.answer = "1.5-3%"
+answer.alternatives = [
+  "%2",
+  "%1,5-2,5",
+  "~%2",
+  "%2-3",
+  "%1,5",
+  "yaklaşık %2",
+  "%3'ten az",
+]
+context = "Piramit dokulandırma, fotonların yüzeyde 2-3 kez sıçramasını sağlar ve SiNₓ ARC sayesinde her sıçramada yalnızca ~%1-3 yansıma görülür. Birleşik etki, ağırlıklı ortalama yansımayı ~%35'ten (parlatılmış çıplak silikon) yalnızca %1,5-3'e düşürür; bu da yansıma kayıplarında %90-95'lik bir azalmadır."
+id = "41100d78-93d8-453e-aa5c-fb22bb30d113"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Neden çok kristalli silikon levhalar, tek kristalli levhalarla aynı alkalin KOH piramit dokulandırma işlemini kullanamıyor?"
+prompt.distractors = [
+  "KOH çok kristalli silikonun tanecik sınırlarında yoğunlaşan metalik safsızlıklarla reaksiyona girerek levhayı mekanik olarak zayıflatan derin aşındırma çukurları oluşturur",
+  "Çok kristalli silikon bazlarda kullanılan daha yüksek bor konsantrasyonu, KOH aşındırma reaksiyonunu engelleyerek prosesin standart sıcaklıklarda pratik olmayacak şekilde yavaşlamasına neden olur.",
+  "Çok kristalli levhalar genellikle daha kalındır (250 μm'ye karşı 170 μm) ve KOH aşındırma hızı, fazla malzemeyi çıkarmadan önce durdurulamayacak kadar hızlıdır",
+]
+answer.answer = "KOH aşındırma anizotropiktir — kristal yönelimine bağlıdır. Çok kristalli silikondaki rastgele tane yönelimleri, tekdüze doku yerine piramitlerin, düz rafların ve derin oyukların kaotik bir karışımını üretir ve bu da zayıf optik ve estetik kaliteye neden olur."
+context = "Zarif piramit oluşumu, (100) ve (111) kristal düzlemleri arasındaki 30-50x aşındırma hızı farkına dayanır. Monokristalde tüm yüzey (100) olup düzgün piramitler verir. Çoklu kristalde, her taneciğin farklı bir yönelimi vardır, dolayısıyla her biri farklı şekilde aşınır; bazıları piramitler oluşturur, diğerleri düz veya aşırı aşındırılmış halde kalır."
+id = "fe5b27cd-dfbc-4123-b809-8d9e779b3eb3"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Siyah silikon, piramidal dokulandırmadan temelde farklı bir optik mekanizma kullanarak %0,3'ten daha az yansıma elde eder. Nedir?"
+prompt.distractors = [
+  "Nano ölçekli sivri uçlar, görünür dalga boylarından daha küçüktür ve kırınıma neden olur ve yansıyan tüm ışığı, bitişik sivri uçlu duvarlardan silikona yeniden girdiği yere doğru yeniden yönlendirir.",
+  "100 nm'nin altındaki sivri uçlu uçlardaki kuantum hapsi, silikon bant aralığını, normalde toplu silikon tarafından yansıtılacak olan UV ve mavi fotonları absorbe edecek şekilde kaydırır",
+  "Sivri uçlar, elektromanyetik alan enerjisini uçlarında yoğunlaştıran plazmonik nanoantenler gibi davranarak yüzeyle geliştirilmiş Raman saçılımına benzer bir süreçte neredeyse tamamen emilimi zorlar.",
+]
+answer.answer = "100-500 nm uzunluğundaki nano ölçekli sivri uçlar, kademeli bir kırılma indeksi oluşturur - n=1,0'dan (hava) n=3,9'a (silikon) yumuşak bir geçiş - böylece ışık hiçbir zaman keskin bir arayüzle karşılaşmaz ve güve gözlerindeki nanoyapılara benzer şekilde yansıma neredeyse tamamen ortadan kalkar."
+context = "Yüzey özellikleri boyut olarak ışığın dalga boyuyla karşılaştırılabilir olduğunda, etkili kırılma indisi havadan hacimli silikona kadar kademeli olarak değişir. Kırılma indisinde ani bir adım yoktur, dolayısıyla Fresnel yansıması da yoktur. Bu, güve gözlerinin kullandığı prensiple aynıdır; yırtıcı hayvanların parıltısını en aza indirmek için milyonlarca yıl boyunca evrimleşen nano ölçekli tümsekler."
+id = "b2c9da48-d838-4cef-8229-393dfba6d6e6"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Havadaki (n = 1,0) silikon (n ≈ 3,9) üzerine tek katmanlı yansıma önleyici kaplama için ideal kırılma indisi nedir?"
+answer.answer = "~2.0"
+answer.alternatives = [
+  "1.97",
+  "2.0",
+  "yaklaşık 2",
+  "~1.97",
+  "2",
+  "1.9-2.0",
+  "sqrt(3.9)",
+]
+context = "Optimum tek katmanlı ARC kırılma indisi, iki sınırlayıcı ortamın geometrik ortalamasıdır: n_ARC = √(n_hava × n_Si) = √(1,0 × 3,9) ≈ 1,97. N = 1,95-2,05 ile silikon nitrür (SiNₓ) bu uygulama için neredeyse mükemmel olup endüstri standardı haline gelmesinin nedenlerinden biri de budur."
+id = "bc21f5d7-4c36-4fc3-8f57-270ae47195fd"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (6. Gün) 'Seçici yayıcı' yaklaşımı nedir ve hangi sorunu çözer?"
+prompt.distractors = [
+  "Vericinin akım yoğunluğunun zirve yaptığı kenarlarda daha kalın olmasını sağlamak ve bara bağlantılarındaki direnç kayıplarını azaltmak için hücre boyunca levha kalınlığını değiştiren bir yöntem",
+  "Taşıyıcıları en yakın şebeke çizgisine doğru yönlendiren yanal bir elektrik alanı oluşturmak için farklı katkı türlerini (fosfor ve arsenik) alternatif şeritler halinde yerleştiren bir teknik",
+  "Vericinin şebeke çizgileri arasında tamamen çıkarıldığı ve alan bölgelerinde Auger rekombinasyonunu ortadan kaldıran çıplak içsel silikonun bırakıldığı bir işlem",
+]
+answer.answer = "Düşük temas direnci için yalnızca metal temas noktaları altında ağır fosfor katkısı (~10²¹/cm³) ve 'ölü katman' rekombinasyon problemini önlemek için kontaklar arasında daha hafif katkı (~10¹⁹/cm³) — elektriksel temas kalitesi ile taşıyıcı toplama arasındaki dengeyi çözer"
+context = "Ölü katman, fosfor katı çözünürlüğünü (~5 × 10²⁰/cm³) aştığında oluşur ve mavi ışık tepkisini ortadan kaldıran rekombinasyon merkezleri oluşturur. Seçici yayıcılar, ihtiyaç duyulan yerde (temaslar altında) ağır katkılamayı ve pasifleştirmenin önemli olduğu yerlerde (temaslar arasında) hafif katkılamayı korur. Modern PERC ve TOPCon hücreleri, pasifleştirme katmanları veya arka tarafa ağır katkılama gibi alternatif yaklaşımlar kullanır."
+id = "ea0b7739-7f08-4d5d-82eb-e252e1f41e47"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (5. Gün) Modern elmas tel testerelerde yaklaşık 50-60 μm çapında tel kullanılır. Üretim ekonomisi açısından tel çapını azaltmak neden bu kadar önemli?"
+prompt.distractors = [
+  "Daha ince teller kesme sırasında daha yüksek frekanslarda titreşir, bu da dilimleme sırasında levha yüzeyini parlatır ve ayrı bir hasar giderme aşındırma adımı ihtiyacını ortadan kaldırır",
+  "Azaltılmış tel kütlesi, makara ağırlığını azaltarak, her makara için ağır yük nakliyesi gerektirmek yerine telin standart lojistik ile taşınmasına olanak tanır.",
+  "Daha ince teller daha düşük elektrik direncine sahiptir ve tel gerdirme motorlarının güç tüketimini yaklaşık %40 azaltır.",
+]
+answer.answer = "Daha ince tel, daha dar bir çentik (kesim genişliği) anlamına gelir, böylece talaş olarak daha az silikon israf edilir; eski sulu harç testerelerde çentik kaybı ~130 μm'den ~60-70 μm'ye düşürülür ve her külçeden yaklaşık %30-40 daha fazla kullanılabilir levha geri kazanılır"
+context = "Kerf (talaş) olarak kaybedilen silikon, tarihsel olarak külçe hacminin neredeyse yarısını oluşturuyordu. Tel çapının 120-160 μm'den (bulamaç dönemi) 50-60 μm'ye (modern elmas tel) düşürülmesi, doğrudan kerf genişliğini azaltır, külçe başına daha fazla levha çıkarır ve watt başına malzeme maliyetini azaltır."
+id = "5cc7b0c7-17e3-4e65-a697-f8dc7b5b96a1"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (3. Gün) Siemens prosesinde ince silikon çubuklar neden hala triklorosilanı parçalayacak daha düşük bir sıcaklık yerine 1.000-1.100°C'ye ısıtılıyor?"
+prompt.distractors = [
+  "Triklorosilan (TCS) yalnızca 950°C'nin üzerinde termal olarak ayrışmaya başlar — bu sıcaklığın altında 381 kJ/mol'lük Si-Cl bağ enerjisinin üstesinden gelinemez ve silikon birikintileri oluşmaz.",
+  "Daha düşük sıcaklıklar, polikristal yerine amorf silikon biriktirir ve amorf silikon, rastgele atom yapısından dolayı Czochralski kristal büyümesi için kullanılamaz.",
+  "Klor yan ürünü (HCl), 1.000°C'nin altında biriken silikona saldırır ve yeniden aşındırır, böylece daha düşük sıcaklıklarda net birikme oranı fiilen sıfır olur.",
+]
+answer.answer = "Ticari olarak uygulanabilir biriktirme hızlarına ulaşmak için yüksek sıcaklığa ihtiyaç vardır — TCS bozunma daha düşük sıcaklıklarda meydana gelir, ancak reaksiyon kinetiği çok yavaştır ve biriken silikonun kalitesi (tane boyutu, saflık), adsorbe edilen türlerin eksik yüzey difüzyonu nedeniyle daha düşük sıcaklıklarda bozulur."
+context = "TCS 600°C civarında ayrışmaya başlar, ancak biriktirme hızı ve film kalitesi zayıftır. 1.000-1.100°C'de silikon adatomların yüzey hareketliliği büyük, yüksek saflıkta polikristalin taneler oluşturacak kadar yüksektir ve çubuk yüzeyinde birikme hızı ~1 mm/saat'e ulaşır. Bunun karşılığında, sürecin baskın enerji maliyeti olan muazzam ışınımsal ısı kaybı ortaya çıkar."
+id = "5b54bef9-f135-49a4-9374-b25f60060ba0"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (1. Gün) Güneş pillerinin ışığı elektriğe dönüştürmesini sağlayan temel fiziksel etkinin adı nedir?"
+answer.answer = "fotovoltaik etki"
+answer.alternatives = [
+  "fotovoltaik etki",
+  "PV etkisi",
+  "fotovoltaik",
+]
+context = "İlk kez 1839'da Edmond Becquerel tarafından gözlemlenen fotovoltaik etki, ışığa maruz kalan bir malzemede voltaj ve akım oluşmasıdır. Yarı iletkenin bant aralığının üzerinde enerjiye sahip fotonlar, bir p-n bağlantısının yerleşik elektrik alanı tarafından ayrılan elektron-delik çiftleri oluşturduğunda meydana gelir."
+id = "9c8e4e72-fe49-430a-9e4a-d695fd1f1294"

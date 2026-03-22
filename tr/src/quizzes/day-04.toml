@@ -1,0 +1,123 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Güneş enerjisi endüstrisi neden çok kristalli levhalardan tek kristalli plakalara geçerek 2024 yılına kadar %95'in üzerinde pazar payına ulaştı?"
+prompt.distractors = [
+  "Monokristal külçeler daha büyük (300 mm+) büyütülebilir, bu da parti başına daha fazla levha ve daha düşük maliyet sağlar",
+  "Çok kristalli silikon, daha yüksek saflıkta hammadde gerektirir ve bu da onu belirli ölçekte üretmeyi daha pahalı hale getirir",
+  "Tel testereyle dilimlemedeki ilerlemeler, monokristalin levhaların kırılmadan incelmesini sağlayarak silikon kullanımını azalttı",
+]
+answer.answer = "Çok kristalli silikondaki tanecik sınırları %2-4 mutlak verimlilik kaybına neden olur; bu kabul edilemez çünkü PERC ve TOPCon performans sınırlarını zorladı"
+context = "Tane sınırları, elektronların sıkışıp kaldığı rekombinasyon merkezleri görevi görür. Yüksek verimli mimariler yüzde birin her kesrini talep ettiğinden, çoklu kristalin daha düşük üretim maliyetine rağmen %2-4 verimlilik cezası anlaşmayı bozucu hale geldi."
+id = "71d8dce2-ac55-45f5-a6ba-8b8120407c44"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "'Çizgi boyun' tekniği nedir ve CZ kristal büyümesi için neden kritiktir?"
+prompt.distractors = [
+  "Kristal çapı boyunca düzgün katkı maddesi dağılımı oluşturmak için tohumu 15-20 RPM'de yavaşça döndürün",
+  "Katılaşma arayüzünün şeklini kontrol etmek için eriyik yüzeyinde 3-5°C'lik bir termal eğimin korunması",
+  "Büyüme döngüsü boyunca eriyik tükenmesini telafi etmek için kristalin değişken hızlarda (0,5-2 mm/dak) çekilmesi",
+]
+answer.answer = "Tohum temasından sonra ince bir boyun (3-5 mm) büyür, böylece termal şok dislokasyonları yüzeye yayılır ve sonlanır ve hatasız bir kristal elde edilir"
+context = "Tohum 1.420°C'deki eriyik ile temas ettiğinde termal şok dislokasyonlara neden olur. Çok ince bir boyun büyüyerek bu kusurlar yüzeye ulaşır ve kendiliğinden sona erer. 200+ kg'lık külçenin tamamı daha sonra bu kalem inceliğindeki boyundan sarkar."
+id = "a7fcf389-1844-4313-90f5-8b170bd059bc"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Silikonun erime noktası nedir?"
+answer.answer = "1.425°C"
+answer.alternatives = [
+  "1425°C",
+  "1425",
+  "1.425",
+  "1425 derece",
+]
+context = "Silikon 1.425°C'de erir. CZ büyüme bu sıcaklığın hemen üzerinde gerçekleşir ve eriyik biraz aşırı ısınır. Yüzlerce kilogram silikonun günlerce 1.420°C'nin üzerinde tutulması çok büyük bir enerji girdisi gerektirir."
+id = "f485bb90-d679-47b0-948e-4896dc70ca49"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Neden kayan bölge (FZ) silikonu ana akım güneş enerjisi üretiminde kullanılamıyor?"
+prompt.distractors = [
+  "FZ kristalleri, RF ısıtma bobinlerinden gelen daha yüksek oksijen konsantrasyonları içerir, bu da hücre performansını düşürür",
+  "FZ silikon, standart dokulandırma işlemleriyle uyumsuz olan farklı bir kristal yönelimine (111'e karşı 100) sahiptir",
+  "FZ büyümesi, katkı maddesi konsantrasyonunda, bir modüldeki hücreler arasında akım uyumsuzluğuna neden olan çizgilere neden olur",
+]
+answer.answer = "FZ külçeler yüzey gerilimi fiziği gereği ~200 mm çapla sınırlıdır, 50-80 kg/iş verimiyle ve CZ'den 30-100 kat daha yüksek maliyetle"
+context = "FZ'daki erimiş bölge yalnızca yüzey gerilimi tarafından tutulur. Kütle çapın küpüyle birlikte büyürken yüzey gerilimi doğrusal olarak ölçeklenir; ~200 mm'nin üzerinde eriyik çöker. CZ için 5-15 ABD Doları/wafer ve 0,15-0,25 ABD Doları olan FZ, güneş enerjisi için ekonomik olarak uygun değildir."
+id = "38cc1fae-1e29-43ca-98b5-328d1e38e5f2"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Ayrışma katsayısı bize kristal büyümesi hakkında ne söylüyor ve borun k₀ = 0,8 değeri neden sorunlu?"
+prompt.distractors = [
+  "k₀ = 0,8, borun zamanla eriyik içinde biriktiği ve külçenin son %20'sinin kullanılamaz şekilde p tipi olmasına neden olduğu anlamına gelir",
+  "k₀ = 0,8, borun ikame bölgelerden ziyade tercihen ara bölgeleri işgal ettiği ve elektriksel aktivitesini azalttığı anlamına gelir",
+  "k₀ = 0,8, bor atomlarının eşit şekilde dağılmak yerine bir araya gelerek lokalize yüksek dirençli bölgeler oluşturduğu anlamına gelir",
+]
+answer.answer = "k₀ = 0,8, borun donma sırasında katı ve sıvıya neredeyse eşit oranda karıştığı anlamına gelir; dolayısıyla kristal büyümesi, çok küçük k₀ değerlerine sahip metaller gibi onu arındıramaz."
+context = "Çoğu metalin çok küçük k₀ değerleri vardır (demir: 8×10⁻⁶), yani kristal büyümesi onları eriyiğe iter. Ancak bor, katı ve sıvı arasında neredeyse eşit olarak bölünür. Bu nedenle polisilikon saflaştırmasının kristal büyümesinden önce boronu uzaklaştırması gerekir."
+id = "8d8357c5-d947-4f89-ab38-84b57138c5c4"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Yeniden şarj CZ (RCZ) teknolojisinde, LONGi gibi önde gelen üreticiler tek bir potadan kaç külçe çekebilir?"
+answer.answer = "6-10"
+answer.alternatives = [
+  "6 ila 10",
+  "8",
+  "6-12",
+  "8-10",
+  "10",
+  "12",
+]
+context = "2024 yılına gelindiğinde, LONGi ve TZS, RCZ kullanarak rutin olarak pota başına 6-10 külçe çekti ve çekmeler arasında tam termal döngüden kaçınarak enerji kullanımını %20-30 oranında azalttı."
+id = "395b3dd4-f030-449f-bccf-2ca98b5bc3ea"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁(3.Gün) Siemens prosesinde ayrımsal damıtmanın temel amacı nedir?"
+prompt.distractors = [
+  "Triklorosilanın kontrollü sıcaklıklarda saf silikon ve hidrojen klorüre ayrıştırılması",
+  "Birikmiş silikonda boşluklar oluşturabilecek nitrojen ve argon gibi çözünmüş gazları uzaklaştırmak için",
+  "Silikon tetraklorürün yan ürününü yeniden dolaşım için kullanılabilir triklorosilana dönüştürmek",
+]
+answer.answer = "Farklı kaynama noktalarından yararlanarak triklorosilanı BCl₃ ve PCl₃ gibi safsızlık klorürlerden ayırmak"
+context = "Damıtma, kaynama noktası farklılıklarından yararlanır: BCl₃ 12,6°C'de, TCS 31,8°C'de ve PCl₃ 76°C'de kaynar. Çoklu sütunlar bor ve fosforu milyarda 0,1 parçanın altına düşürür."
+id = "3abdef5a-f449-41b2-98a4-d2bd2d4bbff5"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (2. Gün) Güneş pillerinde kullanılan silisyumun baskın kristal formu nedir?"
+prompt.distractors = [
+  "Altıgen sıkı paketlenmiş - her atom, alternatif istiflenmiş katmanlarda altı komşuya bağlanır",
+  "Vücut merkezli kübik - her atom en yakın sekiz komşuyla çevrili bir küpün merkezinde bulunur",
+  "Wurtzite yapısı - tetrahedral ve oktahedral koordinasyona sahip alternatif silikon katmanları",
+]
+answer.answer = "Elmas kübik — her atom 109,5° tetrahedral açılarda dört kovalent bağ oluşturur"
+context = "Silikon elmas kübik yapısında sp³ hibridizasyonu ile kristalleşir. Bu yapı, silikonu yarı iletken olarak kullanışlı kılan 1,12 eV elektronik bant aralığını yaratır."
+id = "924e1237-a426-43fb-9018-b3a54b11ad95"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (1. Gün) Kristal silisyumun elektron volt cinsinden bant aralığı enerjisi nedir?"
+answer.answer = "1,12 eV"
+answer.alternatives = [
+  "1.12",
+  "1,1 ev",
+  "1.1",
+]
+context = "Silikonun 1,12 eV'lik bant aralığı, fotonların bir elektronu aralık boyunca uyarmak için en azından bu kadar enerjiye ihtiyaç duyduğu anlamına gelir; bu da yaklaşık 1.100 nm'den daha kısa dalga boylarına karşılık gelir."
+id = "a09b3a89-3b6d-4976-b70a-a19fdc33cf87"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁(1.Gün) Silikonun bant aralığını aşan foton enerjisine ne olur?"
+prompt.distractors = [
+  "Fotonun enerjisiyle orantılı birden fazla elektron deliği çifti üreterek akım çıkışını artırır",
+  "İletim bandından uyarılmış emisyon yoluyla düşük enerjili kızılötesi radyasyon olarak yeniden yayılır.",
+  "Bir sonraki foton soğurma olayı tarafından serbest bırakılıncaya kadar tükenme bölgesinde depolanmış yük olarak birikir.",
+]
+answer.answer = "Fazla enerji termalizasyon yoluyla ısı olarak kaybolur; elektron iletim bandının kenarına doğru gevşer"
+context = "3 eV'lik bir mavi foton, bir elektron deliği çifti oluşturur ve 1,88 eV'yi ısı olarak harcar. Bu termalizasyon kaybı, Shockley-Queisser sınırının yaklaşık %33 olmasının temel nedenidir."
+id = "aa429b18-3734-4fbd-9f2d-a18023cfef63"

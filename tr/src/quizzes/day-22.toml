@@ -1,0 +1,120 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "2 terminalli monolitik perovskit/silikon ikilisinde, iki alt hücre arasındaki ince ITO rekombinasyon katmanının birincil rolü nedir?"
+prompt.distractors = [
+  "Görünür ışığı iletirken kızılötesi fotonları silikon hücreye geri yansıtan, dalga boyu seçici bir filtre görevi görür, her alt hücredeki optik yol uzunluğunu artırır ve emme verimliliğini artırır.",
+  "Her iki alt hücreden fotoakımı toplayan ve bunu kenar baralarına yönlendiren yanal bir akım yayan yol sağlar ve perovskit hücre üzerinde ayrı bir şeffaf üst elektrot ihtiyacını ortadan kaldırır.",
+  "Perovskit (n ≈ 2,5) ile silikon (n ≈ 3,5) arasında kademeli bir kırılma indisi geçişi oluşturarak alt hücre arayüzündeki dahili yansıma kayıplarını en aza indirir ve yaklaşık 2-3 mA/cm² fotoakımı geri kazanır.",
+]
+answer.answer = "Perovskit üst hücreden gelen elektronların ve silikon alt hücreden gelen deliklerin buluştuğu ve yeniden birleştiği bir alan sağlayarak iki alt hücre arasındaki dahili seri devreyi harici kablolama gerektirmeden tamamlar."
+context = "2T monolitik tandemde iki alt hücre seri olarak bağlanır. Rekombinasyon (veya tünel/ara katman) bağlantısı, her hücredeki çoğunluk taşıyıcılarının arayüzde yeniden birleşerek devreyi tamamlamasına olanak tanır. Tipik olarak 10–20 nm uzunluğunda ITO veya IZO'dir."
+id = "fb945c9c-5801-47c9-b16e-026213133d97"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Mevcut eşleştirme, AM1.5G standart spektrumu için optimize edilmiş olsa bile, gerçek dünya koşullarında 2 terminalli tandemler için neden zorluk teşkil ediyor?"
+prompt.distractors = [
+  "Perovskit üst hücresinin bant aralığı, her 10°C sıcaklık değişiminde yaklaşık 50 meV kayarak, soğurma kenarının silikon hücrenin spektral aralığına kaymasına ve gün boyunca öngörülemeyen bir akım dengesizliği yaratmasına neden olur.",
+  "Modül yüzeyindeki toz birikmesi tercihen kısa dalga boyundaki ışığı hücreden uzağa dağıtır, perovskit üst hücrenin akımını %15'e kadar azaltırken silikon hücreyi etkilenmeden bırakır ve ciddi uyumsuzluk yaratır.",
+  "ITO rekombinasyon katmanı, indiyumun fotoredüksiyonu nedeniyle sürekli aydınlatma altında artan direnç geliştirerek, gün boyunca kötüleşen ve toplam çıkışı sınırlayan voltaja bağlı bir akım darboğazına neden olur.",
+]
+answer.answer = "Güneş spektrumu gün boyunca değişir ve hava durumuyla birlikte değişir (öğlen vakti daha mavi, şafak vakti/alacakaranlıkta ve bulutların altında daha kırmızı zengin), iki alt hücre arasındaki fotoakım dengesini tasarım noktası eşleşmesinden uzaklaştırır."
+context = "2T seri bağlantılı bir tandemde toplam akım, hangi alt hücrenin daha az ürettiğine göre sınırlanır. Perovskit mavi ışığı emdiği ve silikon da kırmızı ışığı emdiği için spektral değişimler mevcut dengeyi değiştiriyor. Bu, yıllık ~%1-2 enerji verimine mal olur."
+id = "7b8ba3a9-c3b0-4c88-9461-4fde2c98e47f"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Me-4PACz gibi kendiliğinden birleşen tek katmanlı (SAM) delik taşıma katmanlarını, tandem hücre tasarımında Spiro-OMeTAD gibi önceki polimerik HTL'lere göre önemli bir ilerleme haline getiren şey nedir?"
+prompt.distractors = [
+  "SAM'ler 350 nm civarında dar bir UV ışık bandını emer ve bunu aşağı dönüşüm yoluyla görünür fotonlar olarak yeniden yayar ve Spiro-OMeTAD'ın aksi takdirde bloke edeceği perovskit üst hücreye kabaca 0,5 mA/cm² fotoakım ekler.",
+  "SAM'ler, perovskit kafes içindeki kurşun atomlarıyla kovalent bir bağ oluşturarak, polimerik HTL'lere özgü 5-10 nm'lik karışma bölgesini ortadan kaldıran ve halojenürün taşıma katmanına geçişini önleyen atomik olarak keskin bir arayüz oluşturur.",
+  "SAM'lerin kırılma indeksi tam olarak 1,0'dır, bu da onları perovskit-rekombinasyon katmanı arayüzünde optik olarak görünmez kılarken, polimerik HTL'ler iletilen kızılötesi fotonların kabaca %8-12'si kadar parazitik absorpsiyon kayıplarına neden olur.",
+]
+answer.answer = "SAM'ler yalnızca bir molekül kalınlığındadır (~1-2 nm) ve alt tabaka yüzeyine doğrudan bağlanarak delik çıkarma için mükemmel enerji seviyesi hizalaması sağlarken kalın polimerik katmanlarla ilişkili parazit emilimini, maliyeti ve kararsızlığı ortadan kaldırır."
+context = "Me-4PACz ve benzeri SAM'ler, Spiro-OMeTAD gibi (~200 nm kalınlığında, pahalı ve zamanla bozulan) polimerik HTL'lerin yerini aldı. SAM'ler tek bir moleküler katmanda ideal bant hizalaması sağlayarak optik ve dirençli kayıpları azaltır."
+id = "985ce55a-c2a5-4816-b667-aa7f09aa45da"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Neden tandem halindeki silikon alt hücre, tam spektrumlu güneş ışığı altında tek başına çalışan aynı silikon hücreden biraz daha yüksek voltaja ulaşıyor?"
+prompt.distractors = [
+  "Perovskit üst hücresi bir UV filtre görevi görerek, yüksek enerjili fotonların silikonda sıcak taşıyıcılar üretmesini önler; aksi takdirde Auger rekombinasyonunu artıracak ve filtrelenmiş aydınlatmaya kıyasla voltajı yaklaşık 15-20 mV azaltacaktır.",
+  "Rekombinasyon ara katmanı, silikon yüzeyinde p-n bağlantısının tükenme bölgesini destekleyen ilave bir yerleşik elektrik alanı oluşturarak silikon hücresinin yerleşik potansiyelini 10-15 mV kadar etkili bir şekilde artırır.",
+  "Üstte biriken perovskit katmanından gelen basınç gerilimi, kristal kafesin mekanik deformasyonu yoluyla silikonun dolaylı bant aralığını kabaca 20 meV yukarı kaydırarak açık devre voltajını doğrudan artırır.",
+]
+answer.answer = "Perovskit yüksek enerjili fotonların çoğunu emer, bu nedenle silikon yalnızca bant aralığı enerjisine yakın kızılötesi fotonları alır; bunlar foton başına daha az termalizasyon ısısı üretir, kafes sıcaklığını ve taşıyıcı kayıplarını azaltır, bu da voltajı biraz artırır."
+context = "Bir tandemde, silikon alt hücre, spektral olarak filtrelenmiş (kırmızı/kızılötesi açısından zengin) bir aydınlatma görür. Bu fotonlar, silikonun 1,12 eV bant aralığının üzerinde daha az fazla enerji taşır, dolayısıyla ısı olarak daha az enerji israf edilir ve etkin taşıyıcı sıcaklığı daha düşük olup, Voc artar."
+id = "4e3b7ae5-4a33-4f78-a350-bc4edbf5d579"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "~500 nm'lik bir perovskit filmi standart rastgele piramit dokusuna (1-5 μm özellikler) sahip bir silikon levha üzerine biriktirirken birincil mühendislik zorluğu nedir?"
+prompt.distractors = [
+  "Keskin piramit uçları, çalışma sırasında elektrik alanını yoğunlaştırarak, 10⁵ V/cm'nin üzerindeki alan kuvvetlerinde perovskit filmin dielektrik bozulmasına neden olur, bu da üst hücreye kısa devre yapan kalıcı iletken kanallar oluşturur.",
+  "Piramit yüzeyleri (111) kristal düzlemlerdir ve perovskit tercihen (100) yüzeylerde çekirdeklenir ve perovskiti dokulu alanın kabaca %40'ı boyunca fotoaktif olmayan bir altıgen faza zorlayan kristalografik bir uyumsuzluk yaratır.",
+  "Perovskit film ile silikon piramit uçları arasındaki termal genleşme uyumsuzluğu, sıcaklık döngüsü sırasında 500 MPa'yı aşan çekme gerilimi üretir ve bu da hücre performansını düşüren piramit sırtları boyunca sistematik çatlak yayılmasına neden olur.",
+]
+answer.answer = "Film, piramit zirvelerinde çok ince ve vadilerde çok kalın olma eğiliminde olup, yerel manevra ve rekombinasyon kayıplarına neden olan küçük delikler ve tekdüze olmayan kaplama oluşturur; bu sorun, uyumlu birlikte buharlaşma veya mikron altı doku cilalama ile çözülür."
+context = "Vadilerde çözeltiyle işlenmiş perovskit havuzları oluşur ve μm ölçekli piramitlerin zirvelerinde incelir, iğne delikleri ve şantlara neden olur. Vakum birikintilerinde dokuyu takip eden uyumlu filmlerin birlikte buharlaştırılması ve piramitlerin <1 μm'ye kadar parlatılması da yardımcı olur."
+id = "ed43669a-39b2-4fbe-bc36-12768abd3b6a"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Nisan 2025'te NREL tarafından onaylanan perovskit/silikon tandem güneş hücresinin mevcut dünya rekoru verimliliği nedir?"
+answer.answer = "34.85%"
+answer.alternatives = [
+  "34.85",
+  "Yüzde 34,85",
+]
+context = "LONGi, Nisan 2025'te NREL tarafından onaylanan monolitik 2T perovskit/silikon tandem hücrede %34,85 verimlilik elde etti."
+id = "0374b100-c073-47c3-93e3-c4c77f00e4b6"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (21. Gün) Modern perovskit güneş hücresi bileşimlerinde A bölgesi katyonu olarak neden formamidinyum (FA) metilamonyuma (MA) tercih edilir?"
+prompt.distractors = [
+  "FA, MA'den daha küçük bir iyon yarıçapına sahiptir; bu, perovskit kafesini daraltır ve soğurucu katmanın yoğunluğunu arttırır, bu da MA- bazlı bileşimlere kıyasla birim kalınlık başına kabaca 3 kat daha yüksek emme katsayısı sağlar.",
+  "FA, MA'ye göre iyodür anyonlarıyla daha güçlü kovalent bağlar oluşturarak, fotojenlenmiş taşıyıcılarla daha verimli bir şekilde birleşen fonon frekanslarına sahip daha sert bir kristal çerçeve oluşturarak yük ekstraksiyonunu ~%25 oranında artırır.",
+  "FA, MA-bazlı perovskitlerde bulunan ferroelektrik polarizasyon alanlarını ortadan kaldıran simetrik bir moleküldür; aksi halde tane sınırlarında rastgele dipol oryantasyonu yoluyla 50-80 mV'lik dahili voltaj kayıpları yaratır.",
+]
+answer.answer = "MA, ~85°C'nin (çatı panellerinin yaz aylarında rutin olarak ulaştığı bir sıcaklık) üzerinde perovskit kafesinden buharlaşmaya başlarken, FA termal olarak önemli ölçüde daha kararlı olup, FA-zengin bileşimleri gerçek çalışma koşulları altında daha dayanıklı hale getirir."
+context = "Metilamonyum ~85°C'nin üzerinde uçucudur. Güneş panelleri düzenli olarak bu sıcaklıklara ulaştığından, pratik cihaz ömrü için bu alan, termal olarak stabil formamidinyum açısından zengin bileşimlere yönelmiştir."
+id = "3802bc29-5413-44e9-b0de-f1529f8e6f44"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (20. Gün) IEC 61215 nem-ısı testinde, bir güneş modülünün kalifikasyonu geçebilmesi için hayatta kalması gereken standart koşullar ve süreler nelerdir?"
+prompt.distractors = [
+  "2.000 saat boyunca sürekli olarak 65°C'ye ve %95 bağıl neme maruz kalma, güç kaybının 500 saatlik aralıklarla ölçülmesi ve tüm sırayı geçmek için her kontrol noktasında %3'ten az kayıp gerektirmesi.",
+  "Toplam 500 döngü boyunca 12 saat boyunca 85°C/%85 RH ve 12 saat boyunca -40°C/kuru döngüsel maruz kalma, aynı yeterlilik protokolü kapsamında hem nem girişini hem de termal yorgunluğu aynı anda test eder.",
+  "1.500 saat boyunca 75°C ve %90 bağıl neme maruz bırakma, aynı anda 60 kWh/m²'de UV ışınlamayla bir araya gelerek hem kapsülleyicinin hem de hücrenin birleşik stres etkenleri altında gerçek hayatta hızlandırılmış yaşlanmasını simüle eder.",
+]
+answer.answer = "1.000 saat boyunca sürekli olarak 85°C ve %85 bağıl neme maruz kalma; bu sürenin ardından modülün yeterlilik testi dizisini geçebilmesi için başlangıçtaki nominal güç çıkışının en az %95'ini koruması gerekir."
+context = "IEC 61215 nem-ısı testi, modülleri sürekli olarak 1.000 saat boyunca 85°C/%85 RH'ye tabi tutar. Modüller başlangıç ​​gücünün ≥%95'ini korumalıdır. Bu, yeni ortaya çıkan tandem teknolojisi de dahil olmak üzere ticari güneş panelleri için önemli bir güvenilirlik kapısıdır."
+id = "91dd759f-6750-47f5-a0bd-9612f9eec1b9"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (12. Gün) Shockley-Queisser ayrıntılı denge limitine göre, konsantre olmayan AM1.5G güneş ışığı altında 1,34 eV bant aralığına sahip tek bağlantılı bir güneş hücresinin yaklaşık teorik maksimum verimliliği nedir?"
+prompt.distractors = [
+  "Yaklaşık %29, öncelikli olarak dolaylı bant aralıklı malzemelerdeki Auger rekombinasyonu ile sınırlıdır; bu, bant aralığı optimizasyonuna veya malzeme kalitesine bakılmaksızın tek bağlantı hücrelerinin tam ışınım sınırına ulaşmasını engeller.",
+  "Yaklaşık %37, yalnızca yaklaşık 500 güneşte yoğunlaştırılmış güneş ışığı altında elde edilebilir, çünkü yoğunlaşmamışlık sınırı, dağınık güneş ışığı ile dar açılı hücre emisyonu arasındaki uyumsuzluktan kaynaklanan entropi üretimi tarafından azaltılır.",
+  "Yaklaşık %41; bu, kullanılabilir voltajı bant aralığı enerjisinin altına düşüren kaçınılmaz fonon destekli geçişler de dahil olmak üzere, mükemmel bir malzemedeki tüm ışınımlı ve ışınımsız kayıpları açıklar.",
+]
+answer.answer = "Yaklaşık %33,7, alt bant aralığı iletim kayıpları ile bant aralığı üstü termalizasyon kayıpları arasındaki dengeyle belirlenir ve yalnızca 300 K'de hücreden ışınımsal rekombinasyon ve kara cisim emisyonu varsayılır."
+context = "Shockley-Queisser sınırı, 1-güneş AM1.5G aydınlatma altında 1,34 eV bant aralığı için ~%33,7'ye ulaşır. Termalleştirmeyi, alt bant aralığı şeffaflığını, ışınımsal rekombinasyonu ve kara cisim emisyonunu hesaba katar."
+id = "ea591027-cfd1-4019-8e2d-5884c84f2be4"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (7. Gün) Yüzey dokulaması için (100) silikon levha üzerine anizotropik KOH aşındırmayla oluşturulan rastgele piramit özelliklerinin tipik yükseklik aralığı nedir?"
+answer.answer = "1-5 mikron"
+answer.alternatives = [
+  "1-5 mikrometre",
+  "1 ila 5 mikron",
+  "1 ila 5 mikrometre",
+  "1-5 mikron",
+  "1 ila 5 mikron",
+]
+context = "KOH/IPA çözeltisindeki (100) silikonun anizotropik aşındırılması, tipik olarak 1–5 μm aralığında tepeden vadiye yüksekliklere sahip rastgele piramitler üretir ve mükemmel yansıma önleme ve ışık yakalama özellikleri sağlar."
+id = "be6c0b4d-e5b5-45a9-a934-70d68896217b"

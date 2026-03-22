@@ -1,0 +1,121 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Perovskit güneş pilleri neden silikon plakadan yaklaşık 400 kat daha ince bir filmle aynı miktarda güneş ışığını emebiliyor?"
+prompt.distractors = [
+  "Perovskite filmleri, fotonları dahili dalga kılavuzu modlarında yakalayan, silikonun düz absorpsiyon profiline kıyasla etkili optik yol uzunluğunu birkaç yüz kat artıran kademeli bir kırılma indisine sahiptir.",
+  "Perovskit kafesteki iyonik bağlanma, gelen elektromanyetik radyasyonla daha verimli bir şekilde birleşen daha güçlü salınımlı dipoller oluşturur ve malzemenin birim hacmi başına kesiti önemli ölçüde artırır.",
+  "Perovskit kristalleri, biriktirme sırasında doğal olarak ışığı aşırı açılarda dağıtan nano ölçekli yüzey dokuları oluşturur ve fotonların emilene kadar ince filmin içinde sıçramasını sağlayan toplam iç yansıma yaratır.",
+]
+answer.answer = "Perovskitlerin eşzamanlı bir fonon olmadan elektron geçişlerine izin veren doğrudan bir bant aralığı vardır ve görünür dalga boylarında silikonun dolaylı bant aralığından kabaca 10 kat daha yüksek bir emme katsayısı sağlar, dolayısıyla daha az malzemeye ihtiyaç duyulur."
+context = "Doğrudan bant aralığı yarı iletkenleri, fotonları birim kalınlık başına daha verimli bir şekilde emer çünkü elektronun değerlik bandından iletim bandına geçişi, momentumu korumak için bir fonon desteği gerektirmez. MAPbI₃, 550 nm'de ~1,5 × 10⁵ cm⁻¹ emme katsayısına sahiptir; bu, silikondan yaklaşık 10 kat daha yüksektir."
+id = "cbfaee0c-9b98-4c51-8880-cfc0e48c2d21"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Kapsüllenmemiş bir MAPbI₃ perovskit filmi oda sıcaklığında %55 bağıl neme maruz bırakıldığında birincil bozunma mekanizması nedir?"
+prompt.distractors = [
+  "Su molekülleri, tanecik sınırlarında Pb²⁺'nin metalik kurşun nanoparçacıklarına indirgenmesini katalize eder; bunlar rekombinasyon merkezleri olarak görev yapar ve metalik iletim yolları nedeniyle cihaza saatler içinde kısa devre yaptırır.",
+  "Nem, iyodür alt yapısının hızlı bir şekilde moleküler iyota (I₂) oksidasyonunu tetikler; bu da filmden süblimleşir ve arkasında kurşun açısından zengin boşluk kümeleri bırakarak kristal yapıyı saatler içinde çökertir.",
+  "Emilen su, metilamonyum katyonunun, kristal kafesini Goldschmidt tolerans faktörünün ötesine genişleten daha uzun zincirli aminlere polimerleşmesine neden olur ve perovskit olmayan bir yapıya faz geçişine neden olur.",
+]
+answer.answer = "Su, kafese sızar ve MAPbI₃'yı kurşun iyodür (PbI₂), metilamin gazı ve hidroiyodik asit halinde ayrıştırır; film birkaç saat içinde koyu kahverengiden sarı PbI₂'ye değiştiğinde görsel olarak belirgindir."
+context = "MAPbI₃'nın nem ayrışması en iyi belgelenmiş bozunma yoludur. Su molekülleri MA-Pb-I bağlanma ağını kırarak uçucu metilamin ve HI üreterek geride sarı PbI₂ bırakıyor. Bu, yalnızca %55 RH ile birkaç saat içinde başlayabilir."
+id = "02b964d6-4b35-4606-b20f-e7d752d4373d"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Perovskit güneş hücresi alanı neden büyük ölçüde saf metilamonyumdan (MA) formamidinyum (FA) açısından zengin ve FA/Cs karışık A bölgesi bileşimlerine doğru ilerledi?"
+prompt.distractors = [
+  "FA katyonları, Goldschmidt tolerans faktörünü 1,0'a yaklaştıran daha büyük bir iyon yarıçapına sahiptir; bu, MA ile karşılaştırıldığında yük taşıyıcı hareketliliğini kabaca 5 kat artırır ve cihazlarda çok daha yüksek kısa devre akımlarına yol açar.",
+  "MA-tabanlı bileşimler 1,55 eV'lik bir bant aralığına sahiptir ve bu, optimal tek bağlantı performansı için çok geniştir; FA ise bant aralığını tam olarak Shockley-Queisser optimumuna denk gelen yaklaşık 1,20 eV'ye kaydırır.",
+  "FA katyonları halojenür yapısıyla daha güçlü hidrojen bağları oluşturur, bu da emme katsayısını MA ile karşılaştırıldığında yaklaşık 3 kat artırır, daha ince aktif katmanlara izin verir ve malzeme maliyetlerini önemli ölçüde azaltır.",
+]
+answer.answer = "MA katyonu ~85°C'nin (çatı panellerinin rutin olarak ulaştığı bir sıcaklık) üzerinde kristalden uçmaya başlarken, FA termal açıdan önemli ölçüde daha kararlı olup, FA-zengin bileşimleri gerçek çalışma koşulları altında daha dayanıklı hale getirir."
+context = "Metilamonyum uçucudur ve panellerin yazın yaşadığı ~85°C'nin üzerindeki sıcaklıklarda kafesten buharlaşmaya başlar. Formamidinyum termal açıdan daha kararlı olduğundan, çalışma ömrünü uzatmak için alan FA-zengin bileşimlere geçiş yaptı."
+id = "bb077760-b88f-4fcc-8207-820b897246c3"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Güneş pilleri için kullanılan ABX₃ perovskit yapısında, her bir alan nasıl bir rol oynuyor ve tipik kullanıcılar neler?"
+prompt.distractors = [
+  "A, köşeleri oluşturan bir halojenür anyonudur (I⁻, Br⁻, Cl⁻), B merkezde bir organik katyondur (MA⁺, FA⁺) ve X, oktahedral bir kafes oluşturan kurşundur (Pb²⁺). Organik katyon yük taşınmasını sağlarken kurşun yapısal stabilite sağlar.",
+  "A köşelerde iki değerlikli bir metaldir (Pb²⁺, Sn²⁺), B merkezde tek değerlikli bir katyondur (MA⁺, FA⁺, Cs⁺) ve X oktahedrayı oluşturan bir halojenür anyonudur (I⁻, Br⁻). Organik katyon bant aralığını ayarlarken kurşun optik absorpsiyon sağlar.",
+  "A ve B'nin her ikisi de kafes bölgelerini eşit olarak paylaşan farklı boyutlardaki organik katyonlardır (sırasıyla MA⁺ ve FA⁺), X ise kristal yapının yarı iletken omurgasını oluşturan bir metal halojenür kompleksidir (PbI₃⁻).",
+]
+answer.answer = "A, küp köşelerinde büyük bir katyondur (MA⁺, FA⁺ veya Cs⁺), B merkezde daha küçük bir metal katyonudur (tipik olarak Pb²⁺) ve X, B çevresinde oktahedra oluşturan bir halojenür anyonudur (I⁻, Br⁻, Cl⁻) — halojenürler bağlanma çerçevesini sağlar."
+context = "ABX₃ perovskitlerde: A bölgesi, metilamonyum, formamidinyum veya sezyum gibi büyük katyonları barındırır; B bölgesi kurşun gibi iki değerlikli metalleri barındırır; X bölgesi, BX₆ oktahedra oluşturan halojenür anyonlarına ev sahipliği yapar. Bu düzenleme fotovoltaik özelliklerden sorumlu elektronik yapıyı oluşturur."
+id = "0694d083-faa3-45dd-be38-ae38ac551557"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Endüstriyel perovskit güneş hücresi üretimi için önde gelen ölçeklenebilir biriktirme tekniği nedir ve nasıl çalışır?"
+prompt.distractors = [
+  "Kimyasal buhar biriktirme (CVD), öncül gazların bir vakum odasında 400-600°C'de ısıtılmış bir substrat üzerinden aktığı, yüzeyde ayrışıp reaksiyona girerek yaklaşık 10 cm²/dakika üretim hızında kristalimsi bir perovskit film oluşturduğu yer.",
+  "Atomik katman birikimi (ALD), kurşun halojenür ve organik amonyum öncü buharlarının alternatif darbelerinin, perovskit kristalini bir vakum odasında her seferinde bir tek katman oluşturduğu ve ~1 cm²/dak'da atom düzeyinde kalınlık kontrolü sağladığı yer.",
+  "Kurşun ve halojenür iyonlarının uygulanan voltaj altında sulu bir elektrolitten iletken bir alt tabaka üzerine birlikte biriktirildiği ve daha sonra amonyum halojenür buhar atmosferinde 200°C'de termal olarak perovskite dönüştürüldüğü elektrokimyasal biriktirme.",
+]
+answer.answer = "Prekürsör mürekkebin dar bir yarıktan hareketli bir alt tabaka üzerine hassas bir silecek gibi dakikada metre hızla pompalandığı rulodan ruloya kaplama işlemi, şu ana kadar 10×10 cm² ölçeğinde %17,6 modül verimliliğine ulaşıyor."
+context = "Slot-die kaplama, perovskite biriktirme için önde gelen ölçeklenebilir yöntemdir. Öncü mürekkep dar bir yarıktan sürekli hareket eden alt tabakaya akarak yüksek verimli rulodan ruloya üretime olanak tanır. Laboratuvardan fabrikaya yapılan gösterimlerde 10×10 cm² modüllerde %17,6 verimlilik elde edildi."
+id = "c68876cb-8cc9-42e6-b087-5b8a36bcd50d"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Silikon için ~800 g/m² ile karşılaştırıldığında, güneş hücresinin metrekaresi başına gereken aktif perovskit malzemenin yaklaşık miktarı (gram cinsinden) nedir?"
+answer.answer = "1"
+answer.alternatives = [
+  "1 gr",
+  "1 gram",
+  "~1",
+  "yaklaşık 1",
+  "yaklaşık 1",
+]
+context = "Bir perovskit güneş hücresi, standart bir silikon hücre için yaklaşık 800 g/m²'ye kıyasla metrekare başına kabaca 1 gram aktif madde kullanır; bu, son derece ince aktif katmanı (~500 nm) yansıtan malzeme tüketiminde 800 kat azalma anlamına gelir."
+id = "19bbd396-9301-471c-a435-42e80701b56d"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (20. Gün) IEC 61215 nemli ısı testi protokolü nedir ve neyi simüle eder?"
+prompt.distractors = [
+  "Modüller, 40 gün boyunca 200 döngü boyunca %95 RH ile -40°C ile +85°C arasında döndürülür ve ılıman iklimlerdeki hızlı hava değişiklikleri sırasında panellerin karşılaştığı termal şok ve yoğuşma hasarını simüle eder.",
+  "Modüller, 500 saat boyunca 1-güneş aydınlatması altında 85°C deiyonize suya batırılarak yoğun yağışlı tropik kıyı kurulumlarında su girişi ve termal stresin birleşik etkileri simüle edilir.",
+  "Modüller, 60 kWh/m²'de eş zamanlı UV maruz kalma ile 2.000 saat boyunca 60°C ve %85 RH'ye maruz bırakılır; bu, sıcak, nemli subtropikal ortamlarda birleşik fotodegradasyon ve nem hasarını simüle eder.",
+]
+answer.answer = "Modüller, 1.000 saat (yaklaşık 42 gün) boyunca sürekli olarak 85°C'de ve %85 bağıl nemde tutulur ve kapsülleyici bütünlüğünü ve hücre dayanıklılığını test etmek için onlarca yıllık kümülatif nem ve ısıya maruz kalma simüle edilir."
+context = "IEC 61215 nemli ısı testi, modülleri 1.000 saat boyunca 85°C / %85 RH'ye tabi tutar. Bu hızlandırılmış stres testi, kapsüllemenin, hücre ara bağlantılarının ve malzemelerin nemli çalışma koşullarına dayanabileceğini doğrulamak için uzun süreli nem ve termal maruziyeti simüle eder."
+id = "38c3a24c-5063-4e82-9243-5790bd41497e"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (19. Gün) Elektrolüminesans (EL) görüntülemede, normalde parlak olan bir hücre üzerindeki karanlık alan neyi gösterir?"
+prompt.distractors = [
+  "Elektronların foton emisyonunun Auger rekombinasyonu ile bastırılacağı kadar hızlı bir şekilde yeniden birleştiği, alışılmadık derecede yüksek taşıyıcı hareketliliğine sahip bir bölge; tipik olarak 10²¹ atom/cm³'ün üzerindeki aşırı fosfor katkı konsantrasyonundan kaynaklanır.",
+  "Yansıma önleyici kaplamanın optimalden daha kalın olduğu, yayılan EL fotonları kamera sensörüne ulaşmadan emdiği ve hücre performansını aslında etkilemeyen belirgin bir karanlık nokta oluşturduğu bir bölge.",
+  "Silikon kristal yöneliminin toplu levhaya göre 15°'den fazla döndüğü ve kameranın yakın kızılötesi algılama aralığının dışında bir dalga boyunda fotonlar yayan bir tane sınırı oluşturduğu bir bölge.",
+]
+answer.answer = "Enjekte edilen akımın ışınımsal rekombinasyon üretemediği, çatlak, aktif olmayan alan veya zayıf temas gibi yüksek kusur yoğunluğuna sahip bir bölge; bu, bu alanların güneş ışığı altında enerji üretimine katkıda bulunmayacağını gösterir."
+context = "EL görüntülemede hücreye akım enjekte edilir ve ortaya çıkan foton emisyonu yakın kızılötesi bir kamera tarafından yakalanır. Koyu alanlar, akımın akamadığı veya ışınımsal olmayan rekombinasyonun hakim olduğu bölgeleri (çatlaklara, kırık parmaklara, ölü bölgelere veya zayıf metalizasyon temasına işaret eder) gösterir."
+id = "863d9808-bf61-4771-b5bc-b05aa0594193"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (12. Gün) Optimum bant aralığı ~1,34 eV olan tek bağlantılı bir güneş hücresi için Shockley-Queisser verimlilik sınırı nedir ve birincil kayıp mekanizması nedir?"
+prompt.distractors = [
+  "Sınır yaklaşık %29,4'tür; birincil kayıp, yüksek enerjili taşıyıcıların cihazda ek fotoakım üretmek yerine fazla kinetik enerjilerini komşu taşıyıcılara aktardığı Auger rekombinasyonudur.",
+  "Sınır yaklaşık %40,7'dir; birincil kayıp, gelen fotonların kabaca üçte birinin yansıma önleyici kaplamalara rağmen soğurucu katmana girmeden önce geri sıçradığı yarı iletken yüzeydeki yansımadır.",
+  "Sınır yaklaşık %26,7'dir; birincil kayıp, metal kontaklar ve baralardaki seri dirençtir; bu, üretilen gücün kabaca yarısını harici devreye ulaşmadan önce Joule ısınması olarak dağıtır.",
+]
+answer.answer = "Sınır yaklaşık %33,7'dir ve birincil kayıp termalizasyondur; bant aralığının üzerinde enerjiye sahip fotonlar elektron-delik çiftleri oluşturur, ancak bant aralığının üzerindeki fazla enerji kristal kafeste ısı olarak kaybolur."
+context = "~1,34 eV bant aralığında tek bağlantılı bir hücre için Shockley-Queisser limiti yaklaşık %33,7'dir. Baskın kayıp mekanizması termalizasyondur: bant aralığını aşan enerjiye sahip fotonlar, fazla enerjilerini hızlı bir şekilde ısı olarak döken taşıyıcılar oluşturur ve emilen güneş spektrumunun önemli bir kısmını boşa harcar."
+id = "b1eb12d4-4539-40f5-9582-dc292edcd12c"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (6. Gün) Sırasıyla n-tipi ve p-tipi silikon oluşturmak için en yaygın olarak kullanılan iki katkı elementi nelerdir?"
+answer.answer = "fosfor ve bor"
+answer.alternatives = [
+  "fosfor, bor",
+  "P ve B",
+  "n-tipi için fosfor ve p-tipi için bor",
+]
+context = "Fosfor (Grup V, 5 değerlik elektronu), serbest bir elektrona katkıda bulunan standart n-tipi katkı maddesidir. Bor (Grup III, 3 değerlik elektronu), bir delik oluşturan standart p tipi katkı maddesidir. Birlikte silikon güneş hücresindeki akımı yönlendiren p-n bağlantısını oluştururlar."
+id = "055e6663-1ee3-44cf-8476-688610f7947e"

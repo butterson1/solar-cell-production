@@ -1,0 +1,122 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "BIPV ürünleri neden geleneksel güneş panellerine uygulanan aynı watt başına maliyet metriği kullanılarak adil bir şekilde değerlendirilemiyor?"
+prompt.distractors = [
+  "Çünkü BIPV hücreleri temelde farklı yarı iletken fiziğini kullanır ve bu da farklı bağlantı mimarileri ve bant aralığı konfigürasyonları arasında watt bazlı karşılaştırmaları anlamsız hale getirir.",
+  "BIPV modülleri her zaman geleneksel panellerden daha az verimli olduğundan endüstri, hem şeffaflığı hem de üretimi hesaba katan ayrı bir lümen başına maliyet ölçüsü geliştirdi.",
+  "BIPV kurulumları, optimum olmayan eğim açıları nedeniyle daha az ışınım aldığından, metriğin IEC 61853'te tanımlanan bina yönlendirme düzeltme faktörü kullanılarak ayarlanması gerekir.",
+]
+answer.answer = "BIPV geleneksel inşaat malzemelerinin (çatı kaplama, kaplama, cam) yerini aldığından, elektrik üretimi eklemenin gerçek artan maliyetini bulmak için yeri değiştirilen malzemenin maliyetinin çıkarılması gerekir."
+context = "Bu 'maddi dengeleme' ilkesidir — BIPV, şebeke ölçekli güneş panelleriyle değil, granit, alüminyum kompozit ve üç camlı camla rekabet eder. Değiştirilen yapı malzemesi BIPV'nin 150-1.200 ABD Doları/m² maliyetini çıkardığınızda, etkin güneş enerjisi maliyeti sıfıra yaklaşabilir."
+id = "e7058c8a-e3f5-4482-a1d2-6391948cad3f"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Daha az toplam enerji üretmesine rağmen, cephe BIPV sistemlerinin ticari binalar için çatıya monteli sistemlerden kWh başına daha değerli olabilmesinin ana nedeni nedir?"
+prompt.distractors = [
+  "Cephe panelleri, dikey yüzeylerde rüzgara maruz kalma nedeniyle daha düşük sıcaklıklarda çalışır, bu da çatı panellerine kıyasla hücre verimliliğini %8-12 artırır ve üretilen her kWh'nin değerini artırır.",
+  "AB'daki bina kuralları, EPBD direktifi kapsamında cepheye monte PV sistemlerine 1,5 kat yenilenebilir enerji kredi çarpanı atayarak her kWh'nin sıfır emisyon uyumluluk hedeflerine doğru daha fazla sayılmasını sağlar.",
+  "Dikey cephe panelleri, doğrudan ışın radyasyonu yerine öncelikle dağınık ışığı yakalar; bu, invertörlerin daha verimli bir şekilde dönüştürdüğü daha az voltaj dalgalanmasıyla daha yüksek kalitede DC güç üretir.",
+]
+answer.answer = "Cephe PV kışın ve sabah/akşam saatlerinde daha fazla güç üreterek ticari binaların elektrik tüketim profiline daha iyi uyan daha düz bir üretim eğrisi oluşturur 8 AM–6 PM."
+context = "Dikey yüzeyler, güneş alçaktayken (kış, sabah, akşam) daha fazla doğrudan güneş ışığı alır, öğle vakti güneşin yüksek olduğu saatlerde ise daha az güneş ışığı alır. Bu daha düz nesil profili, ticari talep eğrileriyle çatıya monteli sistemlerin keskin öğlen zirvesinden daha iyi uyum sağlıyor."
+id = "fd479421-c62c-4e7f-aaf9-fbb1db8d1208"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Neden spandrel paneller ekonomik açıdan en ilgi çekici BIPV uygulamalarından biri olarak değerlendiriliyor?"
+prompt.distractors = [
+  "Spandrel paneller, katlar arası yansımaların güneş ışığını opak yüzey üzerinde yoğunlaştırdığı her katın üst kısmında konumlandırıldıkları için giydirme cephede en yüksek güneş ışınımını alır.",
+  "Spandrel paneller, hem dış hem de iç ofis aydınlatmasından ışık yakalayan iki yüzeyli hücreleri kullanabilir ve tek taraflı cephe BIPV modüllerine kıyasla enerji hasadını etkili bir şekilde iki katına çıkarabilir.",
+  "Spandrel paneller, IEC 61215 uyarınca BIPV vizyon camı için gereken termal döngü testlerinden muaftır; bu, sertifikasyon maliyetlerini %40-60 oranında azaltır ve pazara çıkış süresini önemli ölçüde hızlandırır.",
+]
+answer.answer = "Köşeliklerin maliyeti zaten 150-300 ABD Doları/m² olan opak yapı elemanlarıdır, dolayısıyla tam verimli %18-20 silikon hücreler gün ışığından ödün vermeden kullanılabilir ve PV eklemenin artan maliyeti 50-100 ABD Doları/m² kadar düşük olabilir."
+context = "Spandrel paneller zemin döşemelerini ve mekanik boşlukları gizlediğinden ve zaten opak olduğundan, şeffaflıktan ödün vermek söz konusu değildir. Binanın ihtiyaç duyduğu bir bileşeni değiştirirken tam monokristal verim elde edersiniz, bu da artan güneş enerjisi maliyetini çok düşük hale getirir."
+id = "0cd8882f-8b90-4b12-bee9-0709b4afc911"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "ClearVue Technologies tarafından üretilenler gibi 'gerçekten şeffaf' fotovoltaik pencerelerin temel teknik sınırlaması nedir?"
+prompt.distractors = [
+  "UV ve IR soğurucu katmanlar termal döngü altında hızla bozulur ve pencerenin faydalı güç üretme ömrünü, verimlilik %1'in altına düşmeden önce 8-10 yıl ile sınırlandırır; bu da binanın ömründen çok daha kısadır.",
+  "Şeffaf PV kaplamalar, renksel geriverim indeksini %80'in altına düşüren optik bozulmalar yaratarak iç mekanların sarımsı görünmesine ve ofisler, perakende satış veya sağlık hizmetleri ortamları için uygun olmamasına neden olur.",
+  "Akım toplama için gerekli olan iletken şeffaf oksit katmanları, 50 Ω/sq'nin üzerinde tabaka direncine sahiptir ve panel boyutu 0,5 m² alanın ötesinde doğrusal olmayan şekilde artan dirençli kayıplara neden olur.",
+]
+answer.answer = "Verimlilik yalnızca %3,3 civarındadır çünkü camın görünür ışık fotonlarını absorbe etmek yerine iletmesi gerekir, bu da enerji hasadını görünür spektrumdan daha az toplam enerji taşıyan UV ve IR dalga boylarıyla sınırlandırır."
+context = "Şeffaflık ve enerji üretimi birbirine doğrudan karşıttır; iç mekanı aydınlatmak için içinden geçen her görünür foton, emilmeyen fotondur. ClearVue, %99'luk mükemmel bir CRI ile %70 görünür ışık iletimi elde eder, ancak yalnızca %3,3 güç dönüştürme verimliliği sağlar ve kabaca 30–35 W/m² üretir."
+id = "177cb2c3-64a9-4985-a008-87e51e8a13b5"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Geleneksel çatı üstü güneş panelleriyle karşılaştırıldığında modül düzeyinde güç elektroniği (MLPE'ler) neden BIPV kurulumları için özellikle kritiktir?"
+prompt.distractors = [
+  "BIPV modülleri, binanın elektrik sistemleriyle entegrasyonu nedeniyle daha yüksek voltajlarda çalışır ve MLPE'lerin voltajı standart şebeke bağlantılı invertörlerle uyumlu seviyelere düşürmesi gerekir.",
+  "BIPV paneller topraklama çerçevesi olmadan monte edilir; dolayısıyla MLPE'ler, geleneksel topraklamalı raf sistemlerinin mekanik bağlantı kesme yoluyla elde ettiği NEC 690.12 tarafından zorunlu kılınan hızlı kapatma özelliğini sağlar.",
+  "BIPV hücreleri, yüksek sıcaklıklar nedeniyle geleneksel modüllere göre daha hızlı ışık kaynaklı bozulma (LID) yaşar ve MLPE'ler, her 50 ms'de bir maksimum güç noktasını sürekli olarak yeniden kalibre ederek bunu telafi eder.",
+]
+answer.answer = "BIPV'da her panel, komşu binalardan, balkonlardan ve mimari özelliklerden farklı gölgelemeyle karşı karşıyadır ve dizi invertörleri, tüm panelleri en kötü performans gösterenin çıktısına uymaya zorlayarak, toplanabilir enerjinin %10-25'ini kaybeder."
+context = "Dizi invertörlerindeki 'Noel ışıkları' efekti, gölgeli bir panelin tüm diziyi aşağıya çekmesi anlamına gelir. BIPV kurulumları doğası gereği karmaşık, değişken gölgeleme modellerine sahiptir, bu nedenle her panelin bağımsız çalışmasına olanak tanıyan mikro invertörler veya DC optimize ediciler, aksi durumda kaybedilen enerjinin %10-25'ini geri kazanabilir."
+id = "c11923d8-976f-40ca-9a9d-f95008c08f21"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Kopenhag Uluslararası Okulu'nun BIPV cephesi yaklaşık kaç tane güneş paneli kullanıyor ve kaç metrekareyi kaplıyor?"
+answer.answer = "12.000 panel, 6.000 m²"
+answer.alternatives = [
+  "12000 panel 6000 m2",
+  "6.000 metrekareyi kapsayan 12.000 panel",
+  "12000 panel, 6000 m2",
+  "12.000 güneş paneli, 6.000 m²",
+]
+context = "2017'de tamamlanan ve C.F. tarafından tasarlanan Kopenhag Uluslararası Okulu. Møller Architects, 6.000 m² cepheyi kaplayan, 720 kWp kapasiteye sahip ve yaklaşık 300 MWh/yıl üretim yapan 12.000 SolarLab paneline sahiptir."
+id = "67798735-4a7b-436c-8a84-0771d1b90bea"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (23. Gün) Albedosu 0,5 olan beyaz çakıl üzerinde tek eksenli izleyicilerin kullanıldığı şebeke ölçekli bir kurulum için tipik iki yüzeyli enerji kazancı nedir?"
+prompt.distractors = [
+  "%5-8 kazanç, çünkü tek eksenli izleyiciler öncelikle doğrudan ışın yakalamayı iyileştirir ve neredeyse tamamen dağınık zemin yansıma modellerine bağlı olan arka taraf aydınlatmasına minimum düzeyde katkıda bulunur.",
+  "%35-45 kazanç, çünkü yüksek albedolu zemin örtüsü ve sürekli izlemenin birleşimi, bitişik sıralar arasında arkadan gelen ışınımı basit albedo hesaplamalarının ötesinde artıran bir rezonans yansıma boşluğu oluşturur.",
+  "%12-15 kazanç, çünkü yüksek albedolu yüzeyler arka hücrelere ulaşan yerden yansıyan ışığı artırırken, izleyicinin doğu-batı dönüşü sabah ve akşam saatlerinde zeminin etkili görüş faktörünü azaltır.",
+]
+answer.answer = "%20-30 kazanç, çünkü yüksek albedolu zemin yüzeyleri, iki yüzeyli modüllerin arka tarafına ulaşan dağınık ve yansıyan ışığı önemli ölçüde artırır ve izleme, gün boyunca ön taraftaki yakalamayı optimize eder."
+context = "Beyaz çakıl (albedo ~0,5) gibi yüksek albedolu yüzeyler üzerindeki iki yüzeyli modüller, tek eksenli izlemeyle birleştiğinde genellikle sabit monofasiyal sistemlerden %20-30 daha fazla enerji sağlar. Çift yüzeyli panellerin altındaki zeminin albedosu kritik bir tasarım parametresidir."
+id = "9c9a927f-5b7a-46f6-9c29-598be29dbbad"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (22. Gün) İki terminalli (2T) monolitik perovskit-silikon ikili hücrede, neden her iki alt hücrenin akım çıkışının dikkatli bir şekilde eşleştirilmesi gerekiyor?"
+prompt.distractors = [
+  "Çünkü uyumsuz akımlar, düşük akımlı hücrenin ters eğilime girmesine ve perovskit katmanını 150°C'nin üzerinde termal olarak bozan sıcak noktalar geliştirmesine neden olarak geri dönüşü olmayan halojenür ayrışmasını ve faz ayrışmasını tetikler.",
+  "Çünkü paylaşılan şeffaf iletken oksit ara katmanının maksimum akım yoğunluğu eşiği 18 mA/cm²'dir ve bu eşiğin her iki alt hücrede aşılması, kırılgan ara katmanı çatlatan dirençli ısınmaya neden olur.",
+  "Çünkü eşsiz akımlar, rekombinasyon bağlantısı boyunca perovskit hücresinin bant aralığını Stark etkisine doğru kaydıran ve emilim spektrumunu kalıcı olarak değiştiren bir voltaj farkı yaratır.",
+]
+answer.answer = "Çünkü seri bağlantılı bir 2T cihazda toplam akım, iki alt hücrenin fotoakımlarından düşük olanıyla sınırlıdır; daha yüksek üreten hücre tarafından üretilen aşırı akım, rekombinasyon katmanında ısı olarak boşa harcanır."
+context = "İki terminalli tandemler alt hücreleri seri olarak bağlar, böylece cihaz akımı iki alt hücre akımının minimumuna eşit olur (en zayıf halkasıyla sınırlı bir zincir gibi). Mevcut eşleştirme, perovskit bant aralığının ve katman kalınlığının dikkatli bir şekilde ayarlanmasını gerektirir."
+id = "03c6637f-c910-4b92-9316-354d24df0a04"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (9. Gün) PERC hücresi ile TOPCon'a verimlilik avantajı sağlayan TOPCon hücresi arasındaki temel yapısal fark nedir?"
+prompt.distractors = [
+  "TOPCon, PERC'nin 15–20 µm katmanına kıyasla 30–50 µm'lik daha kalın bir alüminyum arka yüzey alanı (Al-BSF) katmanı kullanır; bu, tükenme bölgesini yığının daha derinlerine doğru genişleterek arka taraftaki taşıyıcı toplama verimliliğini artırır.",
+  "TOPCon, PERC'ın bor katkılı p-tipi silikon levhasını, ışığın neden olduğu bozulmayı (LID) ortadan kaldıran ve modülün kullanım ömrü boyunca %0,3-0,5 mutlak verimlilik avantajını koruyan galyum katkılı p-tipi levhayla değiştirir.",
+  "TOPCon, PERC'nin homoeklemi yerine kristalin silikon üzerinde amorf silikonun ön tarafındaki heteroeklemi kullanır ve termalizasyon kayıplarını yaklaşık %8-12 oranında azaltan daha geniş bir bant aralığı pencere katmanı oluşturur.",
+]
+answer.answer = "TOPCon, arka yüzeye, sarkan bağları PERC'nin alüminyum oksit/silikon nitrür arka pasifleştirme istifinden çok daha etkili bir şekilde pasifleştiren, katkılı bir polisilikon katmanıyla desteklenen ultra ince (~1,5 nm) bir tünel oksit katmanı ekler."
+context = "TOPCon (Tünel Oksit Pasifleştirilmiş Temas), ~1,5 nm SiO₂ tünel oksit artı n+ polisilikon katmanı yoluyla üstün arka yüzey pasivasyonu sağlar. Bu, kuantum tünelleme yoluyla taşıyıcı taşınmasına izin verirken arka temastaki rekombinasyonu neredeyse ortadan kaldırır."
+id = "636d2ba8-29d7-485b-9cc8-ae86f42c4cc5"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (7. Gün) Monokristalin silikon plakaların anizotropik KOH aşındırılmasıyla oluşturulan yüzey dokulu desenin adı nedir?"
+answer.answer = "rastgele piramitler"
+answer.alternatives = [
+  "rastgele piramit dokusu",
+  "piramit doku",
+  "piramitler",
+  "rastgele piramit",
+  "ters piramitler",
+]
+context = "KOH çözeltisi içindeki (100) odaklı monokristalin silikonun anizotropik aşındırılması, tercihen kristal düzlemler boyunca aşındırılarak, ışığın piramit yüzleri arasında birden çok kez sıçramasına neden olarak yansımayı ~%35 ila ~%10 arasında azaltan rastgele piramitlerle (tipik olarak 1-10 µm yüksekliğinde) kaplı bir yüzey oluşturur."
+id = "f5990310-d272-4e1e-9970-a04317afffa2"

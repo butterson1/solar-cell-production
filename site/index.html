@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PV Course</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f3ea;
+      --panel: rgba(255, 255, 255, 0.82);
+      --text: #1d2a2f;
+      --muted: #4e5d63;
+      --border: rgba(29, 42, 47, 0.12);
+      --accent: #d87918;
+      --accent-dark: #7b4f18;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at top left, rgba(216, 121, 24, 0.20), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(44, 109, 140, 0.20), transparent 30%),
+        linear-gradient(160deg, #f6f3ea, #f1e4c8 48%, #d9e7ec);
+      color: var(--text);
+      font-family: "Georgia", "Iowan Old Style", serif;
+    }
+    main {
+      width: min(720px, calc(100vw - 2rem));
+      padding: 2.5rem;
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: var(--panel);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 24px 80px rgba(29, 42, 47, 0.14);
+    }
+    h1 {
+      margin: 0 0 0.75rem;
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      line-height: 1.02;
+    }
+    p {
+      margin: 0 0 1.25rem;
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    .links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 180px;
+      padding: 0.95rem 1.2rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      border: 1px solid transparent;
+      transition: transform 140ms ease, box-shadow 140ms ease, border-color 140ms ease;
+    }
+    a.primary {
+      background: var(--accent);
+      color: white;
+      box-shadow: 0 14px 30px rgba(216, 121, 24, 0.24);
+    }
+    a.secondary {
+      background: transparent;
+      color: var(--accent-dark);
+      border-color: rgba(123, 79, 24, 0.25);
+    }
+    a:hover {
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p>Photovoltaics course</p>
+    <h1>Choose a language</h1>
+    <p>The same mdBook is built from one repository and published under separate paths for English and Turkish.</p>
+    <div class="links">
+      <a class="primary" href="./en/">English</a>
+      <a class="secondary" href="./tr/">Turkce</a>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,73 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Metalurjik kalitede silikon (%99 saf) neden güneş pilleri için tamamen uygun değildir?"
+prompt.distractors = [
+  "Kristal kafes, ark ocağı ekstraksiyonu sırasında hızlı soğumadan dolayı çok fazla dislokasyon içeriyor",
+  "İndirgeme işleminden kalan karbon, ışığı bloke eden silisyum karbür çökeltileri oluşturur",
+  "Çözünmüş oksijen, tanecik sınırlarında yalıtkan SiO₂ katmanları oluşturarak akım akımını engeller",
+]
+answer.answer = "Demir gibi metalik safsızlıklar, fotojenlenmiş taşıyıcıların ısı olarak kaybolduğu rekombinasyon merkezleri oluşturur"
+context = "Milyar silikon atomu başına tek bir demir atomu bile güneş hücresinin verimliliğini yarıya indirebilir. %99 saflıkta, safsızlık konsantrasyonları p-n bağlantısının düzgün çalışması için milyonlarca kat fazla."
+id = "c0debc8c-04b5-4b7a-98e2-f6d9b10e4ac8"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Siemens sürecinin işleyişini sağlayan temel içgörü nedir?"
+prompt.distractors = [
+  "Silikonun 1.425°C'de erimesi, yabancı maddelerin yüzeyde yüzerek alınabilmesini sağlar",
+  "Elektrik akımının erimiş silikondan geçirilmesi, elektroliz yoluyla yabancı maddeleri anoda doğru yönlendirir",
+  "Silikonun hidroflorik asit içinde çözülmesi, metalik safsızlıkları çözünmeyen florürler olarak seçici olarak çökeltir",
+]
+answer.answer = "Silikonun uçucu triklorosilana dönüştürülmesi, fraksiyonel damıtma yoluyla saflaştırmayı ve ardından saf katı olarak yeniden biriktirmeyi mümkün kılar"
+context = "Siemens prosesi, katı silikonu triklorosilan gazına (kaynama noktası 31,8°C) dönüştürür, farklı kaynama noktalarından yararlanan fraksiyonel damıtma yoluyla saflaştırır ve ardından CVD yoluyla tekrar ultra saf katı silikona ayrıştırır."
+id = "c1d7e216-16c1-4fc3-bef2-af56f79a8fed"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Siemens prosesi bir kilogram polisilikon üretmek için yaklaşık olarak ne kadar elektrik enerjisi (kWh cinsinden) gerektirir?"
+answer.answer = "60-80"
+answer.alternatives = [
+  "60-80 kWh",
+  "70",
+  "60 ila 80",
+  "70 kWh",
+]
+context = "Siemens prosesi, polisilikon kilogramı başına 60-80 kWh tüketiyor ve bu da onu en enerji yoğun endüstriyel arıtma proseslerinden biri haline getiriyor."
+id = "3d9bf3c4-8220-441f-b72f-dd885340ae55"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Akışkan yataklı reaktörlerin (FBR) geleneksel Siemens prosesine göre temel avantajı nedir?"
+prompt.distractors = [
+  "FBR triklorosilan yerine silan gazı kullanarak daha yüksek saflığa (11N vs 9N) ulaşır",
+  "FBR silikonu geri dönüştürülmüş polisilikon parçalarına yerleştirerek tohum çubuğu ihtiyacını ortadan kaldırır",
+  "FBR daha yüksek sıcaklıklarda (1.200°C) çalışarak daha hızlı biriktirme oranları ve daha yüksek verim sağlar",
+]
+answer.answer = "FBR enerjinin yaklaşık yarısını tüketir (25-35 kWh/kg) ve toplu döngüler yerine sürekli olarak çalışır"
+context = "FBR silan gazı kullanarak 1.100°C yerine 600-800°C'de çalışır. Düşük sıcaklık ve sürekli çalışma, enerji tüketimini 25-35 kWh/kg'a düşürür. Bunun dezavantajı, granüler üründe daha yüksek yüzey kirliliğidir."
+id = "73db8fd6-0240-4440-beb5-94061c524352"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Polisilikon üretimi neden Sincan ve İç Moğolistan gibi bölgelerde yoğunlaşıyor?"
+prompt.distractors = [
+  "Bu bölgeler, doğal olarak düşük bor ve fosfor içeriğine sahip olağanüstü saf kuvars yataklarına sahiptir.",
+  "Soğuk ve kuru iklim, reaktörün daha verimli soğutulmasını sağlar ve kirlenme riskini azaltır",
+  "Devlet sübvansiyonları bu bölgelerdeki polisilikon tesislerinin sermaye maliyetlerinin %60'ını karşılıyor",
+]
+answer.answer = "0,03-0,04 $/kWh seviyesindeki ucuz kömür yakıtlı elektrik, enerji yoğun süreci mevcut polisilikon fiyatlarıyla karlı hale getiriyor"
+context = "Polisilikon kg başına 7-10 dolara satıldığında ve üretimi 60-80 kWh'ye ihtiyaç duyduğunda, elektrik maliyeti baskın değişken oluyor. 0,04 ABD Doları/kWh seviyesinde, elektriğin maliyeti ~2,80 ABD Doları/kg; 0,10 ABD Doları/kWh'de bu, 7,00 ABD Doları/kg'dır; kâr ve zarar arasındaki farktır."
+id = "6048297b-f8f8-48f9-a268-bae802b032d1"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "İnce çubuklar Siemens reaktörünün içinde hangi sıcaklığa ısıtılıyor?"
+answer.answer = "1.050-1.150°C"
+answer.alternatives = [
+  "1100°C",
+  "1.100°C",
+  "1050-1150",
+  "1100 derece",
+]
+context = "Silikon ince çubuklar dirençli bir şekilde 1.050-1.150°C'ye ısıtılır; bu sıcaklıkta triklorosilan ayrışır ve saf silikonu çubuk yüzeyine bırakır."
+id = "4c5eae93-0121-4951-8e4c-3d93a34d4d76"

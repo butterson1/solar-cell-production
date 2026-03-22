@@ -1,0 +1,124 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Tek eklemli bir silikon hücrede 3,0 eV ultraviyole fotona ne olur?"
+prompt.distractors = [
+  "Enerjisi bant aralığı eşiğini aştığı için silikondan emilmeden geçer ve güneş enerjisinin yaklaşık %19'unun iletim kayıplarına katkıda bulunur.",
+  "Darbeli iyonizasyon yoluyla her biri yaklaşık 1,5 eV taşıyan iki elektron deliği çifti üretir, bu nedenle UV-zengin spektrumlar silikon hücre çıkışını artırır",
+  "Bağlantı noktasına ulaşmadan önce yansıma önleyici kaplama tarafından emilir ve yaklaşık %65 termal kayıpla silikon nitrür tabakasında ısıya dönüşür.",
+]
+answer.answer = "1,12 eV değerinde bir elektron-delik çifti üretirken geri kalan 1,88 eV, neredeyse anında gerçekleşen bir süreç olan termalizasyon yoluyla atık ısı olarak kaybedilir."
+context = "Bant aralığı enerjisinin üzerindeki fotonlar emilir ancak bant aralığı enerjisinde yalnızca bir elektron-delik çifti oluşturur. Fazla enerji (3,0 - 1,12 = 1,88 eV) kafes titreşimlerine (ısı) dönüşür. Bu, tek eklemli hücrelerdeki iki ana kayıp mekanizmasından biridir."
+id = "9dc147f2-5297-4ff8-8701-0bb72ac90aad"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "III-V çok bağlantılı güneş pilleri neden silikon pillere göre watt başına 200-400 kat daha pahalıdır?"
+prompt.distractors = [
+  "Galyum ve indiyum gibi III-V yarı iletken malzemeler, sınırlı küresel rezervlere sahip son derece nadir toprak elementleridir ve bunların madenciliği, özel derin şaft çıkarma teknikleri gerektirir.",
+  "Hücreler, ultra yüksek vakum koşulları altında biriktirilmesi gereken platin ve paladyum elektrot kontaklarına ihtiyaç duyar ve bu değerli metaller, watt başına maliyet dökümünde hakimdir.",
+  "Altı bağlantılı mimari, her katmanın ayrı bir temiz oda tesisinde üretilmesini ve ardından arayüz başına 280°C'de altın-kalay ötektik lehimleme kullanılarak birbirine bağlanmasını gerektirir.",
+]
+answer.answer = "MOCVD, toksik organometalik öncülleri kullanarak 600-700°C'de tek seferde atomik bir katman halinde kristal üretir; germanyum substratlarda yalnızca 1-2 µm/saatlik büyüme oranlarıyla 100 mm levha başına ~100 ABD Doları tutarında bir maliyete sahiptir."
+context = "Aşırı maliyet MOCVD üretim sürecinden kaynaklanmaktadır; inanılmaz derecede yavaştır ve pahalı öncüller ve alt tabakalar kullanır. Bu, silikon levha üretiminin seri üretim ölçeği değil, butik yarı iletken üretimidir."
+id = "40056a71-3f00-434f-abbc-758fd7cece4a"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Değişen hava koşullarına karşı gerçek dünyada bir güvenlik açığı yaratan monolitik (iki terminalli) tandem hücrelerin temel kısıtlaması nedir?"
+prompt.distractors = [
+  "Perovskit üst katman, silikon alt hücreden farklı bir oranda termal olarak genişler ve sıcaklık değişiklikleri saatte 15°C'yi aştığında arayüzde mikro çatlaklara neden olur",
+  "Her bir alt hücrenin voltaj çıkışı tam olarak eşleşmelidir ve voltaj sıcaklığa bağlı olduğundan, üst ve alt katmanlar arasındaki herhangi bir termal değişim dirençli kayıplara neden olur.",
+  "Katmanlar arasındaki optik bağlantı, nemle birlikte değişen hassas bir kırılma indisi eşleşmesine bağlıdır ve iç arayüzde %8'e varan Fresnel yansıma kayıplarına neden olur.",
+]
+answer.answer = "Alt hücreler seri olarak kablolanmıştır, bu nedenle akımın her ikisinde de aynı olması gerekir; bu, daha zayıf olan hücrenin tüm cihazı sınırladığı anlamına gelir ve gün boyunca spektral kaymalar hangi hücrenin daha az akım ürettiğini değiştirir."
+context = "Monolitik bir tandemde seri bağlantı, daha az akım üreten hücrenin tüm cihazda darboğaz oluşturması anlamına gelir. Güneş spektrumu değişir (öğle saatlerinde daha mavi, gün doğumunda/batımında daha kırmızı), mevcut eşleşmeyi hizadan çıkarır ve standart test koşullarına kıyasla verimliliği yüzde birkaç azaltır."
+id = "f36c0835-c291-4f95-9514-c5f690abfac5"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Perovskit-silikon ikili hücresinin mevcut dünya rekoru verimliliği nedir ve bu rekor kimin elinde?"
+prompt.distractors = [
+  "Ocak 2026'da Oxford PV tarafından elde edilen %36,12, Brandenburg tesislerinde TOPCon silikon alt hücre üzerinde 1,72 eV formamidinyum-sezyum perovskit kullanılarak sertifikalandırılmıştır.",
+  "%33,90, Hanwha Q Cells tarafından Mart 2025'te, heterojonksiyonlu silikon üzerine yarık kalıplı kaplama yoluyla biriktirilen tamamı çözeltiyle işlenmiş geniş bant aralıklı bir perovskit kullanılarak elde edildi",
+  "Ağustos 2025'te First Solar ile işbirliği içinde metilamonyum içermeyen perovskitin arkadan temaslı silikon hücre mimarisiyle birleştirilmesiyle NREL tarafından %32,50 elde edildi",
+]
+answer.answer = "LONGi Nisan 2025'te %34,85'e ulaştı - NREL tarafından onaylanan bir rekor - onu %34,76 ile JinkoSolar takip etti ve her ikisi de %26,81 ile en iyi tek bağlantılı silikon hücreyi geride bıraktı."
+context = "Dünyanın en büyük güneş enerjisi üreticisi LONGi, perovskit-silikon tandem rekorunu Nisan 2025'te %34,85 olarak belirledi. Bu oran halihazırda %29,4 olan teorik tek eklemli silikon sınırını çok aşıyor."
+id = "a35bce2a-746b-406d-9b3c-a6d7c28f91e4"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Perovskit-silikon iki bağlantılı tandem hücrenin yaklaşık teorik verimlilik sınırı nedir?"
+answer.answer = "43%"
+answer.alternatives = [
+  "yüzde 43",
+  "~%43",
+  "yaklaşık %43",
+  "yaklaşık %43",
+]
+context = "Optimum bant aralığı eşleşmesine sahip iki bağlantılı bir tandemin teorik sınırı yaklaşık %43 olup, silikonun tek bağlantılı Shockley-Queisser sınırı olan %29,4'ün oldukça üzerindedir."
+id = "f9a86456-fdc7-4a29-9ab2-33fd8bb5a073"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Karasal güneş enerjisi için III-V çoklu bağlantı hücrelerine kıyasla perovskit-silikon tandemlerini potansiyel olarak devrim niteliğinde kılan şey nedir?"
+prompt.distractors = [
+  "Perovskite üst hücreleri, III-V hücrelerine göre daha yüksek mutlak verimlilik elde eder çünkü kusur toleransları, teorik maksimumun %98'ine ulaşarak ışınım sınırına daha yakın çalışmaya izin verir",
+  "Perovskite tandemler, aktif soğutma olmadan 500 güneşe kadar yoğunlaştırılmış güneş ışığı altında verimli bir şekilde çalışabilir, böylece III-V yoğunlaştırıcı sistemlerin gerektirdiği takip donanımını ortadan kaldırır",
+  "Perovskite malzemeleri, III-V yarı iletkenlerle karşılaştırıldığında doğası gereği üstün UV stabilitesine sahiptir, bu da onlara tipik 15 yıllık III-V bozunma döngüsüne kıyasla 40 yıllık bir çalışma ömrü sağlar.",
+]
+answer.answer = "Perovskite katmanları, ucuz öncüller kullanılarak mevcut silikon hücrelerin üzerine 100-150°C'de çözelti halinde biriktirilebilir; bu, potansiyel olarak silikon hücre maliyetine yalnızca %10-20 eklerken çıktıyı %20-30 artırır."
+context = "Germanyum substratları üzerinde 600-700°C'de pahalı MOCVD gerektiren III-V hücrelerinin aksine, perovskitler ucuz ham maddelerle düşük sıcaklıkta çözelti işlemeyi kullanır. Bu, mevcut silikon üretim hatlarının yenilenebileceği ve tandemlerin devrim niteliğindeki bir üretim değişikliğinden ziyade kademeli olarak artırılabileceği anlamına gelir."
+id = "95191e86-c400-40b8-a621-0a6e7636d379"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (9. Gün) TOPCon hücre mimarisinde arka yüzeydeki rekombinasyonu azaltan temel özellik nedir?"
+prompt.distractors = [
+  "Elektronları yüzeyden itmek için hem kimyasal pasifleştirme hem de sabit bir pozitif yük sağlayan, atomik katman birikimiyle biriktirilen kalın bir alüminyum oksit (Al₂O₃) katmanı",
+  "Mükemmel taşıyıcı aktarımını korurken sarkan bağları doyuran, PECVD tarafından 200°C'de biriktirilen hidrojenlenmiş amorf silikon (a-Si:H) içsel tampon katmanı",
+  "Emilmemiş kızılötesi fotonları hücreye geri yansıtırken yerel arka yüzey alanları oluşturan bir SiO₂ dielektrik ayna aracılığıyla lazerle ateşlenen alüminyum nokta temas modeli",
+]
+answer.answer = "Elektronların temas noktasına kadar kuantum tüneli oluşturmasına izin verirken yüzeyi pasifleştiren fosfor katkılı polisilikon ile kaplı ultra ince bir tünel oksit tabakası (~ 1,5 nm SiO₂)"
+context = "TOPCon (Tünel Oksit Pasifleştirilmiş Kontak), kuantum tünelleme için yeterince ince, katkılı polisilikon ile kaplanmış ~1,5 nm SiO₂ katmanı kullanır. Bu, PERC'ın yerel alüminyum kontaklarına göre temel yenilik olan elektriksel teması korurken mükemmel yüzey pasifleştirmesi sağlar."
+id = "e27721f2-4677-42ef-b46d-adcd0ddfab0e"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (10. Gün) First Solar'ın CdTe ince film teknolojisiyle temel rekabet avantajı nedir?"
+prompt.distractors = [
+  "CdTe hücreleri, standart test koşullarında hem PERC hem de TOPCon silikon hücrelerini geride bırakarak %24,5 ile tüm ticari teknolojiler arasında en yüksek tek bağlantı verimliliğine ulaşır.",
+  "CdTe panelleri, bakır rafine etme yan ürünlerinden elde edilen bol miktarda tellür kullanır ve bu da onları kristalin silikon üreticilerini etkileyen polisilikon tedarik zinciri kesintilerine karşı bağışık hale getirir.",
+  "CdTe ince film hücreleri, esnek polimer alt tabakalar üzerine yerleştirilebilir ve böylece sert kristalin silikon modüllerin uygun maliyetli bir şekilde hizmet veremeyeceği binaya entegre uygulamalara olanak sağlanır.",
+]
+answer.answer = "First Solar'ın buhar aktarımlı biriktirme işlemi, 1200×600 mm'lik bir cam alt tabakanın tamamını ham camdan bitmiş modüle kadar 2,5 saatten kısa bir sürede kaplayarak sektördeki watt başına en düşük üretim maliyetine ulaşıyor"
+context = "First Solar'ın cam girişinden bitmiş modüle kadar dikey entegre süreci son derece hızlı ve ucuzdur. Buhar taşıma biriktirme tekniği, çok adımlı kristalin silikon işleminden çok daha hızlıdır ve First Solar'a daha düşük hücre verimliliğine rağmen sürekli olarak düşük üretim maliyetleri sağlar."
+id = "837e98d8-cc19-46b8-9f1f-36bc8181dc66"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (6. Gün) P-n eklem katkılama işleminde, bağlantı noktasındaki yerleşik elektrik alanı neden n tarafından p tarafına doğru işaret ediyor?"
+prompt.distractors = [
+  "N tarafındaki elektronların daha yüksek konsantrasyonu, elektronları p tarafından iten negatif bir yük oluşturur ve geleneksel akımı p'den n'ye yönlendiren bir voltaj gradyanı oluşturur.",
+  "P tarafındaki bor alıcı atomları, n tarafındaki fosfor vericilerden daha güçlü bir elektronegatifliğe sahip olup, metalurjik bağlantı arayüzü boyunca kalıcı bir dipol alanı oluşturur.",
+  "Bağlantı oluşumu sırasında çoğunluk taşıyıcılarının difüzyonu, p tarafında pozitif yüklü donör iyonların ve n tarafında negatif yüklü alıcı iyonların fazlalığını oluşturur.",
+]
+answer.answer = "Elektronlar n'den p'ye ve delikler p'den n'ye yayıldıklarında, geride n tarafında sabit iyonize verici atomlar (+) ve p tarafında alıcı atomlar (-) bırakarak +'dan −'ye, yani n'den p'ye işaret eden bir alan oluştururlar."
+context = "Tükenme bölgesi, mobil taşıyıcılar bağlantı noktası boyunca yayıldığında oluşur. Geride kalan hareketsiz iyonize katkı atomları bir uzay yükü bölgesi oluşturur: n tarafında pozitif (açıkta kalan donör iyonları) ve p tarafında negatif (açıkta kalan alıcı iyonlar). Ortaya çıkan elektrik alanı pozitif n-tarafından negatif p-tarafına doğru işaret eder."
+id = "f146812f-0a4b-4d29-b994-88d9fca7ff46"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (5. Gün) Tel testereyle dilimlendikten sonra standart bir silikon levhanın mikrometre cinsinden yaklaşık kalınlığı nedir?"
+answer.answer = "150"
+answer.alternatives = [
+  "150 mikron",
+  "150 mikrometre",
+  "~150",
+  "130-170",
+  "150-180",
+  "160",
+  "170",
+]
+context = "Modern elmas telli testereler, silikon levhaları on yıl önce 300+ µm'den yaklaşık 150-170 µm kalınlığa kadar kesiyor. Daha ince levhalar, külçe başına daha fazla levha ve hücre başına daha düşük silikon tüketimi anlamına gelir."
+id = "9ae18b3e-fabf-4ad6-840f-9554730e1881"

@@ -1,0 +1,121 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Shockley-Queisser modeli altında maksimum tek bağlantı verimliliği için en uygun bant aralığı nedir ve bu hangi verimliliği sağlar?"
+prompt.distractors = [
+  "1,12 eV, teorik maksimum %29,4'e ulaşıyor - bu silikonun bant aralığıdır ve Shockley ile Queisser'in 1961'deki orijinal hesaplamasının referans noktasıydı",
+  "1,42 eV, teorik maksimum %35,1'e ulaşıyor — GaAs, doğrudan bant aralığı fonon destekli absorpsiyon kayıplarını ortadan kaldırdığı için optimum noktaya en yakın konumdadır",
+  "1,50 eV, teorik maksimum %31,8'e ulaşıyor - daha geniş bant aralıkları, yakın kızılötesi bölgede makul iletim kayıpları pahasına termalizasyonu en aza indiriyor",
+]
+answer.answer = "1,34 eV, teorik maksimum %33,7'ye ulaşıyor — bu, alt bant aralığı iletim kayıpları (dar aralıkları destekleyen) ile termalizasyon kayıpları (geniş boşlukları destekleyen) arasındaki dengeyi dengeliyor"
+context = "SQ limiti, AM1.5G spektrumu altında ~1,34 eV bant aralığı için ~%33,7'ye ulaşır. Bu bir uzlaşmadır: daha dar bant aralıkları daha fazla foton emer ancak foton başına daha fazla enerjiyi termalleştirir, daha geniş bant aralıkları ise foton başına daha az eV harcar ancak daha fazla kızılötesi ışığı tamamen kaçırır."
+id = "d12-q01"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Tek bağlantılı bir hücrede güneş enerjisinin en büyük hırsızı hangi kayıp mekanizmasıdır ve gelen enerjinin yaklaşık olarak ne kadarını tüketir?"
+prompt.distractors = [
+  "AM1.5G spektrumunun 1,12 eV'nin altındaki kızılötesi kısmı güneşin yayılan gücünün çoğunu taşıdığından alt bant aralığı iletimi, gelen güneş enerjisinin yaklaşık %33'ünü oluşturur.",
+  "Işınımsal rekombinasyon, gelen güneş enerjisinin kabaca %25'ini oluşturur, çünkü çalışma voltajında hücre, emilen fotonların önemli bir kısmını kızılötesi ışıldama olarak yeniden yayar.",
+  "Carnot entropi cezası, güneşin dar diski ile hücrenin yarı küresel yeniden emisyon modeli arasındaki katı açı uyumsuzluğundan kaynaklanan, gelen güneş enerjisinin yaklaşık %30'unu oluşturur.",
+]
+answer.answer = "Termalizasyon, gelen güneş enerjisinin kabaca %33'ünü oluşturur, çünkü yüksek enerjili fotonlar, emilimin femtosaniyesi içinde fazla kinetik enerjiyi kafes ısısı olarak yayan taşıyıcılar üretir."
+context = "Termalizasyon baskın kayıp mekanizmasıdır. Bant aralığının üzerindeki fotonlar tarafından üretilen taşıyıcılar, hızlı bir şekilde (~10⁻¹⁵ saniye içinde) bant kenarına doğru gevşer ve kristal kafesle çarpışmalar nedeniyle foton enerjisi ile bant aralığı arasındaki farkı ısı olarak kaybeder."
+id = "d12-q02"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Güneş ışığını 1 güneşten 1.000 güneşe yoğunlaştırmak neden teorik tek kavşak verimliliğini %33,7'den yaklaşık %40,7'ye çıkarıyor?"
+prompt.distractors = [
+  "Konsantrasyon, hücreyi 400-500 K'ye ısıtır, bu da bant aralığını yaklaşık 0,15 eV daraltır, onu teorik optimum olan 1,34 eV'ye yaklaştırır ve spektral uyumsuzluk kayıplarını azaltır.",
+  "Konsantre ışık, iki fotonlu soğurma süreçlerini tetikleyecek kadar foton yoğunluğunu arttırır ve alt bant aralığı kızılötesi fotonların sanal durumlar aracılığıyla taşıyıcı oluşumuna katkıda bulunmasına olanak tanır.",
+  "Daha yüksek foton akışı, kavşak boyunca taşıyıcı taşınmasını hızlandırır, geçiş süresini rekombinasyon ömrünün altına düşürür ve böylece toplu rekombinasyon kayıplarını yaklaşık %50 oranında azaltır.",
+]
+answer.answer = "Işığın yoğunlaştırılması, gelen fotonların katı açısını arttırır, dar bir güneş diskinden emilim ile hücrenin üzerindeki tam yarımküreye emisyon arasındaki asimetriden kaynaklanan entropi cezasını azaltır."
+context = "Konsantrasyon altında akım doğrusal olarak ölçeklenir, ancak voltaj logaritmik olarak ölçeklenir; bu net bir kazançtır. Fiziksel olarak bunun nedeni, ışığın yoğunlaştırılmasının kaynağın etkili katı açısını arttırması ve emilen ve yayılan foton popülasyonları arasındaki entropi farkını azaltmasıdır. Hücrenin emisyonu, emiliminin göreceli olarak daha küçük bir kısmı haline gelir."
+id = "d12-q03"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Sıcak taşıyıcılı güneş pillerini teorik olarak ~%66 verimliliğe sahip kılan şey nedir ve bunları gerçekleştirmenin önündeki temel mühendislik engeli nedir?"
+prompt.distractors = [
+  "Termoelektrik bağlantı yoluyla fonon enerjisini kafesten topluyorlar, ancak buradaki engel çoğu yarı iletkendeki Seebeck katsayısının termal değişimlerden faydalı voltaj üretemeyecek kadar düşük olmasıdır.",
+  "Normalde ışınımsal olmayan şekilde yeniden birleşen derin tuzak durumlarından taşıyıcıları çıkarmak için kuantum tünellemeyi kullanıyorlar, ancak 2 nm'den daha ince hatasız tünel bağlantılarının üretilmesi mevcut litografinin ötesinde kalıyor",
+  "Her biri alt bantlar arası geçişler yoluyla farklı enerjilerde soğuran birden fazla kuantum kuyusunu istiflerler, ancak tutarlı taşımayı sürdürmek için kuyucukların angstrom altı hassasiyetle aralıklandırılması gerekir.",
+]
+answer.answer = "Termalizasyon fazla kinetik enerjiyi ısı olarak dağıtmadan önce foto-uyarılmış taşıyıcıları çıkarırlar, ancak taşıyıcı soğutma pikosaniyenin altındaki zaman ölçeklerinde gerçekleşir ve ekstraksiyon için enerji seçici temaslar henüz mevcut değildir."
+context = "Sıcak taşıyıcı hücreler, bant aralığının üzerindeki fotonlar tarafından üretilen taşıyıcıların aşırı kinetik enerjisini, bu enerji kafes ısısına termalleşmeden önce yakalamayı amaçlamaktadır. Tek güneşte teorik tavan ~%66'dır. Zorluk: Soğutma çoğu malzemede ~100 femtosaniye içinde gerçekleşir ve taşıyıcıları yalnızca belirli enerjilerde çıkaran kuantum turnike görevi gören 'enerji seçici temaslara' ihtiyacınız vardır."
+id = "d12-q04"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "LONGi'nin %26,81'lik rekor silikon hücresi Shockley-Queisser sınırının yüzde kaçını başarıyor? (Bir ondalık basamağa kadar yüzde olarak cevaplayınız)"
+answer.answer = "91.2%"
+answer.alternatives = [
+  "91.2",
+  "%91",
+  "yüzde 91,2",
+]
+context = "LONGi'nin %26,81'lik rekoru, silikonun %29,4'lük SQ sınırına bölündüğünde %91,2 elde edilir. Bu, en iyi silikon hücrelerin halihazırda teorik maksimum değerlerinin 9/10'undan fazlasını yakaladığı ve daha fazla tek bağlantı iyileştirmesi için çok az yer bıraktığı anlamına gelir."
+id = "d12-q05"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Tekli fisyonda pentasen %200'e yaklaşan fisyon verimliliğine ulaşabilir. Bu fiziksel açıdan ne anlama geliyor?"
+prompt.distractors = [
+  "Her bir pentasen molekülü, iki fotonlu bir süreç yoluyla aynı anda iki fotonu emer ve iki eksiton üretir; bu da standart tek fotonlu absorpsiyonla karşılaştırıldığında kuantum verimini etkili bir şekilde iki katına çıkarır.",
+  "Pentasen kristali, yeniden emilmeden önce uyarılmış emisyon yoluyla gelen ışık alanını güçlendirir ve bağlantı noktasına ulaşan etkili foton akısını iki katına çıkaran bir kazanç ortamı etkisi üretir.",
+  "Pentasen'in üçlü eksiton ömrü 10 milisaniyeyi aşıyor, emilen her fotonun ekstraksiyondan önce sistem içinde iki kez geri dönüştürülmesine olanak tanıyor ve foton başına iki yük ayırma olayı sağlıyor",
+]
+answer.answer = "Bir pentasen molekülü üzerindeki yüksek enerjili tekli uyarılmış durum, bitişik moleküller üzerinde iki düşük enerjili üçlü uyarılmış duruma bölünerek tek bir soğurulmuş fotondan iki kullanılabilir eksiton elde edilir."
+context = "Tekli fisyon, çoklu eksiton oluşumunun organik molekül analoğudur: bir tekli eksiton (foton absorpsiyonu ile oluşturulan), komşu moleküller üzerinde iki üçlü eksitona bölünür. MIT, bir silikon hücreye bağlı bu etkiyi kullanarak belirli dalga boylarında %100'ün üzerinde harici kuantum verimliliği gösterdi."
+id = "d12-q06"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (11. Gün) III-V hücrelerinin daha yüksek mutlak kayıtlara sahip olmasına rağmen neden perovskit-silikon tandemleri önde gelen ticari tandem yaklaşımı olarak ortaya çıktı?"
+prompt.distractors = [
+  "Perovskite üst hücreleri, 600°C'lik standart MOCVD sıcaklıklarda silikon substratlar üzerinde epitaksiyel olarak büyütülebilir ve arayüzde kafes uyumsuzluğu kusurları olmadan monolitik bir kristal yapı oluşturulabilir.",
+  "Silikon alt hücreler tandemin toplam güç çıkışının %85'ine katkıda bulunur, bu nedenle üst hücre malzemesi alt hücre kalitesinden daha az önemlidir ve silikon alt hücreler germanyumdan çok daha üstündür",
+  "Perovskit bant aralıkları tam olarak 1,68 eV'de sabitlenmiştir; bu, silikonla eşleşme için matematiksel olarak en uygun üst hücre bant aralığıdır; III-V alaşımlarının ekonomik olarak kopyalanamaması tesadüftür.",
+]
+answer.answer = "Perovskit katmanları, çözelti işleme veya buharlaştırma yoluyla mevcut silikon hücrelerin üzerine düşük sıcaklıklarda (~150°C) biriktirilebilir, böylece III-V MOCVD epitaksiyel büyümenin 50-100$/W maliyetinden kaçınılır."
+context = "Perovskit-silikon ikilisi ticari olarak çalışır çünkü perovskitler, geleneksel silikon hücrelerin üzerine düşük sıcaklıklarda ucuz bir şekilde biriktirilebilir. Silikon üzerindeki III-V tandemler pahalı MOCVD veya levha yapıştırma gerektirir. Maliyet farkı 200-400 kat olup, perovskit tandemleri kitlesel pazar karasal güneş enerjisi için uygun hale getirir."
+id = "d12-q07"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (10. Gün) First Solar'ın CdTe ince film modülleri sektördeki en düşük watt başına maliyete ulaşıyor. Bunu mümkün kılan temel üretim avantajı nedir?"
+prompt.distractors = [
+  "CdTe, Shockley-Queisser optimumuyla yakından eşleşen 1,45 eV'lik doğrudan bant aralığına sahiptir, bu da ona doğası gereği silikondan daha yüksek teorik verimlilik sağlar ve dolayısıyla çıkış watt başına daha az hücreye ihtiyaç duyulur.",
+  "Kadmiyum ve tellür, yerkabuğunda en bol bulunan yarı iletken elementler arasındadır; metalürjik sınıf silikondan kilogram başına kabaca 100 kat daha ucuzdur ve hammadde maliyetlerini sıfıra yakın tutar.",
+  "CdTe hücreleri, biriktirme sırasında monolitik seri ara bağlantı kullanır; bu, silikon modül montaj maliyetlerinin ve ilgili verim kayıplarının yaklaşık %15'ini oluşturan sekme ve bağlama adımlarını ortadan kaldırır.",
+]
+answer.answer = "Buhar aktarımlı biriktirme, ~500°C'de dakikalar içinde bir cam levhanın tamamını yarı iletkenle kaplayarak, silikon üretiminde kullanılan külçelerin büyütülmesi, levhaların dilimlenmesi ve tek tek hücrelerin işlenmesi gibi çok günlü sürecin yerini alır."
+context = "CdTe'nin maliyet avantajı üretim sürecinden kaynaklanmaktadır: yarı iletken, sürekli ve hızlı bir işlemle doğrudan cam yüzeylerin üzerine biriktirilmektedir. Bu, silikon üretiminin gerektirdiği maliyetli külçe büyümesini, tabakalaşmayı ve bireysel hücre kullanımını ortadan kaldırır."
+id = "d12-q08"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁(6.Gün) Silisyumun fosfor katkılanmasında atomik seviyede serbest elektron oluşturan neler olur?"
+prompt.distractors = [
+  "Fosfor atomları, silikon atomları arasındaki ara konumlarda bulunur ve bunların gevşek bir şekilde bağlı dış elektronları, oda sıcaklığında silikonun iletim bandıyla örtüşen metalik bir iletken bant oluşturur.",
+  "Fosforun yüksek elektronegatifliği, yük aktarımı yoluyla komşu silikon atomlarından elektronları çeker, silikon kafesini iyonize eder ve hareketli elektronlardan ve sabit pozitif silikon iyonlarından oluşan bir deniz yaratır.",
+  "Fosfor atomları iletim bandının 0,55 eV altında derin enerji durumları yaratır ve oda sıcaklığındaki termal enerji (0,026 eV), ~%40 olasılıkla bu boşluk boyunca kuantum tünelleme yoluyla elektronları teşvik eder",
+]
+answer.answer = "Fosforun beş değerlik elektronu vardır; komşu silikon atomlarıyla dört bağ, bir elektronu iletim bandının sadece 0,045 eV altında sığ donör durumunda zayıf bir şekilde bağlı bırakıyor, oda sıcaklığında kolayca serbest kalıyor"
+context = "Kristal kafeste fosfor silikonun yerini alır. Silikondan bir fazla değerlik elektronuna sahiptir ve bu beşinci elektron yalnızca ~0,045 eV ile bağlıdır; oda sıcaklığında (0,026 eV) kT'den çok daha azdır. 300 K'de fosfor donör atomlarının neredeyse %100'ü iyonize olur ve iletim bandına serbest elektronlar katkıda bulunur."
+id = "d12-q09"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (3. Gün) 'Dokuz' notasyonuyla ifade edilen güneş sınıfı polisilikon'un saflık seviyesi nedir?"
+answer.answer = "9N"
+answer.alternatives = [
+  "dokuz dokuz",
+  "9 dokuz",
+  "%99,9999999",
+  "dokuz-dokuz",
+  "9-dokuz",
+]
+context = "Güneş enerjisi sınıfı polisilikon, 9N saflığa - %99,9999999 saf silikon - rafine edilir. Bu, triklorosilan gazının ~1.100°C'de sıcak silikon çubuklar üzerinde ayrıştırıldığı Siemens süreci aracılığıyla elde edilir."
+id = "d12-q10"

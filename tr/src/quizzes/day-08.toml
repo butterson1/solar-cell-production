@@ -1,0 +1,76 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Pişirim sürecinde cam hamurunun gümüş hamurundaki rolü nedir?"
+prompt.distractors = [
+  "Gümüş parçacıklarının erime noktasını 960°C'den 400°C'ye düşüren bir sinterleme akışı görevi görür ve bunların daha ucuz düşük sıcaklıklı bant fırınları kullanılarak sürekli iletken bir film halinde kaynaşmasına olanak tanır.",
+  "Gümüş şebeke çizgisi ile silikon yayıcı arasında kalıcı bir yalıtım bariyeri oluşturarak gümüş atomunun bağlantı noktasına geçişini önlerken kuantum tünelleme yoluyla akım akımına da izin verir.",
+  "Her parçacığın etrafında koruyucu bir gümüş oksit kabuk oluşturmak için en yüksek sıcaklıkta atmosferik oksijenle reaksiyona girer, uzun vadeli oksidasyonu önler ve sahada 25 yıllık temas stabilitesi sağlar.",
+]
+answer.answer = "500-650°C'de erir ve kurşun oksit (PbO) kullanarak SiNₓ yansıma önleyici kaplamayı kimyasal olarak aşındırarak silikon yayıcı yüzeyini açığa çıkarır, böylece gümüş yarı iletkenle doğrudan elektrik teması kurabilir"
+context = "Tipik olarak kurşun-borosilikat (PbO-B₂O₃-SiO₂) olan cam malzemesi, ateşleme sırasında aşındırıcı bir sıvı haline gelir. PbO, silikon nitrürü ARC çözer ve çözünmüş gümüşün silikon yüzeyine kristalitler halinde çökeldiği kanallar oluşturur."
+id = "a33d86e6-fe19-49f8-93f8-13b2eecb22b6"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Bakırın kilogram başına maliyetinin yaklaşık 1/100'ü kadar olmasına rağmen güneş enerjisi endüstrisi serigrafi baskı kontakları için neden bakır yerine gümüş kullanıyor?"
+prompt.distractors = [
+  "Bakırın toplu direnci gümüşten kabaca 10 kat daha yüksektir (1,59 × 10⁻⁷ vs 1,59 × 10⁻⁸ Ω·m), bu nedenle temas parmaklarının aynı akımı taşımak için 10 kat daha geniş olması gerekir, bu da kabul edilemez gölgeleme kayıplarına neden olur",
+  "Bakır macunu, ortak pişirmede kullanılan 750-850°C'lik en yüksek pişirme sıcaklıklarına dayanamaz çünkü bakır 660°C'de erir ve levha yüzeyini tahrip eder; gümüşün 960°C'lik erime noktası ise marj sağlar",
+  "Bakır, pişirme adımı sırasında hidroflorik asit işlemi olmadan çıkarılamayan kalın, yalıtkan bir doğal oksit tabakası oluşturur, bu da kontakları standart modül ara bağlantısı için lehimlenemez hale getirir",
+]
+answer.answer = "Bakır, orta sıcaklıklarda bile hızlı bir şekilde silikonun içine difüze olur ve azınlık taşıyıcı ömrünü yok eden derin seviyede rekombinasyon merkezleri oluşturur; bu da proses karmaşıklığını artıran pahalı bariyer katmanları (Ni, W) gerektirir"
+context = "Bakır gümüşten yalnızca %6 daha dirençlidir (1,68'e karşı 1,59 × 10⁻⁸ Ω·m), dolayısıyla iletkenlik sorun değildir. Sorun, bakırın silikondaki hızlı interstisyel difüzyonudur ve bu da bağlantı noktasını zehirler. HJT hücreleri bakır için en iyi adaylardır çünkü a-Si katmanları doğal olarak bakır difüzyonunu engeller."
+id = "537571a8-9b65-4280-a6eb-eb3f318ad85d"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Birlikte pişirme sırasında, levha en yüksek sıcaklıkta (750-850°C) yalnızca 1-3 saniye geçirir. Bu kısa termal artış sırasında arka tarafta ne olur?"
+prompt.distractors = [
+  "Ekran baskılı gümüş arka baralar tamamen erir ve soğurulmamış yakın kızılötesi fotonları ikinci bir soğurma geçişi için hücreye geri gönderen aynasal bir ayna katmanı halinde yeniden katılaşır.",
+  "Alüminyum yüzey üzerinde atmosferik oksidasyon yoluyla kendiliğinden ince bir titanyum dioksit tabakası oluşur ve ön taraftaki SiNₓ kaplamaya eşdeğer arka taraftaki pasivasyon performansını sağlar",
+  "Arka taraftaki silikon nitrür kaplama katmanı, yoğun bir alfa fazı seramiği halinde hızlı kristalleşmeye uğrar ve herhangi bir ek kapsülleme olmadan hücreyi nem girişine karşı kalıcı olarak yalıtır.",
+]
+answer.answer = "577°C ötektikte silikonlu alüminyum macun alaşımları, azınlık taşıyıcıları iten ve arka rekombinasyon kayıplarını azaltan 5-10 μm derinliğinde p⁺ katkılı bir arka yüzey alanı (BSF) oluşturur"
+context = "577°C'deki Al-Si ötektiği, alüminyumun silikon içinde çözünmesini ve yoğun p⁺ katkılı bir bölge olarak yeniden katılaşmasını sağlar. Bu BSF bir 'elektron aynası' görevi görür; arkaya doğru sürüklenen azınlık taşıyıcıları, fotoakıma katkıda bulunabilecekleri topluluğa yansıtılır."
+id = "1d93b5e2-8b17-4814-b876-309287591349"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Fotovoltaik endüstrisi 2024 yılında yaklaşık olarak kaç metrik ton gümüş tüketti?"
+answer.answer = "7000"
+answer.alternatives = [
+  "7.000",
+  "7000 ton",
+  "7.000 ton",
+  "7000'in üzerinde",
+  "7217",
+]
+context = "PV gümüş talebi 2024'te yaklaşık 7.000-7.200 tona ulaşarak toplam küresel gümüş madeni üretiminin yaklaşık %20'sine (~26.000 ton/yıl) ulaştı ve PV dünya çapında en büyük endüstriyel gümüş tüketicisi oldu."
+id = "a31f646b-4b56-4279-a1ec-9967e006a9df"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Gümüş macunu kayma inceltici (Newtonian olmayan) bir sıvı olarak tanımlanır. Bu, serigrafi baskı sırasında pratikte ne anlama geliyor?"
+prompt.distractors = [
+  "Silecek aşağıya doğru basınç uyguladığında macun daha viskoz hale gelir, bu da onu şeklini elek ağına karşı sıkı bir şekilde tutmaya zorlar ve basınç boşalana kadar açıklıklardan herhangi bir akışı engeller.",
+  "Macun, silecek hızından veya uygulanan basınçtan bağımsız olarak sabit viskoziteyi (~200 Pa·s) korur ve yazıcı ister 100 mm/s'de ister 400 mm/s'de çalışsın, eşit parmak çizgisi genişliği sağlar",
+  "Organik bağlayıcının geri döndürülemez şekilde parçalanması nedeniyle ilk silecek geçişinden sonra macun kalıcı olarak daha az viskoz hale gelir ve tutarlı parmak geometrisini korumak için her bir levha için taze macun gerekir.",
+]
+answer.answer = "Macun, basılı şeklini korumak için dinlenme halindeyken yüksek viskoziteye (200-400 Pa·s) sahiptir, ancak sileceğin kesme kuvveti altında çok daha düşük viskoziteye (20-50 Pa·s) düşerek ince elek açıklıklarından düzgün akışa olanak tanır"
+context = "Kesme inceltme davranışı serigrafi baskı için gereklidir. Dinlenme halindeyken macun, keskin bir çizgi profilini çökmeden tutacak kadar kalındır. Kesme altında viskozite ~10 kat düşerek 20 μm kadar dar açıklıklardan akışı mümkün kılar."
+id = "b087820b-ac61-4b8e-ad84-a8aa01d744bf"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Modern (2025) bir güneş hücresindeki serigrafi baskılı ön temas parmağının yaklaşık genişliği nedir?"
+answer.answer = "25-30 mikron"
+answer.alternatives = [
+  "25 mikron",
+  "30 mikron",
+  "25-40 mikron",
+  "20-30 mikron",
+  "30 mikron",
+  "25 mikron",
+]
+context = "Modern serigrafi baskı, 2015'te ~50 μm'den 25-40 μm'lik parmak çizgilerine ulaşıyor. Daha dar parmaklar, gölgeleme kaybını ve gümüş tüketimini azaltır."
+id = "b0199a02-d68d-49b0-952d-b8f8e387ce09"

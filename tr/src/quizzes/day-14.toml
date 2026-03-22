@@ -1,0 +1,122 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Telleme öncesinde güneş pillerinin ikiye bölünmesi neden şeritleme şeritlerindeki dirençli güç kayıplarını yaklaşık %75 oranında azaltır?"
+prompt.distractors = [
+  "Yarım kesilmiş hücreler iki kat voltaja sahiptir, bu nedenle şerit daha düşük empedansla daha fazla voltaj taşır ve P = V²/Z hesaplamalarına göre bakırdaki termal yayılımı dört kat azaltır.",
+  "Yarı kesilmiş hücreler yarı uzunlukta şeritler kullanır ve direnç uzunlukla doğrusal olarak ölçeklendiğinden (R = ρL/A), her şeritteki toplam I²R kaybı paralel kablolama avantajıyla birleşerek %50 oranında düşer.",
+  "Yarı kesilmiş hücreler, azaltılmış kenar rekombinasyonu nedeniyle daha yüksek bir doldurma faktöründe çalışır; bu, maksimum güç noktasında daha fazla gücün çekildiği ve ara bağlantılarda ısı olarak daha az enerjinin dağıtıldığı anlamına gelir.",
+]
+answer.answer = "Yarı kesilmiş hücreler, tam boyutlu hücrelerin yarısı kadar akım üretir çünkü akım alanla birlikte ölçeklenirken voltaj aynı kalır. Dirençli kayıplar I²R ile ölçeklendiğinden, akımın yarıya indirilmesi I² terimini dört kat azaltır ve şerit kayıplarını %75 oranında azaltır."
+context = "Bu, I²R güç kaybı ilişkisinin doğrudan bir uygulamasıdır. Akım yarıya indirilir (~14A'dan ~7A'ya), dolayısıyla I² 4 kat düşer, bu da şeritlerdeki direnç kayıplarının yaklaşık %75 oranında azalması anlamına gelir. Hücre başına voltaj değişmeden kalır."
+id = "cbfbe8e2-ce84-4ea6-8e0c-d7aa23e28110"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "EVA (etilen-vinil asetat) kapsülleyiciyle ilgili sektörü POE alternatiflerine yönlendiren temel kimyasal sorun nedir?"
+prompt.distractors = [
+  "EVA, polimer omurgasını kısa oligomerlere bölen, hücre yüzeyine göç eden ve 10 yıl boyunca gelen ışığın %3-5'ini bloke eden yansıtıcı bir film oluşturan UV- indüklü zincir kesilmesine uğrar.",
+  "EVA'ın peroksit çapraz bağlama maddeleri, 60°C'nin üzerindeki çalışma sıcaklıklarında yavaş yavaş ayrışır, gümüş şebeke parmaklarını oksitleyen serbest radikalleri serbest bırakır ve ilk on yıl içinde seri direnci %15-25 oranında artırır.",
+  "EVA hacimsel olarak %2-4 oranında şişmeye neden olan nemi emer, kapsülleyiciyi cam yüzeyinden ayıran mekanik stres oluşturur ve yoğuşmanın biriktiği ve temas noktalarını aşındırdığı boşluklar oluşturur.",
+]
+answer.answer = "EVA, vinil asetat gruplarının hidrolizi yoluyla yavaşça ayrışır, gümüş şebeke parmakları, hücre metalizasyonu ve özellikle HJT hücrelerinde kullanılan şeffaf iletken oksit (TCO) katmanları için aşındırıcı olan asetik asit açığa çıkarır ve 10-15 yıl sonra bozulmaya neden olur."
+context = "Asetik asit üreten vinil asetat gruplarının hidrolizi EVA'nin temel zayıflığıdır. Bu, özellikle aside duyarlı TCO katmanlara sahip HJT hücreleri için ve hidroliz reaksiyonunun hızlandığı sıcak nemli iklimlerde problemlidir."
+id = "3522340e-1e29-4bbf-b436-8ef497e6c149"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Vakumlu laminasyon sırasında tahliye adımının neden enkapsülan erime sıcaklığına ulaşmadan tamamlanması gerekiyor?"
+prompt.distractors = [
+  "Kapsülün çapraz bağlama maddeleri 120°C'nin üzerindeki sıcaklıklarda ayrışır ve ayrışma sırasında hala oksijen mevcutsa, serbest radikaller polimer zincirleri yerine O₂ ile reaksiyona girer, bu da tamamlanmamış kürlenmeye ve jel içeriğinin %50'nin altına düşmesine neden olur.",
+  "Cam ve kapsülleyici farklı termal genleşme katsayılarına sahiptir ve kalan hava basıncı, katmanlar arasında tekdüze termal teması önleyerek modül boyunca farklı kürlenmeye neden olan ±8°C'yi aşan sıcaklık gradyanları oluşturur.",
+  "Sekme şeritleri ve hücre baraları arasındaki lehim bağlantıları, aynı anda hem ısıya hem de atmosferik basınca maruz kalırsa yeniden akabilir, bu da şeritlerin konumunun 1-2 mm kaymasına ve dirençli temas arızalarına neden olabilir.",
+]
+answer.answer = "Kapsülleyici eridiğinde ve aktığında katmanlar arasında hava kalırsa, kabarcıklar halinde kalıcı olarak sıkışıp kalır. Bu kabarcıklar yerel sıcak noktalar, nem giriş noktaları ve modül performansından ve ömründen ödün veren optik kusurlar oluşturur."
+context = "Kapsülleyici eriyip aktığında, kalan hava ceplerinin etrafını kapatarak onları kalıcı olarak hapseder. Polimer akışkan hale gelmeden önce tüm havanın çıkarılması için ilk önce vakum (0,5-1 mbar) oluşturulmalıdır. Kabarcıklar modül katilleri olarak kabul edilir."
+id = "9a0a422f-d672-4d5f-a5ac-a6e45e99e117"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Modern güneş modülleri, %100'ü aşan bir hücre-modül (CTM) güç oranına nasıl ulaşabilir ve bireysel çıplak hücrelerinin toplamından daha fazla güç üretebilir?"
+prompt.distractors = [
+  "Kapsülleyici malzeme, hava kapsülleyici arayüzündeki toplam dahili yansıma yoluyla dağınık ışığı hücreler üzerinde yoğunlaştıran bir dalga kılavuzu görevi görür ve her hücredeki ışınımı olay seviyesinin %1,5-2 üzerinde etkili bir şekilde artırır.",
+  "Yarım kesilmiş modüllerdeki seri paralel kablolama konfigürasyonu, hücreler arasındaki akım uyumsuzluğunu azaltır, modülün her bir hücrenin bireysel maksimum güç noktasına daha yakın çalışmasına ve tipik olarak kaybedilen gücün %1-2'sini geri kazanmasına olanak tanır.",
+  "Alüminyum çerçeve, hücre sıcaklığını çıplak hücrelerin çalışabileceğinden 2-3°C daha düşük tutan bir termal ısı emici görevi görür ve silikon hücreler soğutma derecesi başına yaklaşık %0,4 verimlilik kazandığından, bu termal fayda %1-2 çıktı sağlar.",
+]
+answer.answer = "Hücre boşlukları arasındaki beyaz arka tabakaya çarpan ışık, cam yüzeye doğru yukarı doğru yansır ve bu da onu tamamen dahili olarak bitişik hücrelere geri yansıtır. Ön yüzey yansımasını azaltan cam üzerindeki yansıma önleyici kaplamalarla birleştirilen bu optik kazanımlar, aksi halde boşa harcanan fotonları temizler."
+context = "Işık yakalama efektleriyle %100,5-102'lik CTM oranlarına ulaşılır: hücre boşlukları, arka tabaka yansıması ve camın iç yansıması, hücreleri kaçıracak fotonları kurtaran optik geri dönüşüm yolları oluşturur. AR kaplamalar ön yüzey kayıplarını daha da azaltır."
+id = "3972c051-04cd-4d41-ae00-9416203c3e62"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "POE kapsülleyicinin EVA ile karşılaştırıldığında yaklaşık su buharı iletim hızı avantajı nedir? ('X kat daha düşük' veya 'X kat daha dayanıklı' olarak ifade edin)"
+answer.answer = "7 kez"
+answer.alternatives = [
+  "yedi kez",
+  "7x",
+  "7 kat daha düşük",
+  "yedi kat daha düşük",
+  "7 kat daha dayanıklı",
+]
+context = "POE'nin su buharı iletim hızı (WVTR), EVA'ninkinden kabaca yedi kat daha düşüktür; bu da onu, özellikle HJT hücreleri ve iki yüzeyli cam-cam modüller için kritik olan nem koruması açısından önemli ölçüde üstün kılar."
+id = "a6e254d8-3c33-4d3c-8119-9d719c5e112f"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "2018-2020'deki güneş enerjisi arka tabakası kalite krizinin sonucu neydi ve arızalı ürünleri güvenilir olanlardan hangi maddi özellikler ayırdı?"
+prompt.distractors = [
+  "Geri dönüştürülmüş PET çekirdekleri kullanan arka sayfalar UV radyasyonu emdi ve zamanla elektriksel olarak iletken hale geldi; bu durum, invertör güvenlik sistemlerini tetikleyen topraklama arızaları oluşturdu ve etkilenen kurulumlarda sistem kullanılabilirliğini %15-30 oranında azalttı.",
+  "Çapraz bağlanmamış EVA yapışkan katmanlarla üretilen arka tabakalar, termal döngüden sonra bağlanma mukavemetini kaybederek, bağlantı kutularını su girişine maruz bırakan sistematik katmanlara ayrılmaya neden oldu ve Avrupa çatı üstü kurulumlarında yaygın ark hatası yangınlarını tetikledi.",
+  "DuPont Tedlar yerine Çin üretimi PVDF (poliviniliden florür) kullanan arka tabakalar, alüminyum çerçevelerle reaksiyona giren, montaj yapılarını zayıflatan ve yüksek rüzgarlı bölgelerde modüllerin ayrılmasına yol açan galvanik korozyona neden olan artık katalizörler içeriyordu.",
+]
+answer.answer = "Standartların altında floropolimer olmayan arka tabakalara sahip milyonlarca modül, 5-8 yıl içinde çatlama, sararma ve katmanlara ayrılma yaşadı; bu da hücrelerin neme maruz kalmasına ve güvenlik testlerinin başarısız olmasına neden oldu. Kritik ayrım, DuPont'un Tedlar'ı (PVF) gibi floropolimer katmanlarının varlığı veya yokluğuydu."
+context = "Arka tabaka krizi Solar'ın en pahalı kalite olaylarından biriydi. Floropolimer olmayan alternatifler (PPE — PET/PET/EVA gibi), 25+ yıl için derecelendirilen floropolimer bazlı arka sayfalardan (TPT — Tedlar/PET/Tedlar) çok daha hızlı bozundu. 3-7 $/m²'lik maliyet tasarrufu, feci derecede yanlış bir ekonomi olduğunu kanıtladı."
+id = "de476309-9c6b-4bc5-84a9-33f54d200654"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (13. Gün) IV eğri testi sırasında fabrikalar neden hücreleri yalnızca verimliliğe göre sıralamak yerine birden fazla parametreye (I_sc, V_oc ve FF bağımsız olarak) göre sıralıyor?"
+prompt.distractors = [
+  "Verimlilik tek başına hücrenin termal katsayı davranışını yakalamaz ve eşleşen I_sc'ye sahip ancak farklı sıcaklık katsayılarına sahip hücreler, modül sıcaklığı 25°C STC referans noktasının üzerine çıktıkça gerçek dünya performansında farklılık gösterir.",
+  "Farklı hücre mimarileri (PERC vs TOPCon) temelde farklı mekanizmalar yoluyla verimlilik üretir; bu nedenle, tek bir modüldeki mimarilerin karıştırılması, hücre seviyesinde ters öngerilim hasarını önlemek için tüm elektriksel parametrelerin eşleştirilmesini gerektirir.",
+  "Düzenleyici standartlar (IEC 61215), üreticilerin sertifikasyon için her parametreyi bağımsız olarak izlemesini ve raporlamasını zorunlu kılar ve tek parametreli olarak sıralanmış hücrelerden bir araya getirilen modüller, gerekli termal döngü ve nemli ısı yeterlilik testlerini geçemez.",
+]
+answer.answer = "İki hücre, farklı akım, voltaj ve doldurma faktörü kombinasyonları yoluyla aynı verimliliğe sahip olabilir. Yüksek akım/düşük gerilim hücresini aynı seri dizideki düşük akım/yüksek gerilim hücresiyle karıştırmak akım uyumsuzluğu yaratır ve dizi en zayıf hücrenin akımıyla sınırlanır."
+context = "Bir seri dizide tüm hücrelerin aynı akımı geçirmesi gerekir. Hücreler yalnızca verimlilik açısından eşleşiyorsa ancak farklı I_sc değerlerine sahipse, en düşük akımlı hücre tüm diziyi sınırlar. Çok parametreli sıralama, modül düzeyinde performansı öldüren bu uyumsuzluğu önler."
+id = "3c950987-f070-4f73-aebc-38f944752d9d"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (12. Gün) Shockley-Queisser limiti, tek eklemli silikon güneş hücresinin maksimum teorik verimliliğini yaklaşık %33,7 olarak belirler. Kayıp enerjinin en büyük payını oluşturan birincil kayıp mekanizması nedir?"
+prompt.distractors = [
+  "Ağır katkılı yayıcı bölgedeki burgu rekombinasyonu, fotojenlenmiş taşıyıcıların yaklaşık %20'sinin kontaklara ulaşmadan önce ışınımsız olarak yeniden birleşmesine neden olur ve enerjilerini elektrik akımı yerine kafes titreşimlerine dönüştürür.",
+  "Silikon-hava arayüzündeki yansıma kayıpları, gelen fotonların yaklaşık %30-35'ini hücreye girmeden önce reddeder ve yansıma önleyici kaplamalarda bile ışığın %3-5'i hala kullanılabilir spektrumda yansıtılır.",
+  "Kontaklardaki taşıyıcı termalizasyonu, sıcak elektronlar metal-yarı iletken arayüzündeki kafes sıcaklığına soğuduğunda 0,3-0,4V'luk bir voltaj düşüşüne neden olur ve emilen enerjinin kabaca %15'i baralarda Joule ısınması olarak dağıtılır.",
+]
+answer.answer = "Termalizasyon kayıpları: Silikonun 1,12 eV bant aralığının üzerinde enerjiye sahip fotonlar, elektron-delik çiftleri oluşturur, ancak bant aralığının üzerindeki fazla enerji, ısı olarak hemen kaybolur. Mavi fotonlar (3,1 eV), enerjilerinin yaklaşık %64'ünü bu şekilde kaybederler ve gelen güneş enerjisinin kabaca %47'sini oluştururlar."
+context = "Termalleştirme, Shockley-Queisser çerçevesindeki en büyük kayıp mekanizmasıdır. Yüksek enerjili fotonlar, bant kenarının çok üzerindeki taşıyıcıları harekete geçirir, ancak bu 'sıcak taşıyıcılar' pikosaniyeler içinde bant kenarına kadar soğuyarak fazla enerjiyi fononlara (ısı) dönüştürür."
+id = "a7dbda5f-2ba2-4264-b221-493b9a457143"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (5. Gün) Modern elmas tel testereler külçe dilimleme sırasında neden polietilen glikol (PEG) ve sudan oluşan bir bulamaç kullanıyor ve tipik bir 120μm elmas tel ne kadar çentik kaybı üretiyor?"
+prompt.distractors = [
+  "PEG-su bulamacı, önceden dokulu bir testere hasarı katmanı oluşturmak için kesme sırasında silikon yüzeyini kimyasal olarak aşındırır ve sonraki dokulandırma adımı süresini %40 azaltır. 120μm telde tipik çentik kaybı kesim başına yaklaşık 90-100μm'dir.",
+  "PEG-su bulamacı, ince tabakalarda kalınlık değişimine neden olabilecek telin termal genleşmesini önlemek için elmas teli 25°C'lik sabit bir sıcaklıkta tutar. 120μm telde tipik çentik kaybı kesim başına yaklaşık 180-200μm’dir.",
+  "PEG-su bulamacı yağlama sağlar ve teli ve iş parçasını soğuturken silikon artıklarını (talaş) kesme bölgesinden uzaklaştırır. 120μm telde tipik çentik kaybı kesim başına yaklaşık 120-130μm'dir, bu da külçenin yaklaşık %45'inin atık haline geldiği anlamına gelir.",
+]
+answer.answer = "PEG-su bulamacı hem soğutucu hem de yağlayıcı olarak görev yapar, sürtünmeden kaynaklanan ısıyı giderir ve tel sıkışmasını önlemek için silikon talaşını dar kesme kanalından temizler. 120μm'lik bir elmas tel, yaklaşık 120-130μm'lik bir çentik kaybı üretir; bu da neredeyse tel çapına eşittir."
+context = "Bulamacın ikili rolü (soğutma ve döküntü giderme) kesim kalitesi açısından kritik öneme sahiptir. Kerf kaybı yaklaşık olarak tel çapıyla eşleşir; bu, 120μm'lik bir telin kesim başına yaklaşık 120-130μm silikonu yok ettiği anlamına gelir. Modern daha ince teller (≤100μm) bu israfı azaltarak 100μm çentiklere doğru iter."
+id = "8e2b3c06-f119-4eb6-9770-9f45828fcdd9"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (3. Gün) Siemens'in polisilikon saflaştırma sürecinde, silikonun saf silikon olarak geri biriktirilmeden önce dönüştürüldüğü temel ara kimyasal bileşik nedir?"
+answer.answer = "triklorosilan"
+answer.alternatives = [
+  "TCS",
+  "HSiCl3",
+  "SiHCl3",
+  "trikloro silan",
+]
+context = "Siemens prosesi, metalurjik kalitede silikonu, damıtma yoluyla saflaştırılabilen triklorosilan (HSiCl3/SiHCl3) gazına dönüştürür. Saflaştırılmış TCS daha sonra ultra saf polisilikon biriktirmek için ~1100°C'de sıcak silikon çubuklar üzerinde ayrıştırılır."
+id = "41afb1f1-7ed2-450c-93db-d4d2f8fcd25c"

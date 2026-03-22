@@ -1,0 +1,121 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Koyu renkli tarım toprağının (albedo ~0,15) üzerine iki yüzeyli bir güneş modülü yerleştirilir ve ardından zemin beyaz çakılla (albedo ~0,65) kaplanır. Albedo ve arka taraf kazanımı arasındaki ilişkiye dayanarak, arka tarafta yaklaşık olarak ne kadar ilave güç üretimi beklersiniz?"
+prompt.distractors = [
+  "Yaklaşık %5-8 daha fazla arka taraf üretimi, çünkü her 0,1 albedo artışı kabaca %1 arka güç ekler ve 0,50 albedo farkı, arka hücre doyma etkileriyle sınırlı mütevazı bir doğrusal kazanç üretir.",
+  "Yaklaşık %30-35 daha fazla arka taraf oluşumu, çünkü albedo ve arka güç arasındaki ilişki yüksek albedo değerlerinde üsteldir ve beyaz yüzeyler modüle doğru orantısız aynasal yansıma üretir.",
+  "Yaklaşık %2-3 daha fazla arka taraf üretimi, çünkü arka tarafın katkısının çoğu eğik açılardan giren dağınık gökyüzü radyasyonundan geliyor ve yerden yansıyan ışık, toplam arka ışınımın yalnızca küçük bir kısmını oluşturuyor.",
+]
+answer.answer = "Yaklaşık %15-25 daha fazla arka taraf üretimi, çünkü albedodaki her 0,1'lik artış, kabaca %3-5 ek arka taraf gücüne katkıda bulunur ve bu aralıkta albedo bileşiklerindeki 0,50 fark (0,15 ila 0,65)."
+context = "Araştırmalar, her 0,1 albedo artışının arka tarafta %3-5 daha fazla güç sağladığını gösteriyor. 0,15'ten 0,65'e (0,50'lik bir artış) çıkmak, kabaca %15-25 oranında ek arka nesil üretecektir. Beyaz yansıtıcı yüzeyler çift yüzeyli kazanımı %20'ye kadar artırabilir."
+id = "59cdf99f-1d19-4e3f-8e73-a6e3da2599fc"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Neden cam-cam (çift cam) çift yüzeyli modüller artık şebeke ölçekli çift yüzeyli kurulumlar için cam-şeffaf arka tabaka tasarımlarına üstün geliyor?"
+prompt.distractors = [
+  "Cam-cam modüller, şeffaf arka tabaka tasarımlarına göre metrekare başına %15-20 daha hafiftir, izleyiciler üzerindeki yapısal yükü azaltır ve megawatt başına daha az kazık temel ile daha uzun tork tüpü açıklıklarına olanak tanır.",
+  "Şeffaf arka tabakalar UV dalga boylarını camdan daha verimli şekilde iletir (%50'ye karşı %40), bu da EVA sararmayı ve hücre bozulmasını hızlandırır ve cam camı 30 yıllık garantiler için geçerli tek seçenek haline getirir.",
+  "Cam-cam modüller, potansiyel kaynaklı bozulmayı (PID) tamamen ortadan kaldıran çerçevesiz kenar yalıtımlı yapıyı kullanabilirken şeffaf arka tabaka modülleri, voltaj farklılıkları oluşturan topraklanmış çerçeveler gerektirir.",
+]
+answer.answer = "Cam-cam modüller daha yüksek arka taraf ışık geçirgenliği (şeffaf arka tabakalar için ~%94'e karşı ~%89), üstün uzun vadeli nem direnci ve daha iyi belirlenmiş dayanıklılık verileri sunarak 30 yıllık proje ömrü boyunca iki yüzeyli kazancı en üst düzeye çıkarır."
+context = "Çift cam, şeffaf arka tabakalar için ~%89'a karşılık ~%94 arka geçirgenlik sağlar; bu, arka hücrelere daha fazla ışığın ulaşması anlamına gelir. Cam aynı zamanda daha kanıtlanmış bir nem bariyeri ve daha uzun bir güvenilirlik geçmişi sağlar; bu da güvenilirlik açısından kritik öneme sahiptir."
+id = "c9bb37eb-0377-49e0-8350-08af7939f7b9"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Tek eksenli güneş takip cihazları bağlamında 'geri izleme' nedir ve neden kullanılır?"
+prompt.distractors = [
+  "Geri izleme, güneş öğle saatlerinde izleyicinin dönüş yönünü tersine çevirir, böylece modüller öğleden sonra güneşi batıya doğru takip etmek yerine güneye bakar ve tek bir hücre dizisinde sürekli yüksek ışınım maruziyetinden kaynaklanan termal stresi azaltır.",
+  "Geri izleme, daha dağınık atmosferik radyasyonu yakalamak için sabahın erken saatlerinde ve öğleden sonra geç saatlerde izleyicinin eğim açısını güneş açısının ötesinde artırır ve dağınık fotonlardan daha yüksek enerji hasadı için doğrudan ışın kayıplarını değiştirir.",
+  "Geri izleme, rüzgar hızları 15 m/s'yi aştığında modülleri geçici olarak düz bir yatay konuma yerleştirir ve ardından koşullar normale döndüğünde hızla optimum izleme açısına dönerek mekanik yorulma hasarına karşı koruma sağlar.",
+]
+answer.answer = "Geri izleme, güneşin az olduğu dönemlerde izleyicinin eğim açısını azaltır, böylece her sıranın gölgesi komşu sıradan yetersiz kalır ve her bir sıradaki doğrudan ışın yakalamada küçük bir azalma pahasına sıralar arası gölgelemeyi ortadan kaldırır."
+context = "Güneş alçaldığında, agresif takip sıraların birbirini gölgelemesine neden olur. Geri izleme, gölgelerin çakışmasını önlemek için eğimi bilinçli olarak azaltır. Her sıradaki küçük kosinüs kaybı, komşu sıralarda meydana gelebilecek gölgeleme kaybından çok daha azdır."
+id = "51c7256b-bc38-4288-a976-da9c824da796"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Çift yüzeyli güneş modülleri neden kış aylarında yüksek enlem kurulumlarında orantısız bir şekilde iyi performans gösteriyor?"
+prompt.distractors = [
+  "Silikonun bant aralığı soğuk kış sıcaklıklarında daralır, emme kenarını daha uzun dalga boylarına kaydırır ve kırmızıya kayan kış spektrumunun daha geniş bir bölümünü yakalamasına olanak tanıyarak hem ön hem de arka hücre verimliliğini %3-5 artırır.",
+  "Kış bulut örtüsü, cama doğrudan ışın radyasyonundan daha verimli bir şekilde nüfuz eden, ağırlıklı olarak kısa dalga boylu dağınık ışık üretir ve ön yüzey Fresnel yansıma kayıplarını azaltarak arka hücrelere optik bağlantıyı artırır.",
+  "Daha düşük kış güneşi açısı, güneş ışığının geçtiği hava kütlesini arttırır, bu da spektrumu kırmızılaştırır ve tercihen ön p-tipi katmanlardan daha güçlü uzun dalga boyu kuantum verimliliğine sahip olan arka taraftaki n-tipi hücre mimarilerini harekete geçirir.",
+]
+answer.answer = "Kar örtüsü zemin albedosunu 0,80-0,90'a iterek arka taraftaki ışınımı önemli ölçüde artırırken, düşük kış güneşi açısı dağınık ve yansıyan ışığın daha büyük bir kısmını modülün arka yüzeyine yönlendirir."
+context = "Kışın yüksek enlemlerde kar, son derece yüksek albedo (0,80+) oluşturur ve düşük güneş açısı, daha fazla yansıyan ve dağınık ışığın arkaya ulaşması anlamına gelir. İskandinav bölgelerinde Ocak ayında iki yönlü kazanç %30'u aşabilir ve bu da kısa günlerin kısmen telafi edilmesini sağlayabilir."
+id = "8f441cea-cf75-4204-9436-3a1cb8ffd804"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Amerika'nın Güneybatısı veya Şili'nin Atacama'sı gibi yüksek DNI konumlarında sabit eğimli bir sistem üzerinden tek eksenli bir izleyicinin tipik enerji kazanımı yüzdesi nedir?"
+answer.answer = "25%"
+answer.alternatives = [
+  "25",
+  "%25'in üzerinde",
+  ">%25",
+  "%25-30",
+  "yüzde 25",
+]
+context = "Doğrudan normal ışınımın yüksek olduğu konumlarda, tek eksenli izleyiciler, sabit eğimli kurulumlara göre %25'i aşan kazançlar sağlar. Genel aralık %15–25'tir ve yüksek DNI bölgeleri üst uçta yer alır."
+id = "3b752283-ac6e-4e87-b206-6278e14abf52"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Çift eksenli izleme, sabit eğime göre %30-45 enerji kazancı sağlamasına rağmen neden kamu hizmeti ölçekli güneş enerjisi için önemli bir pazar payı elde edemedi?"
+prompt.distractors = [
+  "Çift eksenli izleyiciler, işaretleme doğruluğunu korumak için sürekli GPS senkronizasyon ve yüksek bant genişlikli iletişim ağlarına ihtiyaç duyar; bu da, uzun vadeli proje getirilerini aşındıran yinelenen bağlantı maliyetlerine 0,08–0,12 ABD Doları/W ekler.",
+  "Çift eksenli hareketten kaynaklanan ek mekanik titreşim, geniş formatlı modüllerde hızlandırılmış hücre mikro çatlamasına neden olur ve operatörleri, izleme enerjisi avantajını ortadan kaldıran daha küçük, daha az verimli paneller kullanmaya zorlar.",
+  "Çift eksenli izleyiciler, hızlı bir şekilde değişen, oldukça yoğun zemin gölgeleri oluşturarak, iki yüzeyli modüllerde herhangi bir arka taraf aydınlatmasını önler ve bunları, baskın iki yüzeyli modül teknolojisiyle uyumsuz hale getirir.",
+]
+answer.answer = "0,12–0,18 ABD Doları/W tutarındaki kurulu maliyet primi, tek eksene göre 3–4 kat daha yüksektir, arazi kullanım yoğunluğunu azaltan daha geniş aralık gerektirirler ve ek mekanik karmaşıklık bakım yükünü artırır; tek eksene göre ekstra %10–15 kazanç bu maliyetleri nadiren karşılar."
+context = "Çift eksen, tek eksene göre yalnızca %10-15 enerji ekler ancak donanım açısından 3-4 kat daha fazla maliyete sahiptir, karşılıklı gölgelemeyi önlemek için daha fazla araziye ihtiyaç duyar ve daha fazla mekanik arıza moduna sahiptir. Ekonomi, fayda ölçeği için tek ekseni tercih ediyor."
+id = "358e7f85-f96a-4b71-8714-695d5111c85b"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (20. Gün) IEC 61215 nemli ısı testi sırasında modüller 1.000 saat boyunca 85°C ve %85 bağıl neme maruz bırakılır. Bu testin hızlandırmak için tasarlandığı birincil bozunma mekanizması nedir?"
+prompt.distractors = [
+  "Silikon hücreler ve cam arasındaki termal genleşme uyumsuzluğu, kristal tanecik sınırları boyunca yayılan ilerleyici hücre çatlamasına neden olur, sonunda bara bağlantılarını keser ve dirençli sıcak noktalar oluşturur.",
+  "UV-enkapsülantın UV-kaynaklı fotodegradasyonu, hücre yüzeyindeki yansıma önleyici kaplamayı aşındıran asetik asit buharı üretir ve test süresi boyunca kısa devre akımını kalıcı olarak %5-8 oranında azaltır.",
+  "Ortam sıcaklığı ile 85°C arasında tekrarlanan termal döngü, hücre-şerit arayüzünde lehim bağlantısının yorulmasına neden olur, seri direnci artırır ve ara bağlantı noktalarında mikro çatlaklar geliştikçe doldurma faktörünü azaltır.",
+]
+answer.answer = "Kapsülleyiciden ve arka tabakadan nem girişi, hücre metalizasyonuna saldırır, malzeme arayüzlerinde delaminasyona neden olur ve gümüş şebeke çizgilerinin ve lehim bağlarının elektrokimyasal korozyonunu tetikleyerek elektriksel performansı düşürebilir."
+context = "85/85 nemli ısı testi, neme bağlı bozulmayı hızlandırır; metal temas noktalarında korozyon, kapsülleyici hücre arayüzlerinde katmanlara ayrılma ve potansiyel kaynaklı bozulma. Onlarca yıllık nemli iklim maruziyetini 1000 saatte simüle eder."
+id = "b0cdad04-9f00-466f-b04a-4b0496b7f56b"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (21. Gün) Perovskit kristal yapısını (ABX₃) silikonun sabit elmas kübik kafesine kıyasla güneş hücresi mühendisliği açısından özellikle avantajlı kılan şey nedir?"
+prompt.distractors = [
+  "Perovskit kafes, rekombinasyon aktif kusur alanları oluşturmadan daha yüksek katkı konsantrasyonlarını barındıran daha büyük bir birim hücre hacmine sahiptir ve ağır katkılı filmlerde bile 100 mikrosaniyeyi aşan taşıyıcı ömürlerine izin verir.",
+  "Perovskite'ın katmanlı 2 boyutlu kristal yapısı, absorpsiyon katsayısını toplu malzemelere göre 10 kat artıran doğal kuantum sınırlama etkilerine olanak tanır ve silikon hücrelerde kullanılan ışığı yakalayan dokulara olan ihtiyacı ortadan kaldırır.",
+  "Perovskit yapısı, ferroelektrik polarizasyonu nedeniyle kendiliğinden yerleşik bir elektrik alanı oluşturur; bu, geleneksel bir p-n bağlantısı gerektirmeden yük ayrımını yönlendirir ve cihaz imalatını basitleştirir.",
+]
+answer.answer = "Mühendisler, farklı iyonları A, B ve X bölgelerine değiştirerek bant aralığını yaklaşık 1,2 eV'den 2,3 eV'ye sürekli olarak ayarlayabilir, böylece tek bağlantı hücreleri için optimizasyona veya tandem mimarilerde hassas spektral bölünmeye olanak sağlanır."
+context = "ABX₃ yapısının bileşimsel esnekliği onun belirleyici avantajıdır. Halojenür (X = I, Br, Cl) veya organik katyonun (A = MA, FA, Cs) değiştirilmesi, silikonun sabit 1,12 eV bant aralığının aksine bant aralığını geniş bir aralıkta ayarlar."
+id = "8ac34d3d-107a-423a-9dd8-7d36640320c0"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (14. Gün) Standart modül yapımında güneş pilleri ile cam arasında kapsülleyici olarak en yaygın olarak hangi şeffaf polimer malzeme kullanılır?"
+answer.answer = "EVA"
+answer.alternatives = [
+  "etilen-vinil asetat",
+  "etilen vinil asetat",
+  "eva",
+]
+context = "EVA (etilen-vinil asetat), PV modüllerindeki baskın kapsülleyicidir. ~150°C'de cam ile hücreler arasında lamine edilerek, ışık geçişine izin verirken hücreleri koruyan şeffaf bir nem bariyeri oluşturulur."
+id = "c1c69eb3-ea56-4f4d-ac47-b784307451eb"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (9. Gün) TOPCon hücrelerini standart PERC'dan ayıran temel yapısal yenilik nedir ve verimliliği nasıl artırır?"
+prompt.distractors = [
+  "TOPCon, ön gümüş şebekeyı, gölgeleme kayıplarını %3,5'ten %1,8'e düşüren ve metalizasyon maliyetlerini %40 oranında azaltan, hem verimliliği hem de üretim marjını artıran bakır kaplamalı bir temas modeliyle değiştirir.",
+  "TOPCon, PERC'nin alüminyum BSF'sinden daha güçlü bir yerleşik arka yüzey alanı oluşturan kademeli katkılama profiline sahip daha kalın bir levha (200 μm - 160 μm) kullanır ve ek işlem gerektirmeden voltajı 15 mV artırır.",
+  "TOPCon, ön yüzeyde yansıma önleyici kaplama olarak silikon nitrürün yerini alan dokulu bir çinko oksit tabakası biriktirerek 300-1200 nm arasında daha geniş bir spektral kapsama alanı elde eder ve fotoakımı 0,8 mA/cm² artırır.",
+]
+answer.answer = "TOPCon, arka yüzeye katkılı polisilikon ile kaplanmış ultra ince (~1,5 nm) tünel açıcı bir silikon oksit katmanı ekleyerek, arka rekombinasyonu önemli ölçüde azaltan ve Voc'yi 720 mV'nin üzerine çıkaran taşıyıcı seçici pasifleştirmeyi mümkün kılar."
+context = "TOPCon'un tanımlayıcı özelliği, tünel oksit pasifleştirilmiş temasıdır - elektron tünellemesine izin verirken arka yüzeyi pasifleştiren ~1,5 nm SiOx katmanı artı n+ polisilikon. Bu, rekombinasyon kayıplarını azaltır ve açık devre voltajını yükseltir."
+id = "ccbff3b2-f39f-4d11-850b-54251e5fb316"

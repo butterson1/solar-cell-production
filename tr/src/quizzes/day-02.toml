@@ -1,0 +1,71 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Kütle olarak yer kabuğunun yüzde kaçı silikondur?"
+prompt.distractors = [
+  "%8,1 — oksijen ve alüminyumdan sonra üçüncü",
+  "%45,2 — onu genel olarak en bol bulunan element yapıyor",
+  "%14,6 — kabaca demir ve magnezyumun birleşimine eşit",
+]
+answer.answer = "%27,7 — oksijenden sonra en bol bulunan ikinci element"
+context = "Silikon, yer kabuğunda kütlece %27,7 ile oksijenden sonra en çok bulunan ikinci elementtir. Alüminyumdan, demirden ve diğer tüm elementlerden daha yaygındır."
+id = "38569e97-7beb-4b9a-9944-3f2627bce13e"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Neden %99 saf metalurjik kalitede silikon doğrudan güneş pillerinde kullanılamıyor?"
+prompt.distractors = [
+  "Geriye kalan %1'lik kısım, kristal içinde yalıtkan oksit katmanları oluşturan oksijenden oluşur.",
+  "Bu seviyedeki karbon safsızlıkları, akım akımını engelleyen silisyum karbür kalıntıları oluşturur",
+  "MG-Si'nin kristal yapısı çok kristallidir ve güneş pilleri tek kristalli malzeme gerektirir",
+]
+answer.answer = "Demir gibi metalik safsızlıklar, milyarda parça konsantrasyonlarında bile yük taşıyıcılarını hapseden rekombinasyon merkezleri oluşturur"
+context = "%99 saflıkta, cm³ başına kabaca 10²⁰ yabancı madde atomu vardır; bu, kasıtlı olarak eklenen ~10¹⁶ katkı atomundan çok daha fazladır. Milyarda 1 parça demir, elektronların ve deliklerin temas noktalarına ulaşmadan önce yeniden birleştiği alanlar oluşturarak hücre verimliliğini yarıya indirebilir."
+id = "6800597c-59eb-4d66-805c-ce92bdf2e74b"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Silikonun damıtma yoluyla gaz fazı saflaştırması için dönüştürüldüğü kimyasal bileşiğin (formül SiHCl₃) adı nedir?"
+answer.answer = "triklorosilan"
+answer.alternatives = [
+  "TCS",
+  "Triklorosilan",
+  "SiHCl3",
+]
+context = "Triklorosilan (SiHCl₃) 31,8°C'de kaynar, bu da sıvı olarak işlenmesini ve ayrımsal damıtma yoluyla saflaştırılmasını kolaylaştırır."
+id = "c080ab42-8c3f-48cc-87e8-8142eb7a8be5"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Geleneksel Siemens prosesi yoluyla bir kilogram polisilikon üretmek için yaklaşık olarak ne kadar elektrik enerjisine ihtiyaç vardır?"
+prompt.distractors = [
+  "25–35 kWh — akışkan yataklı reaktör alternatifiyle karşılaştırılabilir",
+  "120–150 kWh — kilogram başına alüminyum eritme işlemine benzer",
+  "200–300 kWh — titanyum rafine etme enerji gereksinimleriyle eşdeğer",
+]
+answer.answer = "60–80 kWh — öncelikle çubukların uzun biriktirme döngüleri için ~1.100°C'de tutulmasıyla tahrik edilir"
+context = "Siemens prosesi, polisilikon kilogramı başına 60–80 kWh tüketir. Polisilikon tesislerinin ucuz elektriğin yakınında bulunmasının nedeni budur. Akışkan yataklı reaktörler bunu 25–35 kWh/kg'a düşürür ancak daha düşük yüzey saflığı üretir."
+id = "c9a8690b-31dc-477b-a9fd-85a8f4b4e8c9"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Silikonun bant aralığı 1,12 eV'dir. Bu, güneş pilleri için neden önemlidir?"
+prompt.distractors = [
+  "Güneş ışığının en yüksek dalga boyuna (550nm yeşil) uyum sağlayarak foton emilimini maksimuma çıkarır",
+  "Yaygın yarı iletkenler arasında en düşük bant aralığıdır ve en geniş ışık aralığının emilmesine olanak tanır",
+  "Silikonun oda sıcaklığında herhangi bir doping gerektirmeden elektriği iletmesini sağlar",
+]
+answer.answer = "~1,34 eV'lik teorik optimum değere yakındır ve maksimum verimlilik için foton emilimini voltaj çıkışına karşı dengeler."
+context = "Shockley-Queisser sınırı, ~1,34 eV'nin birçok fotonun soğurulması ile yüksek voltajın çıkarılması arasındaki dengeyi maksimuma çıkardığını gösterir. Silikon'un 1,12 eV'si teorik maksimumun ~%95'ini yakalayacak kadar yakındır - şanslı bir tesadüf."
+id = "39484d2f-6a5d-44cf-9815-7298e54b9426"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "~2.000°C'de karbon kullanarak kuvarsiti (SiO₂) metalurjik kalitede silikona indirgemek için ne tür fırın kullanılır?"
+answer.answer = "tozaltı ark ocağı"
+answer.alternatives = [
+  "ark ocağı",
+  "Tozaltı ark ocağı",
+  "elektrik ark ocağı",
+]
+context = "Tozaltı ark fırınları, ~2.000°C'ye ulaşmak için 100.000'den fazla amper taşıyan masif grafit elektrotlar kullanır. MG-Si'nin her tonu 11–13 MWh elektrik gerektirir."
+id = "cff88709-83ad-403d-8ec6-f5e647b53638"

@@ -1,0 +1,124 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "IEC 61215 termal döngü testinde modüller -40°C ile +85°C arasında döngüye tabi tutulur. Bu testin ortaya çıkarmak için tasarlandığı birincil başarısızlık mekanizması nedir?"
+prompt.distractors = [
+  "Aşırı sıcaklık dalgalanmaları altında yansıma önleyici kaplamanın fotodegradasyonu, spektral uyumsuzluğa ve silikon hücrelerde mavi ışık emiliminin kaybına neden olur",
+  "Gümüş atomlarının ön metalizasyon şebekesından silikon kütlesine elektromigrasyonu, azınlık taşıyıcı ömrünü kısaltan rekombinasyon merkezleri oluşturur",
+  "Şönt yollarının akımı yoğunlaştırdığı lokal sıcak nokta bölgelerinde termal kaçak, hücre yanmasına yol açabilecek pozitif geri besleme döngüleri oluşturur",
+]
+answer.answer = "Ara yüzeylerde kayma gerilimi oluşturan, lehim bağlantılarını yoran ve tekrarlanan döngülerde mikro çatlakları yayan malzemeler (silikon, cam, alüminyum, bakır) arasındaki farklı termal genleşme"
+context = "Güneş modülündeki malzemeler çok farklı termal genleşme katsayılarına sahiptir: 2,6×10⁻⁶/°C'de silikon, 9×10⁻⁶/°C'de cam, 23×10⁻⁶/°C'de alüminyum. 125°C'yi kapsayan 200'den fazla döngü, bu uyumsuzluklar lehim bağlantılarını yorar ve çatlakların yayılmasına neden olur."
+id = "71ec3a35-acff-43bd-9182-f0b1d32c12f1"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "IEC 61215 nemli ısı testi, modülleri 85°C'de ve %85 bağıl nemde 1.000 saat boyunca tutar. PVEL'in uzatılmış DH2000 (2.000 saat) testleri neden fiili sektör standardı haline geldi?"
+prompt.distractors = [
+  "DH1000 yalnızca kapsülleyici yapışmayı test ettiğinden ancak arka tabaka polimerlerini zorlamadığından, DH1000'yi geçen modüller dış mekanda kullanıma başladıktan sonraki ilk 5 yıl içinde yine de arka tabaka çatlamasına maruz kalabilir",
+  "Çünkü IEC, 2021'de standartlarını tüm kristal silikon modüller için yeni minimum değer olarak DH2000 gerektirecek şekilde revize etti ve DH1000 artık yalnızca ince film CdTe ve CIGS modül türlerine uygulandı",
+  "Çünkü DH2000 testi, DH1000'de bulunmayan 50 kWh/m²'de bir UV ön koşullandırma adımını devreye sokar ve bu, POE kapsülleyicilerdeki nemle ilgili bozunma yollarını etkinleştirmek için gereklidir",
+]
+answer.answer = "Çünkü DH1000 yaklaşık 10 yıl boyunca orta derecede neme maruz kalmaya karşılık gelir; bu, yıl boyunca yüksek nemin 5-10 yıl içinde arızalara neden olabileceği tropik iklimlerde konuşlandırılan modüller için yetersizdir."
+context = "DH1000 kabaca orta nem koşullarında 10 yılı, tropik koşullarda ise 5 yıldan az süreyi simüle eder. PVEL'nin DH2000'si (ve hatta DH3000), modüllerin Güneydoğu Asya veya Hindistan gibi sıcak, nemli ortamlarda 25 yıl hayatta kalıp kalamayacağını daha iyi tahmin ediyor."
+id = "94c9b622-fbc0-497f-af75-2a5f536ea9ed"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Potansiyel Kaynaklı Bozulma (PID), modül gücünü %30–80 oranında azaltabilir. PID'yi kısmen geri döndürülebilir kılan nedir?"
+prompt.distractors = [
+  "PID tarafından oluşturulan şönt yolları, gece modül sıcaklığı 25°C'nin altına düştüğünde yeniden kristalleşen ve zamanla orijinal p-n bağlantı özelliklerini geri getiren amorf silikondan yapılmıştır.",
+  "PID öncelikle hücrenin kendisinden ziyade EVA kapsülleyicisine zarar verir ve gündüz çalışması sırasında UV radyasyonu, hasarlı polimer zincirlerini yavaş yavaş orijinal yapılarına çapraz bağlar.",
+  "Yansıma önleyici kaplama kalınlığı, PID voltaj stresi altında değişerek spektral tepkiyi değiştirir, ancak sıcak gündüz çalışması sırasındaki termal tavlama, kaplamanın optik özelliklerini eski haline getirir.",
+]
+answer.answer = "Negatif voltaj altında camdan kapsülleyici aracılığıyla hücreye geçen sodyum iyonları, voltaj stresi ortadan kaldırıldığında yavaş yavaş geri çekilerek hücre performansını kısmen eski haline getirebilir."
+context = "PID, yüksek negatif voltaj altında sodyum iyonunun camdan hücreye göç etmesinden kaynaklanır. Gerilim stresi ortadan kaldırıldığında (veya geceleri PID kurtarma kutuları kullanılarak tersine çevrildiğinde), iyonlar geri dönerek kayıp gücün %50-70'ini geri kazanır."
+id = "dc73ccd1-26f6-4d34-982c-8614134e120f"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Pratik saha performansında LeTID'i klasik Işık Kaynaklı Bozulmadan (LID) ayıran nedir?"
+prompt.distractors = [
+  "LeTID yalnızca n-tipi TOPCon ve HJT hücrelerini etkiler çünkü tünel oksit kusurlarından kaynaklanır; klasik LID ise bor-oksijen kompleksi oluşumu nedeniyle p-tipi bor katkılı hücrelere özgüdür",
+  "LeTID yalnızca 200 W/m² ışınımın altındaki düşük ışık koşullarında güç kaybına neden olurken, klasik LID tüm ışınım düzeylerinde meydana gelir ve en çok 1.000 W/m² standart test koşullarında belirgindir",
+  "LeTID, kapsülleyiciye nüfuz eden ve yüzey kusurları oluşturan 350 nm'nin altındaki UV dalga boyları tarafından tetiklenirken klasik LID, bant aralığı enerjisinin üzerindeki herhangi bir foton tarafından etkinleştirilen toplu silikon kusurlarından kaynaklanır.",
+]
+answer.answer = "LeTID, birleşik ışık ve 50°C'nin üzerindeki sıcaklıklar altında aylar ila yıllar boyunca gelişerek %2-6 ek kayba neden olur ve 5-10 yıl içinde yavaş yavaş kendi kendine iyileşir; klasik LID ise ışığa maruz kalmanın ilk saatlerinde meydana gelir"
+context = "Bor-oksijen komplekslerinden elde edilen klasik LID saatler içinde stabilize olur. LeTID, ışık + ısı (>50°C) altında yavaşça etkinleşen, 1.000-3.000 çalışma saatinde zirveye ulaşan ve yıllar içinde yavaşça düzelen ek kayıplara neden olan hidrojenle ilgili kusurları içerir."
+id = "00ed4932-6d26-4849-a0eb-4abeb7044822"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "NREL'ın meta-analizine göre, sahadaki kristalin silikon güneş modüllerinin ortalama yıllık bozulma oranı nedir?"
+answer.answer = "0.5%"
+answer.alternatives = [
+  "yıllık %0,5",
+  "%0,5/yıl",
+  "%0,50",
+]
+context = "NREL'nin 11.000'den fazla bozunma oranını kapsayan dönüm noktası niteliğindeki meta-analizi, kristalin silikon modüller için yılda yaklaşık %0,5'lik bir ortalama buldu; ancak bu, ılıman iklimlerde %0,2'den sıcak, nemli ortamlarda %1'in üzerine kadar değişir."
+id = "6cdd2826-bfd1-4162-9d23-f715619a2e5b"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Güneş modülü yüzeylerinde 'salyangoz izlerine' ne sebep olur ve bunlar modülün sağlığı hakkında ne gösterir?"
+prompt.distractors = [
+  "Cam kaplamadaki nitrojen bileşikleriyle beslenen modül yüzeyindeki mantar büyümesi, yüksek gübre konsantrasyonlarına sahip tarımsal ortamlara uzun süre maruz kaldığına işaret ediyor",
+  "Yoğuşma filmlerinden akan kaçak akımlar nedeniyle cam yüzeyinin elektrolitik aşındırılması, modülün kenar contasındaki yalıtım arızasını ve olası topraklama hatası risklerini gösterir",
+  "Hücre boşluklarından ön yüzeye çıkan arka tabaka polimerinin termal ayrışması, modülün 90°C'nin üzerinde sürekli sıcaklıklara maruz kaldığını gösterir",
+]
+answer.answer = "EVA ayrışmasından kaynaklanan nem ve asetik asit, hücredeki mikro çatlaklara nüfuz eder ve gümüş metalizasyonuyla reaksiyona girerek kahverengi gümüş asetat/karbonat bileşikleri oluşturur, bu da altta yatan hücre hasarına ve korozyona işaret eder"
+context = "Salyangoz izleri, asetik asit (EVA parçalanmasından) ile gümüş macunu arasındaki mikro çatlak yolları boyunca meydana gelen kimyasal reaksiyonların neden olduğu kahverengi renk bozukluklarıdır. Bunlar hücre çatlaklarının görünür bir göstergesidir ve %5-10 güç kaybıyla ilişkilidir."
+id = "fa61ade4-977a-4f2e-8cf2-6c4245917714"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (19. Gün) Elektrolüminesans (EL) görüntülemede, şant kusurları, karanlık halelerle çevrelenmiş parlak noktalar olarak mantıksız bir şekilde görünür. Bu modeli ne açıklıyor?"
+prompt.distractors = [
+  "Şöntler, InGaAs kameranın parlak sinyal olarak kaydettiği yakın kızılötesi aralıkta termal radyasyon yayar; çevredeki karanlık hale ise sıcaklığın neden olduğu bant aralığı daralmasından kaynaklanır.",
+  "Parlak noktalar metalik şant malzemesinden gelen yansımalardır ve koyu haleler kusurlu bölge etrafındaki gümüş macun oluşumunun yüzey topolojisi tarafından oluşturulan gölgelerdir.",
+  "Şöntler yerel direnci artırarak kusur boyunca voltajı yükseltir ve foton emisyonunun artmasına neden olur; halo ise çevredeki bölgeleri optimalin ötesinde ısıtan mevcut kalabalıklaşmadan kaynaklanır.",
+]
+answer.answer = "Akım, düşük dirençli şönt yolu boyunca iletilir ve bu noktada yoğun yerel rekombinasyona ve parlak emisyona neden olur; çevredeki bölgeler ise taşıyıcılardan yoksundur ve kıyaslandığında karanlık görünür."
+context = "EL görüntülemede şant, akım akımını yoğunlaştıran düşük dirençli bir yol sağlar. Yüksek yerel rekombinasyon oranı, şantta parlak emisyon üretirken, komşu alanlar daha az enjekte edilen akım alır ve sönük bir şekilde parlar."
+id = "79777489-9748-4444-a58c-3fdc046a3764"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (18. Gün) Güneş pili fabrikalarının mekanik veya kimyasal alternatifler yerine lazer bazlı işleme adımlarını (PERC hücrelerde lazer kontağı açılması gibi) kullanmasının temel nedeni nedir?"
+prompt.distractors = [
+  "Lazer işleme, oda sıcaklığında çalışarak, mekanik yöntemlerin temas oluşumu için hücrenin 400°C'nin üzerine ısıtılmasını gerektirdiğinden, levha üzerindeki termal stresi önleyerek bunu başaramaz.",
+  "Lazerler, ışın bölücü optikleri kullanarak bir güneş hücresinin altı yüzeyini aynı anda işleyebilirken, mekanik ve kimyasal yöntemler tek yüzeyli sıralı işlemeyle sınırlıdır.",
+  "Lazer ekipmanı, sıfır sarf malzemesiyle 10 yıllık bakım gerektirmeyen bir ömre sahipken, kimyasal aşındırma, pahalı öncü gazların sürekli olarak yenilenmesini gerektirir ve tehlikeli atık oluşturur.",
+]
+answer.answer = "Lazerler, hiçbir fiziksel temas veya kimyasal atık olmadan saatte binlerce levhanın çıktısında mikron ölçeğinde uzamsal hassasiyet sunarak, toplu kimyasal veya mekanik yöntemlerle imkansız olan seçici desenleme adımlarını mümkün kılar."
+context = "Lazer işleme, 10 μm'nin altındaki hassasiyeti yüksek üretim (3.000'den fazla plaka/saat), temassız çalışma ve kimyasal atık olmamasıyla birleştirir; hassasiyetin hücre verimliliğini tanımladığı PERC'da seçici arka taraf pasifleştirme açılması gibi adımlar için kritik öneme sahiptir."
+id = "65651ef3-11b9-463a-92c8-eee0dc0a975c"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (5. Gün) Güneş pili üretiminde kullanılan modern silikon levhanın yaklaşık kalınlığı ne kadardır?"
+answer.answer = "150 mikrometre"
+answer.alternatives = [
+  "150 mikron",
+  "150 um",
+  "150μm",
+  "130-170 mikron",
+  "160 mikrometre",
+  "140 mikrometre",
+  "130 mikrometre",
+  "170 mikrometre",
+]
+context = "Modern güneş panellerinin kalınlığı tipik olarak 130-170 μm (yaklaşık 150 μm) olup, on yıl önce bu kalınlık 300'den fazla μm idi. Daha ince levhalar pahalı silikondan tasarruf sağlar ancak daha kırılgandır ve kullanım sırasında mikro çatlamalara daha yatkındır."
+id = "aa315ade-7e3b-4115-ac3b-b74d97f15bbc"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (3. Gün) Polisilikon saflaştırmaya yönelik Siemens prosesinde neden katı silikonu doğrudan saflaştırmak yerine ara bileşik olarak triklorosilan (SiHCl₃) kullanılıyor?"
+prompt.distractors = [
+  "Katı silikonun erime noktası 2.577°C olup, endüstriyel potaların termal limitlerini aşar, bu nedenle onu gaz fazındaki bir bileşiğe dönüştürmek 1.200°C'nin altındaki sıcaklıklarda işlemeye olanak tanır.",
+  "Triklorosilan, demir ve bakır gibi safsızlık atomlarına seçici olarak bağlanan ve herhangi bir damıtma meydana gelmeden önce klorlama adımı sırasında bunları fiziksel olarak ayıran kimyasal bir filtre görevi görür.",
+  "Katı silikonun doğrudan saflaştırılması, endüstriyel ölçekte sürdürülmesi çok pahalı olan 10⁻⁸ torr'un altındaki vakum basınçlarını gerektirirken, gaz fazındaki bileşikler atmosferik basınçta saflaştırılabilir.",
+]
+answer.answer = "Silikonun uçucu bir sıvıya dönüştürülmesi (kaynama noktası 31,8°C), katı hal yöntemleriyle imkansız olan 9N+ saflık seviyelerine ulaşmak için SiHCl₃ ve safsızlık klorürler arasındaki kaynama noktası farklılıklarından yararlanan fraksiyonel damıtma sağlar"
+context = "Siemens işleminin dehası, silikonu 31,8°C'de kaynayan bir sıvı olan triklorosilana dönüştürüyor. Daha sonra fraksiyonel damıtma, onu farklı kaynama noktalarına sahip safsızlık klorürlerden ayırarak %99,9999999 (9N) saflığa ulaşır."
+id = "bf6bcde1-782c-43eb-9220-8ff49eb5e0c5"

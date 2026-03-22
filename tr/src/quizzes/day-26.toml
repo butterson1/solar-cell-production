@@ -1,0 +1,122 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Uzay tabanlı güneş enerjisi savunucuları neden enerji üretim uyduları için alçak Dünya yörüngesi yerine sabit yörüngeye (GEO) odaklanıyor?"
+prompt.distractors = [
+  "GEO daha düşük radyasyon maruziyeti sağlayarak hücre bozulmasını yılda %0,5'in altına düşürür ve uydu ömrünü koruma olmadan 50+ yıla kadar uzatır",
+  "GEO, III-V hücreleri yerine daha ucuz silikon hücrelerin kullanılmasına olanak tanır çünkü Van Allen kuşakları uyduyu çoğu kozmik radyasyondan korur",
+  "GEO uyduları, Dünya'nın dönüşünden daha hızlı yörüngede dönerek, tek bir yer anteninin gün boyunca birden fazla uydudan güç almasına olanak tanır",
+]
+answer.answer = "GEO uyduları bir yer istasyonunun üzerinde sabit kalır ve yılın ~%99,5'i güneş ışığını alır, bu da tek bir antene neredeyse sürekli 7/24 güç dağıtımı sağlar"
+context = "Jeostatik yörünge, uyduyu bir yer alıcısına göre sabit tutar ve uydu, ekinokslar civarında yalnızca kısa süreler (~ 72 dakika maksimum) için gölgede kalır ve neredeyse sabit güç üretimi ve iletimi sağlar."
+id = "4b6ddced-0f37-4b2f-bc62-b0a9b958c6c2"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "~80.000-130.000$/m² maliyetine rağmen, uzay uygulamalarında silikon yerine III-V çoklu bağlantı hücrelerinin (InGaP/GaAs/InGaAs gibi) tercih edilmesinin birincil nedeni nedir?"
+prompt.distractors = [
+  "III-V hücreleri silikondan daha düşük bir sıcaklık katsayısına sahiptir ve yörüngede tam güneşe maruz kalma sırasında uydu yüzeyleri 200°C'ye ulaştığında bile en yüksek verimliliği korur",
+  "III-V hücreler silikondan daha ince üretilebilir ve hücrelerin birim alan başına daha yoğun olmasına rağmen toplam uydu kütlesini %60 oranında azaltır",
+  "III-V hücreleri, tutulma geçişleri sırasında ısıtıldıklarında radyasyon hasarını doğal olarak kendi kendine tavlayarak, her yörünge döngüsünde verimlilik kayıplarının çoğunu geri kazanır",
+]
+answer.answer = "III-V hücreleri, ultra hafif alt tabakalarda 350-450 W/kg sunarken, cam ön yüzeyli silikon için ~15-20 W/kg sunar ve her gramın piyasaya sürülmesi için paraya mal olduğu durumlarda kilogram başına watt avantajı belirleyicidir"
+context = "Uzayda optimizasyon hedefi metrekare başına dolar değil, kilogram başına watt'tır. Başlatma maliyetleri bütçenin büyük kısmını oluşturduğundan, hafif III-V hücrelerin 20 kat daha iyi güç-ağırlık oranı, yüksek hücre maliyetlerini fazlasıyla telafi ediyor."
+id = "35656887-07f6-4955-afd2-3932001893f5"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Yüksek konsantrasyonlu PV (HCPV) geleneksel silikon panellerin aksine bulutlu iklimlerde neden düşük performans gösteriyor?"
+prompt.distractors = [
+  "HCPV Fresnel lensler nemli havadaki nemi emerek optik bozulmaya neden olur ve kullanıma sunulduktan sonraki aylar içinde iletimi %40'a kadar azaltır",
+  "HCPV çoklu bağlantı hücreleri, doğrudan ışın AM1.5D spektrumuna ayarlanmıştır ve dağınık ışığın maviye kayan spektrumu ile aydınlatıldığında neredeyse sıfır akım üretir",
+  "HCPV çift eksenli izleyiciler, bulut örtüsü güneş diskini engellediğinde panelleri doğru bir şekilde konumlandıramaz ve bu durum, izleme dişlilerine zarar veren mekanik avlanmaya neden olur",
+]
+answer.answer = "Fresnel mercekler ve aynalar yalnızca tek bir yönden gelen doğrudan ışınlı güneş ışığını odaklayabilir; Bulutlar tarafından saçılan dağınık ışık her açıdan gelir ve optik olarak küçük hücrenin üzerinde yoğunlaştırılamaz."
+context = "Konsantrasyon optiği, paralel ışınları bir odak noktasına yönlendirerek çalışır. Bulutlu bir gökyüzünde her yönden gelen dağınık ışık bu şekilde odaklanamaz. Geleneksel silikon paneller hala dağınık ışık kullanabiliyor çünkü her hücre fotonları geniş açıdan kabul ediyor."
+id = "d5dd42e4-88e7-462b-8a3d-d31307b2a824"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Caltech'in 2023'teki SSPD-1 misyonu önemliydi çünkü MAPLE deneyi ilk kez hangi spesifik yeteneği gösterdi?"
+prompt.distractors = [
+  "Altı ay boyunca %30 verimliliği korurken, yörüngede 1 kW'ın üzerinde güç üreten çok bağlantılı bir güneş hücresi dizisini gösterdi.",
+  "Tek bir Falcon 9 fırlatma fuarından 50 m²'lik bir diziyi dağıtarak, yörüngedeki güneş dizisi bölümlerinin otonom robotik montajını gösterdi.",
+  "Alçak Dünya yörüngesinden alt derece doğrulukla hareket eden bir yer alıcısını izleyen kapalı döngü bir mikrodalga ışın yönlendirme sistemini gösterdi.",
+]
+answer.answer = "Özel CMOS devrelere sahip hafif, esnek mikrodalga vericileri kullanarak uzayda kablosuz güç aktarımını gösterdi ve Caltech kampüsündeki yer alıcısına tespit edilebilir bir sinyal gönderdi."
+context = "MAPLE (Güç Aktarımı Düşük Yörünge Deneyi için Mikrodalga Dizisi), esnek, hafif mikrodalga verici dizilerini kullanarak uzayda gücü kablosuz olarak başarıyla iletti ve sinyali Dünya'da tespit etti; donanım yaklaşımı için bir kavram kanıtı, henüz kullanışlı güç seviyeleri değil."
+id = "1d19e9e0-1c0b-4a7d-93a0-223a67ae51bf"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "500x konsantrasyonda çalışan bir yoğunlaştırıcı PV sistemi, yaklaşık ±0,5° dahilinde izleme doğruluğuna ihtiyaç duyar. İzleyici bu toleransın dışına çıkarsa ne olur?"
+prompt.distractors = [
+  "Çok bağlantılı hücre, odaklanmamış güneş ışığının ısı dağıtıcıya eğik açılarla çarpması ve termal yönetim sistemini tamamen atlaması nedeniyle hızla aşırı ısınır.",
+  "Fresnel merceği, asimetrik aydınlatmanın yüzey alanı boyunca 80°C'yi aşan sıcaklık değişimleri yaratması nedeniyle termal stres kırıkları geliştirir.",
+  "Hücrenin baypas diyotları, ters öngerilim hasarını önlemek, yanlış hizalanmış mercekten gelen gücü yönlendirmek ve dizi voltajını ayrı adımlarla azaltmak için etkinleşir",
+]
+answer.answer = "Odaklanan ışık noktası küçük hücreden (tipik olarak ~1 cm²) uzaklaşır, böylece yoğunlaştırılmış güneş ışığının çoğu aktif yarı iletkeni tamamen ıskalar ve çıktı hızla sıfıra doğru düşer."
+context = "500x konsantrasyonda odak noktası çok küçüktür. Bir miktar yanlış hizalama derecesi bile odaklanmış ışının hücreden tamamen ayrılmasına neden olur. Hafif hizalamanın çıkışı yalnızca orantılı olarak azalttığı düz panellerin aksine, CPV, sapmaları izlerken performansta keskin bir uçuruma sahiptir."
+id = "25120488-cc34-4843-a820-59feaf27463a"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Güneş sabiti olarak bilinen, Dünya atmosferinin üst kısmındaki yaklaşık güneş ışınımı (W/m² cinsinden) nedir?"
+answer.answer = "1361"
+answer.alternatives = [
+  "1.361",
+  "1361 W/m²",
+  "1.361 W/m²",
+  "~1361",
+  "1360",
+  "1366",
+]
+context = "Güneş sabiti (Dünya'nın güneşten uzaklığındaki toplam güneş ışınımı) yaklaşık 1.361 W/m²'dir. Bu, herhangi bir atmosferik veya optik kayıptan önce, tüm uzay güneş enerjisi hesaplamalarının başlangıç ​​noktasıdır."
+id = "080825e3-3201-40e6-a40a-558c9c4ff940"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (25. Gün) Kristalin silikon güneş panellerinin ömrünün sonunda geri dönüştürülmesinden elde edilen ekonomik açıdan en değerli malzeme nedir?"
+prompt.distractors = [
+  "P-n bağlantı katkı maddelerini çıkarmak için kimyasal aşındırma işleminden sonra yeniden rafine edilebilen ve yeni güneş pillerinde yeniden kullanılabilen silikon levhaların kendisi",
+  "Standart 60 hücreli konut modülü başına yaklaşık 500 g yüksek saflıkta bakır içeren bakır şerit ara bağlantıları",
+  "Yeni modül laminasyonu için depolimerize edilebilen ve işlenmemiş dereceli etilen vinil asetata dönüştürülebilen EVA kapsülleyici",
+]
+answer.answer = "Alüminyum çerçeve ve bağlantı kutusu ve ardından cam ön levha — gümüş ve silikon çok küçük miktarlarda mevcut olduğundan, bu toplu ticari malzemeler geri kazanılabilir değerin çoğunu temsil eder"
+context = "Kütle ve piyasa değeri açısından, alüminyum çerçeve (modül ağırlığının ~%10'u) ve cam (ağırlığın ~%70'i) geri kazanılabilir değere hakimdir. Gümüş değerli olmasına rağmen her hücrede yalnızca miligram bulunur. Silikon levhanın teorik olarak yeniden kullanılabilir olmasına rağmen, güneş enerjisi sınıfına yeniden işlenmesi maliyetlidir."
+id = "8d5f49f8-687d-42f3-b1f5-fbdaf681902e"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (24. Gün) Geleneksel çatıya monte panellerle karşılaştırıldığında binaya entegre PV (BIPV) sisteminin verimliliğini hangi mimari zorluk sınırlıyor?"
+prompt.distractors = [
+  "BIPV modülleri, yapısal entegrasyon için daha ince cam kullanmalıdır; bu, standart modüllerdeki temperli camla karşılaştırıldığında ışık iletimini %15-20 azaltır",
+  "BIPV kurulumları amorf silikon hücrelerle sınırlıdır çünkü kristalin silikon kavisli bina cephelerine ve çatı hatlarına uyum sağlayamayacak kadar serttir",
+  "BIPV modülleri, bina yönetmeliği yangın güvenliği gereklilikleri nedeniyle baypas diyotları içeremez, bu da onları yıkıcı sıcak nokta arızalarına karşı savunmasız hale getirir",
+]
+answer.answer = "BIPV paneller binanın yönüne ve eğimine göre sabitlenir, genellikle optimum açılardan uzaktır ve sıklıkla bitişik yapılardan kısmi gölgelenmeye maruz kalır, bu da optimum şekilde yerleştirilmiş dizilere göre enerji verimini önemli ölçüde azaltır"
+context = "Maksimum güneş ışığına maruz kalacak şekilde yönlendirilebilen ve eğilebilen zemine monte veya çatı üstü sistemlerden farklı olarak BIPV, binanın mevcut mimarisine uygun olmalıdır. Cepheler doğuya/batıya bakar, pencereler gölgeleme yaratır ve estetik entegrasyon çoğu zaman optimumun altında açılar anlamına gelir."
+id = "ca2b45c5-cfdf-4ed7-8bee-ccecb3e63c94"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (11. Gün) Üç eklemli bir güneş hücresinde (örn. InGaP/GaAs/Ge), alt hücrelerin neden akım uyumlu olması gerekiyor ve genel cihaz akımını ne sınırlıyor?"
+prompt.distractors = [
+  "Akım eşleştirme termal kaçmayı önler; En yüksek akımı üreten alt hücre, diğerleri aşırı taşıyıcıları ememezse aşırı ısınır ve kafes hasarına neden olur",
+  "Akım eşleştirme, her bağlantıdan eşit voltaj katkısı sağlar; toplam cihaz voltajı, uygun şekilde eşleştirildiğinde üç alt hücre voltajının ortalamasıdır",
+  "Mevcut eşleştirme, foton soğurma oranlarını dengeler; bu olmadan, kullanılmayan fotonlar üst hücreden lüminesans olarak yeniden yayılır ve asla alt bağlantı noktalarına ulaşmaz.",
+]
+answer.answer = "Alt hücreler seri olarak bağlandığından, hepsinden aynı akımın geçmesi gerekir; böylece genel cihaz akımı, verilen spektrum altında hangi alt hücrenin en az fotoakımı ürettiğine göre sınırlanır."
+context = "Seri bağlı çok bağlantılı hücreler, her bağlantı noktasından aynı akımı geçirir. En zayıf (en düşük akımlı) alt hücre darboğaz haline gelir. Spektral koşulların önemli olmasının nedeni budur; güneş spektrumundaki bir değişim, cihazı hangi bağlantı noktasının sınırladığını değiştirebilir."
+id = "366658b0-ce6c-4f47-a54a-0384b9e4ebba"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (9. Gün) Güneş pili teknolojisinde PERC kısaltması neyi ifade eder?"
+answer.answer = "Pasifleştirilmiş Verici ve Arka Hücre"
+answer.alternatives = [
+  "Pasifleştirilmiş Verici ve Arka Kontak",
+  "pasifleştirilmiş emitör ve arka hücre",
+  "pasifleştirilmiş emitör ve arka kontak",
+]
+context = "PERC — Pasifleştirilmiş Verici ve Arka Hücre (bazen 'Arka Temas') — hücrenin arka yüzeyine bir dielektrik pasifleştirme katmanı ekleyerek rekombinasyon kayıplarını azaltır ve emilmemiş ışığı ikinci bir geçiş için silikondan geri yansıtır."
+id = "2c9a9c3b-5049-48e3-b78e-bda19d8fa76a"

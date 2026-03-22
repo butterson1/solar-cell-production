@@ -1,0 +1,121 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Polisilikon üretimi neden Sincan, Siçuan ve İç Moğolistan gibi bölgelerde yoğunlaştı?"
+prompt.distractors = [
+  "Bu bölgeler en büyük yüksek saflıktaki kuvars kumu yataklarına sahiptir ve kıyı tesislerine kıyasla hammadde nakliye maliyetlerini %40-60 oranında azaltır.",
+  "Çin'in çevre düzenlemeleri bu iç eyaletleri emisyon izlemeden muaf tutarak Siemens reaktörlerinin egzoz hatlarında temizleme sistemleri olmadan çalışmasına olanak tanıyor",
+  "Bu bölgelerdeki kuru iklim, triklorosilanın damıtılması sırasında nem kirliliğini doğal olarak azaltır ve dokuz dokuzlu saflık verimini %15-20 oranında artırır.",
+]
+answer.answer = "Elektrik, polisilikon üretim maliyetinin %30-40'ını temsil eder ve bu bölgeler en ucuz elektriği sunar - Sichuan/Yunnan'da hidroelektrik, Sincan ve İç Moğolistan'da kömür ve rüzgar."
+context = "Siemens prosesi ile 1 kg polisilikon üretmek 60-80 kWh gerektirir. 100.000 tonluk bir tesis sürekli olarak 700-900 MW çekiyor, bu da elektrik maliyetini tesis yerleşiminde baskın faktör haline getiriyor."
+id = "81503664-87b7-4103-ac94-ba69e3667dab"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "1.000'den fazla CZ çekicinin bulunduğu bir kristal yetiştirme salonundaki gerçek üretim darboğazı nedir?"
+prompt.distractors = [
+  "Eritme aşaması döngü başına 8-12 saat sürer çünkü kuvars pota astarında termal şok çatlamasını önlemek için polisilikon parçalarının kademeli olarak ısıtılması gerekir.",
+  "Kristal çekme hızı, katı-sıvı arayüz dinamikleri tarafından 0,5-1,2 mm/dak ile sınırlıdır, bu da 50-70 saatlik büyüme döngüsünü külçe çıkışı için hız sınırlayıcı adım haline getirir",
+  "Tohum kristalinin mevcudiyeti verimi kısıtlar çünkü dislokasyonsuz her tohum, kullanılmadan önce 2-3 haftalık özel yüzdürme bölgesi hazırlığı gerektirir",
+]
+answer.answer = "Sıcak bölge sarf malzemeleri (grafit potalar, ısıtıcılar ve ısı kalkanları) 4-8 çekmeden sonra bozulur ve değiştirilmeleri gerekir; bu da bakım onarımını gerçek darboğaz haline getirir"
+context = "Kristal büyümesinin kendisi çoğunlukla otomatik beklemedir. Sınırlayıcı faktör, bakım ekiplerinin döngüler arasında sıcak bölge bileşenlerini ne kadar hızlı sökebileceği, değiştirebileceği ve yeniden birleştirebileceğidir."
+id = "6a3b0148-9f0e-4771-b143-60efbd52c70b"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "2025-2026 itibarıyla tam entegre bir 10 GW güneş enerjisi üretim kompleksi (modüller aracılığıyla polisilikon) inşa etmenin yaklaşık sermaye maliyeti nedir?"
+prompt.distractors = [
+  "Toplam 500-800 milyon dolar; PECVD reaktörlerin ve gümüş macunlu ekran yazıcılarının maliyeti nedeniyle hücre hattı ekipmanı yatırımın %60'ını oluşturuyor",
+  "Toplam yatırımın %35-40'ıyla en büyük tek maliyet kategorisini temsil eden temiz oda inşaatı ve HVAC sistemleriyle toplam 8-12 milyar dolar",
+  "Toplamda 800 milyon ila 1,5 milyar dolar; elmaslı tel testerelerin kesme telinin sık sık değiştirilmesini gerektirmesi nedeniyle, baskın maliyet etkeni levha ekipmanıdır.",
+]
+answer.answer = "Toplam 2-4 milyar dolar, kimyasal işleme altyapısı nedeniyle tek başına polisilikon üretim aşaması bu sermaye yatırımının %40-50'sini oluşturuyor"
+context = "Tamamen entegre bir gigafabrika büyük yatırım gerektirir. Polisilikon aşaması orantısız derecede pahalıdır çünkü esasen damıtma kolonları, reaktör kapları ve kapsamlı boruları olan bir kimyasal rafineridir."
+id = "3e0890d8-66ec-4c0e-b83a-0d3875108aa0"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Modern bir TOPCon hücre üretim hattında, verimi korumak için yaklaşık olarak kaç tane ekran yazıcısına ihtiyaç vardır ve her birinin maliyeti nedir?"
+answer.answer = "8-12 yazıcı, her biri 800.000-1,2 milyon dolar"
+answer.alternatives = [
+  "Her biri 800 bin ila 1,2 milyon dolar arası 8-12 ekran yazıcısı",
+  "8 ila 12 yazıcının maliyeti 800.000 ila 1.200.000 ABD Doları arasındadır",
+  "8-12, 0,8-1,2 milyon dolar",
+]
+context = "Ekran yazıcıları ve tükettikleri gümüş macun şaşırtıcı bir şekilde hücre hattındaki en pahalı ekipmanlardır. Tipik bir TOPCon hattının 8-12 yazıcıya (toplamda 8-14 milyon ABD Doları) artı 3-5 milyon ABD Doları/GW gümüş macuna ihtiyacı vardır."
+id = "a8534251-3681-4a42-bc04-610ababc9f8e"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Modern bir hücre üretim hattı saatte 8.000 levha üretim hacmine, %98,5 verim ve %92 çalışma süresine ulaşır. Diğer faktörler sabit kalırken verim %99,0'a yükselirse, saat başına üretilen iyi hücre sayısındaki yaklaşık artış ne olur?"
+prompt.distractors = [
+  "Saatte yaklaşık 120 ek iyi hücre, çünkü %0,5'lik iyileşme mekanik kırılma için değil, yalnızca daha önce elektrik testinde başarısız olan hücreler için geçerlidir",
+  "Saatte yaklaşık 25 ek iyi hücre, çünkü >%98 seviyesindeki verim iyileştirmeleri, silikondaki azaltılamaz kusur popülasyonları nedeniyle azalan getirilerle karşı karşıyadır",
+  "Saatte yaklaşık 400 ek iyi hücre; çünkü daha yüksek verim, konveyör sistemindeki kusurlu hücre sıkışmalarından kaynaklanan hat durmalarını azaltarak etkin çalışma süresini de artırır",
+]
+answer.answer = "Saatte yaklaşık 37 ek iyi hücre - 7.248'den (8.000 × 0.985 × 0.92) 7.285'e (8.000 × 0.990 × 0.92) kadar; bu, milyonlarca günlük birimi birleştiren mütevazı bir saat başına kazançtır."
+context = "8.000 × 0,985 × 0,92 = 7.249,6; 8.000 × 0,990 × 0,92 = 7.286,4. Fark ~37 hücre/saattir. Saat başına küçüktür, ancak birden fazla hat üzerinde 7/24 çalışırken önemli miktarda gelir sağlar."
+id = "6d1fbdf6-ba68-4aa5-899c-c2a61e144e06"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "TOPCon hücre üretim hattı boyunca temiz oda sınıflandırma gereksinimleri nelerdir?"
+prompt.distractors = [
+  "Hattın tamamı eşit şekilde ISO Sınıf 5 (100 partikül/ft³) seviyesinde çalışmaktadır, çünkü herhangi bir aşamadaki herhangi bir kirlenme, hücre verimliliğini %0,5-1,0 oranında azaltan manevra kusurlarına neden olur.",
+  "Tekstüre etme ve ıslak kimya, fırınlar rahat ISO Sınıf 8'de çalışırken kimyasal banyolar parçacıklara karşı en duyarlı olduğundan ISO Sınıf 3-4 (1-10 parçacık/ft³) gerektirir.",
+  "Serigrafi baskı, ISO Sınıf 4'te (10 parçacık/ft³) en katı sınıflandırmayı gerektirir çünkü macun kirliliği şebeke çizgisinde kesintilere neden olurken difüzyon ISO Sınıf 7-8'de çalışır.",
+]
+answer.answer = "Tekstüre etme ve ıslak kimya bölümleri ISO Sınıf 7-8'de (10.000-100.000 parçacık/ft³) çalıştırılırken, PECVD ve difüzyon bölümleri daha katı ISO Sınıf 5-6 (100-1.000 parçacık/ft³) gerektirir"
+context = "Biriktirme işlemleri (PECVD, difüzyon) daha temiz ortamlar gerektirir çünkü ince film büyümesi sırasında levha yüzeyindeki parçacıklar kusurlar yaratır. Banyolar doğal olarak parçacıkları yıkadığından ıslak kimya daha toleranslıdır."
+id = "f96b8fb9-f524-4b7e-9b2c-35faa08b1737"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (13. Gün) Bitmiş hücrelerin flaş I-V testi sırasında seri direnç (Rs) parametresi öncelikle neyi gösterir?"
+prompt.distractors = [
+  "Seri direnç, p-n bağlantı oluşumunun kalitesini ölçer; yüksek Rs, doping profilinin çok sığ olduğu anlamına gelir ve taşıyıcıları ayıran yerleşik elektrik alanını azaltır.",
+  "Seri direnç toplu silikon kalitesini yansıtır - yüksek Rs, malzeme boyunca rekombinasyon merkezleri oluşturan levhada aşırı oksijen veya karbon kirliliğini gösterir",
+  "Seri direnç, yüzey pasifleştirme etkinliğini ölçer - yüksek Rs, yansıma önleyici kaplamanın, fotojenlenmiş taşıyıcıların yüzey rekombinasyonuna izin veren küçük deliklere sahip olduğu anlamına gelir",
+]
+answer.answer = "Seri direnç, hücrenin mevcut yolundaki dirençli kayıpları yakalar - yüksek Rs tipik olarak zayıf metalizasyon temasını, yetersiz parmak iletkenliğini veya yüksek dirençli lehim bağlantılarını gösterir"
+context = "Rs'ye metal-yarı iletken temas direnci, gümüş şebeke parmaklarının direnci ve yayıcının yanal direnci hakimdir. Kötü serigrafi baskı veya ateşleme doğrudan Rs'yi artırır."
+id = "b3236352-23ce-400b-bf7b-2e310f64ddfa"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (14. Gün) Modül laminasyonu sırasında, EVA kapsülleyiciyi çapraz bağlamak için hangi sıcaklık aralığı ve süre kullanılır ve bu parametreler neden kritiktir?"
+prompt.distractors = [
+  "EVA 100-115°C'de 25-35 dakika süreyle lamine edilir; daha düşük sıcaklık, hücre ara bağlantılarındaki termal stresi önlerken, yeterli nem bariyeri performansı için hala %85 jel içeriğine ulaşıyor",
+  "EVA 180-200°C'de 5-8 dakika süreyle lamine edilir; daha yüksek sıcaklık, verimi en üst düzeye çıkaran hızlı çapraz bağlanmayı mümkün kılar ve kısa süre kapsülleyici polimerin sararmasını önler",
+  "EVA 160-175°C'de 20-25 dakika süreyle lamine edilir; bu sıcaklık aralığı, floropolimer arka tabakanın cam geçişinin altında kalırken organik peroksit çapraz bağlayıcıyı etkinleştirir",
+]
+answer.answer = "EVA 145-155°C'de 12-18 dakika süreyle lamine edilir; bu aralık, uzun süreli sararmaya neden olan termal bozunmayı önlerken >%65 jel içeriği elde etmek için peroksit çapraz bağlayıcıyı tamamen etkinleştirir"
+context = "Laminasyon sıcaklığı EVA çapraz bağlayacak kadar yüksek olmalıdır (dayanıklı ve neme karşı dayanıklı olmasını sağlar), ancak polimeri bozacak veya hücre ara bağlantılarına zarar verecek kadar yüksek olmamalıdır."
+id = "a7765fc1-4d83-45d4-9b2f-a9d7b4fa8310"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁(5.Gün) Modern waferingde kullanılan elmas tel testerelerin tel çapları 38-42 mikrometredir. Tel çapını daha da azaltmanın birincil sonucu nedir?"
+prompt.distractors = [
+  "Daha ince teller kesme sırasında daha yüksek frekanslarda titreşir, levhada periyodik kalınlık değişimleri (TTV) oluşturur ve bu da sonraki difüzyon adımları sırasında üniform olmayan katkılama derinliğine neden olur",
+  "Daha ince teller, düz kesimleri korumak için önemli ölçüde daha yüksek gerilim gerektirir; bu da külçe montaj yapıştırıcısı üzerindeki mekanik gerilimi artırır ve kesimin ortasında ayrılma hatalarına neden olur",
+  "Daha ince teller birim uzunluk başına daha fazla elmas parçacığı gömer; bu da paradoksal olarak kesimi yavaşlatır çünkü fazla aşındırıcı, daha fazla malzeme çıkarılmasına direnen cilalı bir yüzey oluşturur",
+]
+answer.answer = "Daha ince teller, çentiği (talaş olarak kaybolan malzeme) kesim başına ~60μm'den 40μm'ye düşürerek külçe başına daha fazla levha sağlar, ancak daha sık kırılırlar; bu da arıza süresini ve bakım maliyetini artırır"
+context = "Kerf kaybı önemli bir maliyet faktörüdür: 130-150μm levha kalınlığında çentik, külçenin %30-40'ını temsil edebilir. Daha ince teller daha fazla levha çıkarır ancak mekanik olarak kırılgandır, dolayısıyla bir mühendislik dengesi söz konusudur."
+id = "a6c5f72b-a0fd-4baf-94b8-35a696e97c2b"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (3. Gün) Siemens prosesinde triklorosilan, polisilikon biriktirmek için yaklaşık olarak hangi sıcaklıkta ısıtılmış silikon çubuklar üzerinde ayrışır?"
+answer.answer = "1.100°C"
+answer.alternatives = [
+  "1100°C",
+  "1100 derece",
+  "1.100 santigrat derece",
+  "yaklaşık 1100°C",
+  "~1100°C",
+]
+context = "Siemens reaktörü ~1.100°C sıcaklıkta çalışır. İnce çubuklar elektrikle bu sıcaklığa kadar ısıtılır ve yüzeylerinde SiHCl₃ gazı ayrışarak birkaç gün içinde onları kalın U şeklinde polisilikon çubuklara dönüştürür."
+id = "d772c18d-b9e4-4766-846b-578d9b9ddfa8"

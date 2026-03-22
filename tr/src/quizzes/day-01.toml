@@ -1,0 +1,71 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Silikonun bant aralığı enerjisi nedir?"
+prompt.distractors = [
+  "0,67 eV — kızılötesi emilim için optimize edilmiştir",
+  "1,42 eV — en yüksek güneş spektrumu için ideal",
+  "1,85 eV — görünür ışık hasadı için konumlandırılmış",
+]
+answer.answer = "1,12 eV — yakın kızılötesi aralığında"
+context = "Silikonun 1,12 eV'lik bant aralığı, ~1100 nm dalga boyundaki kızılötesi ışığa karşılık gelir. Maksimum tek bağlantı verimliliği için ~1,34 eV'lik teorik optimum değere yakındır."
+id = "aa59c93c-0e58-4a67-a0ff-9094435a632d"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Mavi bir foton (2,76 eV) silikon güneş hücresine çarpıyor. 1,12 eV bant aralığının üzerindeki fazla enerjiye ne olur?"
+prompt.distractors = [
+  "Komşu atomdan ikinci bir elektronu serbest bırakarak ek akım üretir.",
+  "Işınımsal rekombinasyon yoluyla daha düşük enerjili bir foton olarak yeniden yayılır.",
+  "Tükenme bölgesinde geçici olarak depolanır ve ışığın az olduğu dönemlerde serbest bırakılır",
+]
+answer.answer = "Silikon kristalini ısıtarak kafes titreşimlerine (fononlar) dönüştürülür."
+context = "Bu termalizasyon kaybıdır; güneş pillerindeki en büyük verimlilik katilidir. Uyarılmış elektron, orijinal fotonun ne kadar enerjik olduğuna bakılmaksızın fazla enerjiyi hızla ısı olarak yayar."
+id = "8ee194cd-8ba9-4d4a-b218-5aa4cdb262a4"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Bir güneş hücresindeki elektron-delik çiftlerini yeniden birleşmeden önce ayıran şey nedir?"
+prompt.distractors = [
+  "Yüzey pasifleştirme katmanı hücre boyunca kimyasal bir potansiyel gradyanı oluşturur",
+  "Üstteki metal temas şebekesı, serbest taşıyıcılara elektrostatik bir çekme uygular",
+  "Doping konsantrasyonundaki fark temas noktalarına doğru difüzyon basıncı yaratır",
+]
+answer.answer = "P-n bağlantısındaki yerleşik elektrik alanı taşıyıcıları zıt yönlerde süpürür"
+context = "P-n bağlantısı tükenme bölgesinde kalıcı bir elektrik alanı oluşturur. Bakım gerektirmeyen, hareket eden parçası olmayan bir şarj ayırıcıdır; güneş hücresinin çekirdek mekanizmasıdır."
+id = "ebf40a66-ff79-4c15-b2d2-a7c65ce0f6db"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Silikon güneş hücresi ısındığında çıkışına ne olur?"
+prompt.distractors = [
+  "Gerilim sabit kalırken akım azalır ve güç °C başına ~%0,1 azalır",
+  "Hem voltaj hem de akım biraz artar, ancak direnç kayıpları kazancı dengeler",
+  "Çıkış, 50°C'ye kadar sabit kalır, ardından termal kaçak etkileri nedeniyle keskin bir şekilde düşer",
+]
+answer.answer = "Gerilim, akım artışlarından daha hızlı düşer ve °C başına ~%0,3-0,5 net güç kaybına neden olur"
+context = "Mantık dışı ama gerçek! Bant aralığı ısıyla küçülerek akımı biraz artırır, ancak voltaj çok daha fazla düşer. 45°C'lik bir çatı, 25°C'deki laboratuvar koşullarına kıyasla size %6-10 oranında performansa mal olur."
+id = "6c8d4341-a38a-4c48-8c67-8021c4ef1310"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Shockley-Queisser limiti, tek bağlantılı silikon hücreleri kabaca hangi teorik maksimum verimlilikte sınırlar?"
+prompt.distractors = [
+  "~%29,4 - özellikle silikondaki Auger rekombinasyonu ve parazitik absorpsiyonla belirlenir",
+  "~%40,7 — mükemmel yansıma önleme ve ideal ışık yakalama ile ulaşılabilir",
+  "~%25,6 — pratikteki maksimum değeri temsil eden mevcut dünya rekoru",
+]
+answer.answer = "~%33,7 — herhangi bir tek bağlantı için termalizasyon ve alt bant aralığı foton kayıpları ile belirlenir"
+context = "~%33,7'lik Shockley-Queisser sınırı, optimal bant aralığındaki (~1,34 eV) herhangi bir tek bağlantı hücresine uygulanır. Silikonun spesifik sınırı, ideal olmayan bant aralığı ve Auger rekombinasyonu nedeniyle daha düşüktür (~%29,4). Şu anki rekor %26,8."
+id = "11bf260c-78fa-40ff-9961-2eddf544bf43"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "İki tür katkılı silikon nedir ve her biri için hangi katkı elemanı kullanılır?"
+answer.answer = "n-tipi (fosfor) ve p-tipi (bor)"
+alternatives = [
+  "n-tipi fosfor kullanır, p-tipi ise bor kullanır",
+  "n-tipi için fosfor, p-tipi için bor",
+  "n tipi fosfor p tipi bor",
+]
+context = "Fosforun 5 dış elektronu vardır (bir ekstra → serbest elektron bağışlar → n-tipi). Borda 3 tane vardır (biri eksik → delik oluşturur → p tipi). Tipik katkılama: Milyon silikon atomu başına ~1 safsızlık atomu."
+id = "13f694aa-ef93-4475-9a9e-8a1efe5c3274"

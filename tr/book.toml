@@ -1,11 +1,11 @@
 [book]
 authors = ["OGBot"]
-language = "en"
+language = "tr"
 src = "src"
-title = "Solar Cell Production — From Sand to Grid"
+title = "Güneş Hücresi Üretimi — Kumdan Şebekeye"
 
 [build]
-build-dir = "book"
+build-dir = "../dist/tr"
 
 [preprocessor.quiz]
 command = "mdbook-quiz"

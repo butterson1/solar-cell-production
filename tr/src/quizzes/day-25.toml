@@ -1,0 +1,119 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "EVA kapsülleyicinin geri dönüşüm sırasında güneş pillerinden ayrılması neden özellikle zordur?"
+prompt.distractors = [
+  "EVA geri dönüşüm sıcaklıklarında hidroflorik asite bozunur, silikon levhaları aşındırır ve asitlere dayanıklı özel ekipman olmadan bunların kurtarılması imkansız hale gelir",
+  "EVA, laminasyon sırasında dokulu silikon yüzeyle mekanik bir kilit oluşturarak, temiz bir şekilde serbest bırakılması için 40 kHz'de ultrasonik titreşim gerektiren mikroskobik tutturucular oluşturur",
+  "EVA, panelin kullanım ömrü boyunca UV radyasyonunu emer ve herhangi bir ayırma girişimi sırasında silikonu kirleten mikroplastik parçalara ayrılarak kırılgan hale gelir",
+]
+answer.answer = "EVA 150°C'de laminasyon sırasında termoset polimere çapraz bağlanır; bu, termoplastik gibi yeniden eritilemeyeceği ve 400–600°C'de piroliz yoluyla yok edilmesi veya kimyasal solventlerle çözülmesi gerektiği anlamına gelir"
+context = "Laminasyon sırasında EVA geri dönüşü olmayan çapraz bağlanmaya uğrayarak termoset haline gelir. Termoplastiklerin aksine termosetler yeniden ısıtıldıklarında erimezler; kömürleşirler. Bu, temiz ayırmanın ya pirolizi (termal ayrışma) ya da solvent çözünmesini gerektirdiği anlamına gelir; bunların her ikisi de basit yeniden eritmeden daha karmaşık ve pahalıdır."
+id = "dccddc63-69c0-493e-9d3a-b97e7cf457f5"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Standart bir kristalin silikon güneş panelinin mevcut emtia fiyatlarında yaklaşık malzeme değeri nedir ve hangi tek malzeme en fazla değere katkıda bulunur?"
+prompt.distractors = [
+  "Yaklaşık 40-55 ABD doları; yüksek saflıkta silikon plakalar, bunları orijinal olarak üretmek için gereken enerji yoğun Czochralski kristal büyüme süreci nedeniyle en fazla değere katkıda bulunuyor",
+  "Yaklaşık 15-25 $; alüminyum çerçeve en fazla değere katkıda bulunuyor çünkü mevcut alüminyum piyasa oranlarına göre panel başına 2-3 kg hemen geri dönüştürülebilir metale karşılık geliyor",
+  "Yaklaşık 5-10 ABD doları; bakır şerit ara bağlantıları, bakırın modüldeki diğer tüm dökme malzemelere göre kilogram başına daha yüksek fiyatlarla işlem görmesi nedeniyle en fazla değere katkıda bulunuyor.",
+]
+answer.answer = "Yaklaşık 15-25 ABD Doları, gümüş temas noktaları gram başına en fazla değere katkıda bulunur - yaklaşık 30 ABD Doları/oz seviyesindeki 10-15 g gümüş, toplam geri kazanılabilir malzeme değerinin önemli bir bölümünü temsil eder"
+context = "Tipik bir panel 15-25 dolar değerinde ham madde içerir. Gümüş, küçük miktarlarda (10-15 g) bulunmasına rağmen, birim kütle başına ~30$/oz ile açık ara en değerli olanıdır ve bu da onu yüksek değerli geri dönüşüm için birincil ekonomik itici güç haline getirir."
+id = "77f05b81-2e2c-40cf-a874-2c9fb38eca1a"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "First Solar'ın CdTe ince film geri dönüşüm süreci, kadmiyum ve tellürün %95'inden fazlasını kurtarır. Tellür geri kazanımı çevresel faydanın ötesinde neden özellikle önemlidir?"
+prompt.distractors = [
+  "Tellurium, Dodd-Frank Yasası kapsamında bir çatışma minerali olarak sınıflandırılıyor ve bunun yurt içinde geri kazanılması, First Solar'ın tedarik zinciri açıklama gerekliliklerinden ve ilgili uyum maliyetlerinden kaçınmasına olanak tanıyor.",
+  "Tellür, CdTe kristal formunda yalnızca 8 yıllık bir yarı ömre sahiptir; bu, geri dönüştürülmemiş panellerin, bileşik bozundukça onu yavaş yavaş toprağa saldığı ve benzersiz bir zamana duyarlı çevresel tehlike oluşturduğu anlamına gelir.",
+  "Tellür, öncelikle istikrarsız jeopolitik koşullara sahip bölgelerde çıkarılıyor ve First Solar'ın geri dönüşüm programı, özellikle Enerji Bakanlığı'nın stratejik rezerv gereklilikleri tarafından zorunlu kılındı.",
+]
+answer.answer = "Tellür, milyarda 1 oranıyla yer kabuğundaki en nadir elementlerden biridir ve küresel madencilik üretimi yılda yalnızca 500-600 tondur, bu da First Solar'ın yıllık yaklaşık 40 tonluk geri kazanımını dünya arzının anlamlı bir kısmı haline getirir."
+context = "Tellurium'un aşırı nadirliği (kabuk bolluğundaki platinle karşılaştırılabilir) ve sınırlı madencilik çıktısı, onu CdTe teknolojisi için kritik bir tedarik kısıtlaması haline getiriyor. First Solar'ın yıllık yaklaşık 40 tonluk geri dönüşüm geri kazanımı, küresel arzın önemli bir kısmını oluşturuyor ve birincil madenciliğe olan bağımlılığı azaltıyor."
+id = "e9f7edd9-093e-4907-875f-94bbbee82eb4"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "IRENA kümülatif PV atığın 2050 yılına kadar 78 milyon tona ulaşacağını öngörüyor. Atık eğrisi neden doğrusal bir artış yerine bu kadar dramatik bir üstel model izliyor?"
+prompt.distractors = [
+  "Panel bozulma oranları, UV- kaynaklı katmanlara ayrılma basamakları nedeniyle 15. yıldan sonra katlanarak hızlanır ve çoğu panelin 25 yıllık garantilerinin tamamını sürdürmek yerine 15 ile 20. yıllar arasında feci şekilde arızalanmasına neden olur.",
+  "Geri dönüşüm altyapısı darboğazları, işlenmeyi bekleyen panellerin 5-10 yıl boyunca depolarda birikmesine ve gerçek hizmet dışı bırakma oranlarını yansıtmayan belirgin atık artışlarına neden olan stoklama etkilerine neden olur.",
+  "İklim değişikliği, şiddetli hava olaylarının sıklığını katlanarak artırıyor, dolu ve rüzgar hasarı nedeniyle panelleri, normal kullanım ömrü sonu hizmetten çıkarmanın ötesinde yıldan yıla artan oranlarda yok ediyor",
+]
+answer.answer = "Modern güneş enerjisi kurulumu patlaması 2010-2012 civarında başladı ve 25 yıllık panel ömrüyle, ilk büyük hizmet dışı bırakma dalgası 2035-2040'ı vuruyor; bu, sonraki yıllardaki daha da büyük kurulum hacimlerinin de yaşlanmaya başlamasıyla aynı zamana denk geliyor."
+context = "Yıllık kurulumlar 2010'da 17 GW iken 2012'de 30'dan fazla GW'ye çıktı ve hızlanmaya devam etti. 25 yıllık ömrü olan her yılın kohortu, gecikmiş bir atık dalgası yaratıyor. Üstel şekil, katlanarak büyüyen kurulum hacimlerinin sırayla kullanım ömrünün sonuna ulaşmasından kaynaklanmaktadır."
+id = "e5d5fe64-5cf9-485b-92e5-f026a1fa7170"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Mekanik geri dönüşüm, termal veya kimyasal işlemlere göre önemli ölçüde daha az malzeme değeri elde edilmesine rağmen neden mevcut PV geri dönüşüm pazarına hakim oluyor?"
+prompt.distractors = [
+  "Mekanik geri dönüşüm, düz cam spesifikasyonlarını karşılayan daha yüksek saflıkta cam çıktısı üreterek, hammaddelerin geri dönüşümü için yüksek fiyatlar ödeyen cam üreticileri için onu daha çekici hale getirir",
+  "Termal ve kimyasal geri dönüşüm süreçleri, çoğu yargı bölgesinde alınması 3-5 yıl süren tehlikeli madde elleçleme izinlerini gerektirir ve bu da rakiplerin pazara girmesini engelleyen düzenleyici engeller oluşturur.",
+  "Mekanik geri dönüşüm tesisleri, herhangi bir değişiklik yapılmadan mevcut e-atık işleme tesisleriyle aynı yere yerleştirilebilirken, termal sistemler, 50 milyon ABD dolarının üzerinde bir maliyete sahip, özel emisyon kontrol ekipmanına sahip özel tesisler gerektirir.",
+]
+answer.answer = "Mekanik geri dönüşümün maliyeti panel başına yalnızca 5-10 ABD Doları, termal proseslerin maliyeti ise 15-25 ABD Dolarıdır ve toplam geri kazanılabilir malzeme değeri panel başına yalnızca 15-25 ABD Doları olduğundan, maliyet farkı, düzenlenmemiş bir pazardaki tüm kar marjını temsil eder."
+context = "Panel başına 15-25 ABD Doları değerindeki malzemeler ve yüksek değerli geri kazanım gerektirmeyen zorunluluklar nedeniyle en ucuz işleme yöntemi kazanır. Mekanik geri dönüşümün 5-10 $ maliyeti bir miktar marj bırakırken, termal geri dönüşümün 15-25 $ maliyeti tüm malzeme değerini tüketebilir."
+id = "811be33d-26b0-42f4-ad82-3e0901c1232a"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "AB WEEE Direktifi fotovoltaik panel geri dönüşümü için kütle bazında hangi minimum geri kazanım oranını zorunlu kılmaktadır?"
+answer.answer = "80%"
+answer.alternatives = [
+  "yüzde 80",
+  "kütlece %80",
+  "yüzde seksen",
+]
+context = "WEEE Direktifi, kütle olarak minimum %80 geri kazanım oranını ve %70 geri dönüşüm/yeniden kullanım oranını zorunlu kılar. Eleştirmenler, bu hedeflerin yalnızca cam ve alüminyumun temel mekanik geri dönüşümüyle elde edilebileceğini ve bunların birlikte modül kütlesinin ~%85'ini oluşturduğunu belirtiyor."
+id = "e9776552-f4b2-4477-9098-17d054c53ba5"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (23. Gün) Çift yüzeyli güneş modüllerinde tipik iki yüzeylilik faktörü nedir ve neyi temsil eder?"
+prompt.distractors = [
+  "Tipik olarak %50-60, toplam enerji çıkışının doğrudan güneş ışığından ziyade dağınık güneş ışığından gelen kısmını temsil eder; bu iki yüzeyli modüller, tek yüzeyli tasarımlardan daha verimli bir şekilde yakalar",
+  "Tipik olarak %95-100; ön taraf verimliliğinin teorik Shockley-Queisser sınırına oranını temsil eder ve hücre mimarisinin mümkün olan maksimum tek bağlantı performansına ne kadar yaklaştığını gösterir.",
+  "Tipik olarak %65-75, yansıtılmak yerine başarılı bir şekilde emilen arka yüzey fotonlarının oranını temsil eder ve öncelikle arka yüzeydeki yansıma önleyici kaplama kalınlığı tarafından belirlenir.",
+]
+answer.answer = "Tipik olarak %70-90; standart test koşulları altında arka taraftaki güç çıkışının ön taraftaki güç çıkışına oranını temsil eder ve hücrenin arkadan giren ışığı ne kadar etkili bir şekilde dönüştürdüğünü gösterir."
+context = "İki yüzeylilik faktörü, STC altında arka taraftaki gücün ön taraftaki güce bölünmesiyle tanımlanır. %70-90'lık değerler modern iki yüzeyli hücreler için tipiktir; bu, eşit şekilde aydınlatıldığında arka tarafın ön tarafa göre %70-90 daha fazla güç üretebileceği anlamına gelir."
+id = "e1cbbbe3-1d6f-494c-a991-7d1219295206"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (24. Gün) Geleneksel rafa monte güneş panelleriyle karşılaştırıldığında BIPV benimsenmesini sınırlayan temel teknik zorluk nedir?"
+prompt.distractors = [
+  "BIPV modülleri, bina kabuğunun arkasındaki hava akımının azalması nedeniyle rafa monte panellerden önemli ölçüde daha yüksek sıcaklıklarda çalışır ve bu durum, azaltılamayan termal etkilerden dolayı %20-30 verimlilik kaybına neden olur",
+  "BIPV cam, daha kalın düşük demirli cam gerektiren, modül ağırlığını 25–30 kg/m²'ye çıkaran ve çoğu konut binasının yapısal yük sınırlarını aşan yangına dayanıklılık derecelerini (Sınıf A veya eşdeğeri) karşılamalıdır.",
+  "BIPV garanti koşulları, yapı malzemesi garantileriyle çelişmektedir; çünkü PV 25 yıllık performans garantileri, değiştirdikleri bina kaplama bileşenlerinin beklenen 40-50 yıllık ömründen daha kısadır",
+]
+answer.answer = "BIPV hem bina yönetmeliklerini (yapısal, termal, hava koşullarına dayanıklılık, yangın güvenliği) hem de elektriksel performans gereksinimlerini aynı anda karşılamalı, maliyeti artıran ve tasarım esnekliğini sınırlayan karmaşık ikili sertifikasyon süreçleri yaratmalıdır"
+context = "BIPV ürünleri hem inşaat malzemesi hem de güç jeneratörü olarak hizmet verir ve iki ayrı düzenleyici çerçeveye uygunluk gerektirir. Bu çift kullanımlı yapı, yalnızca elektrik standartlarını karşılaması gereken geleneksel panellerle karşılaştırıldığında testi, sertifikasyon karmaşıklığını ve maliyeti artırır."
+id = "37d23638-2aca-4046-be5d-ef04592a1f8c"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (3. Gün) Siemens'in polisilikon saflaştırma işleminde, ısıtılmış silikon çubuklar üzerinde triklorosilan (HSiCl₃) ayrıştırılır. Bu çubuklar hangi sıcaklıkta tutuluyor ve bu sıcaklık neden kritik?"
+prompt.distractors = [
+  "Çubuklar, triklorosilanın erime noktasının hemen üzerinde, 600-700°C'de tutulur, çünkü gazın, dendritik kristal büyümesi olmadan düzgün bir birikim elde etmek için çubuk yüzeyine temas ettiğinde sıvı fazda olması gerekir.",
+  "Çubuklar, silikonun erime noktası olan 1.414°C'de tutulur, çünkü biriken silikonun gözenekli, mekanik olarak zayıf bir kaplama yerine sürekli bir polikristalin katman oluşturmak için kısa süreliğine sıvılaşması gerekir.",
+  "Çubuklar, silisyum karbür oluşumu için en uygun sıcaklık olan 800-900°C'de tutulur, çünkü daha sonra yüksek saflıkta silisyum birikmesi için çekirdeklenme bölgeleri sağlamak üzere ilk önce ince bir SiC bariyer tabakasının oluşması gerekir.",
+]
+answer.answer = "Çubuklar, polikristalin silikonun katı fazda birikmesini sağlamak için silikonun erime noktasının altında kalırken, triklorosilanı termal olarak elementel silikon ve HCl gazına ayrıştırmaya yetecek kadar sıcak olan 1.000–1.100°C'de tutulur."
+context = "Siemens süreci 1.000–1.100°C'de çalışır ve bu, HSiCl₃ bağlarını kırmak ve silikonu katı fazda tutarken saf silikon biriktirmek için yeterli termal enerji sağlar. Bu sıcaklık penceresi, güneş enerjisi sınıfı polisilikon için gereken 9N–11N saflık seviyelerini elde etmek için kritik öneme sahiptir."
+id = "749a3460-8488-4c00-a273-1a0325afedf1"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁(14.Gün) Modül kapsülleme sırasında neden ısı ve basınç uygulanmadan önce vakum altında laminasyon işlemi yapılıyor?"
+prompt.distractors = [
+  "Vakum, aksi takdirde kürleme sırasında hidrolize olacak olan EVA tabakalarındaki nemi uzaklaştırır, gümüş metalizasyonunu aşındıran ve zamanla hücre-şerit lehim bağlantılarını bozan asetik asit kabarcıkları üretir",
+  "Vakum, EVA çapraz bağlama maddelerinin kaynama noktasını düşürerek kürleme reaksiyonunun 150°C yerine 120°C'de başlamasını sağlar, bu da hücreler üzerindeki termal stresi azaltır ve uzun vadeli güvenilirliği artırır",
+  "Vakum, EVA'yi tercihli olarak hücre ara bağlantı boşluklarına akmaya zorlayan bir basınç farkı yaratır ve toplu laminasyon basıncı yukarıdan uygulanmadan önce bakır şeritlerin tamamen kapsüllenmesini sağlar",
+]
+answer.answer = "Vakum, EVA erimeden ve akmadan önce modül katmanları arasında sıkışmış havayı gidererek, ışığı dağıtacak, delaminasyon başlangıç ​​noktaları oluşturacak ve modülün ömrü boyunca nemin neden olduğu bozulmayı hızlandıracak hava kabarcıklarını önler."
+context = "Laminatta sıkışıp kalan hava kabarcıkları optik kayıplara (ışık saçılımı) neden olur, delaminasyonu başlatan stres yoğunlaştırıcılar olarak görev yapar ve nem girişi için yollar oluşturur. EVA erimeden önce havanın boşaltılması boşluksuz, optik olarak net bir kapsülleme sağlar."
+id = "91bb4879-6c20-4782-97d7-fe16c92dd739"

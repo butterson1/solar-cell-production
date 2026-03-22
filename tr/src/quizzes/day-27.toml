@@ -1,0 +1,117 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "LONGi'nin SNEC 2025'te gösterilen geniş alanlı perovskit-silikon tandem hücresi %33 verimliliğe ulaştı. Diğer tandem kayıtlarla karşılaştırıldığında bu özel sonuçta dikkate değer olan şey neydi?"
+prompt.distractors = [
+  "Perovskit, silikon ve CIGS katmanlarını istifleyen yeni bir üçlü bağlantı mimarisi kullandı ve 3,2V açık devrede çok bağlantılı bir fotovoltaik cihaz için şimdiye kadar kaydedilen en yüksek voltajı elde etti.",
+  "Tamamen oda sıcaklığında rulodan ruloya baskı kullanılarak üretildi ve bu da tandem hücrelerin herhangi bir vakumlu biriktirme aşaması veya yüksek sıcaklıkta işlem olmadan üretilebileceğini gösterdi.",
+  "Foton akımını normal karasal ışınım seviyelerinin üzerine çıkarmak için bir Fresnel lens dizisi kullanarak, standart tek güneş koşulları yerine 500 güneşin yoğunlaştırılmış aydınlatması altında rekora ulaştı.",
+]
+answer.answer = "Kenar efektlerinin, akım uyumsuzluğunun ve kusur yoğunluğunun yüksek verimliliği elde etmeyi küçük tırnak boyutundaki laboratuvar hücrelerine göre çok daha zor hale getirdiği, ticari olarak uygun 260,9 cm²'lik bir alanda gösterilmiştir."
+context = "Birçok laboratuvar kaydı küçük hücrelere (genellikle <1 cm²) ayarlanır. LONGi'nin başarısı dikkate değerdi çünkü 260,9 cm²'ye ölçeklendirme gerçek üretim zorluklarını beraberinde getiriyor; bu da teknolojinin yalnızca teorik potansiyelini değil, ticari olarak uygulanabilirliğini de kanıtlıyor."
+id = "f8f78eb7-dac1-4bdd-acd7-7b98e90cf9a8"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Tekli fisyon, silikon bazlı güneş pillerinin potansiyel olarak Shockley-Queisser limitlerini aşmasını sağlar. Bu kuantum mekaniksel süreç moleküler düzeyde nasıl işliyor?"
+prompt.distractors = [
+  "Tek bir foton, kuantum tünelleme yoluyla aynı anda iki bitişik moleküle çarparak, her molekülde dolaşmış ve silikon substrattan tutarlı bir akım olarak çıkarılabilen ilişkili elektron-delik çiftleri oluşturur.",
+  "İki düşük enerjili kızılötesi foton, organik katmandaki doğrusal olmayan optik soğurma yoluyla birleştirilir ve tek bir yüksek enerjili sanal durum üretilir ve daha sonra aşağıdaki silikon hücreye bir enerjik taşıyıcı enjekte edilir.",
+  "Organik moleküller, iki alt bant aralığı fotonunu sırayla emerek ve silikon emici katmanda bir elektron-delik çifti oluşturmak için yeterli enerjiye sahip tek bir foton yayarak fotonik yukarı dönüştürücüler olarak işlev görür.",
+]
+answer.answer = "Tek bir yüksek enerjili foton, organik bir molekülde tekli uyarılmış bir durum yaratır ve bu durum daha sonra komşu moleküller üzerinde her biri silikonda ayrı bir elektron-delik çifti oluşturabilen iki düşük enerjili üçlü duruma bölünür."
+context = "Tekli fisyon, bir yüksek enerjili fotonu iki üçlü eksitona dönüştürür. Bu nedenle silikon-tekli fisyon cihazları, mavi/UV aralığında %100 harici kuantum verimliliğini aşabilir; enerji tasarrufunu ihlal etmeden, içeri giren fotonlardan daha fazla taşıyıcı dışarı çıkar."
+id = "11571bba-9107-442b-8eaa-d018abcdd275"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Perovskit güneş pilleri, aynı koşullar altındaki silikon hücrelerle karşılaştırıldığında neden iç mekan LED aydınlatması altında önemli ölçüde daha yüksek verimlilik (~%38,7) elde ediyor?"
+prompt.distractors = [
+  "Perovskite'in düşük yoğunluklu aydınlatma altında daha yüksek taşıyıcı hareketliliği, iç mekan ışık seviyelerinde hakim olan rekombinasyon kayıplarını azaltırken silikonun dolaylı bant aralığı, düşük foton akısı yoğunluklarında daha da kötüleşen fonon darboğaz etkileri yaratır",
+  "İç mekan LED'leri, geniş emme kuyruğu nedeniyle perovskit'in verimli bir şekilde emdiği önemli miktarda ultraviyole radyasyon yayar; silikonun yansıma önleyici kaplamaları ise dış mekan güneş spektrumu için optimize edilmiştir ve yapay kaynaklardan gelen çoğu UV'yi yansıtır.",
+  "Perovskite filmleri, yeniden yayılan fotonların ince film içinde birden çok kez yeniden emildiği dar bantlı aydınlatma altında foton geri dönüşümü sergiler ve voltaj çıkışını tek bir soğurma olayının üreteceğinin ötesinde etkili bir şekilde yükseltir.",
+]
+answer.answer = "İç mekan LED aydınlatmanın dar bir emisyon spektrumu vardır ve perovskite'in bant aralığı buna uyacak şekilde hassas bir şekilde ayarlanabilir, oysa silikonun sabit 1,12 eV bant aralığı geniş güneş spektrumu için optimize edilmiştir ve dar bantlı yapay ışık enerjisinin çoğunu boşa harcar"
+context = "Bu bir spektral eşleştirme sorunudur. Perovskite'nin ayarlanabilir bant aralığı (1,2–2,3 eV), LED emisyon tepe noktalarına mükemmel şekilde uyacak şekilde ayarlanabilir ve böylece termalizasyon kayıpları en aza indirilir. Silikon bant aralığını ayarlayamaz ve aydınlatma spektrumu dar olduğunda önemli miktarda enerji kaybeder."
+id = "ed080943-948d-4856-b72b-579bb0183ca7"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Termofotovoltaik (TPV) sistemler, yüksek sıcaklık yayıcıdan %40'ın üzerinde dönüşüm verimliliği gösterdi. Şebeke uygulamaları için geleneksel akü depolamaya göre hangi temel avantajı sunuyorlar?"
+prompt.distractors = [
+  "TPV hücreleri, bir kojenerasyon düzenlemesinde aynı anda hem elektrik hem de yüksek dereceli ısı üretir ve endüstriyel proses ısı uygulamaları için hiçbir elektrokimyasal pilin eşleştiremeyeceği %85'in üzerinde birleşik termal-elektrik verimliliğine ulaşır.",
+  "TPV sistemleri, emitör bloğunda bol miktarda demir-hava kimyası kullanır, lityum iyondan 10 kat daha yüksek enerji yoğunluklarına olanak sağlarken, maliyeti 5 ABD Doları/kWh'den daha azdır, bu da onları 2 saatin üzerindeki herhangi bir depolama süresi için ekonomik olarak üstün kılar",
+  "TPV hücreleri, alıcı tarafta kriyojenik sıcaklıklarda çalışarak, herhangi bir oda sıcaklığındaki elektrokimyasal sistemin çok ötesinde, %70'e yaklaşan teorik dönüşüm verimliliğine olanak tanıyan, Carnot'ya uygun bir sıcaklık farkı yaratır.",
+]
+answer.answer = "Enerjiyi, hareketli parçaları olmayan, egzotik kimyasallar içermeyen ve şarj döngüsünden kaynaklanan bozulma olmayan basit yalıtımlı karbon veya silikon bloklarda aşırı ısı (1.500–2.400°C) olarak depolarlar ve ardından onu termal radyasyon yoluyla PV hücrelere tekrar elektriğe dönüştürürler."
+context = "TPV termal piller karmaşık elektrokimya yerine temel fiziği (sıcak şeyler foton yayar) kullanır. Karbon bloklar döngüden dolayı bozulmaz, nadir malzemeler kullanmaz ve kimyasal pillerin elde edebileceğinin çok ötesinde yoğunluklarda enerji depolayabilir."
+id = "eee1b4ca-472f-4db5-a199-c521e9411c25"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "2025'te ACS Enerji Mektupları'nda bildirilen hangi molekül, daha önceki şampiyon moleküller olan tetrasen ve pentasenin aksine, hem fisyonda verimli hem de fotostabil olmasıyla tekli fisyon güneş pilleri için bir atılım sağladı?"
+answer.answer = "DPND"
+answer.alternatives = [
+  "dipirolonaftiridindion",
+  "Dipirolonaftiridinedion",
+]
+context = "DPND (dipyrrolonaphthyridinedion), daha önceki tekli fisyon molekülleriyle ilgili temel sorunu çözdü: fotodegradasyon. Tetrasen ve pentasen fisyon için iyi çalışır ancak uzun süreli aydınlatma altında ağartılır ve ayrışır, bu da onları gerçek güneş pilleri için uygunsuz hale getirir."
+id = "977dc326-af41-465d-b959-82c033cf112d"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Kuantum noktaları kullanan ışıldayan güneş yoğunlaştırıcıları (LSC'ler), cihaz boyutunu sınırlayan kritik bir optik zorlukla karşı karşıyadır. Hangi son ilerleme doğrudan bu soruna çözüm getiriyor?"
+prompt.distractors = [
+  "Yasak frekans bantları oluşturan fotonik kristal dalga kılavuzlarına kuantum noktalarının yerleştirilmesi, yeniden yayılan fotonların yoğunlaştırıcı panelin üst veya alt yüzeylerinden kaçmasını önler",
+  "Art arda gelen her katmanın, kenara monteli hücrelere ulaşan foton akımını güçlendirmek için giderek daha uzun dalga boylarında emdiği ve yeniden yaydığı, basamaklı enerji seviyelerine sahip tandem kuantum nokta katmanları kullanma",
+  "Cam alt tabakayı, kırılma indisi gradyanı oluşturan nadir toprak iyonlarıyla katkılamak, yoğunlaştırıcı içindeki emisyon açılarına bakılmaksızın dahili olarak yansıtılan tüm fotonları kenarlara doğru bükmek",
+]
+answer.answer = "Kuantum noktalarının büyük bir Stokes kayması (absorbsiyon ve emisyon dalga boyları arasında geniş bir boşluk) ile tasarlanması, kendi kendine soğurulmayı önemli ölçüde azaltır; bu, yeniden yayılan fotonların kenardaki PV hücrelere ulaşmadan önce yeniden emilmesi sorunudur."
+context = "Kendi kendine emilim, LSC'ler için temel boyut sınırlayıcı faktördür. Absorbsiyon ve emisyon spektrumları örtüştüğünde, fotonlar kenara doğru giderken tekrar tekrar absorbe edilir. Büyük bir Stokes kayması bu spektrumları ayırarak fotonların yeniden yakalanmadan daha uzağa gitmesine olanak tanır."
+id = "271ce26c-a8f6-46a6-a069-2392fddedbbe"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (26. Gün) Uzay güneş uygulamalarında baskın hücre teknolojisi, silikon yerine III-V çoklu bağlantı hücrelerini kullanır. III-V hücrelerin birim alan başına kabaca 100 kat daha fazla maliyete sahip olmasına rağmen bu seçimin temel nedeni nedir?"
+prompt.distractors = [
+  "III-V hücreleri, doğrudan bant aralıkları nedeniyle doğası gereği radyasyona karşı dayanıklıdır; bu, protonların ve elektronların, koruyucu cam kaplamaya ihtiyaç duymadan çalışma sıcaklığında kendi kendine tavlanmasından kaynaklanan yer değiştirme hasarı anlamına gelir",
+  "III-V hücreler, daha ince aktif katmanları nedeniyle eşdeğer silikon hücrelerin yaklaşık onda biri kadar ağırlığa sahiptir ve daha yüksek hücre üretim fiyatını dengelemek yerine yörüngede daha fazla maliyet tasarrufu sağlayarak 5.000-10.000 ABD Doları/kg'a ulaşır.",
+  "III-V hücreleri, önemli bir verimlilik kaybı olmadan 400°C'ye kadar sıcaklıklarda çalışabilir, bu da uzay aracının Güneş'e, silikonla çalışan görevlerin güvenli bir şekilde girebileceğinden çok daha yakın bir yörüngede dönmesine olanak tanır",
+]
+answer.answer = "III-V çok bağlantılı hücreler, farklı bant aralıklarına sahip malzemeleri istifleyerek konsantrasyon altında %47'nin üzerinde verimlilik elde eder ve fırlatma kütlesi ile panel alanının ciddi şekilde kısıtlandığı uzayda, kilogram başına watt'ın maksimuma çıkarılması daha yüksek maliyeti haklı çıkarır"
+context = "Uzayda maliyet denklemi tersine çevrilir. Panel alanı ve kütlesi, fırlatma maliyetini, uzay aracı tasarımını ve görev kabiliyetini doğrudan etkiler. III-V çok bağlantılı hücreler birim alan ve kütle başına çok daha fazla güç üretir, bu da onları yüksek $/cm² fiyatlarına rağmen uygun maliyetli hale getirir."
+id = "8f6f3d36-f55a-4edd-9359-29a6ddaa1211"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (25. Gün) Kristalin silikon güneş panellerini geri dönüştürürken ekonomik açıdan en zorlu adım nedir ve neden geri dönüşüm sektörü için bir darboğaz yaratıyor?"
+prompt.distractors = [
+  "Yansıma önleyici silikon nitrür kaplamanın kaldırılması, hassas konsantrasyonlarda hidroflorik asit aşındırmasını gerektirir, bu da pahalı nötrleştirme ve sertifikalı arıtma tesislerinde imha edilmesini gerektiren tehlikeli florür atık akışları üretir.",
+  "Bakır ara bağlantı şeritlerinin hücreler arasından çıkarılması manuel sökme işlemini gerektirir çünkü otomatik sistemler bakırı kalay lehimden ayırt edemez, bu da mevcut geri dönüştürülmüş bakır piyasa fiyatlarında işçilik maliyetlerini engelleyici hale getirir",
+  "Gümüşün serigraf baskılı metalizasyondan geri kazanılması, yüksek sıcaklıklarda siyanür liçi gerektirir ve panel başına küçük miktar (2-4 gram), günümüz gümüş fiyatlarında kimyasal işleme maliyetlerini haklı çıkarmaz.",
+]
+answer.answer = "Lamine katmanların (cam, EVA kapsülleyici, hücreler ve termal olarak birbirine bağlanmış arka tabaka) ayrılması, yoğun enerji gerektiren piroliz veya kimyasal işlem gerektirir ve geri kazanılan silikon levha parçaları, işlenmemiş polisilikonla karşılaştırıldığında sınırlı değere sahiptir."
+context = "Modülleri 25 yıldan fazla koruyan EVA laminasyon aynı zamanda bunların sökülmesini de oldukça zorlaştırıyor. Katmanları ayırmak için yapılan ısıl işlem, önemli miktarda enerji tüketir ve geri kazanılan kırılmış hücre parçaları, yeni üretilen polisilikondan daha az değerlidir."
+id = "1ce3efb5-971e-41b9-8f87-d07eeaf64c4e"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (12. Gün) Shockley-Queisser limiti, ~1,34 eV'lik optimal bant aralığına sahip tek bağlantılı bir hücre için teorik maksimum ~%33,7'yi belirler. Boşa harcanan enerjinin en büyük payını hangi kayıp mekanizması oluşturuyor?"
+prompt.distractors = [
+  "Elektron-delik çiftlerinin fotonları toplanmadan önce hücrenin dışına yaydığı ışınımsal rekombinasyon, gelen güneş enerjisinin yaklaşık %15'ini dağıtır ve herhangi bir yarı iletken bağlantının temel voltaj sınırını belirler.",
+  "Absorbe edilmeden doğrudan soğurucudan geçen alt bant aralıklı fotonlardan kaynaklanan iletim kayıpları, gelen enerjinin yaklaşık %10'unu oluşturur ve bu oran, daha geniş bant aralıklı malzemeler için önemli ölçüde artar.",
+  "5,778K güneş yüzeyi ile ~300K hücre yüzeyi arasındaki sıcaklık farkından kaynaklanan Carnot termodinamik kayıpları, teorik maksimum gücün yaklaşık %5'ini tüketen kaçınılmaz bir entropi cezasına neden olur",
+]
+answer.answer = "Termalizasyon — bant aralığının üzerinde enerjiye sahip fotonların fazla enerjilerini ısı olarak kristal kafeye hızla aktaran taşıyıcılar ürettiği süreç — bir silikon hücrede gelen güneş enerjisinin yaklaşık %30'unu boşa harcar"
+context = "Termalizasyon herhangi bir tek bağlantı hücresindeki en büyük kayıptır. 3 eV UV foton ve 1,2 eV IR fotonun her ikisi de bant aralığı enerjisinde (silikon için ~1,1 eV) bir taşıyıcı üretir. Aradaki fark, atık ısı olarak pikosaniyeler içinde kafese boşaltılır."
+id = "c231cc68-f818-4406-9e21-221873932e81"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (9. Gün) Güneş pili mimarisinde TOPCon kısaltması neyi ifade ediyor?"
+answer.answer = "Tünel Oksit Pasifleştirilmiş Kontak"
+answer.alternatives = [
+  "tünel oksit pasifleştirilmiş kontak",
+  "Tünel oksit pasifleştirilmiş kontak",
+]
+context = "TOPCon, katkılı polisilikon katmanla kaplanmış ultra ince (~1,5 nm) silikon oksit tünel katmanı kullanır. Taşıyıcılar oksit boyunca tünel açarak yüzey rekombinasyonunu bastırır ve hücre verimliliğinin %26'nın üzerinde olmasını sağlar."
+id = "30c2f9bf-e63e-46f3-b4e0-cff1630ec985"

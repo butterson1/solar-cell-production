@@ -1,0 +1,120 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Modern bir silikon güneş panelinin yaklaşık enerji geri ödeme süresi nedir? Tüm üretim zincirinde tüketilenden daha fazla enerji üretmek için gereken süre nedir?"
+prompt.distractors = [
+  "4-6 ay, çünkü modern üretim son derece enerji tasarrufludur ve polisilikon üretimi ve kristal büyümesi için çoğunlukla yenilenebilir elektrik kullanır",
+  "5-8 yıl, çünkü enerji yoğun Siemens süreci, Czochralski'nin büyümesi ve modül laminasyonu toplu olarak muazzam miktarda elektrik tüketiyor",
+  "10-15 yıl, çünkü madencilik, taşımacılık, kimyasal işleme ve fabrika inşaatı da dahil olmak üzere tüm yaşam döngüsü önemli miktarda kümülatif enerji girdisi gerektirir",
+]
+answer.answer = "1–2 yıl, çünkü Siemens süreci (~60-80 kWh/kg) ve CZ büyüme gibi adımlar enerji yoğun olsa da panel 28+ yıl daha net pozitif enerji üretiyor"
+context = "Modern güneş panellerinin enerji geri ödeme süresi 1-2 yıldır ve bu sürenin ardından kalan 28+ yıl boyunca saf net pozitif enerji üretirler."
+id = "a9f0623a-bbfb-426e-b572-2ccb6a24ba81"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Elmaslı tel testerelerle levha dilimleme sırasında dikkatlice saflaştırılan ve kristalize edilen silikon külçenin yaklaşık yüzde kaçı çentik (talaş atığı) olarak kayboluyor?"
+prompt.distractors = [
+  "%10–15, çünkü 100–120 μm çapındaki modern elmas teller, külçenin çoğunun minimum malzeme kaybıyla kullanılabilir levhalara dönüştürülmesini sağlayacak kadar incedir",
+  "%55–65, çünkü tel çapı artı kesimler arasındaki gerekli boşluk, korunan silikondan daha fazlasının yok edilmesi anlamına gelir, bu da çentiği baskın çıktı haline getirir",
+  "%5–8, çünkü Longi ve TCL Zhonghuan gibi üreticiler, üretim ölçeğinde sıfıra yakın çentik kaybı elde etmek için tel gerginliğini ve kesme hızını optimize etti",
+]
+answer.answer = "%35–40, çünkü 130–160 μm kalınlıktaki levhalar ve her bir kesim, çentik olarak 60–80 μm silikonu tahrip ettiğinden, külçenin kabaca üçte biri veya daha fazlası atık toz haline gelir"
+context = "Elmas tel testereyle kesme işleminde silikonun yaklaşık %35-40'ı çentik olarak boşa harcanır. 130–160 μm kalınlığındaki levhalar ve kesim başına ~60–80 μm kayıpla bu, üretim zincirindeki en israf adımıdır."
+id = "0da21be2-e8ff-4c4d-8cd6-1dbdd6a250c7"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "KOH (potasyum hidroksit) dokulandırma neden monokristalin silikon plakalar üzerinde küçük piramitlerle kaplı bir yüzey üretiyor?"
+prompt.distractors = [
+  "KOH potasyum silikat kristallerini yüzeyde düzenli bir piramit deseninde biriktirir, malzemeyi levhadan çıkarmak yerine çözeltiden doku oluşturur",
+  "KOH tüm kristal düzlemleri eşit hızlarda aşındırır, ancak mikro ölçekte yüzey gerilimi etkileri aşındırıcının belirli bölgelerde birikmesine neden olarak rastgele tepeler ve vadiler oluşturur",
+  "KOH tercihen fosfor katkılı yayıcı katmanla reaksiyona girer ve yüzey boyunca katkı konsantrasyonunun gradyanı, piramitlerin nerede oluştuğunu ve nerede çözüldüğünü belirler",
+]
+answer.answer = "KOH silikonu anizotropik olarak aşındırır - <100> kristal düzlemine <111> düzleminden kabaca 100 kat daha hızlı saldırarak - böylece daha yavaş aşındıran <111> düzlemleri piramit yüzleri olarak kalır"
+context = "Piramidal doku anizotropik dağlamadan kaynaklanır: KOH, <100> kristal düzlemini <111> düzleminden ~100 kat daha hızlı çözer ve <111> yüzlerini 5-10 μm piramitlerin kenarları olarak açıkta bırakır."
+id = "32ae7b60-dea2-4640-b298-0b704b7158c4"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Kumdan şebekeye bağlı modüle kadar tüm üretim zinciri boyunca, ömrü boyunca 25.000'den fazla kWh üretecek tek bir güneş panelinde bulunan silikonun toplam kütlesi nedir?"
+prompt.distractors = [
+  "Yaklaşık 5–8 kg, çünkü 550 W'lık bir modül, kabaca 2,5 metrekarelik aktif hücre alanı boyunca tam ışık emilimi elde etmek için önemli miktarda silikon kütlesi gerektirir",
+  "Yaklaşık 50-100 gram, çünkü modern levhalar o kadar incedir ki (130 μm), yarı iletken katman esasen minimum ham silikon malzemesi gerektiren bir filmdir",
+  "Yaklaşık 3-4 kg, çünkü bireysel plakalar ince olmasına rağmen, 72 hücreli bir modül düzinelerce hücre artı bypass diyotları ve bağlantı kutusu bileşenlerinde kullanılan silikon içerir",
+]
+answer.answer = "Yaklaşık 600 gram - karton kapaklı bir kitaptan daha az - çünkü endüstrinin başarısı, çok küçük miktardaki hassas şekilde düzenlenmiş malzemenin olağanüstü işler yapmasını sağlamaktır"
+context = "Bir güneş paneli yalnızca yaklaşık 600 gram silikon içerir. Yarı iletken endüstrisinin dehası, maddi miktarda değil, kesin atomik düzenlemededir."
+id = "c79dbc72-b39c-48a3-a43b-012c2c30f90d"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Güneş modülünün arkasındaki bağlantı kutusunda bulunan baypas diyotlarının (tipik olarak modül başına 3 adet) birincil işlevi nedir?"
+prompt.distractors = [
+  "Modül voltajı depolama sistemleri için güvenli bir eşiği aştığında aşırı akımı yönlendirerek bağlı pillerin aşırı şarj edilmesini önlemek için çıkış voltajını düzenlerler.",
+  "Modülün kendisinde DC çıkışının küçük bir kısmını AC'ye dönüştürürler, dizi invertöründeki iş yükünü azaltır ve genel sistem dönüştürme verimliliğini artırırlar",
+  "Yüksek ışınım koşulları sırasında termal kaçmayı ve EVA bozulmayı önlemek için bireysel hücre sıcaklıklarını izler ve aşırı ısınan dizilerin devreden bağlantısını keserler",
+]
+answer.answer = "Hücreler kısmen gölgelendiğinde, gölgeli dizi etrafında alternatif bir akım yolu sağlayarak, gücün engellenen hücrelerde dağılmamasını sağlayarak, sıcak nokta hasarına karşı koruma sağlarlar."
+context = "Baypas diyotları, gölgeli veya düşük performans gösteren hücre dizileri etrafında alternatif bir akım yolu sağlayarak ters taraflı hücrelerin aşırı ısınmasını ve modülde sıcak nokta hasarına neden olmasını önler."
+id = "4962f3d4-6942-496e-a39b-b93adcaea631"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "2025 yılı itibarıyla güneşli bölgelerde güneş enerjisinin yaklaşık seviyelendirilmiş enerji maliyeti (LCOE) aralığı, kWh başına dolar cinsinden nedir?"
+answer.answer = "0,02–0,05 ABD Doları/kWh"
+answer.alternatives = [
+  "0.02-0.05",
+  "0,02$-0,05$",
+  "2-5 sent",
+  "0,02 ila 0,05 ABD Doları",
+  "0,02 ila 0,05",
+]
+context = "Güneşli bölgelerdeki güneş enerjisi LCOE 0,02–0,05 $/kWh'ye düştü ve bu da onu tarihteki tüm fosil yakıtlardan daha ucuz hale getirdi."
+id = "e76bfbea-b9a1-43a2-a2d8-8a4ed8be68b0"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (26. Gün) Ters kare yasası, Dünya yüzeyine enerji ışınlayacak uzay merkezli güneş enerjisi santralleri için neden temel bir zorluktur?"
+prompt.distractors = [
+  "Ters kare kanunu, güneş paneli verimliliğinin Güneş'e olan mesafenin karesi ile azalması anlamına gelir, dolayısıyla yüksek yörüngedeki paneller birim alan başına katlanarak daha az güç üretir.",
+  "Ters kare yasası, mikrodalga veya lazer ışınının yörüngeden yere giderken yayılmasına neden olur ve kilometrelerce çapında çok büyük alıcı antenler (rektennalar) gerektirir.",
+  "Ters kare kanunu, iletilen ışının atmosferik emiliminin yükseklikle karesel olarak arttığı ve daha yüksek yörüngelerin güç ışınlaması için giderek daha az uygun hale geldiği anlamına gelir.",
+]
+answer.answer = "Ters kare yasası, iletim sırasında ışın sapmasını yönetir: Sıkıca odaklanmış mikrodalga ışınları bile sabit yörüngeden 36.000 km'ye yayılır ve enerji yoğunluğunu kaybeder."
+context = "Sabit yörüngeden Dünya yüzeyine kadar yaklaşık 36.000 km'lik ışın sapması, ters kare yasası ve kırınım limitleri tarafından yönetilir ve çok büyük iletim ve alma açıklıkları gerektirir."
+id = "9d865970-1816-42d0-b159-9fa1c43449cc"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (27. Gün) Tek eklemli silikon güneş hücresi için mevcut laboratuvar verimlilik rekoru nedir ve bunu hangi şirket başardı?"
+prompt.distractors = [
+  "%29,4'ü SunPower tarafından, n-tipi CZ plaka alt katmanı üzerinde bakır elektrokaplama ve gelişmiş yüzey pasifleştirme ile arka temaslı IBC mimarisi kullanılarak",
+  "%26,1, Trina Solar tarafından, poli-Si pasifleştirici kontaklara ve geniş alanlı bir ticari plaka üzerinde optimize edilmiş fosfor katkılı yayıcıya sahip bir TOPCon mimarisi kullanılarak",
+  "%28,6 Kaneka tarafından, ara reflektör katmanları ve ön ve arka silikon emiciler arasında spektrum bölmeli tandem heteroeklem yapısı kullanılıyor",
+]
+answer.answer = "Üstün amorf silikon yüzey pasifleştirmesi yoluyla olağanüstü yüksek açık devre voltajı elde eden HJT (heteroeklem) hücre mimarisi kullanan LONGi tarafından %27,3"
+context = "LONGi, olağanüstü yüzey pasivasyonu ve yüksek açık devre voltajı sağlayan HJT mimarisiyle elde edilen %27,3'lük tek bağlantı silikon verimlilik rekorunu elinde tutuyor."
+id = "3cc9444e-8842-4bea-9982-0089554b1d73"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (3. Gün) Siemens prosesinde neden triklorosilan (SiHCl₃) silikon saflaştırması için doğrudan katı silikonu saflaştırmak yerine tercih edilen ara bileşiktir?"
+prompt.distractors = [
+  "Triklorosilan, demir ve alüminyum gibi metalik yabancı maddelerle seçici olarak bağlanarak filtrelenebilen stabil çökeltiler oluşturur ve çözeltide saf SiHCl₃ bırakır",
+  "Triklorosilan, katotta saf silikon biriktiren ve yabancı maddeler elektrolit banyosunda çözünmüş halde kalan sulu bir çözelti içinde elektrolize edilebilir.",
+  "Triklorosilan, düşük sıcaklıklarda oksijenle reaksiyona girerek buharlaşan uçucu safsızlık oksitleri oluşturur ve geride giderek daha saf silikon bileşiği bırakır.",
+]
+answer.answer = "Triklorosilan, fraksiyonel olarak damıtılabilen bir sıvıdır (kaynama noktası 31,8°C) ve damıtma, safsızlıkları ayırmada olağanüstü derecede etkilidir ve geçiş başına bir büyüklük sırasını ortadan kaldırır"
+context = "Silikonun sıvı triklorosilana dönüştürülmesi, saflaştırmada olağanüstü derecede etkili olan fraksiyonel damıtma sağlar; her bir damıtma geçişi, kabaca bir miktar safsızlık konsantrasyonunu ortadan kaldırır."
+id = "24df5a6d-d9f7-47ce-a6f2-1617e2a35dde"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (9. Gün) Güneş pili mimarisinde PERC ne anlama geliyor?"
+answer.answer = "Pasifleştirilmiş Verici ve Arka Kontak"
+answer.alternatives = [
+  "Pasifleştirilmiş Verici ve Arka Hücre",
+  "pasifleştirilmiş emitör ve arka kontak",
+]
+context = "PERC Pasifleştirilmiş Verici ve Arka Kontak anlamına gelir. Hücrenin arkasına lazerle delinmiş yerel temas noktalarına sahip bir alüminyum oksit pasifleştirme katmanı ekleyerek verimliliği %23-23,5'e yükseltir."
+id = "e6e4e327-b3e2-4363-8625-1c5d7e86e73c"

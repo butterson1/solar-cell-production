@@ -1,0 +1,131 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "İşgücü maliyetlerinin nispeten düşük olduğu yerlerde bile güneş hücresi üretimi neden büyük ölçüde otomatik hale geldi?"
+prompt.distractors = [
+  "Çünkü 2020'den sonra çoğu hücre mimarisi Sınıf 1 temiz odalar gerektirdi ve insan operatörler, metalizasyon sırasında azınlık taşıyıcı ömrünü kısaltacak kadar yeterli miktarda hava yoluyla taşınan sodyum kirliliği üretti.",
+  "Çünkü büyük ihracat pazarlarındaki ticaret politikası kuralları, her levha için serileştirilmiş robotik izlenebilirlik gerektirmeye başladı ve bu da manuel üretimi birinci sınıf modül sertifikasyon programları için uygun hale getirmedi.",
+  "Modern güneş enerjisi fabrikaları o kadar fazla elektrik tükettiğinden, otomasyona esas olarak şebekeye duyarlı yük değişimini koordine etmek ve dağıtım ve ateşleme sırasında elektrik kesintilerini önlemek için ihtiyaç duyulur.",
+]
+answer.answer = "Çünkü asıl kazanç tekrarlanabilirliktir: 120-170 mikronluk kırılgan plakalar, mikron düzeyinde hizalama ve çok ince marjlar, verim kaybını otomasyonun yerini aldığı emekten daha pahalı hale getirir"
+context = "Otomasyon, teatral işgücü değişiminde tutarlı kullanım, hizalama ve süreç kontrolünden daha az önemlidir. Modülleri 0,08-0,10 ABD Doları/W civarında satan bir işletmede, küçük kusur oranları veya yanlış hizalama kayıpları karı hızla silebilir."
+id = "d712d2f8-d839-4fe5-929a-b04de44bfcf4"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Modern bir TOPCon hücre fabrikasında otomasyonu düşünmenin en iyi yolu nedir?"
+prompt.distractors = [
+  "Her biri maksimum hız için bağımsız olarak optimize edilmiş, yerel araç kullanımının mümkün olduğu kadar yüksek kalması için adımlar arasına envanter arabellekleri eklenen bir dizi yalıtılmış süper araç olarak",
+  "Partilerin tamamı aynı termal ve atmosferik koşullar altında birlikte işleninceye kadar levhaların büyük kuyruklarda beklediği kesikli kimyanın temiz oda versiyonu olarak",
+  "Yalnızca biriktirme ve pişirme aşamalarının nihai kaliteyi belirlediği, yukarı yönde işleme ve aşağı yönde sıralamanın esas olarak raporlama doğruluğunu etkilediği dikey bir hiyerarşi olarak",
+]
+answer.answer = "Bir bayrak yarışı olarak: her bir levha, sıkı zamanlanmış aktarımlar boyunca hareket eden bir coptur ve fabrika ancak her aktarım, tarif, arabellek ve yönlendirme kararının senkronize kalması durumunda başarılı olur"
+context = "Temel zorluk yalnızca bireysel araçların çalışması değil, aynı zamanda araçlar arasındaki geçişlerin güvenilir bir şekilde çalışmasıdır. Kasetler, konveyörler, yazılım yönlendirme ve zamanlama mantığı hasarı, kirlenmeyi ve darboğazları önler."
+id = "2b9d424c-2aea-4a31-919f-dbf8d2b07cf9"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Güneş enerjisi üretiminde makine görüşü ve hat içi görüntüleme neden bu kadar değerli?"
+prompt.distractors = [
+  "Görünür spektrumlu görüntüleme artık uzun vadeli modül bozulmasını flaş testinden veya EL analizinden daha iyi çıkarabildiğinden, üreticilerin nihai elektrik testini tamamen değiştirmelerine izin veriyorlar",
+  "Çoğunlukla çatı modülleri için estetik renk tekdüzeliğini doğrulamak için kullanılırken, çoğu yapısal kusur daha sonra IEC çevre yeterlilik testi sırasında keşfedilir.",
+  "Hat istatistiksel süreç kontrolü olgunluğuna ulaştığında üçüncü taraf inceleme ihtiyacını ortadan kaldırarak, her modülün fabrika içinde güvenilirlik açısından sertifikalandırılmasına olanak tanır.",
+]
+answer.answer = "Çipler, baskı hataları ve mikro çatlaklar gibi öncü kusurları, bu kusurlar verim kaybına, düşük güç kutularına veya gelecekteki saha arızalarına dönüşmeden önce hat hızında yakalarlar."
+context = "Bir kusur hücreyi hemen öldürmeyebilir. Satır içi görüş, EL, PL ve ilgili denetim yöntemleri, üreticilerin daha sonraki bir sorunu pahalı sonraki işlemlerden sonra keşfetmek yerine, erken imzasını yakalamasına yardımcı olur."
+id = "67f315c5-9a56-46f1-991d-d28ea9507175"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Otomatikleştirilmiş bir güneş enerjisi fabrikasında verim neden ekonomik olarak genel üretim hacminden daha önemlidir?"
+prompt.distractors = [
+  "Verim, günde yalnızca sabit sayıda hücreyi örnekleyebilen modül sertifika laboratuvarları tarafından sınırlandırıldığından, ekstra yukarı akış hızı nadiren daha fazla ürün gönderilmesine dönüşür.",
+  "Çünkü yüksek verimli aletler genellikle watt başına daha fazla gümüş macunu ve argon tüketir, bu da hat stabil olsa bile kullanım ve sarf malzemesi maliyetlerinin yüksek olmasına neden olur",
+  "Çünkü gigawatt ölçekli fabrikaların çoğu finansman açısından kısıtlıdır ve bu nedenle elektrik performansı veya nihai satılabilir çıktı yerine düşük stok dönüşleri için optimizasyon yapar.",
+]
+answer.answer = "Çünkü satılabilir kaliteyi sessizce düşüren hızlı bir alet, daha yavaş bir alete göre daha fazla değeri yok edebilir, özellikle de birkaç milivolt veya küçük kırılma oranları bile son gruplama gelirini etkilediğinde"
+context = "Verim etkileyici görünüyor ancak verim, hattın çıktısının ne kadarının birinci sınıf güç sınıflarında gerçekten satılabileceğini belirliyor. Otomasyon güçlüdür çünkü sadece hızlı hareket ettiği için değil, gizli kayıpları da azaltır."
+id = "b98e87cb-3854-4ea4-b965-b2bc4fa0e3b8"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Üretim yürütme sistemi (MES) yüksek düzeyde otomatikleştirilmiş bir PV hattına ne gibi katkıda bulunur?"
+prompt.distractors = [
+  "Modül güç sınıflarını doğrudan satış faturalarına, gümrük beyanlarına ve ihracat pazarları için karbon ayak izi açıklamalarına dönüştürerek esas olarak kurumsal muhasebe yazılımının yerini alır.",
+  "Öncelikle Çin ve Batı araçlarını birbirinden izole eden bir siber güvenlik katmanı görevi görür, böylece karma satıcılı üretim hatları tarif sızıntısı veya IP kaybı olmadan çalışabilir",
+  "Satır içi yönlendirme zaten mekanik olarak sabitlendiğinden ve yazılım düzeyinde koordinasyon gerektirmediğinden, hücreler üretimden ayrıldıktan sonra çoğunlukla depo yönetimi için kullanılır.",
+]
+answer.answer = "Her partiye dijital bir pasaport verir (tarifleri, takım geçmişini, alarmları, ölçümleri ve yönlendirmeyi takip eder), böylece kötü sonuçlar belirli proses koşullarına kadar takip edilebilir"
+context = "MES bir fabrikayı kara kutudan analiz edilebilir bir sisteme dönüştürür. İzlenebilirlik olmadığında getiri sapmaları gizemli kalır; Bu sayede mühendisler zayıf elektrik sonuçlarını bir alete, tarife veya zaman penceresine bağlayabilir."
+id = "183018d6-6794-4db3-86de-58dfd3b32fa3"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Derste anlatıldığı gibi, modern hücre üretiminde ana akım silikon levhalar ne kadar incedir?"
+answer.answer = "120-170 mikron"
+answer.alternatives = [
+  "120 ila 170 mikron",
+  "120–170 mikron",
+  "120-170 mikron",
+  "120 ila 170 mikron",
+]
+context = "Modern levhalar şaşırtıcı derecede incedir (yaklaşık 120-170 μm) ve robotik taşımanın, vakumlu tutucuların ve hassas transfer sistemlerinin bu kadar önemli olmasının ana nedenlerinden biri de budur."
+id = "00233f57-87a4-4a30-9baa-8f934a4f1600"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (17. Gün) Gofret üretimi neden güneş enerjisi tedarik zincirindeki en dar küresel tıkanıklık noktasıdır?"
+prompt.distractors = [
+  "Çünkü gofretler tüm PV yığını içinde en yüksek gümüş içeriğini içeriyor ve bu da onları emtia fiyatlarındaki şoklara ve metalizasyon macunu kıtlığına en çok maruz kalan aşama haline getiriyor",
+  "Dilimlenmiş silikon yüzeyler, uzun mesafeli iç nakliyeye ekonomik olarak dayanamayacak kadar hızlı oksitlendiğinden, levhalar limanların yakınına yerleştirilmesi gereken tek aşama olduğundan",
+  "Gofret fabrikaları benzersiz bir şekilde Avrupa vakum teknolojisine ve Japon kuvars ürünlerine bağımlı olduğundan, Çinli firmalar yalnızca ithalatın kısıtlanmadığı yerlerde hakim durumda kalıyor",
+]
+answer.answer = "Çünkü gofret üretimi, özel kristal büyütme ve dilimleme ekipmanlarını güçlü ölçek efektleriyle birleştirerek, diğerlerinin kopyalaması en zor aşamada Çin'e yaklaşık %95 pay veriyor."
+context = "17. Gün, wafering'in en yoğun adım olduğunu (Çin'de yaklaşık %95) vurguladı çünkü ölçek ekonomilerinden güçlü bir şekilde yararlanırken özel ekipman ve teknik bilgi gerektiriyordu."
+id = "1a0ce21b-7c46-43c4-a8ec-12e2374cdec1"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁(16.Gün) Swanson Yasası neyi anlatır?"
+prompt.distractors = [
+  "Ara bağlantı kayıplarının %1,5'in altında kalması koşuluyla, modül alanındaki her %10'luk artışın watt başına cam ve çerçeve maliyetini yaklaşık %6 azalttığı gözlemi",
+  "Her büyük hücre mimarisi geçişinin, otomasyonun hattı kademeli olarak önceki maliyet seviyelerine döndürmesinden önce fabrika yatırım harcamalarını watt başına %24 artırdığına dair ampirik kural",
+  "Plaka çapının iki katına çıkarılmasıyla elde edilen üretim buluşu, tel testere hızı ve bulamaç geri kazanımı orantılı olduğu sürece watt başına kerf kaybını yaklaşık dörtte bir oranında azaltır.",
+]
+answer.answer = "Kümülatif sevk edilen güneş enerjisi kapasitesinin her iki katına çıkması için modül fiyatlarının yaklaşık %24 düştüğünü gösteren ampirik model"
+context = "Swanson Yasası, güneş enerjisi endüstrisinin öğrenme eğrisidir: kümülatif dağıtım, ölçek, mühendislik iyileştirmeleri ve tedarik zinciri optimizasyonu yoluyla maliyet düşüşünü sağlar."
+id = "11f51cef-b744-4912-a56a-b91b64265d5c"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (9. Gün) TOPCon güneş hücresinin arkasındaki ana mimari fikir nedir?"
+prompt.distractors = [
+  "Düşük ışınım koşulları altında seri direnci kesmek için şeffaf bir iletken oksit kullanarak silikon levhanın ön vericisini kadmiyum tellür katmanlarıyla değiştirir.",
+  "Arka taraftaki pasivasyonu tamamen ortadan kaldırır ve bunun yerine toplu iletim yoluyla düşük dirençli bir arka temas oluşturmak için çok ağır fosfor difüzyonuna dayanır.",
+  "Mevcut koleksiyonun tamamını kenara monteli bakır şeritlere taşıyarak arka yüzey rekombinasyon kontrolü ihtiyacını ortadan kaldırır ve çok daha düşük fırın sıcaklıklarına olanak tanır",
+]
+answer.answer = "Taşıyıcıların seçici olarak toplanmasına izin verirken rekombinasyonu azaltmak için ultra ince bir tünel oksit artı katkılı bir polisilikon pasifleştirici kontak kullanır"
+context = "TOPCon, daha iyi bir arka kontak yapısı oluşturarak PERC'yi geliştirir: çok ince oksit artı katkılı polisilikon, rekombinasyon kayıplarını azaltır ve voltajı ve verimliliği artırır."
+id = "1b4d90f9-a76a-4d67-96fb-a5112f8f1aeb"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Gelişmiş güneş enerjisi fabrikaları, ürün işleme çoğunlukla otomatikleştirilmiş olsa bile neden hala yüksek vasıflı insan işçilere ihtiyaç duyuyor?"
+prompt.distractors = [
+  "Çünkü uluslararası güvenilirlik standartları, lisanslı bir mühendisin, modüller sevkiyat için paketlenip seri hale getirilmeden önce her bir verimlilik kutusunu görsel olarak onaylamasını gerektirir.",
+  "Robotlar tekstüre etme ve temizleme için kullanılan asidik ve alkali ortamlarda güvenli bir şekilde çalışamadığı için bu bölümler hala elle levha taşıma ve incelemeye bağımlıdır.",
+  "Çünkü premium modüllerin çoğu hâlâ yazıcıda gümüş parmak geometrisinin elle kalibre edilmesini gerektiriyor ve bu henüz kapalı döngü optik geri bildirim sistemleriyle dengelenemiyor.",
+]
+answer.answer = "Çünkü çalışma süresi, tanılama ve süreç kararlılığı, kayıplar yayılmadan önce PLC'lerde, servo sistemlerde, takım kaymasında ve kalite sapmalarında sorun giderebilecek teknisyenlere ve mühendislere bağlıdır."
+context = "Otomasyon, emeği ortadan kaldırmak yerine emek karışımını değiştirir. Bu fabrikalardaki en yüksek değere sahip kişiler genellikle hattı dar bir çalışma aralığı içinde tutan bakım, kontrol ve süreç personelidir."
+id = "dec5a2b9-18a6-47ab-a6f2-97a6c0daf25c"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Fabrika genelinde partileri, tarifleri, alarmları, yönlendirmeyi ve izlenebilirliği takip eden yazılım katmanı için yaygın olarak hangi kısaltma kullanılır?"
+answer.answer = "MES"
+answer.alternatives = [
+  "Üretim Yürütme Sistemi",
+  "üretim yürütme sistemi",
+]
+context = "MES, Üretim Yürütme Sistemi anlamına gelir. Otomatik PV hatlarının izlenebilirliği, yönlendirmeyi ve temel neden analizini geniş ölçekte yönetmesine yardımcı olan yazılım omurgasıdır."
+id = "83346e31-b18a-4243-9ac5-28c1d47fb085"

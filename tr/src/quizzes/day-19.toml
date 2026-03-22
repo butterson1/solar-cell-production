@@ -1,0 +1,124 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Silikon güneş hücresinin elektrolüminesans (EL) görüntüsünde, şönt kusuru tipik olarak şu şekilde görünür:"
+prompt.distractors = [
+  "Tüm taşıyıcıları bağlantı noktasından eşit şekilde uzaklaştıran ve herhangi bir ışınımsal rekombinasyonu önleyen şantın neden olduğu, tüm hücre boyunca eşit derecede karanlık bir bölge",
+  "Fosfor difüzyonunun yerel doping konsantrasyonunu arttırdığı ve çevredeki ışınımsal rekombinasyon oranını arttırdığı hücre kenarı boyunca parlak bir çizgi",
+  "Şönt akımı tercihen metalizasyon şebeke çizgileri boyunca baraya doğru çektiği için parmak aralığına uygun bir dizi koyu paralel şerit",
+]
+answer.answer = "Karanlık bir hale ile çevrelenmiş parlak bir nokta, çünkü çevredeki bölge taşıyıcılardan yoksun kalırken ve daha az parlaklık üretirken akım şönt bölgesinden geçirilir"
+context = "Şöntler, kavşak boyunca lokalize düşük dirençli yollar oluşturur. Akım şant boyunca (parlak nokta) yoğunlaşırken çevredeki alanlar taşıyıcı yoğunluğunu (koyu hale) kaybeder. Bu durum mantığa aykırıdır çünkü kusurlu bölge karanlık değil parlak görünür."
+id = "1a48b1f2-512e-431d-8883-2cef0309da5b"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Bir güneş hücresinin IV eğrisi normal bir kısa devre akımını gösterir, ancak eğimli üst kenarı ile keskin bir şekilde azaltılmış doldurma faktörünü gösterir. Hangi parazit direncinin yüksek olması muhtemeldir?"
+prompt.distractors = [
+  "Şönt direnci (Rsh) çok düşük, bağlantı noktası boyunca IV eğrisinde sol kenarın eğimli olması ve kısa devre koşullarında akımın azalması şeklinde ortaya çıkan akım sızıntısına neden oluyor",
+  "Arka alüminyum BSF katmanındaki temas direnci çok yüksektir; bu, IV eğri şeklini etkilemek yerine öncelikle arka yüzeydeki rekombinasyonu artırarak Voc'yi azaltır.",
+  "Aşırı fosfor katkısı nedeniyle yayıcı tabaka direnci çok düşük, bu da Auger rekombinasyonunu artırıyor ve IV eğrisinin hem akım hem de voltaj eksenlerini simetrik olarak sıkıştırıyor",
+]
+answer.answer = "Seri direnç (Rs) çok yüksektir, parmaklar, baralar veya kontaklar arasındaki akım yolunda aşırı dirençli kayıplar yaratır, bu da voltaj arttıkça akımın düşmesine neden olur"
+context = "Yüksek seri direnç özellikle IV eğrisinin üst (yüksek akım) kısmının aşağı doğru eğim yapmasına neden olur. Her ilave 0,1 Ω·cm² Rs, doldurma faktörünü kabaca yüzde 1-2 puan düşürür. Düşük şönt direnci ise sol kenarın eğilmesine neden olur."
+id = "c1f45185-9ac0-47ed-a490-1096145f340e"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Bir güneş hücresi üretim hattında fotolüminesans (PL) görüntülemenin elektrolüminesans (EL) görüntülemeye göre birincil avantajı nedir?"
+prompt.distractors = [
+  "PL görüntüleme, maliyeti 1.000 doların altında olan görünür dalga boylu kameralar kullanır, bu da onu 950-1300 nm aralığında çalışan pahalı InGaAs sensörleri gerektiren EL sistemlerinden en az 10 kat daha ucuz hale getirir",
+  "PL görüntüleme, lazer uyarma kaynağının EL ölçümlerinde kullanılan yaygın akım enjeksiyonundan daha hassas bir şekilde odaklanabilmesi nedeniyle daha yüksek uzaysal çözünürlük (10 μm'nin altında) elde eder",
+  "PL görüntüleme, kapsüllenmiş bitmiş modüllerdeki kusurları EL'den daha etkili bir şekilde tespit edebilir, çünkü optik uyarım minimum sinyal zayıflamasıyla camdan ve EVA katmanlardan geçer",
+]
+answer.answer = "PL görüntüleme hiçbir elektrik kontağı gerektirmeden ham işlenmemiş plakaların metalizasyondan önce incelenmesine olanak tanır ve bu da maliyetli sonraki işlem adımlarından önce malzeme kusurlarını yakalar"
+context = "PL'ın en önemli avantajı temassız işlemdir. EL, akımın enjekte edilmesini gerektirir, bu da hücrenin tamamlanmış bağlantılara ihtiyacı olduğu anlamına gelir. PL optik uyarma (tipik olarak 808 nm lazer/LED) kullanır ve kesilmiş plakalardan bitmiş hücrelere kadar birçok aşamada kusur tespitine olanak tanır."
+id = "442700e6-3c2f-458e-9efc-8cb5d8159d02"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "72 hücreli seri bağlı modüldeki tek bir hücre %30 gölgeli hale gelir. O hücreye ne olacak?"
+prompt.distractors = [
+  "Gölgeli hücre, nominal çıkışının %70'inde güç üretmeye devam eder ve modül akımı, o hücrenin azaltılmış katkısına uyacak şekilde otomatik olarak aşağı doğru ayarlanır.",
+  "Gölgeli hücre, ileri yönlü arıza moduna girer ve burada azaltılmış akımı telafi etmek için aşırı voltaj üretir ve bağlantı noktasında lokalize taşıyıcı çoğalmasına neden olur.",
+  "Gölgeli hücre, dahili bağlantı kapasitansı aracılığıyla diziden elektriksel olarak ayrılır ve geri kalan 71 hücrenin, hücre başına biraz daha yüksek bir voltajda normal şekilde çalışmasına olanak tanır.",
+]
+answer.answer = "Gölgeli hücre ters kutuplu hale gelir ve diğer hücrelerden gücü emer, bunu ısı olarak dağıtır çünkü gölgesiz hücreler tarafından seri olarak ayarlanan dizi akımını koruyamaz"
+context = "Bir seri dizide tüm hücrelerin aynı akımı taşıması gerekir. Bir hücre gerekli akımı üretemediğinde, ters kutuplu hale gelir ve kaynak yerine yük görevi görür. Diğer hücrelerden gelen güç ısı olarak dağıtılır ve potansiyel olarak 150-200°C veya daha yüksek bir sıcaklığa ulaşır."
+id = "e45ebcea-bc7d-4c04-90a2-8272dd3187d0"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Kristalin silikon güneş pillerinden elektrolüminesans emisyonu yaklaşık hangi dalga boyunda (nm cinsinden) zirveye ulaşır?"
+answer.answer = "1150"
+answer.alternatives = [
+  "1150 deniz mili",
+  "1.150",
+  "1.150 deniz mili",
+  "~1150",
+  "~1150 nm",
+  "1100",
+  "1100 deniz mili",
+]
+context = "Kristalin silikon EL emisyonu, yakın kızılötesinin derinliklerinde yaklaşık 1.150 nm'de zirve yapar. Standart görünür ışıklı kameraların EL görüntüleri yakalayamamasının nedeni budur; değiştirilmiş Si CCD/CMOS sensörlerine veya 950-1300 nm aralığında duyarlılığa sahip InGaAs kameralara ihtiyacınız vardır."
+id = "ce742a19-af5a-4a91-b43f-55671decb977"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Modern güneş enerjisi fabrikalarında, IV eğrisi testinden (minimum verimlilik eşiklerinin altına düştüğü için reddedilen hücreler) elde edilen tipik verim kaybı yüzdesi nedir?"
+prompt.distractors = [
+  "%0,1'den az, çünkü flaş testi öncelikle hücreleri reddetmek yerine verimlilik kategorilerine ayırmak için kullanılıyor ve hemen hemen tüm hücreler minimum eşikleri karşılıyor",
+  "%5-8, temel olarak birkaç yüzde puanı kapsayan geniş bir Gaussian hücre verimliliği dağılımı üreten doğal Czochralski külçe kalite değişimlerinden kaynaklanmaktadır",
+  "%10-15, doldurma faktörü %82'nin altında olan veya hedef değerden 5 mV'den büyük Voc sapması olan herhangi bir hücreyi reddeden 1. kademe üreticilerin sıkı gereksinimlerini yansıtır",
+]
+answer.answer = "İyi çalışan bir fabrikada %1-3, herhangi bir depoda satılamayacak kadar verimliliğe sahip hücreleri temsil eder, bu da gigawatt üretim ölçeğinde günlük 50.000-150.000 $ kayıp anlamına gelir."
+context = "IV testinden elde edilen %1-3'lük ret oranı, iyi yönetilen üretim hatları için tipiktir. Bu, ölçekte önemli bir maliyettir ancak sahada 10-30 kat daha fazla maliyete neden olan garanti taleplerini tetikleyecek kusurlu hücrelerin gönderilmesinden çok daha ucuzdur."
+id = "abcb39d1-fb11-4f24-8407-05d47aaa7a93"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (18. Gün) Otomatik güneş hücresi üretiminde serigrafi baskı sonrası konumlandırılan makine görüş sistemlerinin öncelikli rolü nedir?"
+prompt.distractors = [
+  "Maliyet kontrolü amacıyla macun tüketiminin hücre başına 80-120 mg bütçe dahilinde kalmasını sağlamak için her hücrede biriken gümüş macunun ıslak ağırlığını ölçerler.",
+  "Baskı istasyonunun üstüne monte edilen yüksek hızlı kameralar aracılığıyla elek ağının deformasyon modelini analiz ederek silecek basıncını gerçek zamanlı olarak izliyorlar",
+  "Hücrenin arka yüzeyindeki lazerle çizilmiş QR kodlarını okuyarak her bir hücreyi tam yukarı akış işlem geçmişine bağlayarak bireysel levha seri numaralarını takip ediyorlar",
+]
+answer.answer = "Baskılı parmak ve bara geometrisini, seri direnci artıracak ve hücre verimliliğini azaltacak kırık çizgiler, yanlış hizalama veya kalınlık değişiklikleri gibi kusurlar açısından incelerler"
+context = "Baskı sonrası makine görüşü, hücre ateşlemeye geçmeden önce metalizasyon kusurlarını (kırık parmaklar, lekeli macun, yanlış hizalanmış baralar) yakalamak için kritik öneme sahiptir. Bu kusurlar, günümüzün IV eğrisi bölümünde tartışıldığı gibi seri direnci ve doldurma faktörünü doğrudan etkiler."
+id = "9101d01c-b915-4774-a80f-3009c51d9602"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (17. Gün) Minimum polisilikon veya levha üretimine rağmen neden Güneydoğu Asya (Vietnam, Malezya, Tayland, Kamboçya) güneş modülü montajı için önemli bir merkez haline geldi?"
+prompt.distractors = [
+  "Güneydoğu Asya ülkeleri, doğrudan metalurjik kalitede silikon üretimine uygun, bol miktarda kuvars kumu yataklarına sahiptir ve bu, hammaddeden bitmiş hücreye kadar eksiksiz bir yerel tedarik zincirine olanak tanır.",
+  "Bu ülkeler, 2010'larda devlet tarafından finanse edilen Ar-Ge programları aracılığıyla yerli güneş hücresi teknolojisini geliştirerek, küresel talebi çeken tescilli, yüksek verimli mimariler yarattılar.",
+  "Güneydoğu Asya tesisleri öncelikle Çin'de yoğunlaşan kristalin silikon plaka üretiminden farklı tedarik zincirleri gerektiren ince film CdTe ve CIGS modül montajına odaklanıyor",
+]
+answer.answer = "Çinli üreticiler, tedarik zincirlerini çeşitlendirmek ve Çin menşeli modüller ve hücrelere ABD ve AB tarafından uygulanan ticaret tarifelerinde gezinmek için Güneydoğu Asya'da montaj fabrikaları kurdu"
+context = "Güneydoğu Asya'nın güneş enerjisi üretimindeki rolü büyük ölçüde ticaret politikasına bir yanıttır. Çin güneş ürünlerine uygulanan ABD tarifeler (2012'de anti-damping vergileriyle başlayıp o zamandan beri genişliyor), Çinli şirketleri Vietnam ve Malezya gibi ülkelerde alt montaj operasyonları kurmaya teşvik etti."
+id = "7c77ab21-ef2c-4d3e-8dc9-814b0e673410"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (6. Gün) N-tipi emitörü oluşturmak için yapılan fosfor difüzyon katkısı sırasında 'ölü katman' oluşumu nedir ve neden sorunludur?"
+prompt.distractors = [
+  "Ölü katman, fosfor atomlarının 0,5 μm'den daha derine yayılamaması nedeniyle levhanın merkezinde oluşan katkısız bir bölgedir ve yığın silikonu yetersiz taşıyıcı konsantrasyonuyla bırakır.",
+  "Ölü katman, yüksek sıcaklıktaki difüzyon işleminin (850-900°C) silikon levha yüzeyinin üst 100 nm'sinde termal stres kırılmalarına neden olduğu kristalografik bir hasar bölgesidir.",
+  "Ölü katman, difüzyon fırınındaki artık oksijen silikon yüzeyiyle reaksiyona girdiğinde oluşan, daha fazla fosfor nüfuzunu engelleyen ve bir pasifleştirme katmanı oluşturan bir oksit bariyeridir.",
+]
+answer.answer = "Ölü katman, fosfor konsantrasyonunun silikonun katı çözünürlük sınırını aştığı, Auger rekombinasyonunu artıran ve mavi tepkiyi azaltan elektriksel olarak aktif olmayan çökeltiler oluşturduğu aşırı katkılı bir yüzey bölgesidir."
+context = "Yüzeydeki fosfor konsantrasyonu ~1-2 × 10²¹ atom/cm³'ü aştığında, fazla fosfor elektriksel olarak aktif olmayan kümeler oluşturur. Bu 'ölü katman', yararlı akım üretmeden kısa dalga boyundaki (mavi) fotonları emerek hücre verimliliğini azaltır. Seçici emitör tasarımları bu sorunu çözer."
+id = "aedbf6c9-eb96-4318-afe1-762ce88735f4"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (9. Gün) Güneş pili mimarisinde PERC kısaltması neyi ifade eder?"
+answer.answer = "Pasifleştirilmiş Verici ve Arka Hücre"
+answer.alternatives = [
+  "Pasifleştirilmiş Verici ve Arka Kontak",
+  "pasifleştirilmiş emitör ve arka hücre",
+  "pasifleştirilmiş emitör ve arka kontak",
+  "Pasifleştirilmiş emitör ve arka hücre",
+]
+context = "PERC (Pasifleştirilmiş Verici ve Arka Hücre/Kontak), arka yüzeye bir dielektrik pasifleştirme katmanı (tipik olarak Al₂O₃ + SiNₓ) ekleyerek rekombinasyonu azaltır ve verimliliği standart Al-BSF hücrelerine göre mutlak %1-1,5 oranında artırır. 2019 yılı civarında baskın mimari haline geldi."
+id = "2c0b8ce8-97fa-488c-bfa4-fa42ee44a98e"

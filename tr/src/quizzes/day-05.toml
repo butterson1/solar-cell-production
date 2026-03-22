@@ -1,0 +1,126 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Elmas telli testereleme neden monokristalin silikon için bulamaçlı tel testerenin yerini bu kadar hızlı aldı (2015'te <%10'dan 2018'de >%90'a)?"
+prompt.distractors = [
+  "Elmas tel, kesim sonrası gravür veya temizleme adımlarına olan ihtiyacı ortadan kaldıran daha pürüzsüz yüzeyler üretir",
+  "Elmas tel, geri dönüştürülmüş endüstriyel elmaslar kullanır, bu da onu taze silisyum karbür aşındırıcı tedarik etmekten daha ucuz hale getirir",
+  "Elmas tel daha düşük sıcaklıklarda çalışarak bulamaçla kesilmiş levhaları rahatsız eden termal gerilim çatlaklarını önler",
+]
+answer.answer = "Elmas tel %65 daha az çentik kaybıyla 5 kat daha hızlı keser, zehirli PEG/SiC bulamacı yerine yalnızca su bazlı soğutma sıvısı kullanır ve daha sığ yüzey hasarı oluşturur"
+context = "Elmas tel çentiği 170-200 μm'den 55-70 μm'ye düşürdü, ilerleme hızlarını 0,3-0,6 mm/dak'dan 1,5-3,0 mm/dak'ya yükseltti ve kompleks PEG/SiC bulamacının yerine basit su ve yüzey aktif madde koydu. Maliyet, hız ve çevresel avantajların birleşimi, geçişi kaçınılmaz hale getirdi."
+id = "f1f4776e-b77c-4305-824d-ae5188506ab8"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Çok telli testereyle kesim sırasında elmas tel kırılırsa ne olur ve bu neden bu kadar korkulan bir olaydır?"
+prompt.distractors = [
+  "Makine otomatik olarak teli yeniden geçirir ve kesmeye devam eder, ancak kısa duraklama tüm levhalarda görünür bir kalınlık bandına neden olur",
+  "Kırılma, silikonu termal olarak şok eden acil soğutma sıvısının taşmasını tetikleyerek ilk 50 levhada mikro çatlaklar oluşturur.",
+  "Tel makaraya geri çekilerek kesimi yarım bırakır; tuğlanın yeniden konumlandırılması ve kesimin sıfırdan başlatılması gerekir",
+]
+answer.answer = "Tel koparak tüm ağ boyunca gevşer ve levha dizisinin çökerek kırık silikon ve çelikten oluşan karışık bir karmaşaya dönüşmesine neden olur ve potansiyel olarak binlerce levhayı aynı anda mahveder"
+context = "Tek bir tel, 5.000-8.000 kesme segmentinden oluşan tüm ağı oluşturur. Kırıldığında, tüm gerilim bir anda kaybolur ve kısmen kesilmiş (hala kırılgan ve sıkı aralıklı) ince levhalar çöker ve birbirlerine çarparak parçalanır. Büyük tesislerde tel kopması %2-3 verim kaybına neden olur."
+id = "9d684249-739f-4e7c-8c82-294ab7898762"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Wafering üretiminde kullanılan en ince elmas tellerin 2024 yılı itibarıyla yaklaşık çekirdek çapı nedir?"
+answer.answer = "38 mikron"
+answer.alternatives = [
+  "38-42 mikron",
+  "38 mikrometre",
+  "38",
+  "40 mikron",
+  "42 mikron",
+  "38-42",
+]
+context = "2024 yılına gelindiğinde önde gelen üreticiler, yüzeye 6-12 μm elmas parçacıkları bağlanmış, 38-42 μm kadar ince çelik çekirdekli elmas teller kullanıyordu. Bu, yaklaşık 52-65 μm'lik bir toplam tel çapı ve 55-65 μm'lik bir kerf kaybı sağlar."
+id = "8bcce9b1-6768-4824-87ac-8d07f8d4d0d7"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Silikon plaka neden artık bitmiş bir güneş modülünde baskın maliyet bileşeni değil?"
+prompt.distractors = [
+  "Diğer bileşenler azalırken gofret maliyetleri sabit kaldı ve oran varsayılan olarak gofretlere kaydırıldı",
+  "İnce film güneş panellerine geçiş, çoğu modern modül üretim hattındaki silikon plakaları tamamen ortadan kaldırdı",
+  "Polisilikon üretimine yönelik devlet sübvansiyonları, gofret fiyatlarını yapay olarak gerçek üretim maliyetlerinin altına düşürdü",
+]
+answer.answer = "~7 ABD doları/kg polisilikon fiyatıyla, her plaka yalnızca 0,04 ABD doları silikon içerir; bu, hücre başına gümüş macunundan (0,10-0,15 ABD doları) daha az ve modülün camı, arka sayfası ve çerçevesinin toplamından çok daha azdır."
+context = "Polisilikon fiyatının 2024'te ~7$/kg'a düşmesi, silikon içeriğinin toplam modül maliyetinde neredeyse ihmal edilebilir hale gelmesine neden oldu. Gümüş macun metalizasyonu ve hücre dışı bileşenler (cam, çerçeve, arka tabaka, bağlantı kutusu) artık hakimdir, bu nedenle daha ince levhalar azalan maliyet getirisi sağlar."
+id = "6ddfd695-e52e-47b5-aa87-917f239bfe12"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Elmas tel başlangıçta neden çok kristalli silikonla sorun yaşadı ama monokristalin üzerinde iyi çalıştı?"
+prompt.distractors = [
+  "Çok kristalli silikon, monokristalden daha yumuşaktır ve elmas parçacıklarının çok derine gömülmesine ve takılmasına neden olur.",
+  "Çok kristalli silikondaki tanecik sınırları, tel üzerindeki nikel kaplamayı kimyasal olarak bozan metalik yabancı maddeleri açığa çıkarır",
+  "Çok kristalli külçeler, yüksek hızlı tel kesimleri sırasında kendiliğinden kırılmaya neden olan, dökümden kaynaklanan dahili termal gerilimlere sahiptir.",
+]
+answer.answer = "Çok kristalli külçelerdeki rastgele tane yönelimleri, elmas parçacıkları üzerinde eşit olmayan aşınma yaratarak tel kırılmasına ve pürüzlü yüzeylere neden oldu"
+context = "Monokristalin silikonda, tekdüze kristal oryantasyonu tutarlı kesme davranışı anlamına gelir. Çoklu kristallerde her taneciğin farklı sertlik yönü vardır ve bu da elmas üzerinde düzensiz kuvvetler oluşturur. Bu, endüstrinin monoya geçişini hızlandırdı; sadece daha verimli olmakla kalmadı, aynı zamanda dilimlenmesi de daha kolay oldu."
+id = "9d6a709b-a224-44d6-9c59-ee098f0dd7ef"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "Silindirik bir CZ külçenin levha haline getirilmeden önce kare kesite kesildiği işlemin adı nedir?"
+answer.answer = "kare alma"
+answer.alternatives = [
+  "tuğla örmek",
+  "kareleme veya tuğlalama",
+  "kırpma",
+]
+context = "Kareleme (aynı zamanda tuğlalama olarak da adlandırılır), levha formatıyla (örneğin, M10 için 182 mm × 182 mm) eşleşen sahte kare bir kesit oluşturmak için silindirik bir külçenin kavisli kenarlarını kaldırır. Çıkarılan silikon (külçe kütlesinin ~%15-18'i) CZ fırın besleme stoğu olarak geri dönüştürülür."
+id = "3da24279-2345-4e6f-a028-e70914e51cdc"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (4. Gün) Czochralski sürecinde potanın ve büyüyen kristalin ters yönde döndürülmesinin amacı nedir?"
+prompt.distractors = [
+  "İlk daldırma aşaması sırasında tohum kristalinin eriyik yüzeyine eşit olmayan şekilde bağlanmasını önlemek için",
+  "Büyüyen kristali daha sıkı sarmak ve sonraki Dash boyun aşaması için yapısal gücünü artırmak",
+  "Daha ağır yabancı madde atomlarını uzaklaştırılmak üzere pota duvarlarına iten merkezkaç kuvveti oluşturmak",
+]
+answer.answer = "Kristal boyunca termal simetri ve düzgün katkı maddesi dağılımı sağlayan eriyikte kontrollü bir konveksiyon modeli oluşturmak"
+context = "Pota 5-15 RPM'de dönerken kristal 8-20 RPM'de ters yönde döner. Bu ters dönüş, tahmin edilebilir eriyik akış düzenleri oluşturarak eşit olmayan kristal büyümesine ve eşit olmayan dirence neden olabilecek termal asimetrileri önler."
+id = "430cc3cc-7ae6-44f4-8d39-e181b9daf110"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (3. Gün) Siemens süreci neden bu kadar enerji yoğun ve kilogram polisilikon başına kabaca ne kadar elektrik tüketiyor?"
+prompt.distractors = [
+  "Hidrojen klorür sentezi, 15.000°C'de plazma üretimini gerektirir ve üretilen 40-50 kWh/kg polisilikon tüketir.",
+  "SiC reaktör duvarları, silikon yapışmasını önlemek için 100+ kWh/kg kullanılarak sürekli olarak sıvı nitrojenle soğutulmalıdır.",
+  "Fraksiyonel damıtma kolonları, 20'den fazla aşamada tekrarlanan kaynatma ve yoğunlaştırma döngüleri gerektirir ve 30-40 kWh/kg tüketir.",
+]
+answer.answer = "CVD biriktirme, ince çubukların günlerce 1.000-1.100°C'ye ısıtılmasını gerektirirken, girdi enerjisinin çoğu ısı olarak yayılır ve kg polisilikon başına 50-80 kWh tüketir"
+context = "Siemens CVD reaktörü termodinamik açıdan verimsiz; ince silikon çubuklar 5-7 gün boyunca akkor halinde parlıyor ve enerjilerinin çoğunu kızılötesi ısı olarak reaktör duvarlarına yayar. Bu adım tek başına proses enerji bütçesine 50-80 kWh/kg ile hakimdir."
+id = "396ff954-0bce-4c1f-93f0-f64d23d0018e"
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "🔁 (2. Gün) Silisyumun periyodik tablodaki (Grup 14) konumu neden onu güneş pilleri için ideal kılıyor?"
+prompt.distractors = [
+  "Grup 14 elemanları, ilgili periyotlarında en yüksek erime noktalarına sahip olup, yüksek sıcaklıkta hücre işlemeye olanak sağlar",
+  "Grup 14 elementleri herhangi bir katkı gerektirmeden serbest elektron hareketine izin veren metalik bağlar oluşturur",
+  "Grup 14 elementleri yerkabuğunda en çok bulunan yarı iletken malzemelerdir ve ucuz hammadde tedariği sağlarlar.",
+]
+answer.answer = "Dört değerlik elektronu ile silikon, tetrahedral bir yapıda tam olarak dört kovalent bağ oluşturarak güneş enerjisi dönüşümü için ideale yakın 1,12 eV bant aralığına sahip bir yarı iletken oluşturur."
+context = "Silisyumun dört değerlik elektronu, sp³ bağına sahip kararlı bir elmas kübik kristal oluşturur. Ortaya çıkan 1,12 eV bant aralığı, tek eklemli güneş pilleri için teorik optimum değere (~1,34 eV) yakındır ve geniş bir güneş spektrumu aralığını yakalar."
+id = "a38701a0-65f7-42bd-8a68-c24fc20f30d7"
+
+[[questions]]
+type = "ShortAnswer"
+prompt.prompt = "🔁 (1. Gün) Shockley-Queisser limitine göre, tek eklemli bir silikon hücre teorik olarak gelen güneş enerjisinin yüzde kaçını dönüştürebilir?"
+answer.answer = "33%"
+answer.alternatives = [
+  "%33,7",
+  "~33%",
+  "yaklaşık %33",
+  "%29",
+  "%29,4",
+  "33.7",
+  "%34",
+]
+context = "Silikonun 1,12 eV bant aralığına sahip tek bağlantılı bir hücre için Shockley-Queisser limiti yaklaşık %33'tür (bazen özellikle Auger rekombinasyonu nedeniyle silikon için %29,4 olarak belirtilir). Aşırı foton enerjisinin termalizasyonu ve alt bant aralığı şeffaflığı ana kayıp mekanizmalarıdır."
+id = "35cc591e-0425-422e-8504-5c0152fe9d64"
