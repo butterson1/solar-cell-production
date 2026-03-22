@@ -13,9 +13,15 @@ Metalleştirme, fiziğin ekonomiyle en sert şekilde buluştuğu yer. Ön temas 
 
 Her milimetrekare metal = elektrik üretemeyen bir milimetrekare alan. Buna **gölgeleme kaybı** denir — tipik olarak hücre alanının %2–4'ü.
 
+> 📌 **Başlangıç sezgisi:** Ön yüzdeki metal çizgiler bir tür "kayıp" gibi görünür. Ama hiç metal olmazsa üretilen akımı dışarı çıkaramazsınız. Bu adımın bütün mantığı, **olabildiğince az gölgeyle olabildiğince iyi akım toplamak**.
+
 Bu iğneye iplik geçiren malzeme **gümüş** — özel formülasyonlu macunu kg başına 800–1.200 $. 2024'te fotovoltaik endüstrisi **7.000+ ton** gümüş tüketerek, tüm endüstriler arasında en büyük gümüş tüketicisi oldu. Yıllık gümüş macunu maliyeti: **5+ milyar $**.
 
 > ⚡ **Neden gümüş?** Tüm elementler arasında en düşük elektrik direncine sahip (1,59 × 10⁻⁸ Ω·m). Bakır yakın (1,68 × 10⁻⁸) ama silikona yayılarak hücreyi yok ediyor. Gümüşün yerini almak kolay değil.
+
+![Diagram: Ön yüzeyde parmaklar, baralar ve gölgeleme alanı](images/day-08/front-grid-shading.png)
+
+*Şema/TODO: İnce parmakların akımı toplarken aynı anda ışığı da kısmen gölgelediğini gösteren basit hücre üst görünüşü.*
 
 ---
 
@@ -32,7 +38,13 @@ Gümüş macunu sadece metal tozu + tutkal değil. Hassas mühendislik ürünü 
 > 💡 **Cam hamuru — gizli silah:**
 > Pişirme sırasında (~600°C) camın içindeki kurşun oksit (PbO), dün özenle kapladığımız SiNₓ yansıma önleyici kaplamayı *eritir*. Bu kimyasal saldırı olmasa gümüş silikonla hiç temas etmez. Cam hamuruyu "yalnızca yüksek sıcaklıkta, tam zamanında aktive olan bir asit" olarak düşünün.
 
+> 🧠 **Bunu nasıl hayal etmeli?** Macun fırına girmeden önce yalnızca yüzeye oturur. Fırından sonra ise kaplamayı delmiş, silikona bağlanmış ve iletken bir yol oluşturmuş olur. Yani gerçek "elektriksel temas" baskı anında değil, **ateşleme sırasında** doğar.
+
 Büyük macun üreticileri (Heraeus, DuPont, Samsung SDI, Giga Solar) formülasyonlarını devlet sırrı gibi korur. Cam hamuru bileşimindeki %1'lik fark, hücre veriminde %0,3'lük salınım demek — gigawatt fabrikasında milyonlarca dolar.
+
+![Diagram: Gümüş macunun üç bileşeni](images/day-08/silver-paste-components.png)
+
+*Şema/TODO: Gümüş parçacıkları, cam hamuru ve organik aracın baskı öncesi ve pişirme sonrası rollerini gösteren katman diyagramı.*
 
 ---
 
@@ -44,10 +56,14 @@ Standart bir güneş hücresi **üç ayrı serigrafi geçişi** alır — saatte
 Hücrenin arkasına küçük gümüş pedler basılır — modülde hücreleri birbirine bağlayacak lehimleme noktaları.
 
 ### Geçiş 2: Arka Alüminyum (Tam Alan)
-Arka yüzeyin neredeyse tamamına alüminyum macun basılır (~30–50 $/kg, gümüşün kırkta biri). Pişirme sırasında alüminyum silikonla alaşımlanarakp⁺ katkılı **arka yüzey alanı (BSF)** oluşturur — elektronları içe doğru geri iten bir "ayna." BSF olmasaydı verimlilik ~%2–3 düşerdi.
+Arka yüzeyin neredeyse tamamına alüminyum macun basılır (~30–50 $/kg, gümüşün kırkta biri). Pişirme sırasında alüminyum silikonla alaşımlanarak p⁺ katkılı **arka yüzey alanı (BSF)** oluşturur — elektronları içe doğru geri iten bir "ayna." BSF olmasaydı verimlilik ~%2–3 düşerdi.
 
 ### Geçiş 3: Ön Gümüş (Parmaklar ve Baralar)
 **Kritik adım.** İnce paralel "parmaklar" (akım toplayan) ve bunları birleştiren dikey "baralar" — güneş paneline yakından baktığınızda gördüğünüz çizgiler.
+
+![Diagram: Üç baskı geçişinin sırası](images/day-08/three-print-passes.png)
+
+*Şema/TODO: Arka gümüş pedler → arka alüminyum tam alan → ön gümüş parmaklar sıralamasını gösteren akış diyagramı.*
 
 ---
 
@@ -79,6 +95,12 @@ Baskıdan sonra levhalar 6–10 metre uzunluğundaki kızılötesi **ateşleme f
 | Hızlı soğuma | 800→400°C | ~10 s | Yapı dondurulur |
 
 > ⚡ **En kritik parametre:** Tepe sıcaklığı ±5°C → verimlilik ±%0,1–0,2. Saniyelerle ölçülen bu pencere, tüm süreçteki en hassas an.
+
+> 🔬 **Yeni başlayanlar için kritik nokta:** Fırın burada sadece "kurutma" yapmaz. Aynı anda kaplamayı deler, metal-silikon temasını oluşturur ve arka tarafta BSF meydana getirir. Yani bu adım, malzemeyi gerçekten **çalışan hücreye** dönüştürür.
+
+![Diagram: Ateşleme fırını sıcaklık profili](images/day-08/firing-profile.png)
+
+*Şema/TODO: Zaman ekseninde ramp-up, cam aktivasyonu, tepe ateşleme ve hızlı soğuma bölgelerini gösteren profil.*
 
 Fırından çıkan şey **tamamlanmış bir güneş hücresi.** Tek termal çekimde üç sorun çözüldü: gümüş ARC'yi deldi, silikonla ohmik temas kurdu, alüminyum BSF oluşturdu. Bu "ortak ateşleme" güneş enerjisi üretimindeki en zarif adımlardan biri.
 

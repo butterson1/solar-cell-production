@@ -12,11 +12,17 @@ Bir foton elektron-delik çifti oluşturduğunda (1. Gün), bu çift p-n eklemin
 
 **Sorun yüzeylerde.** Kristal kafes yüzeyde aniden biter ve geride "sarkan bağlar" kalır — elektron tuzakları. İşlenmemiş bir yüzeyde rekombinasyon hızı 10⁶ cm/s'yi aşar. İyi pasifleştirilmiş yüzey? 2 cm/s'nin altı. **500.000 kat fark.**
 
+> 📌 **Basit sezgi:** Elektron üretmek tek başına yetmez; onu yüzeyde kaybetmeden devreye ulaştırmak gerekir. PERC, TOPCon ve HJT'nin ortak amacı tam olarak bu: **yüzeyi daha az ölümcül hale getirmek**.
+
 > 💡 **Ön yüzey** büyük ölçüde 6–7. Gün'lerde çözüldü (fosfor difüzyonu + SiNₓ ARC). Üç mimarinin gerçekten ayrıştığı ve son on yılın verimlilik kazanımlarının geldiği yer **arka yüzey.**
 
 Eski Al-BSF hücresinde arka tarafa basitçe alüminyum macun basılıp ateşleniyordu — mütevazı pasivasyon (~200–500 cm/s rekombinasyon hızı) ve orta seviye yansıma (~%60–70). İşe yarıyordu ama masada en az **%2–4 mutlak verimlilik** bırakıyordu.
 
 > ⚡ **%0,1'in değeri:** Mutlak verimliliğin her %0,1'i, 50 GW üretim hattında modül değeri olarak yılda **100–150 milyon $** demek.
+
+![Diagram: Al-BSF, PERC, TOPCon ve HJT'de arka yüzey yaklaşımı](images/day-09/rear-side-comparison.png)
+
+*Şema/TODO: Dört mimaride arka yüzeyin nasıl işlendiğini yan yana gösteren basit karşılaştırma çizimi.*
 
 ---
 
@@ -27,7 +33,7 @@ Eski Al-BSF hücresinde arka tarafa basitçe alüminyum macun basılıp ateşlen
 1983'te Martin Green'in ekibi tarafından icat edildi, ama üretim gerçekliğine geçmesi **30 yıl** sürdü. Konsept aldatıcı derecede basit:
 
 Arka yüzeyin tamamını alüminyumla kaplamak yerine:
-1. İnce bir dielektrik pasivasyon katmanı biraktır (Al₂O₃ + SiNₓ)
+1. İnce bir dielektrik pasivasyon katmanı bırak (Al₂O₃ + SiNₓ)
 2. Lazerle küçük kontak delikleri aç
 
 **Neden işe yarıyor:**
@@ -38,9 +44,15 @@ Arka yüzeyin tamamını alüminyumla kaplamak yerine:
 > 🎯 **PERC'ün süper gücü: Geriye dönük uyumluluk.**
 > Mevcut Al-BSF hatlarına yalnızca iki adım eklemek yeterli (Al₂O₃ biriktirme + lazer delme). Yenilenme maliyeti: 10–20 milyon $. Sıfırdan TOPCon veya HJT hattı: 100+ milyon $. PERC'ün sektörü bu kadar hızlı fethetmesinin sebebi buydu.
 
+> 🧠 **Bunu nasıl görselleştirmeli?** PERC, arka yüzeyi tamamen açık bırakmak yerine büyük kısmını iyi bir yalıtkan/ayna ile kapatır ve yalnızca gerekli noktalarda küçük delikler açar. Yani metalin temas ettiği kötü bölgeleri **azaltır**.
+
 2020'de PERC, neredeyse sıfırdan küresel üretimin **%80'inin** üzerine çıktı. LONGi Green Energy, PERC'e bahse girdi ve muazzam kazandı — orta kademe bir oyuncudan 60 milyar dolarlık bir deve dönüştü.
 
 **Ama sınır yaklaşıyor:** Üretim PERC hücreleri %23,0–23,5'e ulaşırken, pratik tavan ~%24,5. Sektör tavanın %95'inde — kuyu kuruyor.
+
+![Diagram: PERC yapısı ve lazerle açılmış yerel arka kontaklar](images/day-09/perc-local-contacts.png)
+
+*Şema/TODO: Ön yüzey, wafer, arka dielektrik yığın ve yalnızca noktasal/çizgisel açılan PERC arka temaslarını gösteren kesit.*
 
 ---
 
@@ -61,6 +73,8 @@ PERC'te lazerle açılan deliklerdeki metal-silikon temasları rekombinasyon sı
 > 💡 **Tünel oksit — 1,2 nanometre:**
 > Bu, 5–7 atom sırasından oluşan bir tabaka. 182 mm levha üzerinde tekdüze büyütmek olağanüstü zordur. Tek bir iğne deliği akımı kesen bir "şant" yaratır ve voltajı öldürür.
 
+> 🔬 **Yeni başlayanlar için önemli fikir:** TOPCon'un hilesi, akımı engellemeden yüzeyi korumaktır. Oksit tabaka delik kadar ince değil; elektronların kuantum tünellemesine izin verecek kadar incedir. Yani kontak var ama klasik anlamda "çıplak metal-silikon teması" yok.
+
 **Sonuçlar:**
 
 | Metrik | PERC | TOPCon |
@@ -75,6 +89,10 @@ Teorik limit ~%28,7 — hâlâ anlamlı ilerleme alanı var.
 **Geçiş hızı:** PERC → TOPCon dönüşüm maliyeti 5 GW tesis için ~30–50 milyon $. Çinli üreticiler (Tongwei, Jinko, Trina, JA Solar) PERC filosunu büyük hızla TOPCon'a dönüştürüyor. 2025 sonunda küresel TOPCon kapasitesi **500+ GW** — sanayi tarihinin en hızlı teknoloji geçişlerinden biri, ~3 yılda.
 
 > 🎯 **Önemli detay:** Çoğu TOPCon hücresi **n-tipi levha** kullanır (PERC'ün p-tipi levhasının tersi). N-tipi silikon, p-tipi hücrelerde ilk yılda %1–3 güç kaybına neden olan bor-oksijen ışık bozunmasından (LID) etkilenmez. Dezavantaj: n-tipi levhalar %5–10 daha pahalı.
+
+![Diagram: TOPCon kesiti — tünel oksit, poli-Si ve metal kontak](images/day-09/topcon-stack.png)
+
+*Şema/TODO: Kristalin Si, ultra ince SiO₂, katkılı poly-Si ve üstteki metal temasını gösteren katman diyagramı.*
 
 ---
 
@@ -104,11 +122,17 @@ Kritik katman: yalnızca 5–8 nm kalınlığındaki **içsel (katkısız) amorf
 
 > ⚡ **Şaşırtıcı gerçek:** HJT hücreleri PERC veya TOPCon'dan **daha az işlem adımına** sahip! Sadece 4–5 ana adım (doku + temizlik → a-Si biriktirme → TCO → metal). PERC'ün ~10, TOPCon'un ~12 adımına karşı.
 
+> 📌 **Ama bedeli var:** Düşük sıcaklık zorunluluğu yüzünden klasik yüksek sıcaklıklı gümüş ateşlemesi kullanılamaz. Bu da HJT'yi hem ekipman hem de metalizasyon tarafında pahalı hale getirir.
+
 **Ama sorunlar var:**
 
 - **Sıcaklık kısıtı:** a-Si ~200°C üzerinde kristalleşir → geleneksel gümüş macunu ateşlemesi (750–850°C) kullanılamaz → düşük sıcaklıklı özel macunlar gerekir → **daha fazla gümüş** (15–20 mg/W vs TOPCon 10–13 mg/W)
 - **Ekipman maliyeti:** Angstrom seviyeli kalınlık kontrolü gerektiren PECVD araçları, 15–25 milyon $/adet. Tam hat: GW başına **80–120 milyon $** (TOPCon: 50–70 milyon $)
 - **İndiyum sorunu:** Her hücre ~200–300 mg indiyum (ITO). Küresel indiyum üretimi ~900 ton/yıl. 500 GW HJT, ~1.500 ton indiyum gerektirir — mevcut arzın çok üstünde.
+
+![Diagram: HJT katman yığını ve iki taraflı simetrik yapı](images/day-09/hjt-layer-stack.png)
+
+*Şema/TODO: HJT'nin TCO / a-Si:H / c-Si / a-Si:H / TCO katmanlarını ve çift yüzlü simetriyi gösteren kesit.*
 
 ---
 

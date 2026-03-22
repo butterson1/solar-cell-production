@@ -18,11 +18,17 @@ Sonuç: Silikonun ışığın çoğunu yakalayabilmesi için **150–180 μm** k
 
 **Kadmiyum tellür (CdTe)** ise doğrudan bant aralıklı — emilim katsayısı silikondan ~100 kat daha yüksek. Yalnızca **2 μm** CdTe, fotonların %99'undan fazlasını emer. **170 μm yerine 2 μm — malzemenin %2'sinden azı.**
 
+> 📌 **Ana fikir:** İnce film, "aynı işi çok daha az malzemeyle yapmak" iddiasıdır. Kalın bir levha büyütmek yerine ışığı çok daha hızlı emen bir katman kullanırsınız.
+
 > ⚡ **İnce filmin vaadi:**
 > - 100 kat daha az yarı iletken malzeme kullan
-> - Doğrudan cam veya esnek folyo üzerine biraktır
+> - Doğrudan cam veya esnek folyo üzerine biriktir
 > - Polisilikon saflaştırma, kristal büyütme, levha dilimleme zincirinin tamamını atla
 > - Bu zincir bir güneş modülü maliyetinin ~%40'ı
+
+![Diagram: Kristalin silikon ile ince film emici kalınlık karşılaştırması](images/day-10/thickness-comparison.png)
+
+*Şema/TODO: Yaklaşık 170 μm c-Si emici ile 2 μm CdTe / 1–2 μm CIGS / 0,3–0,5 μm a-Si katmanlarını yan yana gösteren ölçekli çizim.*
 
 Peki neden kristal silikon hâlâ %95 pazar payında? Çünkü şeytan ayrıntıda gizli.
 
@@ -43,7 +49,13 @@ Kristalin silikondan şaşırtıcı derecede farklı. Bir silikon hücrenin hamm
 5. **CdCl₂ aktivasyonu:** 380–420°C'de tanecikleri büyütür, tane sınırlarını pasifleştirir. Bu adım olmadan verim sadece ~%10; bu adımla **%18'in** üzerine çıkar
 6. **Arka kontak + cam laminasyonu:** Cam-cam modül
 
+> 🧠 **Bunu bir fabrika mantığıyla düşünün:** Silikonda önce kristal büyütür, sonra levha keser, sonra hücre yaparsınız. CdTe'de ise işin çoğu doğrudan cam üzerinde yapılır. Yani üretim zinciri daha kısa ve daha "düz".
+
 > 💡 **Modern gelişme:** First Solar, CdS tamponunu **MgZnO** (magnezyum çinko oksit) ile değiştirmeye başladı — daha geniş bant aralığı (%3,3 eV) daha fazla mavi/UV fotonun geçmesine izin veriyor.
+
+![Diagram: CdTe modül üretim akışı](images/day-10/cdte-process-flow.png)
+
+*Şema/TODO: Cam → TCO → tampon katman → CdTe biriktirme → CdCl₂ aktivasyonu → arka kontak → laminasyon sırasını gösteren akış diyagramı.*
 
 ### Rakamlar
 
@@ -85,6 +97,12 @@ CIGS dörtlü bir bileşik — dört elementin hassas stokiyometride biriktirilm
 
 **Püskürtme + selenizasyon** (üretim dostu): Metal katmanlar oda sıcaklığında püskürtülür, sonra selenyum atmosferinde 450–550°C'de tavlanır. Daha ölçeklenebilir ama tipik olarak daha düşük verim.
 
+> 📌 **Neden zor?** Silikonda tek ana malzeme vardır; CIGS'te dört elementi aynı anda doğru oranda tutturmanız gerekir. Laboratuvarda mümkün olan şey, büyük fabrikada çok daha zor hale gelir.
+
+![Diagram: CIGS katman yapısı ve bileşim gradyanı](images/day-10/cigs-layer-gradient.png)
+
+*Şema/TODO: Mo arka kontak, CIGS emici, CdS tampon ve ZnO ön kontağı; ayrıca kalınlık boyunca değişen Ga/In oranını gösteren basit çizim.*
+
 ### Neden Ticari Başarısızlık?
 
 Kayıp listesi uzun: Solyndra (535 milyon $ DoE kredisi, 2011 iflas), Nanosolar, MiaSolé, HelioVolt…
@@ -119,7 +137,13 @@ Amorf silikon (a-Si) kristalin silikonun tam tersi: uzun menzilli düzen yok, at
 
 Işığa maruz kalınca a-Si'deki zayıf bağlar kırılır, yeni rekombinasyon kusurları oluşur. İlk yüzlerce saatte verim **göreceli %10–30** düşer. %10'da başlayan bir hücre %7–8'de stabilize olabilir.
 
+> ⚠️ **Neden bu kadar yıkıcı?** Yardımcı malzemeler, taşıyıcı yapı ve arazi maliyeti alanla ölçeklenir. Hücre verimi çok düşükse daha fazla panel, daha fazla alan ve daha fazla kurulum gerekir. Bu yüzden a-Si hesap makinesinde yaşayabilir ama büyük santralde zorlanır.
+
 Üretim modüllerinde stabil verimlilik: **%6–8** — c-Si'nin üçte biri. Alan maliyetlerinin baskın olduğu yere monteli güneş enerjisinde bu verimlilik cezası yıkıcı.
+
+![Diagram: Amorf silikonun ışıkla bozunması ve stabilize verim](images/day-10/asi-degradation-curve.png)
+
+*Şema/TODO: İlk kullanım saatlerinde düşen ve sonra stabilize olan a-Si performans eğrisi.*
 
 ### a-Si Nerede Hayatta?
 - Hesap makineleri ve iç mekân cihazları (geniş bant aralığı iç mekân ışığıyla iyi eşleşir)
@@ -142,6 +166,8 @@ Işığa maruz kalınca a-Si'deki zayıf bağlar kırılır, yeni rekombinasyon 
 1. **Çin c-Si çok ucuzladı:** 2010'da ~1,50 $/W → 2024'te <0,10 $/W. Bu seviyede rakip etmek neredeyse imkansız.
 2. **c-Si verimliliği artmaya devam etti:** %14–16 (2010) → %22–24 (2025). Fark daralmadı, *açıldı.*
 3. **İnce filmin avantajları koşullu:** CdTe'nin sıcaklık avantajı en çok çöl iklimlerinde önemli, CIGS esnekliği niş, a-Si verimi düşük.
+
+> 📊 **Kısa özet:** İnce film kaybetmediği için küçük değil; silikon olağanüstü ucuzlayıp olağanüstü ölçeklendiği için küçük kaldı.
 
 **Ama ince film ölmüyor.** First Solar'ın sipariş defteri yıllarca ileriye uzanıyor — ABD yerli üretim bonusları (IRA), Çin dışı tedarik zinciri tercihi ve ticaret savaşı güvencesi sayesinde. Alabama'da 3,5 GW kapasiteli yeni fabrikaya 1,1 milyar $ yatırım.
 

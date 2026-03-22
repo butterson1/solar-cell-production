@@ -21,6 +21,12 @@ Bu devasa fark, Fresnel denklemiyle **%35** yansımaya karşılık gelir. Ne kad
 
 Bu sorunu çözmenin tam olarak iki yolu var: **(1)** Yüzeye optik bir kaplama eklemek (yansıma önleyici kaplama) ve **(2)** yüzeyin geometrisini değiştirmek (dokulandırma). Modern güneş hücreleri **ikisini birden** yapar.
 
+> 🧭 **Başlangıç pusulası:** Bu derste iki ayrı araç göreceksiniz. Kaplama, ışığın yüzeyde birbirini söndürmesini sağlar; doku ise geri seken fotona ikinci ve üçüncü giriş şansı verir.
+
+![Diagram: Düz silikon yüzeyde yansıma ve kaplamalı/dokulu yüzeyde ışık girişi](images/day-07/reflection-vs-trapping.png)
+
+*Şema/TODO: Düz yüzeyde tek sıçrama ile kaplama+doku yüzeyinde çoklu giriş yolları yan yana gösterilsin.*
+
 ---
 
 ## Yansıma Önleyici Kaplamalar: İnce Film Hilesi
@@ -33,6 +39,12 @@ Prensip 1886'dan beri biliniyor (Lord Rayleigh): Hava ve silikon arasında, uygu
 2. **Kalınlık:** Hedef dalga boyunun çeyreği. 600 nm için: d = 600/(4 × 2,0) = **75 nm**
 
 Yalnızca 75 nanometre kalınlığındaki bir katman — insan saçının genişliğinin 1/700'ü — 600 nm'deki yansımayı neredeyse tamamen yok edebilir.
+
+> 🧠 **Basit sezgi:** Kaplama ışığı "durdurmaz"; iki ayrı yansımayı birbirine ters fazda bindirir. Yani daha az yansıma, daha çok ışığın silikonun içine devam etmesi demektir.
+
+![Diagram: Çeyrek dalga kaplamada yıkıcı girişim](images/day-07/quarter-wave-interference.png)
+
+*Şema/TODO: Hava/kaplama/silikon katmanlarında iki yansıyan ışın ve faz farkı basit oklarla anlatılsın.*
 
 > 🎨 **Güneş hücreleri neden mavi?**
 > Kaplama ~600 nm'de (turuncu) optimize edilir — o dalga boyunda yansıma neredeyse sıfır. Ama daha kısa dalga boylarında (mavi, 400–500 nm) kalınlık artık tam "çeyrek dalga" değildir ve yansıma %5–10'a çıkar. Gördüğünüz mavi renk, kaplamanın **bastıramadığı** ışıktır. En iyi optimize edilmiş hücreler neredeyse siyah görünür.
@@ -68,14 +80,18 @@ Hidrojen yüzeyde durmaz — ateşleme sırasında silikonun derinliklerine de y
 
 Kaplamalar güçlüdür ama yalnızca tek dalga boyunda ve tek açıda mükemmel çalışır. Tamamlayıcı yaklaşım: **yüzeyi pürüzlü yapmak.**
 
-Fikir basit: Silikon yüzeyi küçük **piramitlerle** kaplıysa, bir piramit yüzeyinden yansıyan foton bitişik yüzeye sekererk ikinci bir giriş şansı yakalar. Her sıçrama yansıyan oranı çarpımsal olarak azaltır:
+Fikir basit: Silikon yüzeyi küçük **piramitlerle** kaplıysa, bir piramit yüzeyinden yansıyan foton bitişik yüzeye sekerek ikinci bir giriş şansı yakalar. Her sıçrama yansıyan oranı çarpımsal olarak azaltır:
 
 - Düz yüzey: %35 yansıma
 - İki sıçrama: 0,35 × 0,35 = **%12,3**
 - Üç sıçrama: 0,35³ = **%4,3**
 - ARC ile birleşince: **<%0,1** toplam yansıma mümkün
 
-<!-- 📊 [DİYAGRAM ÖNERİSİ: Düz silikon yüzeyde tek yansıma vs piramitli yüzeyde çoklu sıçrama — ışık ışınlarının yolunu gösteren basit geometrik çizim.] -->
+> 🔎 **Neden piramit?** Çünkü fotonu düz bir aynadan geri sektirmek yerine komşu yüzeye yönlendirir. Her yeni temas, silikonun ışığı yutması için ek bir fırsattır.
+
+![Diagram: Piramit dokuda çoklu sıçrama ile ışık yakalama](images/day-07/pyramid-texture-light-bounce.png)
+
+*Şema/TODO: Düz yüzeyde tek yansıma ile piramit yüzeyde ikinci/üçüncü çarpışmayı karşılaştır.*
 
 ### Monokristalin İçin: Alkali Dokulandırma
 
@@ -100,6 +116,12 @@ En iyi yüzey dokusu piramitler değil — **nano ölçekli iğne ormanları.** 
 Fizik piramitlerden farklıdır: Nano sivri uçlar, havadan (n=1) silikona (n=3,9) **kademeli** bir kırılma indeksi geçişi oluşturur. Işık keskin bir sınır görmez; yumuşak bir geçiş görür. Bu aynı prensip güvelerin gözlerinde var — güvelerin karanlıkta gözleri parlamadan görebilmesi için doğal olarak evrimleşmiş.
 
 Sorun: Devasa yüzey alanı = daha fazla sarkan bağ = daha fazla rekombinasyon. Siyah silikon ancak Al₂O₃ atomik katman biriktirme gibi gelişmiş pasivasyonla birleşince pratik oldu.
+
+> ⚠️ **Önemli ders:** Optik olarak harika görünen yüzey elektriksel olarak kötü olabilir. Güneş hücresinde iyi tasarım, "en çok ışığı alan" değil, ışığı alırken taşıyıcıları da hayatta tutan tasarımdır.
+
+![Photo placeholder: Siyah silikon yüzey ile klasik piramit dokunun yakın plan karşılaştırması](images/day-07/black-silicon-vs-pyramids.png)
+
+*Görsel/TODO: Nano iğne benzeri siyah silikon ile mikrometre ölçekli piramit dokuyu aynı ölçekte karşılaştır.*
 
 ---
 

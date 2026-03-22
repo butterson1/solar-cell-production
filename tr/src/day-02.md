@@ -12,6 +12,9 @@ Ama o zaman neden güneş enerjisi için silikon ucuz değil?
 
 Ucuz olan silikonun *kendisi.* Pahalı olan, silikon *olmayan* her şeyi çıkarmak.
 
+> 🧭 **Bugünün özeti tek cümlede:**
+> Silikon bol olduğu için değil, **yeterince saf hale getirilebildiği** için güneş paneli malzemesi olarak işe yarar.
+
 > ⚡ **Mantığa aykırı gerçek:**
 > Hammadde neredeyse bedava, ama onu kullanılabilir hale getirmek dünyadaki en enerji yoğun süreçlerden biri. Bir kilogram güneş enerjisi kalitesinde polisilikon üretmek **60–80 kWh** elektrik gerektirir. Bu, her güneş panelinin bir "enerji borcu" ile doğduğu anlamına gelir — ama bu borç 1–2 yılda ödenir, ardından panel 25+ yıl daha temiz enerji üretir.
 
@@ -33,6 +36,10 @@ Tırmanmamız gereken yol şöyle görünüyor:
 
 %99'dan %99,9999'a sıçramak, dört büyüklük sırası iyileşme demek. Bu, tüm endüstriyi tanımlayan zorluğun ta kendisi.
 
+![Diyagram: Silikon saflık merdiveni — kumdan güneş enerjisi kalitesine](images/day-02/day-02-purity-ladder.png)
+
+*Şekil önerisi: Dört kalite seviyesi soldan sağa veya aşağıdan yukarıya karşılaştırılır.*
+
 ---
 
 ## Birinci Adım: Oksijeni Koparma
@@ -40,6 +47,10 @@ Tırmanmamız gereken yol şöyle görünüyor:
 Silikon doğada serbest halde bulunmaz — daima oksijene bağlıdır. Si–O bağı kimyadaki en güçlü bağlardan biridir (~452 kJ/mol). Bu bağı kırmak, silikon üretiminin ilk ve en şiddetli adımıdır.
 
 Bu iş **gömülü ark ocağında** yapılır: 10–15 metre çapında devasa bir endüstriyel fırın. İçine kuvarsit (yüksek saflıkta SiO₂ cevheri) ve karbon kaynakları (kömür, odun kömürü) yüklenir. Üç büyük grafit elektrot karışıma daldırılır ve 100.000+ amperlik akım geçirilir.
+
+![Diyagram: Gömülü ark ocağında kuvarsın silikona indirgenmesi](images/day-02/day-02-arc-furnace.png)
+
+*Şekil önerisi: Kuvars + karbon girişi, elektrotlar, yüksek sıcaklık bölgesi ve altta toplanan erimiş silikon.*
 
 Fırındaki sıcaklık 2.000°C'ye ulaşır. Bu sıcaklıkta karbon, oksijeni silikondan koparır:
 
@@ -61,6 +72,9 @@ Ortaya çıkan **metalürjik kalite silikon** (MG-Si) yaklaşık %98–99 saftı
 1\. Gün'den hatırlayın: güneş hücresi, p-n eklemindeki elektrik alanı sayesinde çalışır. Bu eklem, milyonda bir oranında kontrollü katkılama gerektirir. Eğer "kontrol dışı" yabancı maddeler zaten milyonda bir seviyesindeyse, başlamadan oyunu kaybetmişsiniz demektir.
 
 Birkaç somut örnek:
+
+> 💡 **Buradaki sezgi önemli:**
+> Güneş hücresi için sorun yalnızca "kirli malzeme" değildir; sorun, yanlış atomların elektronların yoluna tuzak koymasıdır. Yani kimyasal temizlik doğrudan elektrik performansına dönüşür.
 
 | Safsızlık | Etkisi |
 |-----------|--------|
@@ -92,7 +106,9 @@ Saflaştırılmış TCS daha sonra **Siemens işlemiyle** (3. Gün'ün konusu) y
 
 Sonuç: Eritmeye ve kristal büyütmeye hazır, 6N ila 9N saflıkta **polisilikon** — kalın, gümüşi gri çubuklar.
 
-<!-- 📊 [DİYAGRAM ÖNERİSİ: Kum → Ark ocağı → MG-Si → Gaz faza dönüşüm → Damıtma → Siemens reaktörü → Polisilikon. Basit akış şeması.] -->
+![Diyagram: Kumdan polisilikona tam süreç akış şeması](images/day-02/day-02-sand-to-polysilicon-flow.png)
+
+*Şekil önerisi: Kuvars → MG-Si → TCS → damıtma → Siemens/FBR → polisilikon akışı tek şemada.*
 
 ---
 
@@ -107,6 +123,13 @@ Siemens işlemi mükemmel çalışır ama yavaştır ve çok elektrik yer. Bunun
 | **Ürün formu** | Büyük çubuklar | Küçük granüller (~1–3 mm) |
 
 FBR'de silan gazı (SiH₄), küçük silikon tohum parçacıklarının üzerinden yukarı doğru akar. Gaz parçalanarak tohumların üzerine silikon biriktirir — kartopunun büyümesi gibi. Enerji tasarrufu %60–75'e ulaşır.
+
+> 🎯 **Neden bu karşılaştırma önemli?**
+> Aynı hedefe — ultra saf silikona — farklı fabrika tasarımlarıyla ulaşabilirsiniz. Güneş sektöründe maliyet düşüşünün büyük kısmı, tam da bu tür süreç farklarından gelir.
+
+![Diyagram: Siemens ve FBR süreçlerinin yan yana karşılaştırması](images/day-02/day-02-siemens-vs-fbr.png)
+
+*Şekil önerisi: Solda çubuk büyüten Siemens, sağda granül üreten FBR; enerji tüketimi de etiketlenir.*
 
 GCL Technology (Çin) bu alanda lider: 2024'te yıllık 300.000+ ton kapasiteyle granüler polisilikon üretiyordu. Dezavantajı? Granüller daha yüksek yüzey kirliliğine ve hidrojen içeriğine sahip olabiliyor — ama bu sorunlar giderek çözülüyor.
 

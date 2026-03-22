@@ -12,6 +12,12 @@
 
 Bu tek sorun — nasıl daha ince, daha verimli, daha az atıkla dilimleneceği — güneş üretiminde diğer tüm adımlardan daha fazla mühendislik yeniliğine yol açtı.
 
+> 🧭 **Başlangıç pusulası:** Bu dersteki ana fikir şu: Aynı külçeden ne kadar çok sağlam levha çıkarabilirseniz, watt başına maliyet o kadar düşer. Tel inceldikçe ve levha daha kontrollü kesildikçe hem atık azalır hem de üretim artar.
+
+![Diagram: Silindirik külçeden ince levhalara dönüşüm akışı](images/day-05/ingot-to-wafer-flow.png)
+
+*Şema/TODO: Silindir külçe → kare alma → tel ağı ile kesim → levha kaseti akışını tek bakışta göster.*
+
 ---
 
 ## Dilimleme Teknolojisinin Evrimi
@@ -41,6 +47,12 @@ Fikir basit: Aşındırıcıyı telin dışında taşımak yerine, **doğrudan t
 
 Geçiş inanılmaz hızlı oldu: 2015'te mono levhaların %10'undan azı elmas telle kesilirken, 2020'de bulamaçla kesim fiilen sona erdi.
 
+> 🧠 **Nasıl düşünmeli?** Bulamaç yöntemi "tel + serbest aşındırıcı" iken elmas tel yöntemi "dişleri telin üstüne takılmış testere" gibidir. Bu yüzden daha dar keser, daha hızlı ilerler ve yüzeye daha az hasar verir.
+
+![Diagram: Bulamaç tel ile elmas tel kesiminin karşılaştırması](images/day-05/slurry-vs-diamond-wire.png)
+
+*Şema/TODO: İki kesit çizimiyle tel çapı, kerf genişliği ve yüzey hasarı farkını yan yana göster.*
+
 > 🎯 **Şaşırtıcı detay:** Elmas tel başlangıçta çok kristalli silikonu iyi kesemiyordu — rastgele tane yönelimleri telde eşit olmayan aşınma yaratıyordu. Bu, endüstrinin mono levhalara geçişini *hızlandırdı*: Mono hücreler sadece daha verimli değil, aynı zamanda dilimlenmesi de daha kolaydı.
 
 ---
@@ -57,6 +69,12 @@ Lider üretici **Gaoce Technology** (Çin, pazarın ~%70'i) veya **Meyer Burger*
 - Kesim başına: 5.000–8.000 levha
 - Günde 6–8 kesim
 - Makine başına günde: **30.000–60.000 levha**
+
+> 🔎 **Gözünüzde canlandırın:** Buradaki "tek tel" aslında ileri geri sarılmış yüzlerce kilometrelik tek bir makara. Makine bunu binlerce paralel kesme hattına dönüştürüyor; verim patlaması tam burada geliyor.
+
+![Diagram: Modern tel testerenin tel ağı ve kesim bölgesi](images/day-05/wire-saw-web.png)
+
+*Şema/TODO: Makaralar, kılavuz silindirler, paralel tel ağı ve aşağı inen silikon bloğu etiketlensin.*
 
 Büyük bir levha fabrikasında (LONGi, TZS, GCL) **500–1.000 tel testere** aynı anda çalışır — günde 20–50 milyon levha.
 
@@ -86,6 +104,12 @@ Son on yılda kaydedilen ilerleme çarpıcıdır:
 Kilogram başına levha sayısı 14 yılda 55'ten 95'e çıktı — **%73 iyileşme**.
 
 Ama fiziksel bir sınır yaklaşıyor: ~35 μm çap altında çelik telin mukavemeti yetersiz kalıyor ve kopma oranı katlanarak artıyor. Tek bir tel kopması binlerce levhayı aynı anda mahvedebilir. Bazı üreticiler aynı çapta 2 kat güçlü olan **tungsten tel** araştırıyor (30 μm kalınlığa kadar), ama maliyeti çeliğin 3–5 katı.
+
+> ⚠️ **Buradaki ödünleşme kritik:** Daha ince tel daha az atık demek; ama tel fazla incelirse kopup bütün kesimi bozabilir. Üretim mühendisliği çoğu zaman "en ince mümkün" değil, "en güvenli ekonomik nokta"yı bulmaktır.
+
+![Photo placeholder: Testereden yeni çıkmış gri silikon levhalar](images/day-05/fresh-cut-wafers.png)
+
+*Görsel/TODO: Kasette duran mat gri levhalar ve tel izleri gösterilsin; çatıdaki mavi hücrelere benzemediği vurgulansın.*
 
 ---
 
