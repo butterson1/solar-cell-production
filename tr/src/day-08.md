@@ -19,7 +19,7 @@ Bu iğneye iplik geçiren malzeme **gümüş** — özel formülasyonlu macunu k
 
 > ⚡ **Neden gümüş?** Tüm elementler arasında en düşük elektrik direncine sahip (1,59 × 10⁻⁸ Ω·m). Bakır yakın (1,68 × 10⁻⁸) ama silikona yayılarak hücreyi yok ediyor. Gümüşün yerini almak kolay değil.
 
-![Diagram: Ön yüzeyde parmaklar, baralar ve gölgeleme alanı](images/day-08/front-grid-shading.png)
+![Diagram: Ön yüzeyde parmaklar, baralar ve gölgeleme alanı](images/day-08/front-grid-shading.svg)
 
 *Şema/TODO: İnce parmakların akımı toplarken aynı anda ışığı da kısmen gölgelediğini gösteren basit hücre üst görünüşü.*
 
@@ -42,7 +42,7 @@ Gümüş macunu sadece metal tozu + tutkal değil. Hassas mühendislik ürünü 
 
 Büyük macun üreticileri (Heraeus, DuPont, Samsung SDI, Giga Solar) formülasyonlarını devlet sırrı gibi korur. Cam hamuru bileşimindeki %1'lik fark, hücre veriminde %0,3'lük salınım demek — gigawatt fabrikasında milyonlarca dolar.
 
-![Diagram: Gümüş macunun üç bileşeni](images/day-08/silver-paste-components.png)
+![Diagram: Gümüş macunun üç bileşeni](images/day-08/silver-paste-components.svg)
 
 *Şema/TODO: Gümüş parçacıkları, cam hamuru ve organik aracın baskı öncesi ve pişirme sonrası rollerini gösteren katman diyagramı.*
 
@@ -61,7 +61,7 @@ Arka yüzeyin neredeyse tamamına alüminyum macun basılır (~30–50 $/kg, gü
 ### Geçiş 3: Ön Gümüş (Parmaklar ve Baralar)
 **Kritik adım.** İnce paralel "parmaklar" (akım toplayan) ve bunları birleştiren dikey "baralar" — güneş paneline yakından baktığınızda gördüğünüz çizgiler.
 
-![Diagram: Üç baskı geçişinin sırası](images/day-08/three-print-passes.png)
+![Diagram: Üç baskı geçişinin sırası](images/day-08/three-print-passes.svg)
 
 *Şema/TODO: Arka gümüş pedler → arka alüminyum tam alan → ön gümüş parmaklar sıralamasını gösteren akış diyagramı.*
 
@@ -98,7 +98,7 @@ Baskıdan sonra levhalar 6–10 metre uzunluğundaki kızılötesi **ateşleme f
 
 > 🔬 **Yeni başlayanlar için kritik nokta:** Fırın burada sadece "kurutma" yapmaz. Aynı anda kaplamayı deler, metal-silikon temasını oluşturur ve arka tarafta BSF meydana getirir. Yani bu adım, malzemeyi gerçekten **çalışan hücreye** dönüştürür.
 
-![Diagram: Ateşleme fırını sıcaklık profili](images/day-08/firing-profile.png)
+![Diagram: Ateşleme fırını sıcaklık profili](images/day-08/firing-profile.svg)
 
 *Şema/TODO: Zaman ekseninde ramp-up, cam aktivasyonu, tepe ateşleme ve hızlı soğuma bölgelerini gösteren profil.*
 

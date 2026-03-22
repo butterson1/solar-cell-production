@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <defs>
+    <style>
+      .bg { fill:#f8fafc; }
+      .panel { fill:white; stroke:#cbd5e1; stroke-width:2; rx:22; ry:22; }
+      .title { font: 700 30px 'Inter', 'Segoe UI', Arial, sans-serif; fill:#0f172a; }
+      .label { font: 600 22px 'Inter', 'Segoe UI', Arial, sans-serif; fill:#1e293b; }
+      .text { font: 500 18px 'Inter', 'Segoe UI', Arial, sans-serif; fill:#334155; }
+      .small { font: 500 15px 'Inter', 'Segoe UI', Arial, sans-serif; fill:#475569; }
+      .tiny { font: 600 13px 'Inter', 'Segoe UI', Arial, sans-serif; fill:#64748b; }
+      .si { fill:#cbd5e1; stroke:#64748b; stroke-width:2; }
+      .p { fill:#93c5fd; stroke:#2563eb; stroke-width:2; }
+      .b { fill:#fca5a5; stroke:#dc2626; stroke-width:2; }
+      .accent { stroke:#0ea5e9; stroke-width:4; fill:none; }
+      .green { stroke:#16a34a; fill:none; stroke-width:4; }
+      .orange { stroke:#ea580c; fill:none; stroke-width:4; }
+      .purple { stroke:#7c3aed; fill:none; stroke-width:4; }
+      .dash { stroke-dasharray:8 8; }
+      .field { stroke:#7c3aed; stroke-width:3; marker-end:url(#arrow); }
+      .ray { stroke:#f59e0b; stroke-width:4; fill:none; marker-end:url(#arrow); }
+      .electron { fill:#2563eb; }
+      .hole { fill:#ef4444; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+    <marker id="arrowGold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1200" height="700"/>
+  <text x="50" y="52" class="title">PERC: pasivasyon katmanı ve yerel arka kontaklar</text>
+  
+<rect class="panel" x="100" y="120" width="1000" height="500"/>
+<rect x="250" y="220" width="700" height="170" fill="#dbeafe" stroke="#64748b" stroke-width="2"/>
+<rect x="250" y="390" width="700" height="25" fill="#c4b5fd"/>
+<rect x="310" y="415" width="26" height="70" fill="#f59e0b"/><rect x="465" y="415" width="26" height="70" fill="#f59e0b"/><rect x="620" y="415" width="26" height="70" fill="#f59e0b"/><rect x="775" y="415" width="26" height="70" fill="#f59e0b"/>
+<rect x="250" y="485" width="700" height="35" fill="#f59e0b" opacity="0.5"/>
+<text x="980" y="275" class="text">levha</text>
+<text x="980" y="408" class="text">arka pasivasyon</text>
+<text x="980" y="462" class="text">yalnızca seçili temas noktaları</text>
+<path d="M 930 450 C 880 450, 840 450, 790 450" class="orange" marker-end="url(#arrow)"/>
+<text x="270" y="540" class="text">Amaç: arka yüzeyin çoğunu pasifleştir, metal-silikon temasını küçült.</text>
+
+</svg>

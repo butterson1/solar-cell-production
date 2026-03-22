@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <defs>
+    <style>
+      .bg { fill:#f8fafc; }
+      .panel { fill:white; stroke:#cbd5e1; stroke-width:2; rx:22; ry:22; }
+      .title { font: 700 30px 'Inter', 'Segoe UI', Arial, sans-serif; fill:#0f172a; }
+      .label { font: 600 22px 'Inter', 'Segoe UI', Arial, sans-serif; fill:#1e293b; }
+      .text { font: 500 18px 'Inter', 'Segoe UI', Arial, sans-serif; fill:#334155; }
+      .small { font: 500 15px 'Inter', 'Segoe UI', Arial, sans-serif; fill:#475569; }
+      .tiny { font: 600 13px 'Inter', 'Segoe UI', Arial, sans-serif; fill:#64748b; }
+      .si { fill:#cbd5e1; stroke:#64748b; stroke-width:2; }
+      .p { fill:#93c5fd; stroke:#2563eb; stroke-width:2; }
+      .b { fill:#fca5a5; stroke:#dc2626; stroke-width:2; }
+      .accent { stroke:#0ea5e9; stroke-width:4; fill:none; }
+      .green { stroke:#16a34a; fill:none; stroke-width:4; }
+      .orange { stroke:#ea580c; fill:none; stroke-width:4; }
+      .purple { stroke:#7c3aed; fill:none; stroke-width:4; }
+      .dash { stroke-dasharray:8 8; }
+      .field { stroke:#7c3aed; stroke-width:3; marker-end:url(#arrow); }
+      .ray { stroke:#f59e0b; stroke-width:4; fill:none; marker-end:url(#arrow); }
+      .electron { fill:#2563eb; }
+      .hole { fill:#ef4444; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+    <marker id="arrowGold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1200" height="700"/>
+  <text x="50" y="52" class="title">CdTe modül üretim akışı</text>
+  
+<rect class="panel" x="60" y="120" width="1080" height="500"/>
+<rect x="100" y="280" width="125" height="120" rx="18" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/><rect x="265" y="280" width="125" height="120" rx="18" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/><rect x="430" y="280" width="125" height="120" rx="18" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/><rect x="595" y="280" width="125" height="120" rx="18" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/><rect x="760" y="280" width="125" height="120" rx="18" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/><rect x="925" y="280" width="125" height="120" rx="18" fill="#f8fafc" stroke="#94a3b8" stroke-width="2"/>
+<text x="125" y="250" class="small">Cam</text><text x="270" y="250" class="small">TCO</text><text x="430" y="250" class="small">CdS</text><text x="570" y="250" class="small">CdTe VTD</text><text x="730" y="250" class="small">CdCl₂</text><text x="890" y="250" class="small">Arka kontak</text>
+<rect x="120" y="315" width="85" height="50" fill="#dbeafe"/>
+<rect x="285" y="315" width="85" height="12" fill="#e5e7eb"/><rect x="285" y="327" width="85" height="38" fill="#dbeafe"/>
+<rect x="450" y="310" width="85" height="10" fill="#fde68a"/><rect x="450" y="320" width="85" height="45" fill="#dbeafe"/>
+<rect x="615" y="305" width="85" height="12" fill="#fca5a5"/><rect x="615" y="317" width="85" height="10" fill="#fde68a"/><rect x="615" y="327" width="85" height="38" fill="#dbeafe"/>
+<rect x="780" y="305" width="85" height="12" fill="#fca5a5"/><rect x="780" y="317" width="85" height="10" fill="#fde68a"/><rect x="780" y="327" width="85" height="38" fill="#dbeafe"/>
+<rect x="945" y="305" width="85" height="12" fill="#9ca3af"/><rect x="945" y="317" width="85" height="12" fill="#fca5a5"/><rect x="945" y="329" width="85" height="10" fill="#fde68a"/><rect x="945" y="339" width="85" height="26" fill="#dbeafe"/>
+<path d="M 225 340 L 260 340" class="orange" marker-end="url(#arrow)"/><path d="M 390 340 L 425 340" class="orange" marker-end="url(#arrow)"/><path d="M 555 340 L 590 340" class="orange" marker-end="url(#arrow)"/><path d="M 720 340 L 755 340" class="orange" marker-end="url(#arrow)"/><path d="M 885 340 L 920 340" class="orange" marker-end="url(#arrow)"/>
+<text x="345" y="470" class="text">Doğrudan cam üzerinde katman katman modül yapımı</text>
+
+</svg>

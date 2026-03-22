@@ -20,7 +20,7 @@ Eski Al-BSF hücresinde arka tarafa basitçe alüminyum macun basılıp ateşlen
 
 > ⚡ **%0,1'in değeri:** Mutlak verimliliğin her %0,1'i, 50 GW üretim hattında modül değeri olarak yılda **100–150 milyon $** demek.
 
-![Diagram: Al-BSF, PERC, TOPCon ve HJT'de arka yüzey yaklaşımı](images/day-09/rear-side-comparison.png)
+![Diagram: Al-BSF, PERC, TOPCon ve HJT'de arka yüzey yaklaşımı](images/day-09/rear-side-comparison.svg)
 
 *Şema/TODO: Dört mimaride arka yüzeyin nasıl işlendiğini yan yana gösteren basit karşılaştırma çizimi.*
 
@@ -50,7 +50,7 @@ Arka yüzeyin tamamını alüminyumla kaplamak yerine:
 
 **Ama sınır yaklaşıyor:** Üretim PERC hücreleri %23,0–23,5'e ulaşırken, pratik tavan ~%24,5. Sektör tavanın %95'inde — kuyu kuruyor.
 
-![Diagram: PERC yapısı ve lazerle açılmış yerel arka kontaklar](images/day-09/perc-local-contacts.png)
+![Diagram: PERC yapısı ve lazerle açılmış yerel arka kontaklar](images/day-09/perc-local-contacts.svg)
 
 *Şema/TODO: Ön yüzey, wafer, arka dielektrik yığın ve yalnızca noktasal/çizgisel açılan PERC arka temaslarını gösteren kesit.*
 
@@ -90,7 +90,7 @@ Teorik limit ~%28,7 — hâlâ anlamlı ilerleme alanı var.
 
 > 🎯 **Önemli detay:** Çoğu TOPCon hücresi **n-tipi levha** kullanır (PERC'ün p-tipi levhasının tersi). N-tipi silikon, p-tipi hücrelerde ilk yılda %1–3 güç kaybına neden olan bor-oksijen ışık bozunmasından (LID) etkilenmez. Dezavantaj: n-tipi levhalar %5–10 daha pahalı.
 
-![Diagram: TOPCon kesiti — tünel oksit, poli-Si ve metal kontak](images/day-09/topcon-stack.png)
+![Diagram: TOPCon kesiti — tünel oksit, poli-Si ve metal kontak](images/day-09/topcon-stack.svg)
 
 *Şema/TODO: Kristalin Si, ultra ince SiO₂, katkılı poly-Si ve üstteki metal temasını gösteren katman diyagramı.*
 
@@ -130,7 +130,7 @@ Kritik katman: yalnızca 5–8 nm kalınlığındaki **içsel (katkısız) amorf
 - **Ekipman maliyeti:** Angstrom seviyeli kalınlık kontrolü gerektiren PECVD araçları, 15–25 milyon $/adet. Tam hat: GW başına **80–120 milyon $** (TOPCon: 50–70 milyon $)
 - **İndiyum sorunu:** Her hücre ~200–300 mg indiyum (ITO). Küresel indiyum üretimi ~900 ton/yıl. 500 GW HJT, ~1.500 ton indiyum gerektirir — mevcut arzın çok üstünde.
 
-![Diagram: HJT katman yığını ve iki taraflı simetrik yapı](images/day-09/hjt-layer-stack.png)
+![Diagram: HJT katman yığını ve iki taraflı simetrik yapı](images/day-09/hjt-layer-stack.svg)
 
 *Şema/TODO: HJT'nin TCO / a-Si:H / c-Si / a-Si:H / TCO katmanlarını ve çift yüzlü simetriyi gösteren kesit.*
 

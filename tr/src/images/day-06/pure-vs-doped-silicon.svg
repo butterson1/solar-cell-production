@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <defs>
+    <style>
+      .bg { fill:#f8fafc; }
+      .panel { fill:white; stroke:#cbd5e1; stroke-width:2; rx:22; ry:22; }
+      .title { font: 700 30px 'Inter', 'Segoe UI', Arial, sans-serif; fill:#0f172a; }
+      .label { font: 600 22px 'Inter', 'Segoe UI', Arial, sans-serif; fill:#1e293b; }
+      .text { font: 500 18px 'Inter', 'Segoe UI', Arial, sans-serif; fill:#334155; }
+      .small { font: 500 15px 'Inter', 'Segoe UI', Arial, sans-serif; fill:#475569; }
+      .tiny { font: 600 13px 'Inter', 'Segoe UI', Arial, sans-serif; fill:#64748b; }
+      .si { fill:#cbd5e1; stroke:#64748b; stroke-width:2; }
+      .p { fill:#93c5fd; stroke:#2563eb; stroke-width:2; }
+      .b { fill:#fca5a5; stroke:#dc2626; stroke-width:2; }
+      .accent { stroke:#0ea5e9; stroke-width:4; fill:none; }
+      .green { stroke:#16a34a; fill:none; stroke-width:4; }
+      .orange { stroke:#ea580c; fill:none; stroke-width:4; }
+      .purple { stroke:#7c3aed; fill:none; stroke-width:4; }
+      .dash { stroke-dasharray:8 8; }
+      .field { stroke:#7c3aed; stroke-width:3; marker-end:url(#arrow); }
+      .ray { stroke:#f59e0b; stroke-width:4; fill:none; marker-end:url(#arrow); }
+      .electron { fill:#2563eb; }
+      .hole { fill:#ef4444; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+    <marker id="arrowGold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1200" height="700"/>
+  <text x="50" y="52" class="title">Saf ve katkılanmış silikon: atomik fark</text>
+  
+<rect class="panel" x="40" y="90" width="520" height="560"/>
+<rect class="panel" x="640" y="90" width="520" height="560"/>
+<text x="230" y="130" class="label">Saf silikon</text>
+<text x="775" y="130" class="label">Katkılanmış silikon</text>
+<g>
+  <circle class="si" cx="140" cy="220" r="26"/><circle class="si" cx="240" cy="220" r="26"/><circle class="si" cx="340" cy="220" r="26"/><circle class="si" cx="440" cy="220" r="26"/>
+  <circle class="si" cx="190" cy="320" r="26"/><circle class="si" cx="290" cy="320" r="26"/><circle class="si" cx="390" cy="320" r="26"/>
+  <circle class="si" cx="140" cy="420" r="26"/><circle class="si" cx="240" cy="420" r="26"/><circle class="si" cx="340" cy="420" r="26"/><circle class="si" cx="440" cy="420" r="26"/>
+  <line class="accent" x1="166" y1="220" x2="214" y2="220"/><line class="accent" x1="266" y1="220" x2="314" y2="220"/><line class="accent" x1="366" y1="220" x2="414" y2="220"/>
+  <line class="accent" x1="153" y1="243" x2="177" y2="297"/><line class="accent" x1="227" y1="243" x2="203" y2="297"/><line class="accent" x1="253" y1="243" x2="277" y2="297"/><line class="accent" x1="327" y1="243" x2="303" y2="297"/><line class="accent" x1="353" y1="243" x2="377" y2="297"/><line class="accent" x1="427" y1="243" x2="403" y2="297"/>
+  <line class="accent" x1="203" y1="343" x2="227" y2="397"/><line class="accent" x1="277" y1="343" x2="253" y2="397"/><line class="accent" x1="303" y1="343" x2="327" y2="397"/><line class="accent" x1="377" y1="343" x2="353" y2="397"/>
+  <line class="accent" x1="166" y1="420" x2="214" y2="420"/><line class="accent" x1="266" y1="420" x2="314" y2="420"/><line class="accent" x1="366" y1="420" x2="414" y2="420"/>
+</g>
+<g>
+  <circle class="si" cx="740" cy="220" r="26"/><circle class="p" cx="840" cy="220" r="26"/><circle class="si" cx="940" cy="220" r="26"/><circle class="si" cx="1040" cy="220" r="26"/>
+  <circle class="si" cx="790" cy="320" r="26"/><circle class="si" cx="890" cy="320" r="26"/><circle class="b" cx="990" cy="320" r="26"/>
+  <circle class="si" cx="740" cy="420" r="26"/><circle class="si" cx="840" cy="420" r="26"/><circle class="si" cx="940" cy="420" r="26"/><circle class="si" cx="1040" cy="420" r="26"/>
+  <line class="accent" x1="766" y1="220" x2="814" y2="220"/><line class="accent" x1="866" y1="220" x2="914" y2="220"/><line class="accent" x1="966" y1="220" x2="1014" y2="220"/>
+  <line class="accent" x1="753" y1="243" x2="777" y2="297"/><line class="accent" x1="827" y1="243" x2="803" y2="297"/><line class="accent" x1="853" y1="243" x2="877" y2="297"/><line class="accent" x1="927" y1="243" x2="903" y2="297"/><line class="accent" x1="953" y1="243" x2="977" y2="297"/><line class="accent" x1="1027" y1="243" x2="1003" y2="297"/>
+  <line class="accent" x1="803" y1="343" x2="827" y2="397"/><line class="accent" x1="877" y1="343" x2="853" y2="397"/><line class="accent" x1="903" y1="343" x2="927" y2="397"/>
+  <line class="accent dash" x1="977" y1="343" x2="953" y2="397"/>
+  <line class="accent" x1="766" y1="420" x2="814" y2="420"/><line class="accent" x1="866" y1="420" x2="914" y2="420"/><line class="accent" x1="966" y1="420" x2="1014" y2="420"/>
+  <circle class="electron" cx="870" cy="178" r="12"/><text x="888" y="184" class="small">fazla elektron</text>
+  <circle class="hole" cx="964" cy="372" r="12" fill="none" stroke="#ef4444" stroke-width="4"/><text x="985" y="378" class="small">delik</text>
+</g>
+<text x="100" y="592" class="text">Tüm bağlar dolu → çok az serbest taşıyıcı</text>
+<text x="695" y="592" class="text">Az sayıda katkı atomu → çok daha fazla taşıyıcı</text>
+
+</svg>

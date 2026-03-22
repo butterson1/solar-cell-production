@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <defs>
+    <style>
+      .bg { fill:#f8fafc; }
+      .panel { fill:white; stroke:#cbd5e1; stroke-width:2; rx:22; ry:22; }
+      .title { font: 700 30px 'Inter', 'Segoe UI', Arial, sans-serif; fill:#0f172a; }
+      .label { font: 600 22px 'Inter', 'Segoe UI', Arial, sans-serif; fill:#1e293b; }
+      .text { font: 500 18px 'Inter', 'Segoe UI', Arial, sans-serif; fill:#334155; }
+      .small { font: 500 15px 'Inter', 'Segoe UI', Arial, sans-serif; fill:#475569; }
+      .tiny { font: 600 13px 'Inter', 'Segoe UI', Arial, sans-serif; fill:#64748b; }
+      .si { fill:#cbd5e1; stroke:#64748b; stroke-width:2; }
+      .p { fill:#93c5fd; stroke:#2563eb; stroke-width:2; }
+      .b { fill:#fca5a5; stroke:#dc2626; stroke-width:2; }
+      .accent { stroke:#0ea5e9; stroke-width:4; fill:none; }
+      .green { stroke:#16a34a; fill:none; stroke-width:4; }
+      .orange { stroke:#ea580c; fill:none; stroke-width:4; }
+      .purple { stroke:#7c3aed; fill:none; stroke-width:4; }
+      .dash { stroke-dasharray:8 8; }
+      .field { stroke:#7c3aed; stroke-width:3; marker-end:url(#arrow); }
+      .ray { stroke:#f59e0b; stroke-width:4; fill:none; marker-end:url(#arrow); }
+      .electron { fill:#2563eb; }
+      .hole { fill:#ef4444; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#334155"/>
+    </marker>
+    <marker id="arrowGold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1200" height="700"/>
+  <text x="50" y="52" class="title">Ön şebeke: akım toplama ve gölgeleme dengesi</text>
+  
+<rect class="panel" x="90" y="110" width="1020" height="520"/>
+<rect x="180" y="170" width="700" height="400" rx="18" fill="#2563eb" opacity="0.18" stroke="#1d4ed8" stroke-width="3"/>
+<rect x="220" y="190" width="12" height="360" fill="#94a3b8"/><rect x="265" y="190" width="12" height="360" fill="#94a3b8"/><rect x="310" y="190" width="12" height="360" fill="#94a3b8"/><rect x="355" y="190" width="12" height="360" fill="#94a3b8"/><rect x="400" y="190" width="12" height="360" fill="#94a3b8"/><rect x="445" y="190" width="12" height="360" fill="#94a3b8"/><rect x="490" y="190" width="12" height="360" fill="#94a3b8"/><rect x="535" y="190" width="12" height="360" fill="#94a3b8"/><rect x="580" y="190" width="12" height="360" fill="#94a3b8"/><rect x="625" y="190" width="12" height="360" fill="#94a3b8"/><rect x="670" y="190" width="12" height="360" fill="#94a3b8"/><rect x="715" y="190" width="12" height="360" fill="#94a3b8"/>
+<rect x="360" y="170" width="22" height="400" fill="#64748b"/>
+<rect x="680" y="170" width="22" height="400" fill="#64748b"/>
+<text x="218" y="605" class="text">ince parmaklar: düşük taşıma yolu, az gölge</text>
+<text x="302" y="155" class="small">baralar</text>
+<path d="M 250 310 C 310 310, 330 310, 360 310" class="orange" marker-end="url(#arrow)"/>
+<path d="M 525 260 C 585 260, 620 260, 680 260" class="orange" marker-end="url(#arrow)"/>
+<text x="930" y="250" class="text">metal alan = gölgeleme</text>
+<text x="930" y="285" class="text">ama aynı zamanda akım toplama</text>
+
+</svg>

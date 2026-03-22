@@ -26,7 +26,7 @@ Sonuç: Silikonun ışığın çoğunu yakalayabilmesi için **150–180 μm** k
 > - Polisilikon saflaştırma, kristal büyütme, levha dilimleme zincirinin tamamını atla
 > - Bu zincir bir güneş modülü maliyetinin ~%40'ı
 
-![Diagram: Kristalin silikon ile ince film emici kalınlık karşılaştırması](images/day-10/thickness-comparison.png)
+![Diagram: Kristalin silikon ile ince film emici kalınlık karşılaştırması](images/day-10/thickness-comparison.svg)
 
 *Şema/TODO: Yaklaşık 170 μm c-Si emici ile 2 μm CdTe / 1–2 μm CIGS / 0,3–0,5 μm a-Si katmanlarını yan yana gösteren ölçekli çizim.*
 
@@ -53,7 +53,7 @@ Kristalin silikondan şaşırtıcı derecede farklı. Bir silikon hücrenin hamm
 
 > 💡 **Modern gelişme:** First Solar, CdS tamponunu **MgZnO** (magnezyum çinko oksit) ile değiştirmeye başladı — daha geniş bant aralığı (%3,3 eV) daha fazla mavi/UV fotonun geçmesine izin veriyor.
 
-![Diagram: CdTe modül üretim akışı](images/day-10/cdte-process-flow.png)
+![Diagram: CdTe modül üretim akışı](images/day-10/cdte-process-flow.svg)
 
 *Şema/TODO: Cam → TCO → tampon katman → CdTe biriktirme → CdCl₂ aktivasyonu → arka kontak → laminasyon sırasını gösteren akış diyagramı.*
 
@@ -99,7 +99,7 @@ CIGS dörtlü bir bileşik — dört elementin hassas stokiyometride biriktirilm
 
 > 📌 **Neden zor?** Silikonda tek ana malzeme vardır; CIGS'te dört elementi aynı anda doğru oranda tutturmanız gerekir. Laboratuvarda mümkün olan şey, büyük fabrikada çok daha zor hale gelir.
 
-![Diagram: CIGS katman yapısı ve bileşim gradyanı](images/day-10/cigs-layer-gradient.png)
+![Diagram: CIGS katman yapısı ve bileşim gradyanı](images/day-10/cigs-layer-gradient.svg)
 
 *Şema/TODO: Mo arka kontak, CIGS emici, CdS tampon ve ZnO ön kontağı; ayrıca kalınlık boyunca değişen Ga/In oranını gösteren basit çizim.*
 
@@ -141,7 +141,7 @@ Işığa maruz kalınca a-Si'deki zayıf bağlar kırılır, yeni rekombinasyon 
 
 Üretim modüllerinde stabil verimlilik: **%6–8** — c-Si'nin üçte biri. Alan maliyetlerinin baskın olduğu yere monteli güneş enerjisinde bu verimlilik cezası yıkıcı.
 
-![Diagram: Amorf silikonun ışıkla bozunması ve stabilize verim](images/day-10/asi-degradation-curve.png)
+![Diagram: Amorf silikonun ışıkla bozunması ve stabilize verim](images/day-10/asi-degradation-curve.svg)
 
 *Şema/TODO: İlk kullanım saatlerinde düşen ve sonra stabilize olan a-Si performans eğrisi.*
 

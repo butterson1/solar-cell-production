@@ -36,7 +36,7 @@ Tırmanmamız gereken yol şöyle görünüyor:
 
 %99'dan %99,9999'a sıçramak, dört büyüklük sırası iyileşme demek. Bu, tüm endüstriyi tanımlayan zorluğun ta kendisi.
 
-![Diyagram: Silikon saflık merdiveni — kumdan güneş enerjisi kalitesine](images/day-02/day-02-purity-ladder.png)
+![Diyagram: Silikon saflık merdiveni — kumdan güneş enerjisi kalitesine](images/day-02/day-02-purity-ladder.svg)
 
 *Şekil önerisi: Dört kalite seviyesi soldan sağa veya aşağıdan yukarıya karşılaştırılır.*
 
@@ -48,7 +48,7 @@ Silikon doğada serbest halde bulunmaz — daima oksijene bağlıdır. Si–O ba
 
 Bu iş **gömülü ark ocağında** yapılır: 10–15 metre çapında devasa bir endüstriyel fırın. İçine kuvarsit (yüksek saflıkta SiO₂ cevheri) ve karbon kaynakları (kömür, odun kömürü) yüklenir. Üç büyük grafit elektrot karışıma daldırılır ve 100.000+ amperlik akım geçirilir.
 
-![Diyagram: Gömülü ark ocağında kuvarsın silikona indirgenmesi](images/day-02/day-02-arc-furnace.png)
+![Diyagram: Gömülü ark ocağında kuvarsın silikona indirgenmesi](images/day-02/day-02-arc-furnace.svg)
 
 *Şekil önerisi: Kuvars + karbon girişi, elektrotlar, yüksek sıcaklık bölgesi ve altta toplanan erimiş silikon.*
 
@@ -106,7 +106,7 @@ Saflaştırılmış TCS daha sonra **Siemens işlemiyle** (3. Gün'ün konusu) y
 
 Sonuç: Eritmeye ve kristal büyütmeye hazır, 6N ila 9N saflıkta **polisilikon** — kalın, gümüşi gri çubuklar.
 
-![Diyagram: Kumdan polisilikona tam süreç akış şeması](images/day-02/day-02-sand-to-polysilicon-flow.png)
+![Diyagram: Kumdan polisilikona tam süreç akış şeması](images/day-02/day-02-sand-to-polysilicon-flow.svg)
 
 *Şekil önerisi: Kuvars → MG-Si → TCS → damıtma → Siemens/FBR → polisilikon akışı tek şemada.*
 
@@ -127,7 +127,7 @@ FBR'de silan gazı (SiH₄), küçük silikon tohum parçacıklarının üzerind
 > 🎯 **Neden bu karşılaştırma önemli?**
 > Aynı hedefe — ultra saf silikona — farklı fabrika tasarımlarıyla ulaşabilirsiniz. Güneş sektöründe maliyet düşüşünün büyük kısmı, tam da bu tür süreç farklarından gelir.
 
-![Diyagram: Siemens ve FBR süreçlerinin yan yana karşılaştırması](images/day-02/day-02-siemens-vs-fbr.png)
+![Diyagram: Siemens ve FBR süreçlerinin yan yana karşılaştırması](images/day-02/day-02-siemens-vs-fbr.svg)
 
 *Şekil önerisi: Solda çubuk büyüten Siemens, sağda granül üreten FBR; enerji tüketimi de etiketlenir.*
 

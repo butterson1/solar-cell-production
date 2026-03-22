@@ -14,7 +14,7 @@ Bu tek sorun — nasıl daha ince, daha verimli, daha az atıkla dilimleneceği 
 
 > 🧭 **Başlangıç pusulası:** Bu dersteki ana fikir şu: Aynı külçeden ne kadar çok sağlam levha çıkarabilirseniz, watt başına maliyet o kadar düşer. Tel inceldikçe ve levha daha kontrollü kesildikçe hem atık azalır hem de üretim artar.
 
-![Diagram: Silindirik külçeden ince levhalara dönüşüm akışı](images/day-05/ingot-to-wafer-flow.png)
+![Diagram: Silindirik külçeden ince levhalara dönüşüm akışı](images/day-05/ingot-to-wafer-flow.svg)
 
 *Şema/TODO: Silindir külçe → kare alma → tel ağı ile kesim → levha kaseti akışını tek bakışta göster.*
 
@@ -49,7 +49,7 @@ Geçiş inanılmaz hızlı oldu: 2015'te mono levhaların %10'undan azı elmas t
 
 > 🧠 **Nasıl düşünmeli?** Bulamaç yöntemi "tel + serbest aşındırıcı" iken elmas tel yöntemi "dişleri telin üstüne takılmış testere" gibidir. Bu yüzden daha dar keser, daha hızlı ilerler ve yüzeye daha az hasar verir.
 
-![Diagram: Bulamaç tel ile elmas tel kesiminin karşılaştırması](images/day-05/slurry-vs-diamond-wire.png)
+![Diagram: Bulamaç tel ile elmas tel kesiminin karşılaştırması](images/day-05/slurry-vs-diamond-wire.svg)
 
 *Şema/TODO: İki kesit çizimiyle tel çapı, kerf genişliği ve yüzey hasarı farkını yan yana göster.*
 
@@ -72,7 +72,7 @@ Lider üretici **Gaoce Technology** (Çin, pazarın ~%70'i) veya **Meyer Burger*
 
 > 🔎 **Gözünüzde canlandırın:** Buradaki "tek tel" aslında ileri geri sarılmış yüzlerce kilometrelik tek bir makara. Makine bunu binlerce paralel kesme hattına dönüştürüyor; verim patlaması tam burada geliyor.
 
-![Diagram: Modern tel testerenin tel ağı ve kesim bölgesi](images/day-05/wire-saw-web.png)
+![Diagram: Modern tel testerenin tel ağı ve kesim bölgesi](images/day-05/wire-saw-web.svg)
 
 *Şema/TODO: Makaralar, kılavuz silindirler, paralel tel ağı ve aşağı inen silikon bloğu etiketlensin.*
 
@@ -107,7 +107,7 @@ Ama fiziksel bir sınır yaklaşıyor: ~35 μm çap altında çelik telin mukave
 
 > ⚠️ **Buradaki ödünleşme kritik:** Daha ince tel daha az atık demek; ama tel fazla incelirse kopup bütün kesimi bozabilir. Üretim mühendisliği çoğu zaman "en ince mümkün" değil, "en güvenli ekonomik nokta"yı bulmaktır.
 
-![Photo placeholder: Testereden yeni çıkmış gri silikon levhalar](images/day-05/fresh-cut-wafers.png)
+![Photo placeholder: Testereden yeni çıkmış gri silikon levhalar](images/day-05/fresh-cut-wafers.svg)
 
 *Görsel/TODO: Kasette duran mat gri levhalar ve tel izleri gösterilsin; çatıdaki mavi hücrelere benzemediği vurgulansın.*
 

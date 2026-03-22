@@ -15,7 +15,7 @@ Kendinizi bir foton tarafından serbest bırakılmış bir elektron olarak hayal
 
 **Çok kristalde** (polikristalin) aynı atomlar var, aynı bağlar var — ama kristal milyonlarca küçük taneciklere bölünmüş, her biri farklı yönde. Her tane sınırında kafes bozulur, sarkan bağlar ve safsızlıklar birikir. Tanecik sınırına çarpan elektron, çivili yola çarpan araba gibidir.
 
-![Diyagram: Monokristal ve polikristal silikonun mikro yapı farkı](images/day-04/day-04-mono-vs-poly.png)
+![Diyagram: Monokristal ve polikristal silikonun mikro yapı farkı](images/day-04/day-04-mono-vs-poly.svg)
 
 *Şekil önerisi: Solda tek yönelimli kafes, sağda tane sınırları ve farklı yönelimler.*
 
@@ -66,7 +66,7 @@ Polisilikon eritildikten ve sıcaklık 1.420–1.430°C'de sabitlendiğinde:
 
 Bitmiş külçe: 200–400 kg ağırlığında, ~3 metre uzunluğunda, 300 mm çapında parlak bir silikon silindiri. Termal çatlamayı önlemek için birkaç saat yavaşça soğutulur.
 
-![Diyagram: Czochralski kristal çekme fırınının kesit görünümü](images/day-04/day-04-cz-furnace-cross-section.png)
+![Diyagram: Czochralski kristal çekme fırınının kesit görünümü](images/day-04/day-04-cz-furnace-cross-section.svg)
 
 *Şekil önerisi: Pota, eriyik, tohum kristal, çekilen külçe, dönme yönleri ve ısıtıcı etiketlenir.*
 
@@ -88,7 +88,7 @@ LONGi ve TCL Zhonghuan (TZS), 2024'te pota başına rutin olarak **6–10 külç
 
 Sorun: Her ardışık çekmede eriyikte oksijen, karbon ve katkı maddeleri birikir. Bu bozulmayı yönetmek derin uzmanlık ve rekabetçi avantaj kaynağı.
 
-![Diyagram: Geleneksel CZ ile yeniden şarj CZ döngüsünün karşılaştırması](images/day-04/day-04-cz-vs-rcz-cycle.png)
+![Diyagram: Geleneksel CZ ile yeniden şarj CZ döngüsünün karşılaştırması](images/day-04/day-04-cz-vs-rcz-cycle.svg)
 
 *Şekil önerisi: Tek külçelik klasik döngü ile aynı potadan çoklu külçe alınan RCZ akışı yan yana.*
 
@@ -104,7 +104,7 @@ Bir polisilikon çubuk dikey olarak monte edilir. Halka şeklinde bir RF bobini,
 > **CZ** = erimiş silikon dolu bir potadan kristal çekmek.
 > **FZ** = pota kullanmadan, dar bir erimiş bölgeyi çubuk boyunca gezdirerek kristal oluşturmak.
 
-![Diyagram: Float-zone kristal büyütme prensibi](images/day-04/day-04-float-zone-principle.png)
+![Diyagram: Float-zone kristal büyütme prensibi](images/day-04/day-04-float-zone-principle.svg)
 
 *Şekil önerisi: Dikey çubuk, RF bobini, hareket eden erimiş bölge ve geride kalan tek kristal bölge.*
 
